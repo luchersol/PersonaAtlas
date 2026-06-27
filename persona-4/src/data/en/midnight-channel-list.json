@@ -1,0 +1,38 @@
+[
+  {
+    "id": "mayumi-yamano",
+    "name": "Mayumi Yamano",
+    "status": "Missing / Deceased",
+    "image": "/images/tv/mayumi.png",
+    "route": "/midnight-channel/mayumi-yamano",
+    "airDate": "Rainy Midnight - April 11",
+    "broadcastSummary": "The television announcer who was involved in a major scandal. Her silhouette was the first ever captured on the Midnight Channel, setting off the bizarre chain of events in Inaba."
+  },
+  {
+    "id": "saki-konishi",
+    "name": "Saki Konishi",
+    "status": "Missing / Deceased",
+    "image": "/images/tv/saki.png",
+    "route": "/midnight-channel/saki-konishi",
+    "airDate": "Rainy Midnight - April 12",
+    "broadcastSummary": "A high school student who discovered Mayumi Yamano's body. Shortly after her silhouette appeared blurry on the screen, she went missing."
+  },
+  {
+    "id": "yukiko-amagi-tv",
+    "name": "Yukiko Amagi (Shadow)",
+    "status": "Target Located",
+    "image": "/images/tv/yukiko_shadow.png",
+    "route": "/midnight-channel/yukiko-amagi-tv",
+    "airDate": "Rainy Midnight - April 16",
+    "broadcastSummary": "Appears in a high-fidelity broadcast wearing traditional attire, announcing a reality show to find her 'Prince Charming'. Immediate rescue operation required inside the TV World."
+  },
+  {
+    "id": "kanji-tatsumi-tv",
+    "name": "Kanji Tatsumi (Shadow)",
+    "status": "Target Located",
+    "image": "/images/tv/kanji_shadow.png",
+    "route": "/midnight-channel/kanji-tatsumi-tv",
+    "airDate": "Rainy Midnight - May 14",
+    "broadcastSummary": "Appears in a flamboyant setting, challenging societal norms and presenting an aggressive, heavily stylized persona broadcast that contradicts his real-world thug reputation."
+  }
+]

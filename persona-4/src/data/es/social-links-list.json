@@ -1,0 +1,42 @@
+[
+  {
+    "id": "yosuke-hanamura",
+    "name": "Yosuke Hanamura",
+    "arcana": "Magician",
+    "image": "/images/characters/yosuke.png",
+    "arcanaCard": "/images/cards/magician.png",
+    "route": "/social-links/yosuke-hanamura",
+    "location": "Junes Department Store (Food Court) - Holidays/Weekends",
+    "description": "The protagonist's clumsy but reliable partner. His bond deepens as you help him deal with his status as the manager's son and his grief over Saki Konishi."
+  },
+  {
+    "id": "chie-satonaka",
+    "name": "Chie Satonaka",
+    "arcana": "Chariot",
+    "image": "/images/characters/chie.png",
+    "arcanaCard": "/images/cards/chariot.png",
+    "route": "/social-links/chie-satonaka",
+    "location": "Yasogami High Roof - School Days",
+    "description": "An energetic girl who loves steak and martial arts. Her bond grows as she struggles with her protective feelings toward Yukiko and what true strength means."
+  },
+  {
+    "id": "yukiko-amagi",
+    "name": "Yukiko Amagi",
+    "arcana": "Priestess",
+    "image": "/images/characters/yukiko.png",
+    "arcanaCard": "/images/cards/priestess.png",
+    "route": "/social-links/yukiko-amagi",
+    "location": "Yasogami High Class Building 1F - School Days",
+    "description": "The elegant heiress to the famous Amagi Inn. Her link focuses on her desire to escape her predetermined future and find her own path in life."
+  },
+  {
+    "id": "kanji-tatsumi",
+    "name": "Kanji Tatsumi",
+    "arcana": "Emperor",
+    "image": "/images/characters/kanji.png",
+    "arcanaCard": "/images/cards/emperor.png",
+    "route": "/social-links/kanji-tatsumi",
+    "location": "Shopping District (North) - Near the Textile Shop",
+    "description": "A tough guy with a soft heart who loves knitting. His bond explores his insecurities about his masculine identity and acceptance."
+  }
+]

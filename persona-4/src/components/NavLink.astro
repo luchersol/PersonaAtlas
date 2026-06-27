@@ -1,0 +1,56 @@
+---
+// src/components/NavLink.astro
+interface Props {
+  href: string;
+  concept: string;
+}
+
+const { href, concept } = Astro.props;
+const { pathname } = Astro.url;
+
+const isActive = pathname.replace(/\/$/, '') === href.replace(/\/$/, '');
+---
+
+<a href={href} class={isActive ? "p4-nav-link active" : "p4-nav-link"}>
+  <span>{concept}</span>
+</a>
+
+<style>
+  .p4-nav-link {
+    display: inline-block;
+    position: relative;
+    padding: 0.5rem 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    transform: skewX(-12deg);
+    transition: all 0.2s ease-in-out;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #333;
+    cursor: pointer;
+  }
+
+  .p4-nav-link span {
+    display: inline-block;
+    transform: skewX(12deg); /* Endereza el texto */
+  }
+
+  /* Estilo cuando pasas el ratón por encima */
+  .p4-nav-link:hover {
+    background-color: #FFEB3B;
+    color: #000;
+    transform: skewX(-12deg) scale(1.05);
+    border-color: #FFEB3B;
+  }
+
+  /* Estilo cuando está ACTIVO (Estilo P4 total) */
+  .p4-nav-link.active {
+    background-color: #FFEB3B;
+    color: #000;
+    border-color: #FFEB3B;
+    box-shadow: 4px 4px 0px 0px #000;
+    z-index: 2;
+  }
+</style>

@@ -1,0 +1,182 @@
+---
+import Layout from '@layouts/Layout.astro';
+import { useTranslations, getSocialLinksList } from '@i18n/utils';
+
+export async function getStaticPaths() {
+  const paths: any[] = [];
+  const languages = ['en', 'es'] as const;
+
+  for (const lang of languages) {
+    const list = await getSocialLinksList(lang);
+    
+    list.forEach((char: any) => {
+      // Extraemos el slug o ID de la ruta (ej: 'yosuke-hanamura')
+      const characterSlug = char.route.split('/').pop(); 
+      
+      paths.push({
+        params: { character: characterSlug },
+        props: { char, routeLang: lang },
+      });
+    });
+  }
+
+  return paths;
+}
+
+const { char, routeLang } = Astro.props;
+const t = useTranslations(routeLang);
+---
+
+<Layout title={`${char.name} Profile | P4`}>
+  <div class="p4-profile-wrapper">
+    
+    <!-- Botón volver atrás rápido -->
+    <a href="/social-links" class="p4-btn-back-list">← Back to Social Links</a>
+
+    <div class="p4-profile-layout">
+      <!-- LADO IZQUIERDO: Imágenes de cartas y Rostro -->
+      <div class="p4-profile-media">
+        <div class="p4-big-avatar">
+          <img src={char.image} alt={char.name} onerror="this.style.backgroundColor='#222'" />
+        </div>
+        <div class="p4-big-arcana">
+          <img src={char.arcanaCard} alt={char.arcana} onerror="this.style.display='none'" />
+          <div class="p4-arcana-title-badge">{char.arcana} Arcana</div>
+        </div>
+      </div>
+
+      <!-- LADO DERECHO: Datos internos -->
+      <div class="p4-profile-details">
+        <h1 class="p4-title">{char.name}</h1>
+        <div class="p4-meta-box">
+          <p><strong>Availability / Location:</strong> {char.location}</p>
+        </div>
+        
+        <div class="p4-bio-box">
+          <h2>Investigation File</h2>
+          <p>{char.description}</p>
+        </div>
+
+        <div class="p4-status-mock">
+          <div class="p4-rank-title">Social Link Rank</div>
+          <div class="p4-rank-stars">★ ★ ★ ★ ★ ★ ★ ★ ★ ★</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</Layout>
+
+<style>
+  .p4-profile-wrapper {
+    margin-top: 1rem;
+  }
+  .p4-btn-back-list {
+    color: #FFEB3B;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+  }
+  .p4-btn-back-list:hover {
+    text-decoration: underline;
+  }
+
+  .p4-profile-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    background-color: #000;
+    border: 4px solid #FFEB3B;
+    padding: 2.5rem;
+    box-shadow: 10px 10px 0px #000;
+  }
+
+  @media (min-width: 768px) {
+    .p4-profile-layout {
+      grid-template-columns: 250px 1fr;
+    }
+  }
+
+  /* Media Styles */
+  .p4-profile-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .p4-big-avatar {
+    width: 180px;
+    height: 180px;
+    border: 4px solid #fff;
+    outline: 4px solid #000;
+    transform: rotate(-2deg);
+    background-color: #222;
+  }
+  .p4-big-avatar img { width: 100%; height: 100%; object-fit: cover; }
+  
+  .p4-big-arcana {
+    text-align: center;
+  }
+  .p4-big-arcana img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+  .p4-arcana-title-badge {
+    background-color: #FFEB3B;
+    color: #000;
+    font-family: 'Impact', sans-serif;
+    padding: 4px 12px;
+    transform: skewX(-10deg);
+    font-size: 1.1rem;
+  }
+
+  /* Details Styles */
+  .p4-profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .p4-meta-box {
+    background-color: #1a1a1a;
+    padding: 1rem;
+    border-left: 4px solid #FFEB3B;
+    font-size: 1rem;
+  }
+  .p4-meta-box strong { color: #FFEB3B; }
+
+  .p4-bio-box h2 {
+    font-family: 'Impact', sans-serif;
+    text-transform: uppercase;
+    color: #FFEB3B;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.05em;
+  }
+  .p4-bio-box p {
+    color: #ccc;
+    line-height: 1.6;
+    font-size: 1.1rem;
+  }
+
+  .p4-status-mock {
+    border-top: 2px dashed #333;
+    padding-top: 1.5rem;
+    margin-top: auto;
+  }
+  .p4-rank-title {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #666;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.25rem;
+  }
+  .p4-rank-stars {
+    color: #FFEB3B;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+  }
+</style>

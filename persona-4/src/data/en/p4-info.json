@@ -1,0 +1,32 @@
+{
+  "social-links": {
+    "title": "Social Links",
+    "subtitle": "Forming bonds to forge power",
+    "description": "In Persona 4, Social Links (S.Links) represent the bonds you form with the people of Inaba. By strengthening these relationships, you gain experience bonuses when fusing Personas of the corresponding Arcanas and unlock powerful combat abilities for your teammates.",
+    "mechanic": "Maxing out an S.Link unlocks the ultimate Persona of that specific Arcana (e.g., Izanagi-no-Okami or Kaguya)."
+  },
+  "velvet-room": {
+    "title": "Velvet Room",
+    "subtitle": "A place between dream and reality",
+    "description": "The Velvet Room is a mysterious space that takes the form of a limousine traveling through a never-ending fog. Here, Igor and his assistant Margaret help the protagonist fuse multiple Personas to create stronger ones, manage the Persona Compendium, and take on special requests.",
+    "mechanic": "Persona Fusion obeys strict level requirements based on your current protagonist level and current S.Link ranks."
+  },
+  "midnight-channel": {
+    "title": "Midnight Channel",
+    "subtitle": "Who is reflected on the screen rainy nights?",
+    "description": "An urban legend in Inaba: if you stare into a turned-off TV screen at midnight on a rainy night, your soulmate will appear. In reality, it serves as a window showing the next target scheduled to be thrown into the TV World by the culprit.",
+    "mechanic": "You must watch the Midnight Channel to gather clues and identify the kidnapping victims before entering the TV."
+  },
+  "tv-world": {
+    "title": "TV World",
+    "subtitle": "The fog-filled alternate dimension",
+    "description": "Also known as the Midnight Channel's interior, this world is manifested from human subconsciousness and suppressed desires. It is guarded by Shadows and covered in a deadly fog that rises in the real world when heavy rain persists.",
+    "mechanic": "You must rescue victims trapped inside before consecutive rainy days end, otherwise, it's Game Over."
+  },
+  "quests": {
+    "title": "Inaba Side Quests",
+    "subtitle": "Help the citizens of Inaba",
+    "description": "The townspeople and students have various requests. Solve their riddles, hunt down specific shadows in the TV World for materials, and increase your personal stats.",
+    "mechanic": "Quests do not consume time, but some require specific Social Stats (Knowledge, Courage, etc.) to be accepted or completed."
+  }
+}

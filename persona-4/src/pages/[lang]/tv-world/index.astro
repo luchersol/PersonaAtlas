@@ -1,0 +1,56 @@
+---
+import type { P4SectionInfo } from '../../types/p4';
+
+import Layout from '@layouts/Layout.astro';
+import { getP4Data } from '@i18n/utils';
+import type { Params } from '../../../types/p4';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'es' } }, 
+    { params: { lang: 'en' } }
+  ];
+}
+
+const { lang } = Astro.params as Params;
+
+const info: P4SectionInfo = await getP4Data(lang, 'velvet-room');
+
+if (!info) {
+  throw new Error(`Data missing for velvet-room in language: ${lang}`);
+}
+---
+
+<Layout title={`${info.title} | Persona 4 Hub`}>
+  <!-- El resto del código HTML y CSS es exactamente igual al de velvet-room.astro -->
+  <article class="p4-card-container">
+    <header class="p4-page-header">
+      <h1 class="p4-title">{info.title}</h1>
+      <p class="p4-subtitle">{info.subtitle}</p>
+    </header>
+    <div class="p4-content-box">
+      <p class="p4-description">{info.description}</p>
+      <div class="p4-mechanic-box">
+        <span class="p4-badge">SYSTEM_NOTE</span>
+        <p>{info.mechanic}</p>
+      </div>
+    </div>
+    <a href="/" class="p4-back-btn"><span>Go back to Inaba</span></a>
+  </article>
+</Layout>
+<!-- Mismos estilos CSS que velvet-room.astro -->
+
+<style>
+  /* Aquí van los estilos base que ya teníamos para tarjetas compartidas */
+  .p4-card-container { display: flex; flex-direction: column; gap: 2rem; margin-top: 2rem; }
+  .p4-page-header { border-left: 8px solid #FFEB3B; padding-left: 1.5rem; }
+  .p4-subtitle { font-size: 1.2rem; color: #FFEB3B; text-transform: uppercase; font-weight: 700; margin-top: -0.5rem; }
+  .p4-content-box { background-color: #000; border: 3px solid #333; padding: 2.5rem; box-shadow: 8px 8px 0px 0px #000; }
+  .p4-description { font-size: 1.15rem; line-height: 1.8; color: #e0e0e0; }
+  .p4-mechanic-box { margin-top: 2rem; background-color: #222; border-left: 5px solid #FFEB3B; padding: 1.5rem; position: relative; }
+  .p4-badge { position: absolute; top: -12px; left: 15px; background-color: #FFEB3B; color: #000; font-family: 'Impact', sans-serif; padding: 2px 8px; font-size: 0.85rem; transform: skewX(-10deg); }
+  .p4-mechanic-box p { font-size: 1rem; color: #FFEB3B; font-style: italic; }
+  .p4-back-btn { align-self: flex-start; background-color: #333; color: #fff; padding: 0.6rem 1.5rem; font-weight: 700; text-transform: uppercase; text-decoration: none; transform: skewX(-12deg); border: 2px solid #444; }
+  .p4-back-btn span { display: inline-block; transform: skewX(12deg); }
+  .p4-back-btn:hover { background-color: #fff; color: #000; border-color: #fff; }
+</style>

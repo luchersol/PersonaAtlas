@@ -1,0 +1,32 @@
+{
+  "social-links": {
+    "title": "Vínculos Sociales",
+    "subtitle": "Formando lazos para forjar poder",
+    "description": "En Persona 4, los Vínculos Sociales (S.Links) representan los lazos que formas con la gente de Inaba. Al fortalecer estas relaciones, obtienes bonificaciones de experiencia al fusionar Personas del Arcana correspondiente y desbloqueas poderosas habilidades de combate para tus compañeros.",
+    "mechanic": "Al maximizar un S.Link desbloqueas la Persona definitiva de ese Arcana específico (por ejemplo, Izanagi-no-Okami o Kaguya)."
+  },
+  "velvet-room": {
+    "title": "Habitación de terciopelo",
+    "subtitle": "Un lugar entre el sueño y la realidad",
+    "description": "La Sala Velvet es un espacio misterioso que toma la forma de una limusina que viaja por una niebla interminable. Aquí, Igor y su asistente Margaret ayudan al protagonista a fusionar múltiples Personas para crear otras más fuertes, gestionar el Compendio de Personas y encargarse de solicitudes especiales.",
+    "mechanic": "La fusión de Personas obedece estrictos requisitos de nivel basados en el nivel actual del protagonista y los rangos actuales de los S.Links."
+  },
+  "midnight-channel": {
+    "title": "Canal de Medianoche",
+    "subtitle": "¿Quién se refleja en la pantalla en las noches lluviosas?",
+    "description": "Una leyenda urbana en Inaba: si miras fijamente una pantalla de TV apagada a medianoche en una noche lluviosa, aparecerá tu alma gemela. En realidad, sirve como una ventana que muestra el siguiente objetivo programado para ser arrojado al Mundo de la TV por el culpable.",
+    "mechanic": "Debes ver el Canal de Medianoche para reunir pistas e identificar a las víctimas de secuestro antes de entrar en la TV."
+  },
+  "tv-world": {
+    "title": "Mundo de la TV",
+    "subtitle": "La dimensión alternativa llena de niebla",
+    "description": "También conocido como el interior del Canal de Medianoche, este mundo se manifiesta a partir del subconsciente humano y los deseos reprimidos. Está custodiado por Sombras y cubierto por una niebla mortal que se eleva en el mundo real cuando persisten lluvias intensas.",
+    "mechanic": "Debes rescatar a las víctimas atrapadas en el interior antes de que terminen los días lluviosos consecutivos; de lo contrario, es Game Over."
+  },
+  "quests": {
+    "title": "Misiones",
+    "subtitle": "Ayuda a los ciudadanos de Inaba",
+    "description": "La gente del pueblo y los estudiantes tienen varias peticiones. Resuelve sus acertijos, caza sombras específicas en el Mundo de la TV por materiales y aumenta tus estadísticas personales.",
+    "mechanic": "Las misiones no consumen tiempo, pero algunas requieren estadísticas sociales específicas (Conocimiento, Coraje, etc.) para ser aceptadas o completadas."
+  }
+}

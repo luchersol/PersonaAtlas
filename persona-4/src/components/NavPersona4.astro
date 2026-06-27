@@ -1,0 +1,66 @@
+---
+// src/components/NavPersona4.astro
+import NavLink from './NavLink.astro';
+import type { Params } from '../types/p4';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'es' } }, 
+    { params: { lang: 'en' } }
+  ];
+}
+
+const { lang } = Astro.params as Params;
+
+const navItems = [
+  { id: 'social-links', concept: 'Social Links' },
+  { id: 'velvet-room', concept: 'Velvet Room' },
+  { id: 'midnight-channel', concept: 'Midnight Channel' },
+  { id: 'tv-world', concept: 'TV World' },
+  { id: 'quests', concept: 'Quests'}
+];
+---
+
+<nav class="p4-navbar">
+  <div class="p4-logo">
+    P4_MENU.SYS
+  </div>
+  
+  <div class="p4-links-container">
+    {navItems.map((item) => (
+      <NavLink href={`/${lang}/${item.id}`} concept={item.concept} />
+    ))}
+  </div>
+</nav>
+
+<style>
+  .p4-navbar {
+    background-color: #111;
+    padding: 1.5rem;
+    border-bottom: 4px solid #FFEB3B;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .p4-logo {
+    color: #FFEB3B;
+    font-family: 'Impact', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    letter-spacing: -0.05em;
+    transform: skewX(-12deg);
+    background-color: #000;
+    padding: 0.25rem 0.75rem;
+    border: 2px solid #FFEB3B;
+    margin-right: 1rem;
+  }
+
+  .p4-links-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+</style>

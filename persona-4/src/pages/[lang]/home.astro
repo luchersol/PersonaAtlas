@@ -1,0 +1,65 @@
+---
+import Layout from '@layouts/Layout.astro';
+import { useTranslations } from '@i18n/utils';
+import type { Params } from '../../types/p4';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'es' } }, 
+    { params: { lang: 'en' } }
+  ];
+}
+
+const { lang } = Astro.params as Params;
+
+const t = useTranslations(lang);
+
+---
+<Layout title="Persona 4 Hub | Inaba">
+  <div class="p4-home">
+    <h1 class="p4-title" style="font-size: 4rem; line-height: 0.9;">
+      Reach Out To<br><span style="color:#fff; text-shadow: 4px 4px 0px #000;">The Truth</span>
+    </h1>
+    
+    <p class="p4-home-desc">
+      Welcome to the ultimate database system. Select a concept from the navigation menu above to analyze the anomalies occurring inside the television world and the fog settling over Inaba.
+    </p>
+
+    <div class="p4-tv-static">
+      <p class="static-text">CHANNEL_TUNED: OK</p>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .p4-home {
+    max-w-xl;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 3rem 0;
+  }
+
+  .p4-home-desc {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ccc;
+  }
+
+  .p4-tv-static {
+    margin-top: 1rem;
+    background-color: #000;
+    border: 2px dashed #FFEB3B;
+    padding: 1rem;
+    width: fit-content;
+    transform: skewX(-10deg);
+  }
+
+  .static-text {
+    font-family: monospace;
+    color: #FFEB3B;
+    font-weight: bold;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
+</style>
