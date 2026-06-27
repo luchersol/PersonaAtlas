@@ -1,7 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import { useTranslations } from '@i18n/utils';
-import type { Params } from '../../types/p4';
+import type { Params } from '@types2/p4';
 
 export function getStaticPaths() {
   return [
@@ -18,15 +18,15 @@ const t = useTranslations(lang);
 <Layout title="Persona 4 Hub | Inaba">
   <div class="p4-home">
     <h1 class="p4-title" style="font-size: 4rem; line-height: 0.9;">
-      Reach Out To<br><span style="color:#fff; text-shadow: 4px 4px 0px #000;">The Truth</span>
+      {t("home.title.0")}<br><span style="color:#fff; text-shadow: 4px 4px 0px #000;">{t("home.title.1")}</span>
     </h1>
     
     <p class="p4-home-desc">
-      Welcome to the ultimate database system. Select a concept from the navigation menu above to analyze the anomalies occurring inside the television world and the fog settling over Inaba.
+      {t("home.description")}
     </p>
 
     <div class="p4-tv-static">
-      <p class="static-text">CHANNEL_TUNED: OK</p>
+      <p class="static-text">{t("home.channel_tuned")}</p>
     </div>
   </div>
 </Layout>

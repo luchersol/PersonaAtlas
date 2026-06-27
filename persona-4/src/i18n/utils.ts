@@ -1,4 +1,4 @@
-import type { P4Language, P4SectionInfo, P4Quest, P4SocialLink, P4MidnightChannel } from '../types/p4';
+import type { P4Language, P4SectionInfo, P4Quest, P4SocialLink, P4MidnightChannel } from '@types2/p4';
 import { ui, defaultLang } from './ui';
 
 export function useTranslations(lang: P4Language) {

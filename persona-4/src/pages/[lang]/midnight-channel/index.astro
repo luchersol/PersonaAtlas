@@ -1,7 +1,10 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import { useTranslations, getP4Data, getMidnightChannelList } from '@i18n/utils';
-import type { P4Language, Params } from '../../../types/p4';
+import type { Params } from '@types2/p4';
+import NoteBox from '@components/NoteBox.astro';
+import HeaderBox from '@components/HeaderBox.astro';
+import TvMonitor from '@components/TvMonitor.astro';
 
 export function getStaticPaths() {
   return [
@@ -17,7 +20,7 @@ const t = useTranslations(lang);
 // Cargamos los datos del idioma correspondiente de forma asíncrona
 const mcList = await getMidnightChannelList(lang);
 
-const info =  await getP4Data(lang, 'midnight-channel');
+const info = await getP4Data(lang, 'midnight-channel');
 
 if (!info) {
   throw new Error(`Data missing for velvet-room in language: ${lang}`);
@@ -26,18 +29,9 @@ if (!info) {
 ---
 <Layout title={`${info.title} | Persona 4 Hub`}>
   <article class="p4-card-container">
-    <header class="p4-page-header">
-      <h1 class="p4-title">{info.title}</h1>
-      <p class="p4-subtitle">{info.subtitle}</p>
-    </header>
 
-    <div class="p4-content-box">
-      <p class="p4-description">{info.description}</p>
-      <div class="p4-mechanic-box">
-        <span class="p4-badge">SYSTEM_NOTE</span>
-        <p>{info.mechanic}</p>
-      </div>
-    </div>
+    <HeaderBox {...info} />
+    <NoteBox {...info} />
 
     <section class="p4-mc-section">
       <h2 class="p4-title sub text-magenta">
@@ -45,27 +39,7 @@ if (!info) {
       </h2>
       <div class="p4-tv-grid">
         {mcList.map((tv: any) => (
-          <div class="p4-tv-monitor">
-            <div class="p4-crt-screen">
-              <div class="p4-crt-scanlines"></div>
-              <div class="p4-crt-static-layer"></div>
-              <img src={tv.image} alt={tv.name} class="p4-tv-image" onerror="this.style.opacity='0.1'" />
-              <span class={tv.status.includes('Deceased') || tv.status.includes('Fallecido') ? 'p4-tv-status dead' : 'p4-tv-status alert'}>
-                {tv.status}
-              </span>
-            </div>
-            <div class="p4-tv-bezel">
-              <div class="p4-tv-meta">
-                <h3>{tv.name}</h3>
-                <p class="p4-broadcast-time">📺 {tv.airDate}</p>
-                <p class="p4-broadcast-desc">{tv.broadcastSummary}</p>
-              </div>
-              <!-- Acoplamos el parámetro de idioma a la transmisión individual -->
-              <a href={`${tv.route}?lang=${lang}`} class="p4-tune-btn">
-                <span>{lang === 'es' ? 'Sintonizar Canal' : 'Tune Channel'}</span>
-              </a>
-            </div>
-          </div>
+          <TvMonitor {...tv} />
         ))}
       </div>
     </section>
@@ -78,13 +52,6 @@ if (!info) {
 <style>
   /* [Tus estilos anteriores se quedan igual] */
   .p4-card-container { display: flex; flex-direction: column; gap: 2rem; margin-top: 2rem; }
-  .p4-page-header { border-left: 8px solid #FFEB3B; padding-left: 1.5rem; }
-  .p4-subtitle { font-size: 1.2rem; color: #FFEB3B; text-transform: uppercase; font-weight: 700; margin-top: -0.5rem; }
-  .p4-content-box { background-color: #000; border: 3px solid #333; padding: 2.5rem; box-shadow: 8px 8px 0px 0px #000; }
-  .p4-description { font-size: 1.15rem; line-height: 1.8; color: #e0e0e0; }
-  .p4-mechanic-box { margin-top: 2rem; background-color: #222; border-left: 5px solid #FFEB3B; padding: 1.5rem; position: relative; }
-  .p4-badge { position: absolute; top: -12px; left: 15px; background-color: #FFEB3B; color: #000; font-family: 'Impact', sans-serif; padding: 2px 8px; font-size: 0.85rem; transform: skewX(-10deg); }
-  .p4-mechanic-box p { font-size: 1rem; color: #FFEB3B; font-style: italic; }
   .p4-back-btn { align-self: flex-start; background-color: #333; color: #fff; padding: 0.6rem 1.5rem; font-weight: 700; text-transform: uppercase; text-decoration: none; transform: skewX(-12deg); border: 2px solid #444; }
   .p4-back-btn span { display: inline-block; transform: skewX(12deg); }
   .p4-back-btn:hover { background-color: #fff; color: #000; border-color: #fff; }
@@ -98,122 +65,4 @@ if (!info) {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2.5rem;
   }
-
-  /* El mueble de la televisión antigua */
-  .p4-tv-monitor {
-    background-color: #0e0e0e;
-    border: 4px solid #000;
-    box-shadow: 6px 6px 0px #FFEB3B;
-    display: flex;
-    flex-direction: column;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-
-  /* Pantalla de Cristal (CRT) */
-  .p4-crt-screen {
-    background-color: #151815;
-    height: 180px;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 4px solid #000;
-  }
-
-  .p4-tv-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: sepia(0.3) saturate(1.4) hue-rotate(-20deg); /* Efecto vintage amarillo/verdoso */
-    transition: opacity 0.3s ease;
-  }
-
-  /* Efecto líneas de escaneo de TV vieja */
-  .p4-crt-scanlines {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    z-index: 3;
-    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-    background-size: 100% 4px, 6px 100%;
-  }
-
-  /* Capa de nieve/estática animada de TV sin señal */
-  .p4-crt-static-layer {
-    position: absolute;
-    inset: 0;
-    opacity: 0.15;
-    z-index: 2;
-    background-image: repeating-radial-gradient(circle at 50% 50%, #fff 0px, #fff 1px, transparent 1px, transparent 100%);
-    background-size: 8px 8px;
-    animation: tvNoise 0.1s infinite;
-  }
-
-  @keyframes tvNoise {
-    0% { transform: translate(0, 0); }
-    100% { transform: translate(-2px, 2px); }
-  }
-
-  /* Badges de Estado */
-  .p4-tv-status {
-    position: absolute;
-    bottom: 8px;
-    left: 8px;
-    font-size: 0.75rem;
-    font-weight: 900;
-    padding: 2px 6px;
-    text-transform: uppercase;
-    z-index: 4;
-  }
-  .p4-tv-status.dead { background-color: #e60012; color: #fff; }
-  .p4-tv-status.alert { background-color: #FFEB3B; color: #000; animation: pulse 1s infinite alternate; }
-
-  @keyframes pulse { from { opacity: 0.6; } to { opacity: 1; } }
-
-  /* Controles e Información Inferior */
-  .p4-tv-bezel {
-    padding: 1.25rem;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    background-color: #1a1a1a;
-  }
-  .p4-tv-meta h3 {
-    font-family: 'Impact', sans-serif;
-    font-size: 1.4rem;
-    color: #fff;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-  }
-  .p4-broadcast-time {
-    color: #FFEB3B;
-    font-size: 0.85rem;
-    font-weight: 700;
-    margin: 0.25rem 0 0.75rem 0;
-  }
-  .p4-broadcast-desc {
-    color: #999;
-    font-size: 0.9rem;
-    line-height: 1.4;
-    margin-bottom: 1.25rem;
-    flex-grow: 1;
-  }
-
-  /* Botón Sintonizar */
-  .p4-tune-btn {
-    background-color: #000;
-    color: #FFEB3B;
-    text-align: center;
-    padding: 0.5rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    text-decoration: none;
-    transform: skewX(-10deg);
-    border: 2px solid #FFEB3B;
-    transition: all 0.2s;
-  }
-  .p4-tune-btn span { display: inline-block; transform: skewX(10deg); }
-  .p4-tune-btn:hover { background-color: #FFEB3B; color: #000; }
 </style>

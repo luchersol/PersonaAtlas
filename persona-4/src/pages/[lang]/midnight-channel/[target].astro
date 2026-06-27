@@ -1,31 +1,19 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import { useTranslations, getMidnightChannelList } from '../../i18n/utils';
+import Layout from '@layouts/Layout.astro';
+import { useTranslations, getMidnightChannelList } from '@i18n/utils';
+import type { Params } from '@types2/p4';
 
-export async function getStaticPaths() {
-  const paths: any[] = [];
-  const languages = ['en', 'es'] as const;
-
-  // Recorremos los idiomas cargando asíncronamente sus listas de canales
-  for (const lang of languages) {
-    const list = await getMidnightChannelList(lang);
-    
-    list.forEach((tv: any) => {
-      // Extraemos el ID final de la ruta del JSON (ej: 'mayumi-yamano')
-      const targetSlug = tv.route.split('/').pop();
-      
-      paths.push({
-        params: { target: targetSlug },
-        props: { tv, routeLang: lang },
-      });
-    });
-  }
-
-  return paths;
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'es' } }, 
+    { params: { lang: 'en' } }
+  ];
 }
 
-const { tv, routeLang } = Astro.props;
-const t = useTranslations(routeLang);
+const { lang } = Astro.params as Params;
+const { tv } = Astro.props;
+
+const t = useTranslations(lang);
 ---
 <Layout title={`${tv.name} | Midnight Channel Broadcast`}>
   <article class="p4-card-container">
@@ -44,7 +32,7 @@ const t = useTranslations(routeLang);
 
       <div class="p4-transmission-details" style="margin-top: 2rem;">
         <h3 style="color: #ff00ff; font-family: 'Impact', sans-serif;">
-          {routeLang === 'es' ? 'INFORME DE LA TRANSMISIÓN' : 'BROADCAST DOSSIER'}
+          {lang === 'es' ? 'INFORME DE LA TRANSMISIÓN' : 'BROADCAST DOSSIER'}
         </h3>
         <p class="p4-description" style="font-size: 1.2rem; line-height: 1.8;">
           {tv.broadcastSummary}
@@ -53,7 +41,7 @@ const t = useTranslations(routeLang);
     </div>
 
     <!-- Volvemos al tablón manteniendo el idioma de la ruta actual -->
-    <a href={`/midnight-channel?lang=${routeLang}`} class="p4-back-btn">
+    <a href={`/${lang}/midnight-channel`} class="p4-back-btn">
       <span>{routeLang === 'es' ? 'Volver al Tablón' : 'Back to Monitor Board'}</span>
     </a>
   </article>

@@ -1,7 +1,7 @@
 [
   {
-    "id": "quest-01",
-    "number": "Quest 01",
+    "id": 1,
+    "name": "Quest 01",
     "title": "Who's the Riddle Master?",
     "client": "Funky Student",
     "location": "Yasogami High, Learning Building 2F",
@@ -11,8 +11,8 @@
     "requirements": "Requires Knowledge Rank 2 (Anformed)."
   },
   {
-    "id": "quest-02",
-    "number": "Quest 02",
+    "id": 2,
+    "name": "Quest 02",
     "title": "Acquire an Angel Statue",
     "client": "Timid Female Student",
     "location": "Yasogami High, Class 2-2",
@@ -22,8 +22,8 @@
     "requirements": "Access to Yukiko's Castle."
   },
   {
-    "id": "quest-03",
-    "number": "Quest 03",
+    "id": 3,
+    "name": "Quest 03",
     "title": "Feed the Cat",
     "client": "Cat",
     "location": "Samegawa Flood Plain",

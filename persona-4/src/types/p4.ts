@@ -38,8 +38,8 @@ export type QuestStatus = 'Available' | 'In Progress' | 'Completed' | 'Disponibl
  * Ficha individual de una misión secundaria (quests-list.json)
  */
 export interface P4Quest {
-  id: string;
-  number: string;
+  id: number;
+  name: string;
   title: string;
   client: string;
   location: string;
@@ -79,18 +79,4 @@ export interface P4MidnightChannel {
   image: string;       // Ruta local a la imagen de la transmisión
   route: string;       // Ruta de navegación interna (ej: /midnight-channel/mayumi-yamano)
   broadcastSummary: string;
-}
-
-/**
- * Estructura para el diccionario global de textos fijos de la interfaz (ui.ts)
- */
-export interface UIStaticTranslations {
-  'nav.back': string;
-  'nav.board': string;
-  'quest.client': string;
-  'quest.location': string;
-  'quest.reward': string;
-  'quest.briefing': string;
-  'quest.requirements': string;
-  [key: string]: string; // Permite expandir con nuevos botones o textos
 }
