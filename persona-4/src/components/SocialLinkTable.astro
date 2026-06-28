@@ -1,0 +1,150 @@
+---
+import { useTranslations } from "@i18n/utils";
+import type { P4Language, RankItem } from "@types2/p4";
+
+interface Props {
+  lang: P4Language;
+  ranks: RankItem[]
+}
+
+const { ranks, lang } = Astro.props;
+
+const t = useTranslations(lang);
+---
+<div class="p4-ranks-box">
+  <h2>{t("social-links-table.ranks-title")}</h2>
+  
+  <div class="p4-ranks-timeline">
+    {ranks && ranks.map((rankItem: any) => (
+      <div class="p4-rank-row">
+        <div class="p4-rank-number">
+          <span>RANK {rankItem.level}</span>
+        </div>
+        
+        <div class="p4-rank-content">
+          <p class="p4-rank-condition">
+            <strong>{t("social-links-table.rank-req") || "Requisito / Respuestas ideales"}:</strong>
+          </p>
+          <ul class="p4-rank-answers">
+            {rankItem.bestAnswers && rankItem.bestAnswers.map((answer: string) => (
+              <li>{answer}</li>
+            ))}
+          </ul>
+          {rankItem.notes && <p class="p4-rank-notes">{rankItem.notes}</p>}
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
+<style>
+    /* --- NUEVOS ESTILOS: SOCIAL LINK RANKS --- */
+  .p4-ranks-box {
+    margin-top: 1rem;
+  }
+
+  .p4-ranks-box h2 {
+    font-family: 'Impact', sans-serif;
+    text-transform: uppercase;
+    color: #FFEB3B;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.05em;
+  }
+
+  .p4-ranks-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .p4-rank-row {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #fff;
+    background-color: #111;
+    box-shadow: 6px 6px 0px #000;
+  }
+
+  @media (min-width: 576px) {
+    .p4-rank-row {
+      flex-direction: row;
+    }
+  }
+
+  /* Badge del Rango (Estilo bloque inclinado P4) */
+  .p4-rank-number {
+    background-color: #FFEB3B;
+    color: #000;
+    font-family: 'Impact', sans-serif;
+    font-size: 1.25rem;
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    min-width: 120px;
+    border-bottom: 3px solid #fff;
+  }
+
+  @media (min-width: 576px) {
+    .p4-rank-number {
+      border-bottom: none;
+      border-right: 3px solid #fff;
+      transform: skewX(-5deg);
+      margin-left: -5px;
+    }
+    .p4-rank-number span {
+      transform: skewX(5deg); /* Endereza el texto dentro del bloque torcido */
+    }
+  }
+
+  /* Contenido del Rango */
+  .p4-rank-content {
+    padding: 1.25rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .p4-rank-condition {
+    color: #FFEB3B;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .p4-rank-answers {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .p4-rank-answers li {
+    color: #fff;
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.4rem;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  /* Flecha mítica de selección de Persona 4 */
+  .p4-rank-answers li::before {
+    content: "▶";
+    position: absolute;
+    left: 0;
+    color: #FF9900; /* Naranja de acento P4 */
+    font-size: 0.85rem;
+  }
+
+  .p4-rank-notes {
+    color: #aaa;
+    font-size: 0.9rem;
+    font-style: italic;
+    border-top: 1px dashed #333;
+    padding-top: 0.5rem;
+    margin-top: 0.25rem;
+  }
+</style>

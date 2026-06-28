@@ -1,6 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import { useTranslations, getQuestsList } from '@i18n/utils';
+import type { P4Language } from '@types2/p4';
 
 export async function getStaticPaths() {
   const paths: any[] = [];
@@ -8,12 +9,11 @@ export async function getStaticPaths() {
 
   // Recorremos los idiomas cargando de forma asíncrona sus respectivos archivos independientes
   for (const lang of languages) {
-    const list = await getQuestsList(lang);
+    const list = [1,2,3]
     
-    list.forEach((quest: any) => {
+    list.forEach((id: any) => {
       paths.push({
-        params: { id: quest.id },
-        props: { quest, routeLang: lang },
+        params: { id: quest, lang },
       });
     });
   }
@@ -21,8 +21,19 @@ export async function getStaticPaths() {
   return paths;
 }
 
-const { quest, routeLang } = Astro.props;
-const t = useTranslations(routeLang);
+interface Props {
+
+}
+
+const { quest } = Astro.props;
+
+interface Params {
+  lang: P4Language;
+  id: number;
+}
+
+const { lang } = Astro.params as Params;
+const t = useTranslations(lang);
 ---
 <Layout title={`${quest.number} | Persona 4 Hub`}>
   <article class="p4-card-container">
@@ -38,21 +49,21 @@ const t = useTranslations(routeLang);
           <p class="p4-description">{quest.description}</p>
           
           <div class="p4-requirements-callout">
-            <strong>⚠️ Requirements:</strong> {quest.requirements}
+            <strong>⚠️ {t("quests.[id].requirements")}:</strong> {quest.requirements}
           </div>
         </div>
 
         <div class="p4-detail-sidebar">
           <div class="p4-sidebar-block">
-            <span>CLIENT</span>
+            <span>{t("quests.[id].client")}</span>
             <p>{quest.client}</p>
           </div>
           <div class="p4-sidebar-block">
-            <span>LOCATION</span>
+            <span>{t("quests.[id].location")}</span>
             <p>{quest.location}</p>
           </div>
           <div class="p4-sidebar-block reward">
-            <span>REWARD</span>
+            <span>{t("quests.[id].reward")}</span>
             <p>🎁 {quest.reward}</p>
           </div>
         </div>

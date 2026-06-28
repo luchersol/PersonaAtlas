@@ -2,41 +2,193 @@
   {
     "id": "yosuke-hanamura",
     "name": "Yosuke Hanamura",
-    "arcana": "Magician",
+    "arcana": "Mago",
     "image": "/images/characters/yosuke.png",
     "arcanaCard": "/images/cards/magician.png",
     "route": "/social-links/yosuke-hanamura",
-    "location": "Junes Department Store (Food Court) - Holidays/Weekends",
-    "description": "The protagonist's clumsy but reliable partner. His bond deepens as you help him deal with his status as the manager's son and his grief over Saki Konishi."
+    "location": "Junes (Food Court) - Holidays & Weekends",
+    "description": "El leal compañero del protagonista. Su arco argumental profundiza en el duelo por Saki y su madurez.",
+    "ranks": [
+      {
+        "level": "1",
+        "bestAnswers": ["Automaticamente el 4/16"]
+      },
+      {
+        "level": "2",
+        "bestAnswers": ["Fue una lástima lo de Saki-san (+3)", "Debió de ser difícil (+3)"],
+        "notes": "Desbloquea: Recibir golpe mortal por el protagonista."
+      },
+      {
+        "level": "3",
+        "bestAnswers": ["Hecho (+3)", "No me importa (+3)"],
+        "notes": "Desbloquea: Ataque combinado tras derribo."
+      },
+      {
+        "level": "4",
+        "bestAnswers": ["Dilo con orgullo (+3)", "Todo gracias a ti (+3)"],
+        "notes": "Desbloquea: Curar estados alterados en combate."
+      },
+      {
+        "level": "5",
+        "bestAnswers": ["Tienes razón (+3)", "No pienses tanto (+2)"],
+        "notes": "Mejora las tácticas de combate."
+      },
+      {
+        "level": "6",
+        "bestAnswers": ["No ha sido nada (+3)", "Te queda bien (+3)"],
+        "notes": "Desbloquea habilidad: Evadir Eléctrico."
+      },
+      {
+        "level": "7",
+        "bestAnswers": ["Tú puedes, Yosuke (+3)", "Sé cómo te sientes (+3)"],
+        "notes": "Aumenta la probabilidad de críticos."
+      },
+      {
+        "level": "8",
+        "bestAnswers": ["Lo has hecho genial (+3)", "Saki-san sonreiría (+3)"],
+        "notes": "Desbloquea la habilidad de combate definitiva."
+      },
+      {
+        "level": "9",
+        "bestAnswers": ["Ánimo (+3)", "No estás solo (+3)"],
+        "notes": "El vínculo está a punto de completarse."
+      },
+      {
+        "level": "10",
+        "bestAnswers": ["Cualquier opción maximiza el vínculo."],
+        "notes": "Desbloquea la evolución de Persona: Susano-o."
+      }
+    ]
   },
   {
     "id": "chie-satonaka",
     "name": "Chie Satonaka",
-    "arcana": "Chariot",
+    "arcana": "Carro",
     "image": "/images/characters/chie.png",
     "arcanaCard": "/images/cards/chariot.png",
     "route": "/social-links/chie-satonaka",
-    "location": "Yasogami High Roof - School Days",
-    "description": "An energetic girl who loves steak and martial arts. Her bond grows as she struggles with her protective feelings toward Yukiko and what true strength means."
+    "location": "Azotea de la Secundaria Yasogami",
+    "description": "Amante del kung-fu y los filetes. Su historia trata sobre descubrir qué significa proteger a los demás.",
+    "ranks": [
+      {
+        "level": "2",
+        "bestAnswers": ["Hiciste lo correcto (+3)", "¿Quieres que te ayude? (+2)"],
+        "notes": "Desbloquea: Recibir golpe mortal por el protagonista."
+      },
+      {
+        "level": "3",
+        "bestAnswers": ["Se ve lindo (+3)", "Es maduro (+3)"],
+        "notes": "Desbloquea: Ataque combinado (Patada Galáctica)."
+      },
+      {
+        "level": "4",
+        "bestAnswers": ["Quédate conmigo (+3)", "Te protegeré (+3)"],
+        "notes": "Desbloquea: Curar estados alterados."
+      },
+      {
+        "level": "5",
+        "bestAnswers": ["Te ves genial haciéndolo (+3)", "Sigue entrenando (+2)"],
+        "notes": "Aumenta estadísticas de combate."
+      },
+      {
+        "level": "6",
+        "bestAnswers": ["No pasa nada (+3)", "Estás progresando (+3)"],
+        "notes": "Desbloquea habilidad: Evadir Fuego."
+      },
+      {
+        "level": "7",
+        "bestAnswers": ["¿Es por Yukiko? (+3)", "Tienes un gran corazón (+3)"],
+        "notes": "Mejora el daño físico del personaje."
+      },
+      {
+        "level": "8",
+        "bestAnswers": ["No estás sola (+3)", "Lo resolveremos juntos (+3)"],
+        "notes": "¡Cuidado! Aquí puedes iniciar la ruta de Romance."
+      },
+      {
+        "level": "9",
+        "bestAnswers": ["Te amo (+3) [Romance] o Somos amigos (+3) [Platónico]"],
+        "notes": "Bloqueo definitivo de relación."
+      },
+      {
+        "level": "10",
+        "bestAnswers": ["Cualquier opción maximiza el vínculo."],
+        "notes": "Desbloquea la evolución de Persona: Suzuka Gongen."
+      }
+    ]
   },
   {
     "id": "yukiko-amagi",
     "name": "Yukiko Amagi",
-    "arcana": "Priestess",
+    "arcana": "Sacerdotisa",
     "image": "/images/characters/yukiko.png",
     "arcanaCard": "/images/cards/priestess.png",
     "route": "/social-links/yukiko-amagi",
-    "location": "Yasogami High Class Building 1F - School Days",
-    "description": "The elegant heiress to the famous Amagi Inn. Her link focuses on her desire to escape her predetermined future and find her own path in life."
+    "location": "Edificio escolar 1F / Distrito comercial",
+    "description": "Heredera de la posada Amagi que busca encontrar su independencia antes de aceptar su destino.",
+    "ranks": [
+      {
+        "level": "2",
+        "bestAnswers": ["¿Te vas a ir de Inaba? (+3)", "Suena divertido (+3)"],
+        "notes": "Desbloquea: Recibir golpe mortal por el protagonista."
+      },
+      {
+        "level": "3",
+        "bestAnswers": ["Hacerlo juntos (+3)", "Te ayudaré (+3)"],
+        "notes": "Desbloquea: Ataque combinado tras derribo."
+      },
+      {
+        "level": "4",
+        "bestAnswers": ["Te queda muy bien (+3)", "Eres hermosa (+3)"],
+        "notes": "Desbloquea: Curar estados alterados en combate."
+      },
+      {
+        "level": "5",
+        "bestAnswers": ["No te preocupes (+3)", "Poco a poco (+2)"],
+        "notes": "Mejora las destrezas de curación mágica."
+      },
+      {
+        "level": "6",
+        "bestAnswers": ["Tienes razón (+3)", "Sigue así (+3)"],
+        "notes": "Desbloquea habilidad: Evadir Hielo."
+      },
+      {
+        "level": "7",
+        "bestAnswers": ["Eres libre de elegir (+3)", "Te apoyaré (+3)"],
+        "notes": "Desbloquea las magias de fuego de nivel superior."
+      },
+      {
+        "level": "8",
+        "bestAnswers": ["Me gustas tú (+3) [Romance] o Eres mi amiga (+3)"],
+        "notes": "Punto de decisión crucial de Romance."
+      },
+      {
+        "level": "9",
+        "bestAnswers": ["Estaré a tu lado (+3)", "No temas (+3)"],
+        "notes": "El vínculo está en su máximo potencial intermedio."
+      },
+      {
+        "level": "10",
+        "bestAnswers": ["Vínculo completo."],
+        "notes": "Desbloquea la evolución de Persona: Amaterasu."
+      }
+    ]
   },
-  {
+    {
     "id": "kanji-tatsumi",
     "name": "Kanji Tatsumi",
-    "arcana": "Emperor",
+    "arcana": "Emperador",
     "image": "/images/characters/kanji.png",
     "arcanaCard": "/images/cards/emperor.png",
     "route": "/social-links/kanji-tatsumi",
-    "location": "Shopping District (North) - Near the Textile Shop",
-    "description": "A tough guy with a soft heart who loves knitting. His bond explores his insecurities about his masculine identity and acceptance."
+    "location": "Distrito comercial (Norte) - Cerca de la tienda de textiles",
+    "description": "Un chico rudo con un corazón blando al que le encanta tejer. Su vínculo explora sus inseguridades sobre su identidad masculina y la aceptación.",
+    "ranks": [
+      {
+        "level": "2",
+        "bestAnswers": ["Pídele perdón (+3)", "Cambia y punto (+2)"],
+        "notes": "Desbloquea la habilidad de combate: Recibir golpe mortal por el protagonista."
+      }
+    ]
   }
 ]

@@ -30,11 +30,6 @@ export interface P4DataDictionary {
 }
 
 /**
- * Estado actual de una misión secundaria
- */
-export type QuestStatus = 'Available' | 'In Progress' | 'Completed' | 'Disponible' | 'En Progreso' | 'Completada';
-
-/**
  * Ficha individual de una misión secundaria (quests-list.json)
  */
 export interface P4Quest {
@@ -44,9 +39,15 @@ export interface P4Quest {
   client: string;
   location: string;
   reward: string;
-  status: QuestStatus;
+  day: string;
   description: string;
   requirements: string;
+}
+
+export interface RankItem {
+  level: string | number;       // El nivel del rango (ej: "2", 3, "MAX")
+  bestAnswers: string[];        // Array con las opciones de diálogo óptimas
+  notes?: string;               // Notas opcionales (ej: habilidades desbloqueadas)
 }
 
 /**
@@ -61,6 +62,7 @@ export interface P4SocialLink {
   route: string;       // Ruta de navegación interna (ej: /social-links/yosuke-hanamura)
   location: string;
   description: string;
+  ranks: RankItem[];
 }
 
 /**

@@ -1,7 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import { useTranslations, getMidnightChannelList } from '@i18n/utils';
-import type { Params } from '@types2/p4';
+import type { Params, P4MidnightChannel } from '@types2/p4';
 
 export function getStaticPaths() {
   return [
@@ -11,15 +11,15 @@ export function getStaticPaths() {
 }
 
 const { lang } = Astro.params as Params;
-const { tv } = Astro.props;
+const {name, airDate, image, broadcastSummary} = Astro.props["tv"] as P4MidnightChannel;
 
 const t = useTranslations(lang);
 ---
-<Layout title={`${tv.name} | Midnight Channel Broadcast`}>
+<Layout title={`${name} | Midnight Channel Broadcast`}>
   <article class="p4-card-container">
     <header class="p4-page-header">
-      <h1 class="p4-title">{tv.name}</h1>
-      <p class="p4-subtitle">📍 {tv.airDate}</p>
+      <h1 class="p4-title">{name}</h1>
+      <p class="p4-subtitle">📍 {airDate}</p>
     </header>
 
     <div class="p4-content-box visual-transmission-box">
@@ -27,22 +27,22 @@ const t = useTranslations(lang);
       <div class="p4-fullscreen-tv">
         <div class="p4-crt-scanlines"></div>
         <div class="p4-crt-static-layer anim-heavy"></div>
-        <img src={tv.image} alt={tv.name} class="p4-broadcast-full-img" />
+        <img src={image} alt={name} class="p4-broadcast-full-img" />
       </div>
 
       <div class="p4-transmission-details" style="margin-top: 2rem;">
         <h3 style="color: #ff00ff; font-family: 'Impact', sans-serif;">
-          {lang === 'es' ? 'INFORME DE LA TRANSMISIÓN' : 'BROADCAST DOSSIER'}
+          {t("midnight_channel.[target].dossier")}
         </h3>
         <p class="p4-description" style="font-size: 1.2rem; line-height: 1.8;">
-          {tv.broadcastSummary}
+          {broadcastSummary}
         </p>
       </div>
     </div>
 
     <!-- Volvemos al tablón manteniendo el idioma de la ruta actual -->
     <a href={`/${lang}/midnight-channel`} class="p4-back-btn">
-      <span>{routeLang === 'es' ? 'Volver al Tablón' : 'Back to Monitor Board'}</span>
+      <span>{t("midnight_channel.[target].back")}</span>
     </a>
   </article>
 </Layout>

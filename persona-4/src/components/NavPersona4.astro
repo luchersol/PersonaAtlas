@@ -1,7 +1,10 @@
 ---
 // src/components/NavPersona4.astro
+import { useTranslations } from '@i18n/utils';
 import NavLink from './NavLink.astro';
 import type { Params } from '@types2/p4';
+
+interface Props {}
 
 export function getStaticPaths() {
   return [
@@ -12,12 +15,14 @@ export function getStaticPaths() {
 
 const { lang } = Astro.params as Params;
 
+const t = useTranslations(lang);
+
 const navItems = [
-  { id: 'social-links', concept: 'Social Links' },
-  { id: 'velvet-room', concept: 'Velvet Room' },
-  { id: 'midnight-channel', concept: 'Midnight Channel' },
-  { id: 'tv-world', concept: 'TV World' },
-  { id: 'quests', concept: 'Quests'}
+  { id: 'social-links', concept: t("nav.concept.social-link") },
+  { id: 'velvet-room', concept: t("nav.concept.velvet-room") },
+  { id: 'midnight-channel', concept: t("nav.concept.midnight-channel") },
+  { id: 'tv-world', concept: t("nav.concept.tv-world") },
+  { id: 'quests', concept: t("nav.concept.quests") }
 ];
 ---
 

@@ -1,6 +1,8 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import { useTranslations, getSocialLinksList } from '@i18n/utils';
+import type { P4SocialLink, Params } from '@types2/p4';
+import SocialLinkTable from '@components/SocialLinkTable.astro';
 
 export async function getStaticPaths() {
   const paths: any[] = [];
@@ -9,13 +11,13 @@ export async function getStaticPaths() {
   for (const lang of languages) {
     const list = await getSocialLinksList(lang);
     
-    list.forEach((char: any) => {
+    list.forEach((char: P4SocialLink) => {
       // Extraemos el slug o ID de la ruta (ej: 'yosuke-hanamura')
-      const characterSlug = char.route.split('/').pop(); 
+      const character = char.route.split('/').pop(); 
       
       paths.push({
-        params: { character: characterSlug },
-        props: { char, routeLang: lang },
+        params: { character, lang },
+        props: { char },
       });
     });
   }
@@ -23,15 +25,18 @@ export async function getStaticPaths() {
   return paths;
 }
 
-const { char, routeLang } = Astro.props;
-const t = useTranslations(routeLang);
+
+const { lang } = Astro.params as Params; 
+const { char } = Astro.props;
+
+const t = useTranslations(lang);
 ---
 
 <Layout title={`${char.name} Profile | P4`}>
   <div class="p4-profile-wrapper">
     
     <!-- Botón volver atrás rápido -->
-    <a href="/social-links" class="p4-btn-back-list">← Back to Social Links</a>
+    <a href={`/${lang}/social-links`} class="p4-btn-back-list">{t("social-links.[character].back")}</a>
 
     <div class="p4-profile-layout">
       <!-- LADO IZQUIERDO: Imágenes de cartas y Rostro -->
@@ -49,18 +54,15 @@ const t = useTranslations(routeLang);
       <div class="p4-profile-details">
         <h1 class="p4-title">{char.name}</h1>
         <div class="p4-meta-box">
-          <p><strong>Availability / Location:</strong> {char.location}</p>
+          <p><strong>{t("social-links.[character].meta-box.text")}:</strong> {char.location}</p>
         </div>
         
         <div class="p4-bio-box">
-          <h2>Investigation File</h2>
+          <h2>{t("social-links.[character].bio-box.text")}</h2>
           <p>{char.description}</p>
         </div>
 
-        <div class="p4-status-mock">
-          <div class="p4-rank-title">Social Link Rank</div>
-          <div class="p4-rank-stars">★ ★ ★ ★ ★ ★ ★ ★ ★ ★</div>
-        </div>
+        <SocialLinkTable ranks={char.ranks} lang={lang} />
       </div>
     </div>
 
@@ -162,21 +164,4 @@ const t = useTranslations(routeLang);
     font-size: 1.1rem;
   }
 
-  .p4-status-mock {
-    border-top: 2px dashed #333;
-    padding-top: 1.5rem;
-    margin-top: auto;
-  }
-  .p4-rank-title {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    color: #666;
-    letter-spacing: 0.1em;
-    margin-bottom: 0.25rem;
-  }
-  .p4-rank-stars {
-    color: #FFEB3B;
-    font-size: 1.3rem;
-    letter-spacing: 2px;
-  }
 </style>

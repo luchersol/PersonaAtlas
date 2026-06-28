@@ -1,0 +1,268 @@
+---
+
+---
+
+<html lang="es"> <!-- Por defecto es 'es', cambiará mediante JS si es 'en' -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>404 - Midnight Channel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Impact&family=Rubik:wght@700;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="p4-container">
+      <div class="scanlines"></div>
+
+      <main class="content">
+        <!-- Bloque del Código de Error -->
+        <div class="error-badge-wrapper">
+          <div class="error-badge">404</div>
+        </div>
+
+        <!-- Alerta estilo Midnight Channel (Los textos se inyectarán por JS) -->
+        <div class="alert-box">
+          <h1 id="p4-title" class="status-title">---</h1>
+          <p id="p4-desc" class="status-desc">---</p>
+        </div>
+
+        <!-- Botón de retorno dinámico -->
+        <nav class="p4-menu">
+          <a id="p4-btn" href="/es/" class="menu-item">
+            <span class="arrow">▶</span>
+            <span id="p4-btn-text" class="text">---</span>
+          </a>
+        </nav>
+      </main>
+    </div>
+
+    <!-- SCRIPT CLIENT-SIDE: Detecta la ruta rota y traduce al vuelo -->
+    <script>
+      // 1. Diccionario de traducciones idéntico a tu sistema i18n
+      const translations = {
+        es: {
+          title: "WARNING: OBJETIVO PERDIDO",
+          desc: "La señal se ha desvanecido en la niebla. El lugar que buscas no existe en este lado del <span class='highlight'>Mundo de la TV</span>.",
+          btn: "REGRESAR AL MUNDO REAL",
+          root: "/es/home"
+        },
+        en: {
+          title: "WARNING: TARGET LOST",
+          desc: "The signal has vanished into the fog. The place you are looking for does not exist on this side of the <span class='highlight'>TV World</span>.",
+          btn: "RETURN TO THE REAL WORLD",
+          root: "/en/home"
+        }
+      };
+
+      // 2. Detectar qué idioma había en la URL que falló (ej: /en/fbwnoifew o /es/falsa)
+      const currentPath = window.location.pathname;
+      const isEnglish = currentPath.startsWith('/en/') || currentPath === '/en';
+      const lang = isEnglish ? 'en' : 'es';
+      const t = translations[lang];
+
+      // 3. Inyectar los textos de forma dinámica en el DOM
+      document.documentElement.lang = lang;
+      document.getElementById('p4-title')!.textContent = t.title;
+      document.getElementById('p4-desc')!.innerHTML = t.desc;
+      document.getElementById('p4-btn-text')!.textContent = t.btn;
+      
+      // 4. Redirigir el botón de home al idioma correcto
+      const backBtn = document.getElementById('p4-btn') as HTMLAnchorElement;
+      if (backBtn) backBtn.href = t.root;
+    </script>
+  </body>
+</html>
+
+<style>
+  /* --- PALETA DE COLORES RECALIBRADA --- */
+  :root {
+    --p4-yellow: #fadc00;       /* Amarillo base más sólido */
+    --p4-dark-yellow: #e6c200;  /* Contraste más suave para el fondo */
+    --p4-black: #111111;        /* Negro más puro para mejorar contraste */
+    --p4-white: #ffffff;
+    --p4-orange: #ff9900;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: var(--p4-black);
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* --- CONTENEDOR PRINCIPAL --- */
+  .p4-container {
+    background-color: var(--p4-yellow);
+    /* Patrón geométrico suavizado para que no interfiera con la lectura */
+    background-image: 
+      linear-gradient(45deg, var(--p4-dark-yellow) 25%, transparent 25%), 
+      linear-gradient(-45deg, var(--p4-dark-yellow) 25%, transparent 25%), 
+      linear-gradient(45deg, transparent 75%, var(--p4-dark-yellow) 75%), 
+      linear-gradient(-45deg, transparent 75%, var(--p4-dark-yellow) 75%);
+    background-size: 32px 32px;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+  }
+
+  /* Líneas de TV sutiles (no rompen el renderizado de la fuente) */
+  .scanlines {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.08) 50%);
+    background-size: 100% 4px;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .content {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 650px; /* Un poco más estrecho para mejorar la lectura */
+  }
+
+  /* --- BLOQUE 404 (ESTILO POP-ART) --- */
+  .error-badge-wrapper {
+    transform: rotate(-6deg);
+    margin-bottom: -15px;
+    z-index: 12;
+  }
+
+  .error-badge {
+    background: var(--p4-black);
+    color: var(--p4-yellow);
+    font-family: 'Impact', sans-serif;
+    font-size: 7rem;
+    line-height: 1;
+    padding: 10px 45px;
+    border: 6px solid var(--p4-white);
+    outline: 6px solid var(--p4-black);
+    box-shadow: 12px 12px 0px rgba(0,0,0,1);
+    display: inline-block;
+    letter-spacing: 2px;
+  }
+
+  /* --- CAJA DE TEXTO PRINCIPAL --- */
+  .alert-box {
+    background: var(--p4-black);
+    border: 5px solid var(--p4-white);
+    outline: 6px solid var(--p4-black);
+    padding: 45px 35px;
+    color: var(--p4-white);
+    box-shadow: 15px 15px 0px var(--p4-orange), 15px 15px 0px 6px var(--p4-black);
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+    /* Aplicamos la inclinación SÓLO a la caja contenedora */
+    transform: skewX(-8deg); 
+  }
+
+  /* Forzamos a que el texto interior vuelva a estar recto (0deg) */
+  .status-title, .status-desc {
+    transform: skewX(8deg); 
+    text-align: center;
+  }
+
+  .status-title {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    color: var(--p4-yellow);
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .status-desc {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    font-weight: 700;
+    color: #f0f0f0; /* Blanco ligeramente grisáceo para descansar la vista */
+  }
+
+  /* Resaltado amarillo dentro del texto */
+  .highlight {
+    color: var(--p4-black);
+    background: var(--p4-yellow);
+    padding: 2px 8px;
+    margin: 0 4px;
+    font-weight: 900;
+    display: inline-block;
+    transform: skewX(-4deg);
+  }
+
+  /* --- BOTÓN DE RETORNO --- */
+  .p4-menu {
+    transform: rotate(2deg);
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--p4-white);
+    color: var(--p4-black);
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
+    padding: 18px 30px;
+    border: 5px solid var(--p4-black);
+    box-shadow: 8px 8px 0px var(--p4-black);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+  }
+
+  .menu-item .arrow {
+    margin-right: 12px;
+    color: var(--p4-orange);
+    font-size: 1.4rem;
+    display: inline-block;
+    visibility: hidden; /* Evita saltos de texto bruscos */
+    width: 0;
+    transition: width 0.15s ease;
+  }
+
+  /* Estado Hover: Inversión limpia de colores de alto contraste */
+  .menu-item:hover {
+    background: var(--p4-black);
+    color: var(--p4-yellow);
+    border-color: var(--p4-white);
+    box-shadow: -8px -8px 0px var(--p4-orange), -8px -8px 0px 5px var(--p4-black);
+    transform: translate(4px, 4px);
+  }
+
+  .menu-item:hover .arrow {
+    visibility: visible;
+    width: 24px;
+    animation: blink 0.4s infinite alternate;
+  }
+
+  /* --- ANIMACIONES Y RESPONSIVE --- */
+  @keyframes blink {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1.1); }
+  }
+
+  @media (max-width: 600px) {
+    .error-badge { font-size: 4.5rem; padding: 5px 25px; }
+    .alert-box { padding: 35px 20px; transform: none; } /* Quitamos inclinación en móvil */
+    .status-title, .status-desc { transform: none; }
+    .status-title { font-size: 1.5rem; }
+    .status-desc { font-size: 1rem; }
+    .menu-item { font-size: 1.1rem; padding: 15px 20px; }
+  }
+</style>

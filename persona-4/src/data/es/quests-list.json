@@ -1,35 +1,32 @@
 [
   {
     "id": 1,
-    "name": "Quest 01",
-    "title": "Who's the Riddle Master?",
-    "client": "Funky Student",
-    "location": "Yasogami High, Learning Building 2F",
-    "reward": "Chestnut Mono-Mandala x3",
-    "status": "Available",
-    "description": "A student wearing an afro wants to test your intellect with a series of riddles. You must answer them correctly to prove your street smarts.",
-    "requirements": "Requires Knowledge Rank 2 (Anformed)."
+    "name": "Misión 01",
+    "title": "¿Quién es el maestro de los acertijos?",
+    "client": "Estudiante con onda",
+    "location": "Secundaria Yasogami, Edificio de Aprendizaje 2F",
+    "reward": "Mono-Mandala de castaña x3",
+    "description": "Un estudiante con pelo afro quiere poner a prueba tu intelecto con una serie de acertijos. Debes responderlos correctamente para demostrar tu astucia callejera.",
+    "requirements": "Requiere Rango de Conocimiento 2 (Informado)."
   },
   {
     "id": 2,
-    "name": "Quest 02",
-    "title": "Acquire an Angel Statue",
-    "client": "Timid Female Student",
-    "location": "Yasogami High, Class 2-2",
-    "reward": "Chestnut Mono-Mandala x3",
-    "status": "In Progress",
-    "description": "A student needs an Angel Statue for a project. It is said to drop from the Avenger Knight shadows haunting the early floors of Yukiko's Castle.",
-    "requirements": "Access to Yukiko's Castle."
+    "name": "Misión 02",
+    "title": "Adquiere una estatua de ángel",
+    "client": "Estudiante tímida",
+    "location": "Secundaria Yasogami, Clase 2-2",
+    "reward": "Mono-Mandala de castaña x3",
+    "description": "Una estudiante necesita una estatua de ángel para un proyecto. Se dice que la sueltan las sombras Caballero Vengador que rondan los primeros pisos del Castillo de Yukiko.",
+    "requirements": "Acceso al Castillo de Yukiko."
   },
   {
     "id": 3,
-    "name": "Quest 03",
-    "title": "Feed the Cat",
-    "client": "Cat",
-    "location": "Samegawa Flood Plain",
-    "reward": "Read Book speed increased",
-    "status": "Completed",
-    "description": "A hungry cat hanging around the riverbank wants some fish. Bring it a Chub or a Tatsuhime Ladybug from your bait supply.",
-    "requirements": "Need a Fishing Rod and bait."
+    "name": "Misión 03",
+    "title": "Alimenta al gato",
+    "client": "Gato",
+    "location": "Llanura aluvial de Samegawa",
+    "reward": "Velocidad de lectura de libros aumentada",
+    "description": "Un gato hambriento que merodea por la orilla del río quiere algo de pescado. Tráele un cacho o una mariquita de Tatsuhime de tu suministro de cebo.",
+    "requirements": "Se necesita una caña de pescar y cebo."
   }
 ]

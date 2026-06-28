@@ -34,15 +34,15 @@ if (!info) {
     <NoteBox {...info} />
 
     <section class="p4-quests-section">
-      <h2 class="p4-title sub text-orange">Bulletin Board</h2>
+      <h2 class="p4-title sub text-orange">{t("quests.board")}</h2>
       <div class="p4-quests-list">
         {questsList.map((quest: P4Quest) => (
-          <QuestBox {...quest, lang} />
+          <QuestBox {...quest} />
         ))}
       </div>
     </section>
 
-    <a href="/" class="p4-back-btn"><span>Go back to Inaba</span></a>
+    <a href="/" class="p4-back-btn"><span>{t("nav.back")}</span></a>
   </article>
 </Layout>
 

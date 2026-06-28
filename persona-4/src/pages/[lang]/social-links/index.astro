@@ -4,6 +4,7 @@ import { useTranslations, getP4Data, getSocialLinksList } from '@i18n/utils';
 import type { Params } from '@types2/p4';
 import HeaderBox from '@components/HeaderBox.astro';
 import NoteBox from '@components/NoteBox.astro';
+import ProfileBox from '@components/ProfileBox.astro';
 
 export function getStaticPaths() {
   return [
@@ -32,29 +33,15 @@ if (!info) {
     <NoteBox {...info} />
 
     <section class="p4-slinks-section">
-      <h2 class="p4-title sub">Investigate Bonds</h2>
+      <h2 class="p4-title sub">{t("social-links.section.title")}</h2>
       <div class="p4-slinks-grid">
         {sLinksList.map((char: any) => (
-          <div class="p4-char-card">
-            <div class="p4-card-arcana-wrapper">
-              <img src={char.arcanaCard} alt={char.arcana} class="p4-arcana-img-fallback" onerror="this.style.display='none'" />
-              <span class="p4-arcana-tag">{char.arcana}</span>
-            </div>
-            <div class="p4-char-avatar-box">
-              <img src={char.image} alt={char.name} class="p4-avatar-img-fallback" onerror="this.style.backgroundColor='#333'" />
-            </div>
-            <div class="p4-char-info">
-              <h3>{char.name}</h3>
-              <p class="p4-loc">📍 {char.location}</p>
-              <p class="p4-desc">{char.description}</p>
-              <a href={`${char.route}?lang=${lang}`} class="p4-profile-btn"><span>Open Profile</span></a>
-            </div>
-          </div>
+          <ProfileBox {...char} />
         ))}
       </div>
     </section>
 
-    <a href="/" class="p4-back-btn"><span>Go back to Inaba</span></a>
+    <a href="/" class="p4-back-btn"><span>{t("nav.back")}</span></a>
   </article>
 </Layout>
 
@@ -86,104 +73,5 @@ if (!info) {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
   }
-  
-  /* Tarjeta de Personaje Estilo P4 */
-  .p4-char-card {
-    background-color: #111;
-    border: 3px solid #000;
-    box-shadow: 5px 5px 0px #FFEB3B;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    padding: 1.5rem;
-    overflow: hidden;
-    transition: transform 0.2s ease;
-  }
-  .p4-char-card:hover {
-    transform: translateY(-5px);
-  }
 
-  /* Contenedores de imágenes (con fallbacks visuales por si están vacíos) */
-  .p4-char-avatar-box {
-    width: 90px;
-    height: 90px;
-    border: 3px solid #fff;
-    outline: 3px solid #000;
-    margin-bottom: 1rem;
-    transform: rotate(-3deg);
-    overflow: hidden;
-  }
-  .p4-avatar-img-fallback {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .p4-card-arcana-wrapper {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  .p4-arcana-img-fallback {
-    width: 45px;
-    height: auto;
-    margin-bottom: 4px;
-  }
-  .p4-arcana-tag {
-    background-color: #000;
-    color: #FFEB3B;
-    font-size: 0.75rem;
-    font-weight: 900;
-    padding: 2px 6px;
-    text-transform: uppercase;
-    border: 1px solid #FFEB3B;
-  }
-
-  /* Info textual interna */
-  .p4-char-info h3 {
-    font-family: 'Impact', sans-serif;
-    font-size: 1.6rem;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-bottom: 0.25rem;
-  }
-  .p4-loc {
-    color: #FFEB3B;
-    font-size: 0.85rem;
-    font-weight: 700;
-    margin-bottom: 0.75rem;
-  }
-  .p4-desc {
-    color: #bbb;
-    font-size: 0.95rem;
-    line-height: 1.4;
-    margin-bottom: 1.5rem;
-    flex-grow: 1;
-  }
-
-  /* Botón de Perfil interno */
-  .p4-profile-btn {
-    background-color: #FFEB3B;
-    color: #000;
-    text-align: center;
-    padding: 0.5rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    text-decoration: none;
-    transform: skewX(-10deg);
-    border: 2px solid #000;
-    display: block;
-    transition: background 0.2s;
-  }
-  .p4-profile-btn span {
-    display: inline-block;
-    transform: skewX(10deg);
-  }
-  .p4-profile-btn:hover {
-    background-color: #fff;
-  }
 </style>

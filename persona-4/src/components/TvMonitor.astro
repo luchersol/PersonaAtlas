@@ -1,4 +1,5 @@
 ---
+import { useTranslations } from '@i18n/utils';
 import type { Params } from '@types2/p4';
 
 export function getStaticPaths() {
@@ -9,6 +10,8 @@ export function getStaticPaths() {
 }
 
 const { lang } = Astro.params as Params;
+
+const t = useTranslations(lang);
 
 interface Props {
     image: string, 
@@ -38,7 +41,7 @@ const {image, name, status, airDate, broadcastSummary, href} = Astro.props;
         </div>
         <!-- Acoplamos el parámetro de idioma a la transmisión individual -->
         <a href={href} class="p4-tune-btn">
-        <span>{lang === 'es' ? 'Sintonizar Canal' : 'Tune Channel'}</span>
+        <span>{t("tv_monitor.tune_in")}</span>
         </a>
     </div>
 </div>
