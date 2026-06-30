@@ -12,8 +12,11 @@
     "dev:all": "npm run dev --workspaces --if-present",
     "build:all": "npm run build --workspaces --if-present",
     "preview:all": "npm run preview --workspaces --if-present",
+    
     "dev:p4": "npm run dev --workspace=persona-4-golden",
     "build:p4": "npm run build --workspace=persona-4-golden",
-    "preview:p4": "npm run preview --workspace=persona-4-golden"
+    "preview:p4": "npm run preview --workspace=persona-4-golden",
+    
+    "icon": "python .tools/create_icon.py"
   }
 }
