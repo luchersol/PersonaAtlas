@@ -1,0 +1,19 @@
+{
+  "name": "persona-atlas",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "workspaces": [
+    "wikis/*"
+  ],
+  "scripts": {
+    "dev:all": "npm run dev --workspaces --if-present",
+    "build:all": "npm run build --workspaces --if-present",
+    "preview:all": "npm run preview --workspaces --if-present",
+    "dev:p4": "npm run dev --workspace=persona-4-golden",
+    "build:p4": "npm run build --workspace=persona-4-golden",
+    "preview:p4": "npm run preview --workspace=persona-4-golden"
+  }
+}
