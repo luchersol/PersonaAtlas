@@ -9,6 +9,11 @@
     "wikis/*"
   ],
   "scripts": {
+    "dev:root": "astro dev",
+    "build:root": "astro build",
+    "preview:root": "astro preview",
+    "astro": "astro",
+
     "dev:all": "npm run dev --workspaces --if-present",
     "build:all": "npm run build --workspaces --if-present",
     "preview:all": "npm run preview --workspaces --if-present",
@@ -18,5 +23,8 @@
     "preview:p4": "npm run preview --workspace=persona-4-golden",
     
     "icon": "python .tools/create_icon.py"
+  },
+  "dependencies": {
+    "astro": "^5.0.0"
   }
 }

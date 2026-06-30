@@ -1,0 +1,326 @@
+---
+// src/pages/index.astro
+import { wikisData } from "../data/wikis.js";
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Persona Atlas - Wiki Selection</title>
+  </head>
+  
+  <body id="main-body">
+    <div class="bg-grid-overlay"></div>
+
+    <main>
+      <h1 class="persona-title">
+        <span class="word-cut c-black">Select</span>
+        <span class="word-cut c-accent">Your</span>
+        <span class="word-cut c-white">Atlas</span>
+      </h1>
+      
+      <div class="carousel-card-persona">
+        <button id="prev-btn" class="nav-btn-persona btn-left">◀</button>
+        
+        <div class="carousel-track">
+          {wikisData.map((wiki, index) => (
+            <div class="carousel-item" data-index={index} data-color={wiki.bg_color}>
+              <a href={wiki.link} class="icon-link-persona">
+                <div class="skew-border-backup"></div>
+                <img src={wiki.favicon} alt={`Icono de ${wiki.title}`} class="icon-img-persona" />
+                <div class="icon-overlay-persona">
+                  <span class="enter-badge-persona">TAKE YOUR TIME</span>
+                </div>
+              </a>
+              <h2 class="wiki-title-persona">{wiki.title}</h2>
+              <p class="wiki-subtitle-persona">// ACCESS METAVERSE WIKI</p>
+            </div>
+          ))}
+        </div>
+        
+        <button id="next-btn" class="nav-btn-persona btn-right">▶</button>
+        
+        <div class="dots-container">
+          {wikisData.map((_, index) => (
+            <div class="dot-persona" data-dot-index={index}></div>
+          ))}
+        </div>
+      </div>
+    </main>
+
+    <script>
+      let currentIndex = 0;
+      const items = document.querySelectorAll('.carousel-item');
+      const dots = document.querySelectorAll('.dot-persona');
+      const body = document.getElementById('main-body');
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+
+      function updateCarousel(index: number) {
+        if (index >= items.length) currentIndex = 0;
+        else if (index < 0) currentIndex = items.length - 1;
+        else currentIndex = index;
+
+        items.forEach((item, i) => {
+          if (i === currentIndex) {
+            item.classList.add('active');
+            const newColor = item.getAttribute('data-color');
+            if (body && newColor) {
+              // Asignamos el color del juego a una propiedad CSS para usarla dinámicamente en los estilos
+              body.style.backgroundColor = newColor;
+              body.style.setProperty('--current-accent', newColor);
+            }
+          } else {
+            item.classList.remove('active');
+          }
+        });
+
+        dots.forEach((dot, i) => {
+          if (i === currentIndex) dot.classList.add('active');
+          else dot.classList.remove('active');
+        });
+      }
+
+      prevBtn?.addEventListener('click', () => updateCarousel(currentIndex - 1));
+      nextBtn?.addEventListener('click', () => updateCarousel(currentIndex + 1));
+
+      // Inicializar primer elemento
+      updateCarousel(0);
+    </script>
+
+    <style>
+      :root {
+        --font-family: 'Impact', 'Arial Black', system-ui, sans-serif;
+        --current-accent: #da0000; /* Se actualiza por JS automáticamente */
+      }
+
+      #main-body {
+        font-family: var(--font-family);
+        color: #ffffff;
+        background-color: #0f172a;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 1rem;
+        position: relative;
+        overflow: hidden;
+        /* Transición veloz y agresiva típica de la saga */
+        transition: background-color 350ms cubic-bezier(0.19, 1, 0.22, 1);
+      }
+
+      /* Efecto de rejilla de fondo distorsionada */
+      .bg-grid-overlay {
+        position: absolute;
+        inset: 0;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.15) 2px, transparent 2px),
+                          linear-gradient(90deg, rgba(0, 0, 0, 0.15) 2px, transparent 2px);
+        background-size: 30px 30px;
+        transform: skewY(-6deg) scale(1.2);
+        pointer-events: none;
+        z-index: 1;
+      }
+
+      main {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        width: 100%;
+        max-width: 576px;
+      }
+
+      /* ─── ESTILO DEL TÍTULO PRINCIPAL (RECORTES) ──────────────── */
+      .persona-title {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-bottom: 3rem;
+        transform: rotate(-3deg);
+      }
+
+      .word-cut {
+        padding: 0.5rem 1.25rem;
+        font-size: 2.5rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: -0.02em;
+        box-shadow: 6px 6px 0px #000000;
+      }
+
+      .c-black { background-color: #000000; color: #ffffff; transform: rotate(2deg); }
+      .c-accent { background-color: var(--current-accent); color: #ffffff; transform: rotate(-4deg); transition: background-color 350ms; }
+      .c-white { background-color: #ffffff; color: #000000; transform: rotate(3deg); }
+
+      /* ─── TARJETA PRINCIPAL DEL CARRUSEL ────────────────────── */
+      .carousel-card-persona {
+        position: relative;
+        background-color: #000000;
+        padding: 3rem 2rem;
+        /* Formas angulares asimétricas */
+        transform: skewX(-4deg);
+        box-shadow: 14px 14px 0px rgba(0, 0, 0, 0.8);
+        border: 4px solid #ffffff;
+      }
+
+      /* Forzar que el contenido dentro de la tarjeta inclinada no se distorsione */
+      .carousel-track, .nav-btn-persona, .dots-container {
+        transform: skewX(4deg);
+      }
+
+      /* Botones de navegación punks */
+      .nav-btn-persona {
+        position: absolute;
+        top: 45%;
+        background-color: #ffffff;
+        color: #000000;
+        border: 3px solid #000000;
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.25rem;
+        cursor: pointer;
+        z-index: 10;
+        font-weight: bold;
+        box-shadow: 4px 4px 0px var(--current-accent);
+        transition: transform 100ms, background-color 200ms, box-shadow 350ms;
+      }
+
+      .nav-btn-persona:hover {
+        background-color: var(--current-accent);
+        color: #ffffff;
+        transform: scale(1.1);
+      }
+
+      .btn-left { left: -1.5rem; transform: rotate(-5deg) skewX(4deg); }
+      .btn-right { right: -1.5rem; transform: rotate(5deg) skewX(4deg); }
+
+      .carousel-track {
+        position: relative;
+        height: 18rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .carousel-item {
+        position: absolute;
+        width: 100%;
+        opacity: 0;
+        pointer-events: none;
+        transform: scale(0.85) rotate(-2deg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 400ms cubic-bezier(0.19, 1, 0.22, 1), transform 400ms cubic-bezier(0.19, 1, 0.22, 1);
+      }
+
+      .carousel-item.active {
+        opacity: 1;
+        pointer-events: auto;
+        transform: scale(1) rotate(0deg);
+      }
+
+      /* ─── EL ICONO / FAVICON TIPO MARCO ARTÍSTICO ────────────── */
+      .icon-link-persona {
+        display: block;
+        position: relative;
+        width: 9rem;
+        height: 9rem;
+        margin-bottom: 1.5rem;
+        background-color: #ffffff;
+        padding: 6px;
+        transform: rotate(-1deg);
+        box-shadow: 8px 8px 0px var(--current-accent);
+        transition: transform 200ms, box-shadow 350ms;
+      }
+
+      .icon-link-persona:hover {
+        transform: scale(1.05) rotate(3deg);
+      }
+
+      .icon-img-persona {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 3px solid #000000;
+      }
+
+      /* Efecto "Take Your Time / Warning" al pasar el ratón */
+      .icon-overlay-persona {
+        position: absolute;
+        inset: 6px;
+        background-color: rgba(0, 0, 0, 0.9);
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 3px solid #000000;
+        transition: opacity 250ms ease;
+      }
+
+      .icon-link-persona:hover .icon-overlay-persona {
+        opacity: 1;
+      }
+
+      .enter-badge-persona {
+        color: #ffffff;
+        font-size: 0.85rem;
+        font-weight: 900;
+        background-color: var(--current-accent);
+        padding: 0.4rem 0.6rem;
+        transform: rotate(-5deg);
+        letter-spacing: 0.05em;
+        border: 2px solid #ffffff;
+        transition: background-color 350ms;
+      }
+
+      /* Textos descriptivos de la Wiki */
+      .wiki-title-persona {
+        font-size: 1.85rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: -0.01em;
+        color: #ffffff;
+        margin-bottom: 0.35rem;
+        background-color: #000000;
+        display: inline-block;
+        padding: 0px 8px;
+      }
+
+      .wiki-subtitle-persona {
+        font-family: monospace;
+        font-size: 0.8rem;
+        color: var(--current-accent);
+        letter-spacing: 0.1em;
+        font-weight: bold;
+        transition: color 350ms;
+      }
+
+      /* ─── INDICADORES INFERIORES (ROMBOS) ────────────────────── */
+      .dots-container {
+        display: flex;
+        justify-content: center;
+        gap: 0.75rem;
+        margin-top: 1.5rem;
+      }
+
+      .dot-persona {
+        width: 0.75rem;
+        height: 0.75rem;
+        background-color: rgba(255, 255, 255, 0.3);
+        transform: rotate(45deg); /* Transforma los círculos en rombos del HUD */
+        transition: background-color 300ms, transform 300ms;
+        border: 1px solid #000000;
+      }
+
+      .dot-persona.active {
+        background-color: var(--current-accent);
+        transform: rotate(45deg) scale(1.3);
+        box-shadow: 0 0 8px var(--current-accent);
+      }
+    </style>
+  </body>
+</html>
