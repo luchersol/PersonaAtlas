@@ -16,22 +16,22 @@ export function getStaticPaths() {
 const { lang } = Astro.params as Params;
 const t = useTranslations(lang);
 
-const info: P4SectionInfo = await getP4Data(lang, 'velvet-room');
+const info: P4SectionInfo = await getP4Data(lang, 'tv-world');
 
 if (!info) {
-  throw new Error(`Data missing for velvet-room in language: ${lang}`);
+  throw new Error(`Data missing for tv-world in language: ${lang}`);
 }
 ---
 
 <Layout title={`${info.title} | Persona 4 Hub`}>
-  <!-- El resto del código HTML y CSS es exactamente igual al de velvet-room.astro -->
+  <!-- El resto del código HTML y CSS es exactamente igual al de tv-world.astro -->
   <article class="p4-card-container">
     <HeaderBox {...info} />
 
     <a href="/" class="p4-back-btn"><span>{t("nav.back")}</span></a>
   </article>
 </Layout>
-<!-- Mismos estilos CSS que velvet-room.astro -->
+<!-- Mismos estilos CSS que tv-world.astro -->
 
 <style>
   /* Aquí van los estilos base que ya teníamos para tarjetas compartidas */
