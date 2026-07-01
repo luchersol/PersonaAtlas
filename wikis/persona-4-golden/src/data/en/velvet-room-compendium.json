@@ -1,0 +1,39 @@
+[
+  {
+    "id": "persona-01",
+    "name": "Agnus",
+    "arcana": "Magician",
+    "level": "1",
+    "description": "A basic Persona that serves as an early companion in the Velvet Room.",
+    "affinities": [
+      { "element": "Physical", "state": "weak" },
+      { "element": "Fire", "state": "resist" },
+      { "element": "Ice", "state": "block" },
+      { "element": "Electric", "state": "repel" },
+      { "element": "Bless", "state": "absorb" }
+    ],
+    "skills": [
+      { "name": "Zio", "level": "1" },
+      { "name": "Agi", "level": "2" }
+    ],
+    "image": "/images/characters/persona-01.png"
+  },
+  {
+    "id": "persona-02",
+    "name": "Pixie",
+    "arcana": "Fool",
+    "level": "2",
+    "description": "A versatile Persona that can support the team in multiple battle situations.",
+    "affinities": [
+      { "element": "Bless", "state": "weak" },
+      { "element": "Curse", "state": "resist" },
+      { "element": "Fire", "state": "repel" },
+      { "element": "Ice", "state": "absorb" }
+    ],
+    "skills": [
+      { "name": "Dia", "level": "2" },
+      { "name": "Bufu", "level": "3" }
+    ],
+    "image": "/images/characters/persona-02.png"
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "persona-01",
+    "name": "Agnus",
+    "arcana": "Mago",
+    "level": "1",
+    "description": "Una Persona básica que sirve como compañero inicial en la Habitación Terciopelo.",
+    "affinities": [
+      { "element": "Físico", "state": "weak" },
+      { "element": "Fuego", "state": "resist" },
+      { "element": "Hielo", "state": "block" },
+      { "element": "Eléctrico", "state": "repel" },
+      { "element": "Bendición", "state": "absorb" }
+    ],
+    "skills": [
+      { "name": "Zio", "level": "1" },
+      { "name": "Agi", "level": "2" }
+    ],
+    "image": "/images/characters/persona-01.png"
+  },
+  {
+    "id": "persona-02",
+    "name": "Pixie",
+    "arcana": "Dumbo",
+    "level": "2",
+    "description": "Una Persona versátil que puede apoyar al equipo en múltiples situaciones de batalla.",
+    "affinities": [
+      { "element": "Bendición", "state": "weak" },
+      { "element": "Maldición", "state": "resist" },
+      { "element": "Fuego", "state": "repel" },
+      { "element": "Hielo", "state": "absorb" }
+    ],
+    "skills": [
+      { "name": "Dia", "level": "2" },
+      { "name": "Bufu", "level": "3" }
+    ],
+    "image": "/images/characters/persona-02.png"
+  }
+]

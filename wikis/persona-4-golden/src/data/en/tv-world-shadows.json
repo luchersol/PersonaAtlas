@@ -1,0 +1,26 @@
+[
+  {
+    "id": "avenger-knight",
+    "name": "Avenger Knight",
+    "dungeon": "Yukiko's Castle",
+    "weakness": "Fire",
+    "weaknesses": ["Fire", "Physical"],
+    "hp": "320",
+    "ep": "90",
+    "abilities": ["Slash", "Counterattack", "Shield Bash"],
+    "description": "A towering armored shadow that appears in the early floors and tests the party's resolve.",
+    "reward": "Rare armor material"
+  },
+  {
+    "id": "towering-figure",
+    "name": "Towering Figure",
+    "dungeon": "The Steamy Bathhouse",
+    "weakness": "Ice",
+    "weaknesses": ["Ice", "Light"],
+    "hp": "410",
+    "ep": "120",
+    "abilities": ["Heavy Strike", "Terror", "Drain"],
+    "description": "A looming shadow that uses brutal physical attacks and punishes careless approaches.",
+    "reward": "Useful combat item"
+  }
+]

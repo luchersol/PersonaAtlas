@@ -1,0 +1,24 @@
+[
+  {
+    "id": "healing-salve",
+    "name": "Healing Salve",
+    "category": "Consumable",
+    "usage": "Restores HP to the party",
+    "source": "Dropped by basic shadows",
+    "description": "A basic restorative item that keeps the party alive during early dungeon explorations.",
+    "healHp": 80,
+    "healEp": 0,
+    "statusEffect": "None"
+  },
+  {
+    "id": "spirit-sand",
+    "name": "Spirit Sand",
+    "category": "Material",
+    "usage": "Used for Persona fusion and crafting",
+    "source": "Found in dungeon chests",
+    "description": "An essential material for strengthening Personas and preparing for tougher encounters.",
+    "healHp": 0,
+    "healEp": 0,
+    "statusEffect": "None"
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "skill-card-01",
+    "name": "Ataque Up",
+    "type": "Apoyo",
+    "effect": "Aumenta el ataque del grupo durante un tiempo corto.",
+    "source": "Se obtiene de recompensas tempranas de mazmorras",
+    "kind": "support",
+    "target": "party",
+    "cost": 6,
+    "costType": "PE",
+    "icon": "✨"
+  },
+  {
+    "id": "skill-card-02",
+    "name": "Agi",
+    "type": "Fuego",
+    "effect": "Inflige daño de fuego a un enemigo.",
+    "source": "Se encuentra en la tienda de la Habitación Terciopelo",
+    "kind": "attack",
+    "element": "Fuego",
+    "strength": "Leve",
+    "target": "one",
+    "cost": 8,
+    "costType": "PE",
+    "icon": "🔥"
+  },
+  {
+    "id": "skill-card-03",
+    "name": "Dia",
+    "type": "Curación",
+    "effect": "Restaura una pequeña cantidad de PS a un aliado.",
+    "source": "Se encuentra en la tienda de la Habitación Terciopelo",
+    "kind": "heal",
+    "target": "one",
+    "healing": "30 PS",
+    "icon": "💚"
+  }
+]

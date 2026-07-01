@@ -17,6 +17,67 @@ export interface P4SectionInfo {
   mechanic: string;
 }
 
+export interface P4DungeonEntry {
+  id: string;
+  name: string;
+  area: string;
+  floors: string;
+  reward: string;
+  description: string;
+}
+
+export interface P4ShadowEntry {
+  id: string;
+  name: string;
+  dungeon: string;
+  weakness: string;
+  weaknesses?: string[];
+  hp?: string;
+  ep?: string;
+  abilities?: string[];
+  description: string;
+  reward: string;
+}
+
+export interface P4ObjectEntry {
+  id: string;
+  name: string;
+  category: string;
+  usage: string;
+  source: string;
+  description: string;
+  healHp?: number | string;
+  healEp?: number | string;
+  statusEffect?: string;
+}
+
+export interface P4CompendiumEntry {
+  id: string;
+  name: string;
+  arcana: string;
+  level: string;
+  description: string;
+  affinities?: Array<{ element: string; state: 'block' | 'weak' | 'resist' | 'repel' | 'absorb' }>;
+  skills?: Array<{ name: string; level: string }>;
+  image?: string;
+}
+
+export interface P4SkillCardEntry {
+  id: string;
+  name: string;
+  type: string;
+  effect: string;
+  source: string;
+  kind?: 'attack' | 'heal' | 'support';
+  element?: string;
+  strength?: string;
+  target?: 'one' | 'all' | 'party' | 'self' | string;
+  cost?: number | string;
+  costType?: 'PE' | 'HP' | 'SP' | string;
+  healing?: number | string;
+  icon?: string;
+}
+
 /**
  * Diccionario general que mapea cada sección con su información (Formato de Objeto de p4-info.json)
  */

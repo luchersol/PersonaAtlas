@@ -1,0 +1,18 @@
+[
+  {
+    "id": "yukikos-castle",
+    "name": "Yukiko's Castle",
+    "area": "Inaba",
+    "floors": "1-3",
+    "reward": "Healing item drops, rare herbs",
+    "description": "The first major dungeon where the party enters Yukiko's Castle to rescue her from the shadows that have consumed the manor."
+  },
+  {
+    "id": "tv-world-dungeon-2",
+    "name": "The Steamy Bathhouse",
+    "area": "TV World",
+    "floors": "4-6",
+    "reward": "Strong healing materials",
+    "description": "A dangerous bathhouse where the party confronts the deeper desires hidden beneath the surface."
+  }
+]

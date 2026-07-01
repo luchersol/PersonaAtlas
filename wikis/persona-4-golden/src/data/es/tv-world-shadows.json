@@ -1,0 +1,26 @@
+[
+  {
+    "id": "avenger-knight",
+    "name": "Caballero Vengador",
+    "dungeon": "Castillo de Yukiko",
+    "weakness": "Fuego",
+    "weaknesses": ["Fuego", "Físico"],
+    "hp": "320",
+    "ep": "90",
+    "abilities": ["Cuchillada", "Contraataque", "Golpe de escudo"],
+    "description": "Una sombra de armadura enorme que aparece en las primeras plantas y pone a prueba la determinación del grupo.",
+    "reward": "Material raro de armadura"
+  },
+  {
+    "id": "towering-figure",
+    "name": "Figura imponente",
+    "dungeon": "Baño caliente",
+    "weakness": "Hielo",
+    "weaknesses": ["Hielo", "Luz"],
+    "hp": "410",
+    "ep": "120",
+    "abilities": ["Golpe pesado", "Terror", "Drenaje"],
+    "description": "Una sombra imponente que usa ataques físicos brutales y castiga los enfoques descuidados.",
+    "reward": "Objeto útil para combate"
+  }
+]

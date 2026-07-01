@@ -1,0 +1,39 @@
+[
+  {
+    "id": "skill-card-01",
+    "name": "Attack Up",
+    "type": "Support",
+    "effect": "Raises the party's attack for a short time.",
+    "source": "Obtained from early dungeon rewards",
+    "kind": "support",
+    "target": "party",
+    "cost": 6,
+    "costType": "PE",
+    "icon": "✨"
+  },
+  {
+    "id": "skill-card-02",
+    "name": "Agi",
+    "type": "Fire",
+    "effect": "Deals fire damage to a single enemy.",
+    "source": "Found in the Velvet Room shop",
+    "kind": "attack",
+    "element": "Fire",
+    "strength": "Light",
+    "target": "one",
+    "cost": 8,
+    "costType": "PE",
+    "icon": "🔥"
+  },
+  {
+    "id": "skill-card-03",
+    "name": "Dia",
+    "type": "Healing",
+    "effect": "Restores a small amount of HP to one ally.",
+    "source": "Found in the Velvet Room shop",
+    "kind": "heal",
+    "target": "one",
+    "healing": "30 HP",
+    "icon": "💚"
+  }
+]

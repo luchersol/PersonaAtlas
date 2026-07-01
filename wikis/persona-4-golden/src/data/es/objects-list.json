@@ -1,0 +1,24 @@
+[
+  {
+    "id": "healing-salve",
+    "name": "Ungüento curativo",
+    "category": "Consumible",
+    "usage": "Restaura PS al grupo",
+    "source": "Soltado por sombras básicas",
+    "description": "Un objeto restaurador básico que mantiene al grupo vivo durante las primeras exploraciones de mazmorras.",
+    "healHp": 80,
+    "healEp": 0,
+    "statusEffect": "Ninguno"
+  },
+  {
+    "id": "spirit-sand",
+    "name": "Arena espiritual",
+    "category": "Material",
+    "usage": "Se usa para fusionar Personas y fabricar objetos",
+    "source": "Se encuentra en cofres de mazmorras",
+    "description": "Un material esencial para fortalecer Personas y prepararse para encuentros más difíciles.",
+    "healHp": 0,
+    "healEp": 0,
+    "statusEffect": "Ninguno"
+  }
+]

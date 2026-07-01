@@ -1,0 +1,68 @@
+---
+import Layout from '@layouts/Layout.astro';
+import { getTvWorldDungeonsList, useTranslations } from '@i18n/utils';
+import type { Params } from '@types2/p4';
+import type { P4DungeonEntry } from '@types2/p4';
+
+export async function getStaticPaths() {
+  const paths: any[] = [];
+  const languages = ['en', 'es'] as const;
+
+  for (const lang of languages) {
+    const list = await getTvWorldDungeonsList(lang);
+    list.forEach((entry) => {
+      paths.push({ params: { id: entry.id, lang }, props: { dungeon: entry } });
+    });
+  }
+
+  return paths;
+}
+
+interface Props {
+  dungeon: P4DungeonEntry;
+}
+
+const { dungeon } = Astro.props as Props;
+const { lang } = Astro.params as Params;
+const t = useTranslations(lang);
+---
+
+<Layout title={`${dungeon.name} | Persona 4 Hub`}>
+  <article class="p4-card-container">
+    <header class="p4-page-header">
+      <h1 class="p4-title">{dungeon.name}</h1>
+      <p class="p4-subtitle">{dungeon.area}</p>
+    </header>
+
+    <div class="p4-content-box">
+      <p class="p4-description">{dungeon.description}</p>
+      <div class="p4-detail-grid">
+        <div class="p4-detail-card">
+          <h3>{t('tv-world.dungeons.floors')}</h3>
+          <p>{dungeon.floors}</p>
+        </div>
+        <div class="p4-detail-card">
+          <h3>{t('tv-world.dungeons.reward')}</h3>
+          <p>{dungeon.reward}</p>
+        </div>
+      </div>
+    </div>
+
+    <a href={`/${lang}/tv-world/dungeons`} class="p4-back-btn"><span>{t('nav.back')}</span></a>
+  </article>
+</Layout>
+
+<style>
+  .p4-card-container { display: flex; flex-direction: column; gap: 2rem; margin-top: 2rem; }
+  .p4-page-header { border-left: 8px solid #FFEB3B; padding-left: 1.5rem; }
+  .p4-subtitle { font-size: 1.2rem; color: #FFEB3B; text-transform: uppercase; font-weight: 700; margin-top: -0.5rem; }
+  .p4-content-box { background-color: #000; border: 3px solid #333; padding: 2.5rem; box-shadow: 8px 8px 0px 0px #000; }
+  .p4-description { font-size: 1.15rem; line-height: 1.8; color: #e0e0e0; }
+  .p4-detail-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+  .p4-detail-card { background-color: #111; border: 1px solid #333; padding: 1rem; }
+  .p4-detail-card h3 { color: #FF9800; margin-bottom: 0.4rem; font-size: 0.95rem; text-transform: uppercase; }
+  .p4-detail-card p { color: #fff; line-height: 1.6; }
+  .p4-back-btn { align-self: flex-start; background-color: #333; color: #fff; padding: 0.6rem 1.5rem; font-weight: 700; text-transform: uppercase; text-decoration: none; transform: skewX(-12deg); border: 2px solid #444; }
+  .p4-back-btn span { display: inline-block; transform: skewX(12deg); }
+  .p4-back-btn:hover { background-color: #fff; color: #000; border-color: #fff; }
+</style>
