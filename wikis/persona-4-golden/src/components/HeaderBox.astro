@@ -1,19 +1,49 @@
 ---
+import NoteBox from './NoteBox.astro';
+
 
 interface Props {
   title: string; // Asegúrate de que no diga "never" o un tipo incompatible
   subtitle: string;
+  description: string;
+  mechanic: string;
 }
 
-const {title, subtitle} = Astro.props;
+const {title, subtitle, description, mechanic} = Astro.props;
 ---
 
 <header class="p4-page-header">
-    <h1 class="p4-title">{title}</h1>
-    <p class="p4-subtitle">{subtitle}</p>
+    <div class="p4-header-content">
+        <div class="p4-header-text">
+            <h1 class="p4-title">{title}</h1>
+            <p class="p4-subtitle">{subtitle}</p>
+        </div>
+        <NoteBox {...{description, mechanic}} />
+    </div>
 </header>
 
 <style>
-    .p4-page-header { border-left: 8px solid #FFEB3B; padding-left: 1.5rem; }
-    .p4-subtitle { font-size: 1.2rem; color: #FFEB3B; text-transform: uppercase; font-weight: 700; margin-top: -0.5rem; }
+    .p4-page-header {
+        border-left: 8px solid #FFEB3B;
+        padding-left: 1.5rem;
+    }
+
+    .p4-header-content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .p4-header-text {
+        flex: 1;
+    }
+
+    .p4-subtitle {
+        font-size: 1.2rem;
+        color: #FFEB3B;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-top: -0.5rem;
+    }
 </style>

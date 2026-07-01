@@ -1,7 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import { useTranslations, getQuestsList } from '@i18n/utils';
-import type { P4Language } from '@types2/p4';
+import type { P4Language, P4Quest } from '@types2/p4';
 
 export async function getStaticPaths() {
   const paths: any[] = [];
@@ -9,11 +9,12 @@ export async function getStaticPaths() {
 
   // Recorremos los idiomas cargando de forma asíncrona sus respectivos archivos independientes
   for (const lang of languages) {
-    const list = [1,2,3]
+    const list = await getQuestsList(lang);
     
-    list.forEach((id: any) => {
+    list.forEach((quest) => {
       paths.push({
-        params: { id: quest, lang },
+        params: { id: String(quest.id), lang },
+        props: { quest}
       });
     });
   }
@@ -22,14 +23,14 @@ export async function getStaticPaths() {
 }
 
 interface Props {
-
+  quest: P4Quest;
 }
 
 const { quest } = Astro.props;
 
 interface Params {
   lang: P4Language;
-  id: number;
+  id: string;
 }
 
 const { lang } = Astro.params as Params;
@@ -70,7 +71,7 @@ const t = useTranslations(lang);
       </div>
     </div>
 
-    <a href="/quests" class="p4-back-btn"><span>Back to Board</span></a>
+    <a href={`/${lang}/quests`} class="p4-back-btn"><span>Back to Board</span></a>
   </article>
 </Layout>
 
@@ -128,4 +129,8 @@ const t = useTranslations(lang);
     color: #FFEB3B;
     font-weight: bold;
   }
+
+  .p4-back-btn { align-self: flex-start; background-color: #333; color: #fff; padding: 0.6rem 1.5rem; font-weight: 700; text-transform: uppercase; text-decoration: none; transform: skewX(-12deg); border: 2px solid #444; }
+  .p4-back-btn span { display: inline-block; transform: skewX(12deg); }
+  .p4-back-btn:hover { background-color: #fff; color: #000; border-color: #fff; }
 </style>

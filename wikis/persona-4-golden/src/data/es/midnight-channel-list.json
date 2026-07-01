@@ -4,7 +4,6 @@
     "name": "Mayumi Yamano",
     "status": "Desaparecida / Fallecida",
     "image": "/images/tv/mayumi.png",
-    "route": "/midnight-channel/mayumi-yamano",
     "airDate": "Medianoche lluviosa - 11 de abril",
     "broadcastSummary": "La presentadora de televisión que se vio envuelta en un gran escándalo. Su silueta fue la primera en ser capturada en el Midnight Channel, desencadenando la extraña cadena de acontecimientos en Inaba."
   },
@@ -13,7 +12,6 @@
     "name": "Saki Konishi",
     "status": "Desaparecida / Fallecida",
     "image": "/images/tv/saki.png",
-    "route": "/midnight-channel/saki-konishi",
     "airDate": "Medianoche lluviosa - 12 de abril",
     "broadcastSummary": "Una estudiante de secundaria que descubrió el cuerpo de Mayumi Yamano. Poco después de que su silueta apareciera borrosa en la pantalla, desapareció."
   },
@@ -22,7 +20,6 @@
     "name": "Yukiko Amagi (Sombra)",
     "status": "Objetivo localizado",
     "image": "/images/tv/yukiko_shadow.png",
-    "route": "/midnight-channel/yukiko-amagi-tv",
     "airDate": "Medianoche lluviosa - 16 de abril",
     "broadcastSummary": "Aparece en una transmisión de alta fidelidad vistiendo atuendo tradicional, anunciando un reality show para encontrar a su 'Príncipe Azul'. Se requiere una operación de rescate inmediata dentro del Mundo de la TV."
   },
@@ -31,7 +28,6 @@
     "name": "Kanji Tatsumi (Sombra)",
     "status": "Objetivo localizado",
     "image": "/images/tv/kanji_shadow.png",
-    "route": "/midnight-channel/kanji-tatsumi-tv",
     "airDate": "Medianoche lluviosa - 14 de mayo",
     "broadcastSummary": "Aparece en un escenario extravagante, desafiando las normas sociales y presentando una transmisión con un personaje agresivo y muy estilizado que contradice su reputación de matón en el mundo real."
   }

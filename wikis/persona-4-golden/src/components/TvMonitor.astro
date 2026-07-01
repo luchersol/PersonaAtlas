@@ -14,6 +14,7 @@ const { lang } = Astro.params as Params;
 const t = useTranslations(lang);
 
 interface Props {
+    id: string;
     image: string, 
     name: string, 
     status: string, 
@@ -22,7 +23,7 @@ interface Props {
     href: string
 }
 
-const {image, name, status, airDate, broadcastSummary, href} = Astro.props;
+const {id, image, name, status, airDate, broadcastSummary } = Astro.props;
 ---
 <div class="p4-tv-monitor">
     <div class="p4-crt-screen">
@@ -40,7 +41,7 @@ const {image, name, status, airDate, broadcastSummary, href} = Astro.props;
         <p class="p4-broadcast-desc">{broadcastSummary}</p>
         </div>
         <!-- Acoplamos el parámetro de idioma a la transmisión individual -->
-        <a href={href} class="p4-tune-btn">
+        <a href={`/${lang}/midnight-channel/${id}`} class="p4-tune-btn">
         <span>{t("tv_monitor.tune_in")}</span>
         </a>
     </div>

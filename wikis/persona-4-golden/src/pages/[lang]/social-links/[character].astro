@@ -13,10 +13,9 @@ export async function getStaticPaths() {
     
     list.forEach((char: P4SocialLink) => {
       // Extraemos el slug o ID de la ruta (ej: 'yosuke-hanamura')
-      const character = char.route.split('/').pop(); 
       
       paths.push({
-        params: { character, lang },
+        params: { character: char.id, lang },
         props: { char },
       });
     });

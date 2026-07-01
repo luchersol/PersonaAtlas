@@ -3,7 +3,6 @@ import Layout from '@layouts/Layout.astro';
 import { getP4Data, useTranslations } from '@i18n/utils';
 import type { Params } from '@types2/p4';
 import HeaderBox from '@components/HeaderBox.astro';
-import NoteBox from '@components/NoteBox.astro';
 
 export function getStaticPaths() {
   return [
@@ -26,7 +25,7 @@ if (!info) {
 <Layout title={`${info.title} | Persona 4 Hub`}>
   <article class="p4-card-container">
     <HeaderBox {...info} />
-    <NoteBox {...info} />
+
     <a href="/" class="p4-back-btn"><span>{t("nav.back")}</span></a>
   </article>
 </Layout>

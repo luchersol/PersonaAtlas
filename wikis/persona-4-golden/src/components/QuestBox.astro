@@ -26,12 +26,22 @@ const {id, name, title, day, client, location} = Astro.props;
         <span class="p4-quest-number">{name}</span>
         <span class={"p4-quest-day"}>{day}</span>
     </div>
-    <h3 class="p4-quest-title">{title}</h3>
-    <div class="p4-quest-meta">
-        <p>👤 <strong>Client:</strong> {client}</p>
-        <p>📍 <strong>Location:</strong> {location}</p>
+
+    <div class="p4-quest-body">
+        <div class="p4-quest-info">
+            <h3 class="p4-quest-title">{title}</h3>
+            <div class="p4-quest-meta">
+                <p>👤 <strong>Client:</strong> {client}</p>
+                <p>📍 <strong>Location:</strong> {location}</p>
+            </div>
+        </div>
+        <a href={`/${lang}/quests/${id}`} class="p4-view-quest-btn" aria-label="View details">
+            <svg class="p4-view-quest-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="11" cy="11" r="5.5" />
+                <path d="M15 15l4 4" />
+            </svg>
+        </a>
     </div>
-    <a href={`/${lang}/quests/${id}`} class="p4-view-quest-btn"><span>View Details</span></a>
 </div>
 
 <style>
@@ -72,6 +82,17 @@ const {id, name, title, day, client, location} = Astro.props;
     transform: skewX(-10deg);´
   }
 
+  .p4-quest-body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .p4-quest-info {
+    flex: 1;
+  }
+
   .p4-quest-title {
     font-size: 1.4rem;
     color: #fff;
@@ -85,17 +106,31 @@ const {id, name, title, day, client, location} = Astro.props;
   }
 
   .p4-view-quest-btn {
-    align-self: flex-end;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.4rem;
+    height: 2.4rem;
     background-color: #FF9800;
     color: #000;
     text-decoration: none;
     font-weight: bold;
-    padding: 0.4rem 1.2rem;
-    text-transform: uppercase;
-    font-size: 0.9rem;
     transform: skewX(-12deg);
-    margin-top: 0.5rem;
+    border: 2px solid #333;
+    flex-shrink: 0;
   }
-  .p4-view-quest-btn span { display: inline-block; transform: skewX(12deg); }
+
   .p4-view-quest-btn:hover { background-color: #fff; }
+
+  .p4-view-quest-icon {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    stroke: #000;
+    stroke-width: 2;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transform: skewX(12deg);
+  }
 </style>

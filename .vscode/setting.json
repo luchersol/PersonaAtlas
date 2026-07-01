@@ -1,0 +1,16 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/.astro": true,
+    "**/dist": false,                
+    "**/.tools": false                 
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.astro": true,
+    "**/package-lock.json": true,
+    "**/dist": false 
+  }             
+}

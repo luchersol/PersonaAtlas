@@ -13,15 +13,17 @@ const { lang } = Astro.params as Params;
 
 interface Props {
     image: string; 
+    id: string;
     name: string;
     arcanaCard: string;
     arcana: string;
     location: string;
     description: string;
-    route: string
 }
 
-const {image, name, arcanaCard, arcana, location, description, route} = Astro.props;
+const {image, id, name, arcanaCard, arcana, location, description} = Astro.props;
+
+
 
 const t = useTranslations(lang);
 
@@ -39,7 +41,7 @@ const t = useTranslations(lang);
         <h3>{name}</h3>
         <p class="p4-loc">📍 {location}</p>
         <p class="p4-desc">{description}</p>
-        <a href={`/${lang}/${route}`} class="p4-profile-btn"><span>{t("profilebox.button")}</span></a>
+        <a href={`/${lang}/social-links/${id}`} class="p4-profile-btn"><span>{t("profilebox.button")}</span></a>
     </div>
 </div>
 

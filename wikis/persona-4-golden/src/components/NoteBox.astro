@@ -4,7 +4,7 @@ import type { Params } from '@types2/p4';
 
 export function getStaticPaths() {
   return [
-    { params: { lang: 'es' } }, 
+    { params: { lang: 'es' } },
     { params: { lang: 'en' } }
   ];
 }
@@ -12,29 +12,188 @@ export function getStaticPaths() {
 const { lang } = Astro.params as Params;
 
 interface Props {
-  description: string; // Asegúrate de que no diga "never" o un tipo incompatible
+  description: string;
   mechanic: string;
 }
 
-const {description, mechanic} = Astro.props;
-
-
+const { description, mechanic } = Astro.props as Props;
 const t = useTranslations(lang);
-
 ---
 
-<div class="p4-content-box">
-    <p class="p4-description">{description}</p>
-    <div class="p4-mechanic-box">
-    <span class="p4-badge">{t("notebox.system")}</span>
-    <p>{mechanic}</p>
+<div class="p4-note-root" data-note-root>
+  <button class="p4-info-button" type="button" data-note-trigger aria-label={t('notebox.system')}>
+    <span class="p4-info-icon">ⓘ</span>
+  </button>
+
+  <div class="p4-modal-backdrop" data-note-modal hidden aria-hidden="true">
+    <div class="p4-modal" role="dialog" aria-modal="true" aria-label={t('notebox.system')}>
+      <button class="p4-modal-close" type="button" data-note-close aria-label="Cerrar">×</button>
+      <div class="p4-content-box">
+        <p class="p4-description">{description}</p>
+        <div class="p4-mechanic-box">
+          <span class="p4-badge">{t('notebox.system')}</span>
+          <p>{mechanic}</p>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 
+<script>
+  const noteRoots = document.querySelectorAll('[data-note-root]');
+
+  noteRoots.forEach((root) => {
+    const trigger = root.querySelector('[data-note-trigger]');
+    const modal = root.querySelector('[data-note-modal]');
+    const closeButton = root.querySelector('[data-note-close]');
+
+    const openModal = () => {
+      if (!modal) return;
+      modal.removeAttribute('hidden');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('p4-modal-open');
+    };
+
+    const closeModal = () => {
+      if (!modal) return;
+      modal.setAttribute('hidden', 'true');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('p4-modal-open');
+    };
+
+    trigger?.addEventListener('click', openModal);
+    closeButton?.addEventListener('click', closeModal);
+
+    modal?.addEventListener('click', (event) => {
+      if (event.target === modal) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && !modal?.hasAttribute('hidden')) {
+        closeModal();
+      }
+    });
+  });
+</script>
+
 <style>
-    .p4-content-box { background-color: #000; border: 3px solid #333; padding: 2.5rem; box-shadow: 8px 8px 0px 0px #000; }
-    .p4-description { font-size: 1.15rem; line-height: 1.8; color: #e0e0e0; }
-    .p4-mechanic-box { margin-top: 2rem; background-color: #222; border-left: 5px solid #FFEB3B; padding: 1.5rem; position: relative; }
-    .p4-badge { position: absolute; top: -12px; left: 15px; background-color: #FFEB3B; color: #000; font-family: 'Impact', sans-serif; padding: 2px 8px; font-size: 0.85rem; transform: skewX(-10deg); }
-    .p4-mechanic-box p { font-size: 1rem; color: #FFEB3B; font-style: italic; }
+  .p4-note-root {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .p4-info-button {
+    width: 2.4rem;
+    height: 2.4rem;
+    border: 2px solid #333;
+    background: #ffeb3b;
+    color: #000;
+    box-shadow: 4px 4px 0 #000;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: transform 0.2s ease;
+  }
+
+  .p4-info-button:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 5px 5px 0 #000;
+  }
+
+  .p4-info-icon {
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: 'Impact', sans-serif;
+  }
+
+  .p4-modal-backdrop {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100dvh;
+    min-height: 100dvh;
+    background: rgba(0, 0, 0, 0.78);
+    padding: 1.5rem;
+    z-index: 1000;
+    overflow-y: auto;
+  }
+
+  .p4-modal-backdrop[hidden] {
+    display: none !important;
+  }
+
+  .p4-modal {
+    position: fixed;
+    top: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(100%, 42rem);
+    max-width: min(42rem, calc(100vw - 2rem));
+    max-height: calc(100dvh - 3rem);
+    overflow-y: auto;
+  }
+
+  .p4-modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: 2px solid #333;
+    background: #ffeb3b;
+    color: #000;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 #000;
+    z-index: 1;
+  }
+
+  .p4-content-box {
+    background-color: #000;
+    border: 3px solid #333;
+    padding: 2.5rem;
+    box-shadow: 8px 8px 0 0 #000;
+    position: relative;
+  }
+
+  .p4-description {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #e0e0e0;
+  }
+
+  .p4-mechanic-box {
+    margin-top: 2rem;
+    background-color: #222;
+    border-left: 5px solid #ffeb3b;
+    padding: 1.5rem;
+    position: relative;
+  }
+
+  .p4-badge {
+    position: absolute;
+    top: -12px;
+    left: 15px;
+    background-color: #ffeb3b;
+    color: #000;
+    font-family: 'Impact', sans-serif;
+    padding: 2px 8px;
+    font-size: 0.85rem;
+    transform: skewX(-10deg);
+  }
+
+  .p4-mechanic-box p {
+    font-size: 1rem;
+    color: #ffeb3b;
+    font-style: italic;
+  }
+
+  :global(body.p4-modal-open) {
+    overflow: hidden;
+  }
 </style>

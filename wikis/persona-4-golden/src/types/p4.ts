@@ -59,7 +59,6 @@ export interface P4SocialLink {
   arcana: string;
   image: string;       // Ruta local a la imagen en /public/images/characters/
   arcanaCard: string;  // Ruta local a la imagen en /public/images/cards/
-  route: string;       // Ruta de navegación interna (ej: /social-links/yosuke-hanamura)
   location: string;
   description: string;
   ranks: RankItem[];

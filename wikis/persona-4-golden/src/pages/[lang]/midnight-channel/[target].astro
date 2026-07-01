@@ -3,15 +3,26 @@ import Layout from '@layouts/Layout.astro';
 import { useTranslations, getMidnightChannelList } from '@i18n/utils';
 import type { Params, P4MidnightChannel } from '@types2/p4';
 
-export function getStaticPaths() {
-  return [
-    { params: { lang: 'es' } }, 
-    { params: { lang: 'en' } }
-  ];
+export async function getStaticPaths() {
+  const paths: any[] = [];
+  const languages = ['en', 'es'] as const;
+
+  // Recorremos los idiomas cargando de forma asíncrona sus respectivos archivos independientes
+  for (const lang of languages) {
+    const list = await getMidnightChannelList(lang);
+    
+    list.forEach((channel) => {
+      paths.push({
+        params: { lang, target: channel.id },
+      });
+    });
+  }
+
+  return paths;
 }
 
 const { lang } = Astro.params as Params;
-const {name, airDate, image, broadcastSummary} = Astro.props["tv"] as P4MidnightChannel;
+const {name, airDate, image, broadcastSummary} = Astro.props as P4MidnightChannel;
 
 const t = useTranslations(lang);
 ---

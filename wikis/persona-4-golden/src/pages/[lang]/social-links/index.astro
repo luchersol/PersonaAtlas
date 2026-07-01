@@ -3,7 +3,6 @@ import Layout from '@layouts/Layout.astro';
 import { useTranslations, getP4Data, getSocialLinksList } from '@i18n/utils';
 import type { Params } from '@types2/p4';
 import HeaderBox from '@components/HeaderBox.astro';
-import NoteBox from '@components/NoteBox.astro';
 import ProfileBox from '@components/ProfileBox.astro';
 
 export function getStaticPaths() {
@@ -30,7 +29,6 @@ if (!info) {
 <Layout title={`${info?.title} | Persona 4 Hub`}>
   <article class="p4-card-container">
     <HeaderBox {...info} />
-    <NoteBox {...info} />
 
     <section class="p4-slinks-section">
       <h2 class="p4-title sub">{t("social-links.section.title")}</h2>
