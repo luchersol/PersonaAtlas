@@ -54,7 +54,8 @@ export async function getObjectsList(lang: keyof typeof ui): Promise<P4ObjectEnt
 }
 
 export async function getCompendiumList(lang: keyof typeof ui): Promise<P4CompendiumEntry[]> {
-  const data = await import(getUrlData(lang, "velvet-room-compendium.json"));
+  // const data = await import(getUrlData(lang, "velvet-room-compendium.json"));
+  const data = await import(getUrlData(lang, "personas.json"));
   return data.default as P4CompendiumEntry[];
 }
 

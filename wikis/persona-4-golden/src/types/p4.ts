@@ -51,15 +51,46 @@ export interface P4ObjectEntry {
   statusEffect?: string;
 }
 
+export type AffinityState =
+  | "wk"
+  | "rs"
+  | "nu"
+  | "rp"
+  | "dr"
+  | "normal";
+
+export interface P4Affinity {
+  element: string;
+  state: AffinityState;
+}
+
+export interface P4Skill {
+  name: string;
+  level: number;
+}
+
+export interface P4Stats {
+  st: number;
+  ma: number;
+  en: number;
+  ag: number;
+  lu: number;
+}
+
 export interface P4CompendiumEntry {
-  id: string;
+  slug: string;
   name: string;
   arcana: string;
-  level: string;
-  description: string;
-  affinities?: Array<{ element: string; state: 'block' | 'weak' | 'resist' | 'repel' | 'absorb' }>;
-  skills?: Array<{ name: string; level: string }>;
-  image?: string;
+  level: number;
+
+  image: string;
+  url: string;
+
+  stats: P4Stats;
+
+  affinities: P4Affinity[];
+
+  skills: P4Skill[];
 }
 
 export interface P4SkillCardEntry {

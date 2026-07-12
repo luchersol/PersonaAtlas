@@ -1,0 +1,4501 @@
+[
+  {
+    "name": "Abaddon",
+    "slug": "abaddon",
+    "url": "https://www.ibunroku.com/p4g/personas/abaddon",
+    "arcana": "Tower",
+    "level": 55,
+    "image": "output/images/abaddon.webp",
+    "affinities": {
+      "Fire": "Dr",
+      "Ice": "Rs",
+      "Dark": "Wk",
+      "Almi": "Rp"
+    },
+    "stats": {
+      "St": 43,
+      "Ma": 27,
+      "En": 50,
+      "Ag": 23,
+      "Lu": 29
+    }
+  },
+  {
+    "name": "Alice",
+    "slug": "alice",
+    "url": "https://www.ibunroku.com/p4g/personas/alice",
+    "arcana": "Death",
+    "level": 72,
+    "image": "output/images/alice.webp",
+    "affinities": {
+      "Dark": "Wk",
+      "Almi": "Rp"
+    },
+    "stats": {
+      "St": 39,
+      "Ma": 56,
+      "En": 33,
+      "Ag": 45,
+      "Lu": 44
+    }
+  },
+  {
+    "name": "Alilat",
+    "slug": "alilat",
+    "url": "https://www.ibunroku.com/p4g/personas/alilat",
+    "arcana": "Empress",
+    "level": 70,
+    "image": "output/images/alilat.webp",
+    "affinities": {
+      "Ice": "Dr",
+      "Elec": "Wk"
+    },
+    "stats": {
+      "St": 39,
+      "Ma": 48,
+      "En": 49,
+      "Ag": 39,
+      "Lu": 42
+    }
+  },
+  {
+    "name": "Alraune",
+    "slug": "alraune",
+    "url": "https://www.ibunroku.com/p4g/personas/alraune",
+    "arcana": "Moon",
+    "level": 41,
+    "image": "output/images/alraune.webp",
+    "affinities": {
+      "Fire": "Rs",
+      "Ice": "Rs",
+      "Wind": "Wk",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 17,
+      "Ma": 35,
+      "En": 21,
+      "Ag": 29,
+      "Lu": 28
+    }
+  },
+  {
+    "name": "Amaterasu",
+    "slug": "amaterasu",
+    "url": "https://www.ibunroku.com/p4g/personas/amaterasu",
+    "arcana": "Priestess",
+    "level": 1,
+    "image": "output/images/amaterasu.webp",
+    "affinities": {
+      "Fire": "Dr",
+      "Ice": "Wk",
+      "Elec": "Rs"
+    },
+    "stats": {
+      "St": 2,
+      "Ma": 2,
+      "En": 2,
+      "Ag": 2,
+      "Lu": 2
+    }
+  },
+  {
+    "name": "Ame-no-Uzume",
+    "slug": "ame-no-uzume",
+    "url": "https://www.ibunroku.com/p4g/personas/ame-no-uzume",
+    "arcana": "Aeon",
+    "level": 18,
+    "image": "output/images/ame_no_uzume.webp",
+    "affinities": {
+      "Elec": "Wk",
+      "Wind": "Dr",
+      "Dark": "Dr"
+    },
+    "stats": {
+      "St": 9,
+      "Ma": 15,
+      "En": 12,
+      "Ag": 10,
+      "Lu": 15
+    }
+  },
+  {
+    "name": "Ananta",
+    "slug": "ananta",
+    "url": "https://www.ibunroku.com/p4g/personas/ananta",
+    "arcana": "Fortune",
+    "level": 58,
+    "image": "output/images/ananta.webp",
+    "affinities": {
+      "Phys": "Rs",
+      "Ice": "Nu",
+      "Elec": "Wk"
+    },
+    "stats": {
+      "St": 43,
+      "Ma": 42,
+      "En": 45,
+      "Ag": 28,
+      "Lu": 23
+    }
+  },
+  {
+    "name": "Andra",
+    "slug": "andra",
+    "url": "https://www.ibunroku.com/p4g/personas/andra",
+    "arcana": "Moon",
+    "level": 20,
+    "image": "output/images/andra.webp",
+    "affinities": {
+      "Elec": "Dr",
+      "Wind": "Wk"
+    },
+    "stats": {
+      "St": 14,
+      "Ma": 16,
+      "En": 13,
+      "Ag": 12,
+      "Lu": 12
+    }
+  },
+  {
+    "name": "Angel",
+    "slug": "angel",
+    "url": "https://www.ibunroku.com/p4g/personas/angel",
+    "arcana": "Justice",
+    "level": 4,
+    "image": "output/images/angel.webp",
+    "affinities": {
+      "Wind": "Rs",
+      "Dark": "Rs",
+      "Almi": "Wk"
+    },
+    "stats": {
+      "St": 4,
+      "Ma": 5,
+      "En": 2,
+      "Ag": 5,
+      "Lu": 3
+    }
+  },
+  {
+    "name": "Anubis",
+    "slug": "anubis",
+    "url": "https://www.ibunroku.com/p4g/personas/anubis",
+    "arcana": "Judgement",
+    "level": 59,
+    "image": "output/images/anubis.webp",
+    "affinities": {
+      "Dark": "Dr"
+    },
+    "stats": {
+      "St": 38,
+      "Ma": 41,
+      "En": 37,
+      "Ag": 37,
+      "Lu": 31
+    }
+  },
+  {
+    "name": "Anzu",
+    "slug": "anzu",
+    "url": "https://www.ibunroku.com/p4g/personas/anzu",
+    "arcana": "Hierophant",
+    "level": 15,
+    "image": "output/images/anzu.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Elec": "Rs",
+      "Wind": "Dr"
+    },
+    "stats": {
+      "St": 9,
+      "Ma": 11,
+      "En": 10,
+      "Ag": 13,
+      "Lu": 9
+    }
+  },
+  {
+    "name": "Apsaras",
+    "slug": "apsaras",
+    "url": "https://www.ibunroku.com/p4g/personas/apsaras",
+    "arcana": "Temperance",
+    "level": 4,
+    "image": "output/images/apsaras.webp",
+    "affinities": {
+      "Fire": "Wk"
+    },
+    "stats": {
+      "St": 3,
+      "Ma": 5,
+      "En": 3,
+      "Ag": 5,
+      "Lu": 3
+    }
+  },
+  {
+    "name": "Ara Mitama",
+    "slug": "ara-mitama",
+    "url": "https://www.ibunroku.com/p4g/personas/ara-mitama",
+    "arcana": "Chariot",
+    "level": 18,
+    "image": "output/images/ara_mitama.webp",
+    "affinities": {
+      "Phys": "Rs",
+      "Elec": "Wk"
+    },
+    "stats": {
+      "St": 11,
+      "Ma": 11,
+      "En": 11,
+      "Ag": 11,
+      "Lu": 11
+    }
+  },
+  {
+    "name": "Arahabaki",
+    "slug": "arahabaki",
+    "url": "https://www.ibunroku.com/p4g/personas/arahabaki",
+    "arcana": "Hermit",
+    "level": 73,
+    "image": "output/images/arahabaki.webp",
+    "affinities": {
+      "Phys": "Rp",
+      "Fire": "Wk",
+      "Ice": "Wk",
+      "Dark": "Dr",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 50,
+      "Ma": 55,
+      "En": 62,
+      "Ag": 37,
+      "Lu": 25
+    }
+  },
+  {
+    "name": "Archangel",
+    "slug": "archangel",
+    "url": "https://www.ibunroku.com/p4g/personas/archangel",
+    "arcana": "Justice",
+    "level": 11,
+    "image": "output/images/archangel.webp",
+    "affinities": {
+      "Dark": "Dr",
+      "Almi": "Wk"
+    },
+    "stats": {
+      "St": 8,
+      "Ma": 9,
+      "En": 7,
+      "Ag": 7,
+      "Lu": 9
+    }
+  },
+  {
+    "name": "Ardha",
+    "slug": "ardha",
+    "url": "https://www.ibunroku.com/p4g/personas/ardha",
+    "arcana": "Judgement",
+    "level": 90,
+    "image": "output/images/ardha.webp",
+    "affinities": {
+      "Phys": "Rs",
+      "Ice": "Dr",
+      "Elec": "Dr"
+    },
+    "stats": {
+      "St": 62,
+      "Ma": 52,
+      "En": 64,
+      "Ag": 41,
+      "Lu": 58
+    }
+  },
+  {
+    "name": "Ares",
+    "slug": "ares",
+    "url": "https://www.ibunroku.com/p4g/personas/ares",
+    "arcana": "Chariot",
+    "level": 25,
+    "image": "output/images/ares.webp",
+    "affinities": {
+      "Phys": "Rs",
+      "Wind": "Wk",
+      "Dark": "Dr"
+    },
+    "stats": {
+      "St": 18,
+      "Ma": 15,
+      "En": 20,
+      "Ag": 15,
+      "Lu": 14
+    }
+  },
+  {
+    "name": "Asura",
+    "slug": "asura",
+    "url": "https://www.ibunroku.com/p4g/personas/asura",
+    "arcana": "Sun",
+    "level": 86,
+    "image": "output/images/asura.webp",
+    "affinities": {
+      "Fire": "Dr",
+      "Ice": "Rs",
+      "Wind": "Wk",
+      "Dark": "Dr"
+    },
+    "stats": {
+      "St": 59,
+      "Ma": 57,
+      "En": 51,
+      "Ag": 50,
+      "Lu": 48
+    }
+  },
+  {
+    "name": "Atavaka",
+    "slug": "atavaka",
+    "url": "https://www.ibunroku.com/p4g/personas/atavaka",
+    "arcana": "Chariot",
+    "level": 72,
+    "image": "output/images/atavaka.webp",
+    "affinities": {
+      "Phys": "Dr",
+      "Ice": "Wk",
+      "Dark": "Dr"
+    },
+    "stats": {
+      "St": 50,
+      "Ma": 41,
+      "En": 43,
+      "Ag": 41,
+      "Lu": 48
+    }
+  },
+  {
+    "name": "Atropos",
+    "slug": "atropos",
+    "url": "https://www.ibunroku.com/p4g/personas/atropos",
+    "arcana": "Fortune",
+    "level": 65,
+    "image": "output/images/atropos.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Wind": "Dr"
+    },
+    "stats": {
+      "St": 36,
+      "Ma": 48,
+      "En": 36,
+      "Ag": 37,
+      "Lu": 45
+    }
+  },
+  {
+    "name": "Attis",
+    "slug": "attis",
+    "url": "https://www.ibunroku.com/p4g/personas/attis",
+    "arcana": "Hanged Man",
+    "level": 82,
+    "image": "output/images/attis.webp",
+    "affinities": {
+      "Fire": "Dr",
+      "Wind": "Rp",
+      "Almi": "Wk"
+    },
+    "stats": {
+      "St": 51,
+      "Ma": 56,
+      "En": 56,
+      "Ag": 50,
+      "Lu": 40
+    }
+  },
+  {
+    "name": "Baal Zebul",
+    "slug": "baal-zebul",
+    "url": "https://www.ibunroku.com/p4g/personas/baal-zebul",
+    "arcana": "Moon",
+    "level": 77,
+    "image": "output/images/baal_zebul.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Ice": "Nu",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 48,
+      "Ma": 60,
+      "En": 49,
+      "Ag": 41,
+      "Lu": 40
+    }
+  },
+  {
+    "name": "Baphomet",
+    "slug": "baphomet",
+    "url": "https://www.ibunroku.com/p4g/personas/baphomet",
+    "arcana": "Jester",
+    "level": 47,
+    "image": "output/images/baphomet.webp",
+    "affinities": {
+      "Dark": "Wk",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 25,
+      "Ma": 35,
+      "En": 35,
+      "Ag": 26,
+      "Lu": 27
+    }
+  },
+  {
+    "name": "Barong",
+    "slug": "barong",
+    "url": "https://www.ibunroku.com/p4g/personas/barong",
+    "arcana": "Emperor",
+    "level": 65,
+    "image": "output/images/barong.webp",
+    "affinities": {
+      "Elec": "Dr",
+      "Wind": "Wk"
+    },
+    "stats": {
+      "St": 48,
+      "Ma": 44,
+      "En": 40,
+      "Ag": 36,
+      "Lu": 34
+    }
+  },
+  {
+    "name": "Beelzebub",
+    "slug": "beelzebub",
+    "url": "https://www.ibunroku.com/p4g/personas/beelzebub",
+    "arcana": "Devil",
+    "level": 81,
+    "image": "output/images/beelzebub.webp",
+    "affinities": {
+      "Fire": "Nu",
+      "Ice": "Dr",
+      "Elec": "Rp",
+      "Dark": "Wk",
+      "Almi": "Rp"
+    },
+    "stats": {
+      "St": 51,
+      "Ma": 57,
+      "En": 48,
+      "Ag": 50,
+      "Lu": 44
+    }
+  },
+  {
+    "name": "Belial",
+    "slug": "belial",
+    "url": "https://www.ibunroku.com/p4g/personas/belial",
+    "arcana": "Devil",
+    "level": 68,
+    "image": "output/images/belial.webp",
+    "affinities": {
+      "Almi": "Rp"
+    },
+    "stats": {
+      "St": 51,
+      "Ma": 31,
+      "En": 48,
+      "Ag": 40,
+      "Lu": 41
+    }
+  },
+  {
+    "name": "Belphegor",
+    "slug": "belphegor",
+    "url": "https://www.ibunroku.com/p4g/personas/belphegor",
+    "arcana": "Devil",
+    "level": 61,
+    "image": "output/images/belphegor.webp",
+    "affinities": {
+      "Elec": "Nu",
+      "Dark": "Wk",
+      "Almi": "Rp"
+    },
+    "stats": {
+      "St": 40,
+      "Ma": 48,
+      "En": 42,
+      "Ag": 39,
+      "Lu": 21
+    }
+  },
+  {
+    "name": "Berith",
+    "slug": "berith",
+    "url": "https://www.ibunroku.com/p4g/personas/berith",
+    "arcana": "Hanged Man",
+    "level": 15,
+    "image": "output/images/berith.webp",
+    "affinities": {
+      "Fire": "Dr",
+      "Wind": "Wk"
+    },
+    "stats": {
+      "St": 12,
+      "Ma": 10,
+      "En": 9,
+      "Ag": 12,
+      "Lu": 9
+    }
+  },
+  {
+    "name": "Black Frost",
+    "slug": "black-frost",
+    "url": "https://www.ibunroku.com/p4g/personas/black-frost",
+    "arcana": "Fool",
+    "level": 38,
+    "image": "output/images/black_frost.webp",
+    "affinities": {
+      "Fire": "Nu",
+      "Ice": "Nu",
+      "Almi": "Rp"
+    },
+    "stats": {
+      "St": 23,
+      "Ma": 31,
+      "En": 22,
+      "Ag": 23,
+      "Lu": 22
+    }
+  },
+  {
+    "name": "Black Izanami",
+    "slug": "black-izanami",
+    "url": "https://www.ibunroku.com/p4g/personas/black-izanami",
+    "arcana": "Fool",
+    "level": 1,
+    "image": "output/images/black_izanami.webp",
+    "affinities": {},
+    "stats": {
+      "St": 3,
+      "Ma": 2,
+      "En": 2,
+      "Ag": 99,
+      "Lu": 2
+    }
+  },
+  {
+    "name": "Byakko",
+    "slug": "byakko",
+    "url": "https://www.ibunroku.com/p4g/personas/byakko",
+    "arcana": "Temperance",
+    "level": 62,
+    "image": "output/images/byakko.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Ice": "Nu",
+      "Elec": "Dr",
+      "Dark": "Dr"
+    },
+    "stats": {
+      "St": 47,
+      "Ma": 32,
+      "En": 35,
+      "Ag": 49,
+      "Lu": 30
+    }
+  },
+  {
+    "name": "Cerberus",
+    "slug": "cerberus",
+    "url": "https://www.ibunroku.com/p4g/personas/cerberus",
+    "arcana": "Hierophant",
+    "level": 52,
+    "image": "output/images/cerberus.webp",
+    "affinities": {
+      "Fire": "Rp",
+      "Ice": "Wk"
+    },
+    "stats": {
+      "St": 37,
+      "Ma": 30,
+      "En": 32,
+      "Ag": 35,
+      "Lu": 29
+    }
+  },
+  {
+    "name": "Chernobog",
+    "slug": "chernobog",
+    "url": "https://www.ibunroku.com/p4g/personas/chernobog",
+    "arcana": "Jester",
+    "level": 62,
+    "image": "output/images/chernobog.webp",
+    "affinities": {
+      "Phys": "Rs",
+      "Wind": "Wk",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 46,
+      "Ma": 47,
+      "En": 32,
+      "Ag": 35,
+      "Lu": 33
+    }
+  },
+  {
+    "name": "Clotho",
+    "slug": "clotho",
+    "url": "https://www.ibunroku.com/p4g/personas/clotho",
+    "arcana": "Fortune",
+    "level": 44,
+    "image": "output/images/clotho.webp",
+    "affinities": {
+      "Wind": "Rp"
+    },
+    "stats": {
+      "St": 22,
+      "Ma": 31,
+      "En": 28,
+      "Ag": 26,
+      "Lu": 32
+    }
+  },
+  {
+    "name": "Cu Chulainn",
+    "slug": "cu-chulainn",
+    "url": "https://www.ibunroku.com/p4g/personas/cu-chulainn",
+    "arcana": "Tower",
+    "level": 46,
+    "image": "output/images/cu_chulainn.webp",
+    "affinities": {
+      "Phys": "Rs",
+      "Ice": "Wk",
+      "Wind": "Rp"
+    },
+    "stats": {
+      "St": 40,
+      "Ma": 32,
+      "En": 28,
+      "Ag": 25,
+      "Lu": 20
+    }
+  },
+  {
+    "name": "Cu Sith",
+    "slug": "cu-sith",
+    "url": "https://www.ibunroku.com/p4g/personas/cu-sith",
+    "arcana": "Sun",
+    "level": 10,
+    "image": "output/images/cu_sith.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Wind": "Rs"
+    },
+    "stats": {
+      "St": 10,
+      "Ma": 5,
+      "En": 6,
+      "Ag": 9,
+      "Lu": 7
+    }
+  },
+  {
+    "name": "Cybele",
+    "slug": "cybele",
+    "url": "https://www.ibunroku.com/p4g/personas/cybele",
+    "arcana": "Lovers",
+    "level": 64,
+    "image": "output/images/cybele.webp",
+    "affinities": {
+      "Fire": "Rs",
+      "Ice": "Dr",
+      "Elec": "Wk"
+    },
+    "stats": {
+      "St": 41,
+      "Ma": 47,
+      "En": 37,
+      "Ag": 39,
+      "Lu": 35
+    }
+  },
+  {
+    "name": "Daisoujou",
+    "slug": "daisoujou",
+    "url": "https://www.ibunroku.com/p4g/personas/daisoujou",
+    "arcana": "Hierophant",
+    "level": 60,
+    "image": "output/images/daisoujou.webp",
+    "affinities": {
+      "Fire": "Dr",
+      "Dark": "Dr",
+      "Almi": "Wk"
+    },
+    "stats": {
+      "St": 34,
+      "Ma": 45,
+      "En": 40,
+      "Ag": 30,
+      "Lu": 41
+    }
+  },
+  {
+    "name": "Decarabia",
+    "slug": "decarabia",
+    "url": "https://www.ibunroku.com/p4g/personas/decarabia",
+    "arcana": "Fool",
+    "level": 46,
+    "image": "output/images/decarabia.webp",
+    "affinities": {
+      "Phys": "Wk",
+      "Elec": "Dr",
+      "Wind": "Rs",
+      "Dark": "Dr"
+    },
+    "stats": {
+      "St": 27,
+      "Ma": 36,
+      "En": 25,
+      "Ag": 26,
+      "Lu": 31
+    }
+  },
+  {
+    "name": "Dis",
+    "slug": "dis",
+    "url": "https://www.ibunroku.com/p4g/personas/dis",
+    "arcana": "Magician",
+    "level": 39,
+    "image": "output/images/dis.webp",
+    "affinities": {
+      "Fire": "Rp"
+    },
+    "stats": {
+      "St": 25,
+      "Ma": 31,
+      "En": 24,
+      "Ag": 26,
+      "Lu": 21
+    }
+  },
+  {
+    "name": "Dominion",
+    "slug": "dominion",
+    "url": "https://www.ibunroku.com/p4g/personas/dominion",
+    "arcana": "Justice",
+    "level": 38,
+    "image": "output/images/dominion.webp",
+    "affinities": {
+      "Elec": "Dr",
+      "Wind": "Wk",
+      "Dark": "Rp",
+      "Almi": "Wk"
+    },
+    "stats": {
+      "St": 22,
+      "Ma": 32,
+      "En": 25,
+      "Ag": 24,
+      "Lu": 18
+    }
+  },
+  {
+    "name": "Eligor",
+    "slug": "eligor",
+    "url": "https://www.ibunroku.com/p4g/personas/eligor",
+    "arcana": "Chariot",
+    "level": 12,
+    "image": "output/images/eligor.webp",
+    "affinities": {
+      "Phys": "Rs",
+      "Dark": "Wk",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 11,
+      "Ma": 6,
+      "En": 13,
+      "Ag": 8,
+      "Lu": 5
+    }
+  },
+  {
+    "name": "Flauros",
+    "slug": "flauros",
+    "url": "https://www.ibunroku.com/p4g/personas/flauros",
+    "arcana": "Hierophant",
+    "level": 36,
+    "image": "output/images/flauros.webp",
+    "affinities": {
+      "Fire": "Dr",
+      "Ice": "Wk",
+      "Wind": "Rs"
+    },
+    "stats": {
+      "St": 30,
+      "Ma": 20,
+      "En": 24,
+      "Ag": 20,
+      "Lu": 21
+    }
+  },
+  {
+    "name": "Forneus",
+    "slug": "forneus",
+    "url": "https://www.ibunroku.com/p4g/personas/forneus",
+    "arcana": "Hermit",
+    "level": 6,
+    "image": "output/images/forneus.webp",
+    "affinities": {
+      "Ice": "Rs",
+      "Elec": "Wk",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 4,
+      "Ma": 5,
+      "En": 7,
+      "Ag": 6,
+      "Lu": 3
+    }
+  },
+  {
+    "name": "Fortuna",
+    "slug": "fortuna",
+    "url": "https://www.ibunroku.com/p4g/personas/fortuna",
+    "arcana": "Fortune",
+    "level": 35,
+    "image": "output/images/fortuna.webp",
+    "affinities": {
+      "Fire": "Dr",
+      "Elec": "Wk",
+      "Wind": "Dr"
+    },
+    "stats": {
+      "St": 19,
+      "Ma": 23,
+      "En": 22,
+      "Ag": 26,
+      "Lu": 22
+    }
+  },
+  {
+    "name": "Futsunushi",
+    "slug": "futsunushi",
+    "url": "https://www.ibunroku.com/p4g/personas/futsunushi",
+    "arcana": "Chariot",
+    "level": 80,
+    "image": "output/images/futsunushi.webp",
+    "affinities": {
+      "Phys": "Dr",
+      "Almi": "Wk"
+    },
+    "stats": {
+      "St": 59,
+      "Ma": 38,
+      "En": 61,
+      "Ag": 44,
+      "Lu": 45
+    }
+  },
+  {
+    "name": "Fuu-ki",
+    "slug": "fuu-ki",
+    "url": "https://www.ibunroku.com/p4g/personas/fuu-ki",
+    "arcana": "Star",
+    "level": 43,
+    "image": "output/images/fuu_ki.webp",
+    "affinities": {
+      "Fire": "Wk"
+    },
+    "stats": {
+      "St": 25,
+      "Ma": 32,
+      "En": 34,
+      "Ag": 27,
+      "Lu": 18
+    }
+  },
+  {
+    "name": "Gabriel",
+    "slug": "gabriel",
+    "url": "https://www.ibunroku.com/p4g/personas/gabriel",
+    "arcana": "Empress",
+    "level": 44,
+    "image": "output/images/gabriel.webp",
+    "affinities": {
+      "Fire": "Rs",
+      "Wind": "Nu",
+      "Dark": "Dr",
+      "Almi": "Wk"
+    },
+    "stats": {
+      "St": 28,
+      "Ma": 34,
+      "En": 22,
+      "Ag": 30,
+      "Lu": 25
+    }
+  },
+  {
+    "name": "Ganesha",
+    "slug": "ganesha",
+    "url": "https://www.ibunroku.com/p4g/personas/ganesha",
+    "arcana": "Star",
+    "level": 50,
+    "image": "output/images/ganesha.webp",
+    "affinities": {
+      "Elec": "Wk",
+      "Wind": "Dr"
+    },
+    "stats": {
+      "St": 38,
+      "Ma": 29,
+      "En": 31,
+      "Ag": 27,
+      "Lu": 32
+    }
+  },
+  {
+    "name": "Ganga",
+    "slug": "ganga",
+    "url": "https://www.ibunroku.com/p4g/personas/ganga",
+    "arcana": "Priestess",
+    "level": 29,
+    "image": "output/images/ganga.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Ice": "Nu",
+      "Almi": "Wk"
+    },
+    "stats": {
+      "St": 16,
+      "Ma": 22,
+      "En": 16,
+      "Ag": 19,
+      "Lu": 21
+    }
+  },
+  {
+    "name": "Garuda",
+    "slug": "garuda",
+    "url": "https://www.ibunroku.com/p4g/personas/garuda",
+    "arcana": "Star",
+    "level": 57,
+    "image": "output/images/garuda.webp",
+    "affinities": {
+      "Elec": "Wk",
+      "Wind": "Rp",
+      "Dark": "Rp"
+    },
+    "stats": {
+      "St": 39,
+      "Ma": 33,
+      "En": 28,
+      "Ag": 47,
+      "Lu": 31
+    }
+  },
+  {
+    "name": "Gdon",
+    "slug": "gdon",
+    "url": "https://www.ibunroku.com/p4g/personas/gdon",
+    "arcana": "Sun",
+    "level": 31,
+    "image": "output/images/gdon.webp",
+    "affinities": {
+      "Fire": "Nu",
+      "Ice": "Wk"
+    },
+    "stats": {
+      "St": 27,
+      "Ma": 10,
+      "En": 23,
+      "Ag": 22,
+      "Lu": 18
+    }
+  },
+  {
+    "name": "Genbu",
+    "slug": "genbu",
+    "url": "https://www.ibunroku.com/p4g/personas/genbu",
+    "arcana": "Temperance",
+    "level": 40,
+    "image": "output/images/genbu.webp",
+    "affinities": {
+      "Ice": "Dr",
+      "Elec": "Wk"
+    },
+    "stats": {
+      "St": 28,
+      "Ma": 27,
+      "En": 39,
+      "Ag": 12,
+      "Lu": 21
+    }
+  },
+  {
+    "name": "Ghoul",
+    "slug": "ghoul",
+    "url": "https://www.ibunroku.com/p4g/personas/ghoul",
+    "arcana": "Death",
+    "level": 9,
+    "image": "output/images/ghoul.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Ice": "Dr",
+      "Dark": "Wk"
+    },
+    "stats": {
+      "St": 8,
+      "Ma": 7,
+      "En": 9,
+      "Ag": 5,
+      "Lu": 5
+    }
+  },
+  {
+    "name": "Girimehkala",
+    "slug": "girimehkala",
+    "url": "https://www.ibunroku.com/p4g/personas/girimehkala",
+    "arcana": "Moon",
+    "level": 48,
+    "image": "output/images/girimehkala.webp",
+    "affinities": {
+      "Phys": "Rp",
+      "Dark": "Wk",
+      "Almi": "Wk"
+    },
+    "stats": {
+      "St": 36,
+      "Ma": 35,
+      "En": 23,
+      "Ag": 30,
+      "Lu": 27
+    }
+  },
+  {
+    "name": "Gorgon",
+    "slug": "gorgon",
+    "url": "https://www.ibunroku.com/p4g/personas/gorgon",
+    "arcana": "Empress",
+    "level": 34,
+    "image": "output/images/gorgon.webp",
+    "affinities": {
+      "Ice": "Dr",
+      "Dark": "Wk"
+    },
+    "stats": {
+      "St": 20,
+      "Ma": 21,
+      "En": 25,
+      "Ag": 24,
+      "Lu": 19
+    }
+  },
+  {
+    "name": "Gurr",
+    "slug": "gurr",
+    "url": "https://www.ibunroku.com/p4g/personas/gurr",
+    "arcana": "Jester",
+    "level": 20,
+    "image": "output/images/gurr.webp",
+    "affinities": {
+      "Wind": "Rs",
+      "Dark": "Wk",
+      "Almi": "Rs"
+    },
+    "stats": {
+      "St": 16,
+      "Ma": 11,
+      "En": 14,
+      "Ag": 15,
+      "Lu": 11
+    }
+  },
+  {
+    "name": "Hachiman",
+    "slug": "hachiman",
+    "url": "https://www.ibunroku.com/p4g/personas/hachiman",
+    "arcana": "Hierophant",
+    "level": 70,
+    "image": "output/images/hachiman.webp",
+    "affinities": {
+      "Ice": "Dr",
+      "Elec": "Dr",
+      "Almi": "Wk"
+    },
+    "stats": {
+      "St": 33,
+      "Ma": 60,
+      "En": 39,
+      "Ag": 38,
+      "Lu": 47
+    }
+  },
+  {
+    "name": "Hanuman",
+    "slug": "hanuman",
+    "url": "https://www.ibunroku.com/p4g/personas/hanuman",
+    "arcana": "Strength",
+    "level": 42,
+    "image": "output/images/hanuman.webp",
+    "affinities": {
+      "Phys": "Rs",
+      "Ice": "Dr",
+      "Elec": "Wk"
+    },
+    "stats": {
+      "St": 31,
+      "Ma": 25,
+      "En": 31,
+      "Ag": 21,
+      "Lu": 25
+    }
+  },
+  {
+    "name": "Haraedo-no-Okami",
+    "slug": "haraedo-no-okami",
+    "url": "https://www.ibunroku.com/p4g/personas/haraedo-no-okami",
+    "arcana": "Chariot",
+    "level": 1,
+    "image": "output/images/haraedo_no_okami.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Ice": "Nu",
+      "Dark": "Dr"
+    },
+    "stats": {
+      "St": 2,
+      "Ma": 2,
+      "En": 2,
+      "Ag": 2,
+      "Lu": 2
+    }
+  },
+  {
+    "name": "Hariti",
+    "slug": "hariti",
+    "url": "https://www.ibunroku.com/p4g/personas/hariti",
+    "arcana": "Priestess",
+    "level": 59,
+    "image": "output/images/hariti.webp",
+    "affinities": {
+      "Ice": "Dr",
+      "Elec": "Wk",
+      "Wind": "Rs"
+    },
+    "stats": {
+      "St": 31,
+      "Ma": 47,
+      "En": 33,
+      "Ag": 34,
+      "Lu": 39
+    }
+  },
+  {
+    "name": "Helel",
+    "slug": "helel",
+    "url": "https://www.ibunroku.com/p4g/personas/helel",
+    "arcana": "Star",
+    "level": 87,
+    "image": "output/images/helel.webp",
+    "affinities": {
+      "Phys": "Rs",
+      "Fire": "Dr",
+      "Wind": "Wk",
+      "Dark": "Dr",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 56,
+      "Ma": 57,
+      "En": 56,
+      "Ag": 49,
+      "Lu": 50
+    }
+  },
+  {
+    "name": "Hell Biker",
+    "slug": "hell-biker",
+    "url": "https://www.ibunroku.com/p4g/personas/hell-biker",
+    "arcana": "Hanged Man",
+    "level": 66,
+    "image": "output/images/hell_biker.webp",
+    "affinities": {
+      "Fire": "Rp",
+      "Dark": "Wk"
+    },
+    "stats": {
+      "St": 49,
+      "Ma": 40,
+      "En": 40,
+      "Ag": 48,
+      "Lu": 28
+    }
+  },
+  {
+    "name": "High Pixie",
+    "slug": "high-pixie",
+    "url": "https://www.ibunroku.com/p4g/personas/high-pixie",
+    "arcana": "Priestess",
+    "level": 22,
+    "image": "output/images/high_pixie.webp",
+    "affinities": {
+      "Ice": "Wk",
+      "Elec": "Dr"
+    },
+    "stats": {
+      "St": 10,
+      "Ma": 21,
+      "En": 10,
+      "Ag": 19,
+      "Lu": 13
+    }
+  },
+  {
+    "name": "Himiko",
+    "slug": "himiko",
+    "url": "https://www.ibunroku.com/p4g/personas/himiko",
+    "arcana": "Lovers",
+    "level": 34,
+    "image": "output/images/himiko.webp",
+    "affinities": {},
+    "stats": {
+      "St": 15,
+      "Ma": 25,
+      "En": 20,
+      "Ag": 21,
+      "Lu": 24
+    }
+  },
+  {
+    "name": "Hitokotonusi",
+    "slug": "hitokotonusi",
+    "url": "https://www.ibunroku.com/p4g/personas/hitokotonusi",
+    "arcana": "Hermit",
+    "level": 41,
+    "image": "output/images/hitokotonusi.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Ice": "Dr",
+      "Wind": "Dr"
+    },
+    "stats": {
+      "St": 28,
+      "Ma": 33,
+      "En": 30,
+      "Ag": 20,
+      "Lu": 19
+    }
+  },
+  {
+    "name": "Hokuto Seikun",
+    "slug": "hokuto-seikun",
+    "url": "https://www.ibunroku.com/p4g/personas/hokuto-seikun",
+    "arcana": "Hierophant",
+    "level": 45,
+    "image": "output/images/hokuto_seikun.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Elec": "Rp"
+    },
+    "stats": {
+      "St": 29,
+      "Ma": 34,
+      "En": 31,
+      "Ag": 26,
+      "Lu": 22
+    }
+  },
+  {
+    "name": "Horus",
+    "slug": "horus",
+    "url": "https://www.ibunroku.com/p4g/personas/horus",
+    "arcana": "Sun",
+    "level": 68,
+    "image": "output/images/horus.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Elec": "Dr",
+      "Dark": "Rp"
+    },
+    "stats": {
+      "St": 45,
+      "Ma": 48,
+      "En": 35,
+      "Ag": 45,
+      "Lu": 38
+    }
+  },
+  {
+    "name": "Hua Po",
+    "slug": "hua-po",
+    "url": "https://www.ibunroku.com/p4g/personas/hua-po",
+    "arcana": "Magician",
+    "level": 25,
+    "image": "output/images/hua_po.webp",
+    "affinities": {
+      "Fire": "Dr",
+      "Ice": "Wk"
+    },
+    "stats": {
+      "St": 14,
+      "Ma": 21,
+      "En": 15,
+      "Ag": 17,
+      "Lu": 15
+    }
+  },
+  {
+    "name": "Ikusa",
+    "slug": "ikusa",
+    "url": "https://www.ibunroku.com/p4g/personas/ikusa",
+    "arcana": "Hanged Man",
+    "level": 22,
+    "image": "output/images/ikusa.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Ice": "Rs",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 17,
+      "Ma": 16,
+      "En": 18,
+      "Ag": 12,
+      "Lu": 10
+    }
+  },
+  {
+    "name": "Incubus",
+    "slug": "incubus",
+    "url": "https://www.ibunroku.com/p4g/personas/incubus",
+    "arcana": "Devil",
+    "level": 28,
+    "image": "output/images/incubus.webp",
+    "affinities": {
+      "Fire": "Dr",
+      "Dark": "Wk",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 17,
+      "Ma": 22,
+      "En": 16,
+      "Ag": 19,
+      "Lu": 17
+    }
+  },
+  {
+    "name": "Ippon-Datara",
+    "slug": "ippon-datara",
+    "url": "https://www.ibunroku.com/p4g/personas/ippon-datara",
+    "arcana": "Hermit",
+    "level": 17,
+    "image": "output/images/ippon_datara.webp",
+    "affinities": {
+      "Fire": "Rs",
+      "Dark": "Wk",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 15,
+      "Ma": 6,
+      "En": 14,
+      "Ag": 13,
+      "Lu": 10
+    }
+  },
+  {
+    "name": "Ishtar",
+    "slug": "ishtar",
+    "url": "https://www.ibunroku.com/p4g/personas/ishtar",
+    "arcana": "Lovers",
+    "level": 71,
+    "image": "output/images/ishtar.webp",
+    "affinities": {
+      "Elec": "Dr",
+      "Wind": "Wk"
+    },
+    "stats": {
+      "St": 46,
+      "Ma": 44,
+      "En": 33,
+      "Ag": 48,
+      "Lu": 49
+    }
+  },
+  {
+    "name": "Isis",
+    "slug": "isis",
+    "url": "https://www.ibunroku.com/p4g/personas/isis",
+    "arcana": "Empress",
+    "level": 79,
+    "image": "output/images/isis.webp",
+    "affinities": {
+      "Ice": "Rp",
+      "Elec": "Wk"
+    },
+    "stats": {
+      "St": 52,
+      "Ma": 48,
+      "En": 42,
+      "Ag": 48,
+      "Lu": 54
+    }
+  },
+  {
+    "name": "Izanagi",
+    "slug": "izanagi",
+    "url": "https://www.ibunroku.com/p4g/personas/izanagi",
+    "arcana": "Fool",
+    "level": 1,
+    "image": "output/images/izanagi.webp",
+    "affinities": {
+      "Elec": "Rs",
+      "Wind": "Wk",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 3,
+      "Ma": 2,
+      "En": 2,
+      "Ag": 3,
+      "Lu": 2
+    }
+  },
+  {
+    "name": "Izanagi-no-Okami",
+    "slug": "izanagi-no-okami",
+    "url": "https://www.ibunroku.com/p4g/personas/izanagi-no-okami",
+    "arcana": "World",
+    "level": 91,
+    "image": "output/images/izanagi_no_okami.webp",
+    "affinities": {
+      "Phys": "Rs",
+      "Fire": "Rs",
+      "Ice": "Rs",
+      "Elec": "Rs",
+      "Wind": "Rs"
+    },
+    "stats": {
+      "St": 80,
+      "Ma": 80,
+      "En": 80,
+      "Ag": 80,
+      "Lu": 80
+    }
+  },
+  {
+    "name": "Jack Frost",
+    "slug": "jack-frost",
+    "url": "https://www.ibunroku.com/p4g/personas/jack-frost",
+    "arcana": "Magician",
+    "level": 16,
+    "image": "output/images/jack_frost.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Ice": "Dr"
+    },
+    "stats": {
+      "St": 10,
+      "Ma": 14,
+      "En": 12,
+      "Ag": 11,
+      "Lu": 8
+    }
+  },
+  {
+    "name": "Jatayu",
+    "slug": "jatayu",
+    "url": "https://www.ibunroku.com/p4g/personas/jatayu",
+    "arcana": "Sun",
+    "level": 61,
+    "image": "output/images/jatayu.webp",
+    "affinities": {
+      "Elec": "Wk",
+      "Wind": "Nu"
+    },
+    "stats": {
+      "St": 38,
+      "Ma": 44,
+      "En": 35,
+      "Ag": 48,
+      "Lu": 25
+    }
+  },
+  {
+    "name": "Jinn",
+    "slug": "jinn",
+    "url": "https://www.ibunroku.com/p4g/personas/jinn",
+    "arcana": "Magician",
+    "level": 62,
+    "image": "output/images/jinn.webp",
+    "affinities": {
+      "Fire": "Nu",
+      "Elec": "Wk"
+    },
+    "stats": {
+      "St": 37,
+      "Ma": 51,
+      "En": 38,
+      "Ag": 39,
+      "Lu": 28
+    }
+  },
+  {
+    "name": "Jiraiya",
+    "slug": "jiraiya",
+    "url": "https://www.ibunroku.com/p4g/personas/jiraiya",
+    "arcana": "Magician",
+    "level": 3,
+    "image": "output/images/jiraiya.webp",
+    "affinities": {
+      "Elec": "Wk",
+      "Wind": "Rs"
+    },
+    "stats": {
+      "St": 4,
+      "Ma": 3,
+      "En": 2,
+      "Ag": 4,
+      "Lu": 4
+    }
+  },
+  {
+    "name": "Kaguya",
+    "slug": "kaguya",
+    "url": "https://www.ibunroku.com/p4g/personas/kaguya",
+    "arcana": "Aeon",
+    "level": 74,
+    "image": "output/images/kaguya.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Wind": "Rs",
+      "Dark": "Dr",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 37,
+      "Ma": 65,
+      "En": 36,
+      "Ag": 44,
+      "Lu": 47
+    }
+  },
+  {
+    "name": "Kaiwan",
+    "slug": "kaiwan",
+    "url": "https://www.ibunroku.com/p4g/personas/kaiwan",
+    "arcana": "Star",
+    "level": 24,
+    "image": "output/images/kaiwan.webp",
+    "affinities": {
+      "Phys": "Wk",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 16,
+      "Ma": 23,
+      "En": 14,
+      "Ag": 15,
+      "Lu": 11
+    }
+  },
+  {
+    "name": "Kali",
+    "slug": "kali",
+    "url": "https://www.ibunroku.com/p4g/personas/kali",
+    "arcana": "Strength",
+    "level": 50,
+    "image": "output/images/kali.webp",
+    "affinities": {
+      "Ice": "Dr",
+      "Elec": "Wk",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 37,
+      "Ma": 25,
+      "En": 36,
+      "Ag": 35,
+      "Lu": 27
+    }
+  },
+  {
+    "name": "Kamui",
+    "slug": "kamui",
+    "url": "https://www.ibunroku.com/p4g/personas/kamui",
+    "arcana": "Star",
+    "level": 1,
+    "image": "output/images/kamui.webp",
+    "affinities": {
+      "Ice": "Dr",
+      "Elec": "Wk",
+      "Wind": "Rs",
+      "Almi": "Rs"
+    },
+    "stats": {
+      "St": 2,
+      "Ma": 2,
+      "En": 2,
+      "Ag": 2,
+      "Lu": 2
+    }
+  },
+  {
+    "name": "Kamui-Moshiri",
+    "slug": "kamui-moshiri",
+    "url": "https://www.ibunroku.com/p4g/personas/kamui-moshiri",
+    "arcana": "Star",
+    "level": 1,
+    "image": "output/images/kamui_moshiri.webp",
+    "affinities": {
+      "Ice": "Nu",
+      "Elec": "Wk",
+      "Wind": "Dr",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 2,
+      "Ma": 2,
+      "En": 2,
+      "Ag": 2,
+      "Lu": 2
+    }
+  },
+  {
+    "name": "Kanzeon",
+    "slug": "kanzeon",
+    "url": "https://www.ibunroku.com/p4g/personas/kanzeon",
+    "arcana": "Lovers",
+    "level": 1,
+    "image": "output/images/kanzeon.webp",
+    "affinities": {},
+    "stats": {
+      "St": 2,
+      "Ma": 2,
+      "En": 2,
+      "Ag": 2,
+      "Lu": 2
+    }
+  },
+  {
+    "name": "Kartikeya",
+    "slug": "kartikeya",
+    "url": "https://www.ibunroku.com/p4g/personas/kartikeya",
+    "arcana": "Star",
+    "level": 67,
+    "image": "output/images/kartikeya.webp",
+    "affinities": {
+      "Elec": "Rp"
+    },
+    "stats": {
+      "St": 47,
+      "Ma": 39,
+      "En": 40,
+      "Ag": 44,
+      "Lu": 38
+    }
+  },
+  {
+    "name": "Kikuri-Hime",
+    "slug": "kikuri-hime",
+    "url": "https://www.ibunroku.com/p4g/personas/kikuri-hime",
+    "arcana": "Priestess",
+    "level": 48,
+    "image": "output/images/kikuri_hime.webp",
+    "affinities": {
+      "Fire": "Dr",
+      "Elec": "Rs",
+      "Almi": "Wk"
+    },
+    "stats": {
+      "St": 26,
+      "Ma": 36,
+      "En": 28,
+      "Ag": 31,
+      "Lu": 30
+    }
+  },
+  {
+    "name": "Kin-ki",
+    "slug": "kin-ki",
+    "url": "https://www.ibunroku.com/p4g/personas/kin-ki",
+    "arcana": "Chariot",
+    "level": 54,
+    "image": "output/images/kin_ki.webp",
+    "affinities": {
+      "Phys": "Dr"
+    },
+    "stats": {
+      "St": 41,
+      "Ma": 25,
+      "En": 53,
+      "Ag": 23,
+      "Lu": 27
+    }
+  },
+  {
+    "name": "King Frost",
+    "slug": "king-frost",
+    "url": "https://www.ibunroku.com/p4g/personas/king-frost",
+    "arcana": "Emperor",
+    "level": 22,
+    "image": "output/images/king_frost.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Ice": "Nu"
+    },
+    "stats": {
+      "St": 11,
+      "Ma": 20,
+      "En": 17,
+      "Ag": 13,
+      "Lu": 12
+    }
+  },
+  {
+    "name": "Kingu",
+    "slug": "kingu",
+    "url": "https://www.ibunroku.com/p4g/personas/kingu",
+    "arcana": "Aeon",
+    "level": 58,
+    "image": "output/images/kingu.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Elec": "Rs",
+      "Almi": "Rs"
+    },
+    "stats": {
+      "St": 38,
+      "Ma": 44,
+      "En": 38,
+      "Ag": 30,
+      "Lu": 31
+    }
+  },
+  {
+    "name": "Kintoki-Douji",
+    "slug": "kintoki-douji",
+    "url": "https://www.ibunroku.com/p4g/personas/kintoki-douji",
+    "arcana": "Star",
+    "level": 35,
+    "image": "output/images/kintoki_douji.webp",
+    "affinities": {
+      "Ice": "Rs",
+      "Elec": "Wk"
+    },
+    "stats": {
+      "St": 24,
+      "Ma": 25,
+      "En": 20,
+      "Ag": 22,
+      "Lu": 16
+    }
+  },
+  {
+    "name": "Kohryu",
+    "slug": "kohryu",
+    "url": "https://www.ibunroku.com/p4g/personas/kohryu",
+    "arcana": "Hierophant",
+    "level": 76,
+    "image": "output/images/kohryu.webp",
+    "affinities": {
+      "Elec": "Rp",
+      "Dark": "Dr"
+    },
+    "stats": {
+      "St": 50,
+      "Ma": 53,
+      "En": 54,
+      "Ag": 40,
+      "Lu": 38
+    }
+  },
+  {
+    "name": "Konohana Sakuya",
+    "slug": "konohana-sakuya",
+    "url": "https://www.ibunroku.com/p4g/personas/konohana-sakuya",
+    "arcana": "Priestess",
+    "level": 15,
+    "image": "output/images/konohana_sakuya.webp",
+    "affinities": {
+      "Fire": "Rs",
+      "Ice": "Wk"
+    },
+    "stats": {
+      "St": 8,
+      "Ma": 15,
+      "En": 11,
+      "Ag": 8,
+      "Lu": 10
+    }
+  },
+  {
+    "name": "Kouzeon",
+    "slug": "kouzeon",
+    "url": "https://www.ibunroku.com/p4g/personas/kouzeon",
+    "arcana": "Lovers",
+    "level": 1,
+    "image": "output/images/kouzeon.webp",
+    "affinities": {},
+    "stats": {
+      "St": 2,
+      "Ma": 2,
+      "En": 2,
+      "Ag": 2,
+      "Lu": 2
+    }
+  },
+  {
+    "name": "Kumbhanda",
+    "slug": "kumbhanda",
+    "url": "https://www.ibunroku.com/p4g/personas/kumbhanda",
+    "arcana": "Jester",
+    "level": 55,
+    "image": "output/images/kumbhanda.webp",
+    "affinities": {
+      "Fire": "Nu",
+      "Wind": "Wk"
+    },
+    "stats": {
+      "St": 37,
+      "Ma": 36,
+      "En": 35,
+      "Ag": 44,
+      "Lu": 20
+    }
+  },
+  {
+    "name": "Kurama Tengu",
+    "slug": "kurama-tengu",
+    "url": "https://www.ibunroku.com/p4g/personas/kurama-tengu",
+    "arcana": "Hermit",
+    "level": 48,
+    "image": "output/images/kurama_tengu.webp",
+    "affinities": {
+      "Fire": "Rs",
+      "Elec": "Wk",
+      "Wind": "Nu"
+    },
+    "stats": {
+      "St": 30,
+      "Ma": 34,
+      "En": 28,
+      "Ag": 38,
+      "Lu": 21
+    }
+  },
+  {
+    "name": "Kushinada",
+    "slug": "kushinada",
+    "url": "https://www.ibunroku.com/p4g/personas/kushinada",
+    "arcana": "Aeon",
+    "level": 44,
+    "image": "output/images/kushinada.webp",
+    "affinities": {
+      "Dark": "Dr",
+      "Almi": "Wk"
+    },
+    "stats": {
+      "St": 25,
+      "Ma": 32,
+      "En": 27,
+      "Ag": 24,
+      "Lu": 31
+    }
+  },
+  {
+    "name": "Kusi Mitama",
+    "slug": "kusi-mitama",
+    "url": "https://www.ibunroku.com/p4g/personas/kusi-mitama",
+    "arcana": "Strength",
+    "level": 28,
+    "image": "output/images/kusi_mitama.webp",
+    "affinities": {
+      "Elec": "Wk",
+      "Wind": "Dr"
+    },
+    "stats": {
+      "St": 18,
+      "Ma": 21,
+      "En": 12,
+      "Ag": 19,
+      "Lu": 21
+    }
+  },
+  {
+    "name": "Lachesis",
+    "slug": "lachesis",
+    "url": "https://www.ibunroku.com/p4g/personas/lachesis",
+    "arcana": "Fortune",
+    "level": 51,
+    "image": "output/images/lachesis.webp",
+    "affinities": {
+      "Ice": "Rs",
+      "Elec": "Wk",
+      "Wind": "Dr"
+    },
+    "stats": {
+      "St": 31,
+      "Ma": 39,
+      "En": 25,
+      "Ag": 34,
+      "Lu": 31
+    }
+  },
+  {
+    "name": "Laksmi",
+    "slug": "laksmi",
+    "url": "https://www.ibunroku.com/p4g/personas/laksmi",
+    "arcana": "Aeon",
+    "level": 65,
+    "image": "output/images/laksmi.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Ice": "Dr",
+      "Dark": "Dr"
+    },
+    "stats": {
+      "St": 36,
+      "Ma": 50,
+      "En": 37,
+      "Ag": 38,
+      "Lu": 41
+    }
+  },
+  {
+    "name": "Lamia",
+    "slug": "lamia",
+    "url": "https://www.ibunroku.com/p4g/personas/lamia",
+    "arcana": "Hermit",
+    "level": 26,
+    "image": "output/images/lamia.webp",
+    "affinities": {
+      "Fire": "Rs",
+      "Elec": "Rs",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 16,
+      "Ma": 23,
+      "En": 12,
+      "Ag": 20,
+      "Lu": 14
+    }
+  },
+  {
+    "name": "Leanan Sidhe",
+    "slug": "leanan-sidhe",
+    "url": "https://www.ibunroku.com/p4g/personas/leanan-sidhe",
+    "arcana": "Lovers",
+    "level": 42,
+    "image": "output/images/leanan_sidhe.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Ice": "Dr",
+      "Wind": "Rs"
+    },
+    "stats": {
+      "St": 19,
+      "Ma": 33,
+      "En": 26,
+      "Ag": 29,
+      "Lu": 26
+    }
+  },
+  {
+    "name": "Legion",
+    "slug": "legion",
+    "url": "https://www.ibunroku.com/p4g/personas/legion",
+    "arcana": "Fool",
+    "level": 21,
+    "image": "output/images/legion.webp",
+    "affinities": {
+      "Fire": "Rs",
+      "Ice": "Rs",
+      "Dark": "Wk",
+      "Almi": "Rs"
+    },
+    "stats": {
+      "St": 14,
+      "Ma": 14,
+      "En": 18,
+      "Ag": 13,
+      "Lu": 11
+    }
+  },
+  {
+    "name": "Lilim",
+    "slug": "lilim",
+    "url": "https://www.ibunroku.com/p4g/personas/lilim",
+    "arcana": "Devil",
+    "level": 10,
+    "image": "output/images/lilim.webp",
+    "affinities": {
+      "Dark": "Wk",
+      "Almi": "Rs"
+    },
+    "stats": {
+      "St": 4,
+      "Ma": 11,
+      "En": 5,
+      "Ag": 9,
+      "Lu": 8
+    }
+  },
+  {
+    "name": "Lilith",
+    "slug": "lilith",
+    "url": "https://www.ibunroku.com/p4g/personas/lilith",
+    "arcana": "Devil",
+    "level": 53,
+    "image": "output/images/lilith.webp",
+    "affinities": {
+      "Elec": "Rp",
+      "Dark": "Wk",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 30,
+      "Ma": 43,
+      "En": 30,
+      "Ag": 36,
+      "Lu": 27
+    }
+  },
+  {
+    "name": "Loa",
+    "slug": "loa",
+    "url": "https://www.ibunroku.com/p4g/personas/loa",
+    "arcana": "Jester",
+    "level": 40,
+    "image": "output/images/loa.webp",
+    "affinities": {
+      "Wind": "Rs",
+      "Dark": "Wk",
+      "Almi": "Rs"
+    },
+    "stats": {
+      "St": 25,
+      "Ma": 30,
+      "En": 28,
+      "Ag": 23,
+      "Lu": 21
+    }
+  },
+  {
+    "name": "Loki",
+    "slug": "loki",
+    "url": "https://www.ibunroku.com/p4g/personas/loki",
+    "arcana": "Fool",
+    "level": 64,
+    "image": "output/images/loki.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Ice": "Nu",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 48,
+      "Ma": 50,
+      "En": 31,
+      "Ag": 47,
+      "Lu": 23
+    }
+  },
+  {
+    "name": "Lucifer",
+    "slug": "lucifer",
+    "url": "https://www.ibunroku.com/p4g/personas/lucifer",
+    "arcana": "Judgement",
+    "level": 93,
+    "image": "output/images/lucifer.webp",
+    "affinities": {
+      "Phys": "Rs",
+      "Dark": "Wk",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 62,
+      "Ma": 69,
+      "En": 61,
+      "Ag": 52,
+      "Lu": 51
+    }
+  },
+  {
+    "name": "Mada",
+    "slug": "mada",
+    "url": "https://www.ibunroku.com/p4g/personas/mada",
+    "arcana": "Magician",
+    "level": 78,
+    "image": "output/images/mada.webp",
+    "affinities": {
+      "Fire": "Nu",
+      "Ice": "Wk"
+    },
+    "stats": {
+      "St": 45,
+      "Ma": 63,
+      "En": 52,
+      "Ag": 38,
+      "Lu": 43
+    }
+  },
+  {
+    "name": "Magatsu-Izanagi",
+    "slug": "magatsu-izanagi",
+    "url": "https://www.ibunroku.com/p4g/personas/magatsu-izanagi",
+    "arcana": "Fool",
+    "level": 1,
+    "image": "output/images/magatsu_izanagi.webp",
+    "affinities": {},
+    "stats": {
+      "St": 1,
+      "Ma": 3,
+      "En": 2,
+      "Ag": 1,
+      "Lu": 3
+    }
+  },
+  {
+    "name": "Magatsu-Izanagi",
+    "slug": "magatsu-izanagi-249",
+    "url": "https://www.ibunroku.com/p4g/personas/magatsu-izanagi-249",
+    "arcana": "Jester",
+    "level": 77,
+    "image": "output/images/magatsu_izanagi.webp",
+    "affinities": {
+      "Dark": "Dr",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 60,
+      "Ma": 58,
+      "En": 55,
+      "Ag": 50,
+      "Lu": 20
+    }
+  },
+  {
+    "name": "Mahakala",
+    "slug": "mahakala",
+    "url": "https://www.ibunroku.com/p4g/personas/mahakala",
+    "arcana": "Death",
+    "level": 78,
+    "image": "output/images/mahakala.webp",
+    "affinities": {
+      "Fire": "Nu",
+      "Elec": "Rp",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 58,
+      "Ma": 38,
+      "En": 57,
+      "Ag": 49,
+      "Lu": 39
+    }
+  },
+  {
+    "name": "Makami",
+    "slug": "makami",
+    "url": "https://www.ibunroku.com/p4g/personas/makami",
+    "arcana": "Hanged Man",
+    "level": 27,
+    "image": "output/images/makami.webp",
+    "affinities": {
+      "Fire": "Dr",
+      "Ice": "Wk",
+      "Wind": "Rs",
+      "Dark": "Wk",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 16,
+      "Ma": 21,
+      "En": 13,
+      "Ag": 22,
+      "Lu": 16
+    }
+  },
+  {
+    "name": "Mara",
+    "slug": "mara",
+    "url": "https://www.ibunroku.com/p4g/personas/mara",
+    "arcana": "Tower",
+    "level": 62,
+    "image": "output/images/mara.webp",
+    "affinities": {
+      "Fire": "Nu",
+      "Wind": "Rs",
+      "Dark": "Wk",
+      "Almi": "Rp"
+    },
+    "stats": {
+      "St": 44,
+      "Ma": 35,
+      "En": 48,
+      "Ag": 36,
+      "Lu": 30
+    }
+  },
+  {
+    "name": "Masakado",
+    "slug": "masakado",
+    "url": "https://www.ibunroku.com/p4g/personas/masakado",
+    "arcana": "Tower",
+    "level": 69,
+    "image": "output/images/masakado.webp",
+    "affinities": {
+      "Phys": "Dr",
+      "Fire": "Dr",
+      "Elec": "Wk",
+      "Almi": "Wk"
+    },
+    "stats": {
+      "St": 51,
+      "Ma": 32,
+      "En": 45,
+      "Ag": 46,
+      "Lu": 40
+    }
+  },
+  {
+    "name": "Matador",
+    "slug": "matador",
+    "url": "https://www.ibunroku.com/p4g/personas/matador",
+    "arcana": "Death",
+    "level": 24,
+    "image": "output/images/matador.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Almi": "Rp"
+    },
+    "stats": {
+      "St": 17,
+      "Ma": 10,
+      "En": 16,
+      "Ag": 25,
+      "Lu": 11
+    }
+  },
+  {
+    "name": "Melchizedek",
+    "slug": "melchizedek",
+    "url": "https://www.ibunroku.com/p4g/personas/melchizedek",
+    "arcana": "Justice",
+    "level": 66,
+    "image": "output/images/melchizedek.webp",
+    "affinities": {
+      "Dark": "Dr",
+      "Almi": "Wk"
+    },
+    "stats": {
+      "St": 51,
+      "Ma": 46,
+      "En": 46,
+      "Ag": 34,
+      "Lu": 28
+    }
+  },
+  {
+    "name": "Metatron",
+    "slug": "metatron",
+    "url": "https://www.ibunroku.com/p4g/personas/metatron",
+    "arcana": "Judgement",
+    "level": 83,
+    "image": "output/images/metatron.webp",
+    "affinities": {
+      "Fire": "Dr",
+      "Dark": "Rp",
+      "Almi": "Wk"
+    },
+    "stats": {
+      "St": 54,
+      "Ma": 55,
+      "En": 53,
+      "Ag": 46,
+      "Lu": 48
+    }
+  },
+  {
+    "name": "Michael",
+    "slug": "michael",
+    "url": "https://www.ibunroku.com/p4g/personas/michael",
+    "arcana": "Judgement",
+    "level": 72,
+    "image": "output/images/michael.webp",
+    "affinities": {
+      "Phys": "Rs",
+      "Fire": "Dr",
+      "Wind": "Wk",
+      "Dark": "Dr"
+    },
+    "stats": {
+      "St": 45,
+      "Ma": 42,
+      "En": 43,
+      "Ag": 48,
+      "Lu": 45
+    }
+  },
+  {
+    "name": "Mithra",
+    "slug": "mithra",
+    "url": "https://www.ibunroku.com/p4g/personas/mithra",
+    "arcana": "Temperance",
+    "level": 31,
+    "image": "output/images/mithra.webp",
+    "affinities": {
+      "Ice": "Dr",
+      "Elec": "Wk",
+      "Dark": "Dr"
+    },
+    "stats": {
+      "St": 22,
+      "Ma": 26,
+      "En": 21,
+      "Ag": 16,
+      "Lu": 15
+    }
+  },
+  {
+    "name": "Mokoi",
+    "slug": "mokoi",
+    "url": "https://www.ibunroku.com/p4g/personas/mokoi",
+    "arcana": "Death",
+    "level": 14,
+    "image": "output/images/mokoi.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Ice": "Dr"
+    },
+    "stats": {
+      "St": 13,
+      "Ma": 7,
+      "En": 9,
+      "Ag": 11,
+      "Lu": 9
+    }
+  },
+  {
+    "name": "Mot",
+    "slug": "mot",
+    "url": "https://www.ibunroku.com/p4g/personas/mot",
+    "arcana": "Death",
+    "level": 46,
+    "image": "output/images/mot.webp",
+    "affinities": {
+      "Elec": "Dr",
+      "Wind": "Wk",
+      "Almi": "Rp"
+    },
+    "stats": {
+      "St": 32,
+      "Ma": 38,
+      "En": 30,
+      "Ag": 24,
+      "Lu": 21
+    }
+  },
+  {
+    "name": "Mother Harlot",
+    "slug": "mother-harlot",
+    "url": "https://www.ibunroku.com/p4g/personas/mother-harlot",
+    "arcana": "Empress",
+    "level": 60,
+    "image": "output/images/mother_harlot.webp",
+    "affinities": {
+      "Ice": "Rs",
+      "Elec": "Rp",
+      "Wind": "Wk",
+      "Dark": "Wk",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 38,
+      "Ma": 47,
+      "En": 37,
+      "Ag": 29,
+      "Lu": 36
+    }
+  },
+  {
+    "name": "Mothman",
+    "slug": "mothman",
+    "url": "https://www.ibunroku.com/p4g/personas/mothman",
+    "arcana": "Hermit",
+    "level": 33,
+    "image": "output/images/mothman.webp",
+    "affinities": {
+      "Fire": "Rs",
+      "Ice": "Wk",
+      "Elec": "Rp"
+    },
+    "stats": {
+      "St": 20,
+      "Ma": 23,
+      "En": 17,
+      "Ag": 28,
+      "Lu": 18
+    }
+  },
+  {
+    "name": "Narasimha",
+    "slug": "narasimha",
+    "url": "https://www.ibunroku.com/p4g/personas/narasimha",
+    "arcana": "Sun",
+    "level": 47,
+    "image": "output/images/narasimha.webp",
+    "affinities": {
+      "Phys": "Rs",
+      "Fire": "Wk",
+      "Dark": "Dr"
+    },
+    "stats": {
+      "St": 29,
+      "Ma": 27,
+      "En": 30,
+      "Ag": 35,
+      "Lu": 27
+    }
+  },
+  {
+    "name": "Narcissus",
+    "slug": "narcissus",
+    "url": "https://www.ibunroku.com/p4g/personas/narcissus",
+    "arcana": "Aeon",
+    "level": 24,
+    "image": "output/images/narcissus.webp",
+    "affinities": {
+      "Phys": "Wk",
+      "Ice": "Rs",
+      "Elec": "Rs",
+      "Wind": "Rs"
+    },
+    "stats": {
+      "St": 13,
+      "Ma": 18,
+      "En": 11,
+      "Ag": 16,
+      "Lu": 21
+    }
+  },
+  {
+    "name": "Nata Taishi",
+    "slug": "nata-taishi",
+    "url": "https://www.ibunroku.com/p4g/personas/nata-taishi",
+    "arcana": "Chariot",
+    "level": 6,
+    "image": "output/images/nata_taishi.webp",
+    "affinities": {
+      "Fire": "Rs",
+      "Elec": "Wk"
+    },
+    "stats": {
+      "St": 6,
+      "Ma": 2,
+      "En": 6,
+      "Ag": 7,
+      "Lu": 4
+    }
+  },
+  {
+    "name": "Nebiros",
+    "slug": "nebiros",
+    "url": "https://www.ibunroku.com/p4g/personas/nebiros",
+    "arcana": "Hermit",
+    "level": 63,
+    "image": "output/images/nebiros.webp",
+    "affinities": {
+      "Fire": "Rp",
+      "Elec": "Wk",
+      "Wind": "Rs",
+      "Dark": "Wk",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 38,
+      "Ma": 47,
+      "En": 39,
+      "Ag": 40,
+      "Lu": 32
+    }
+  },
+  {
+    "name": "Neko Shogun",
+    "slug": "neko-shogun",
+    "url": "https://www.ibunroku.com/p4g/personas/neko-shogun",
+    "arcana": "Star",
+    "level": 32,
+    "image": "output/images/neko_shogun.webp",
+    "affinities": {
+      "Phys": "Rs",
+      "Elec": "Rp",
+      "Wind": "Wk",
+      "Dark": "Dr",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 26,
+      "Ma": 20,
+      "En": 19,
+      "Ag": 23,
+      "Lu": 15
+    }
+  },
+  {
+    "name": "Niddhoggr",
+    "slug": "niddhoggr",
+    "url": "https://www.ibunroku.com/p4g/personas/niddhoggr",
+    "arcana": "Hermit",
+    "level": 55,
+    "image": "output/images/niddhoggr.webp",
+    "affinities": {
+      "Ice": "Dr",
+      "Dark": "Wk",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 23,
+      "Ma": 41,
+      "En": 35,
+      "Ag": 31,
+      "Lu": 42
+    }
+  },
+  {
+    "name": "Nigi Mitama",
+    "slug": "nigi-mitama",
+    "url": "https://www.ibunroku.com/p4g/personas/nigi-mitama",
+    "arcana": "Temperance",
+    "level": 23,
+    "image": "output/images/nigi_mitama.webp",
+    "affinities": {
+      "Elec": "Wk",
+      "Wind": "Dr"
+    },
+    "stats": {
+      "St": 15,
+      "Ma": 16,
+      "En": 14,
+      "Ag": 15,
+      "Lu": 16
+    }
+  },
+  {
+    "name": "Norn",
+    "slug": "norn",
+    "url": "https://www.ibunroku.com/p4g/personas/norn",
+    "arcana": "Fortune",
+    "level": 72,
+    "image": "output/images/norn.webp",
+    "affinities": {
+      "Ice": "Rs",
+      "Elec": "Wk",
+      "Wind": "Nu"
+    },
+    "stats": {
+      "St": 42,
+      "Ma": 53,
+      "En": 31,
+      "Ag": 48,
+      "Lu": 46
+    }
+  },
+  {
+    "name": "Nozuchi",
+    "slug": "nozuchi",
+    "url": "https://www.ibunroku.com/p4g/personas/nozuchi",
+    "arcana": "Moon",
+    "level": 27,
+    "image": "output/images/nozuchi.webp",
+    "affinities": {
+      "Ice": "Wk",
+      "Elec": "Rp"
+    },
+    "stats": {
+      "St": 26,
+      "Ma": 13,
+      "En": 19,
+      "Ag": 15,
+      "Lu": 15
+    }
+  },
+  {
+    "name": "Obariyon",
+    "slug": "obariyon",
+    "url": "https://www.ibunroku.com/p4g/personas/obariyon",
+    "arcana": "Fool",
+    "level": 13,
+    "image": "output/images/obariyon.webp",
+    "affinities": {
+      "Phys": "Rs",
+      "Fire": "Rs"
+    },
+    "stats": {
+      "St": 11,
+      "Ma": 6,
+      "En": 11,
+      "Ag": 9,
+      "Lu": 9
+    }
+  },
+  {
+    "name": "Oberon",
+    "slug": "oberon",
+    "url": "https://www.ibunroku.com/p4g/personas/oberon",
+    "arcana": "Emperor",
+    "level": 12,
+    "image": "output/images/oberon.webp",
+    "affinities": {
+      "Fire": "Rs",
+      "Elec": "Dr",
+      "Wind": "Wk"
+    },
+    "stats": {
+      "St": 10,
+      "Ma": 12,
+      "En": 8,
+      "Ag": 8,
+      "Lu": 5
+    }
+  },
+  {
+    "name": "Odin",
+    "slug": "odin",
+    "url": "https://www.ibunroku.com/p4g/personas/odin",
+    "arcana": "Emperor",
+    "level": 74,
+    "image": "output/images/odin.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Elec": "Dr",
+      "Wind": "Nu"
+    },
+    "stats": {
+      "St": 48,
+      "Ma": 60,
+      "En": 42,
+      "Ag": 39,
+      "Lu": 43
+    }
+  },
+  {
+    "name": "Okami",
+    "slug": "okami",
+    "url": "https://www.ibunroku.com/p4g/personas/okami",
+    "arcana": "Fool",
+    "level": 99,
+    "image": "output/images/okami.webp",
+    "affinities": {},
+    "stats": {
+      "St": 16,
+      "Ma": 16,
+      "En": 16,
+      "Ag": 16,
+      "Lu": 16
+    }
+  },
+  {
+    "name": "Omoikane",
+    "slug": "omoikane",
+    "url": "https://www.ibunroku.com/p4g/personas/omoikane",
+    "arcana": "Hierophant",
+    "level": 7,
+    "image": "output/images/omoikane.webp",
+    "affinities": {
+      "Ice": "Wk",
+      "Elec": "Rs"
+    },
+    "stats": {
+      "St": 5,
+      "Ma": 8,
+      "En": 5,
+      "Ag": 4,
+      "Lu": 6
+    }
+  },
+  {
+    "name": "Ongyo-ki",
+    "slug": "ongyo-ki",
+    "url": "https://www.ibunroku.com/p4g/personas/ongyo-ki",
+    "arcana": "Hermit",
+    "level": 82,
+    "image": "output/images/ongyo_ki.webp",
+    "affinities": {
+      "Elec": "Dr",
+      "Wind": "Nu",
+      "Dark": "Wk",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 59,
+      "Ma": 64,
+      "En": 59,
+      "Ag": 47,
+      "Lu": 24
+    }
+  },
+  {
+    "name": "Oni",
+    "slug": "oni",
+    "url": "https://www.ibunroku.com/p4g/personas/oni",
+    "arcana": "Strength",
+    "level": 30,
+    "image": "output/images/oni.webp",
+    "affinities": {
+      "Phys": "Rs",
+      "Fire": "Dr"
+    },
+    "stats": {
+      "St": 25,
+      "Ma": 12,
+      "En": 26,
+      "Ag": 18,
+      "Lu": 16
+    }
+  },
+  {
+    "name": "Orobas",
+    "slug": "orobas",
+    "url": "https://www.ibunroku.com/p4g/personas/orobas",
+    "arcana": "Magician",
+    "level": 8,
+    "image": "output/images/orobas.webp",
+    "affinities": {
+      "Fire": "Rs",
+      "Ice": "Wk"
+    },
+    "stats": {
+      "St": 4,
+      "Ma": 10,
+      "En": 6,
+      "Ag": 7,
+      "Lu": 4
+    }
+  },
+  {
+    "name": "Orthrus",
+    "slug": "orthrus",
+    "url": "https://www.ibunroku.com/p4g/personas/orthrus",
+    "arcana": "Hanged Man",
+    "level": 39,
+    "image": "output/images/orthrus.webp",
+    "affinities": {
+      "Fire": "Dr",
+      "Ice": "Wk"
+    },
+    "stats": {
+      "St": 34,
+      "Ma": 21,
+      "En": 28,
+      "Ag": 23,
+      "Lu": 18
+    }
+  },
+  {
+    "name": "Ose",
+    "slug": "ose",
+    "url": "https://www.ibunroku.com/p4g/personas/ose",
+    "arcana": "Fool",
+    "level": 31,
+    "image": "output/images/ose.webp",
+    "affinities": {
+      "Phys": "Rs",
+      "Wind": "Dr",
+      "Dark": "Wk"
+    },
+    "stats": {
+      "St": 28,
+      "Ma": 12,
+      "En": 20,
+      "Ag": 25,
+      "Lu": 15
+    }
+  },
+  {
+    "name": "Oukuninushi",
+    "slug": "oukuninushi",
+    "url": "https://www.ibunroku.com/p4g/personas/oukuninushi",
+    "arcana": "Emperor",
+    "level": 41,
+    "image": "output/images/oukuninushi.webp",
+    "affinities": {
+      "Elec": "Rp",
+      "Wind": "Wk"
+    },
+    "stats": {
+      "St": 29,
+      "Ma": 34,
+      "En": 25,
+      "Ag": 20,
+      "Lu": 22
+    }
+  },
+  {
+    "name": "Pabilsag",
+    "slug": "pabilsag",
+    "url": "https://www.ibunroku.com/p4g/personas/pabilsag",
+    "arcana": "Emperor",
+    "level": 51,
+    "image": "output/images/pabilsag.webp",
+    "affinities": {
+      "Fire": "Dr",
+      "Ice": "Wk",
+      "Dark": "Wk",
+      "Almi": "Rp"
+    },
+    "stats": {
+      "St": 38,
+      "Ma": 29,
+      "En": 30,
+      "Ag": 33,
+      "Lu": 30
+    }
+  },
+  {
+    "name": "Pale Rider",
+    "slug": "pale-rider",
+    "url": "https://www.ibunroku.com/p4g/personas/pale-rider",
+    "arcana": "Jester",
+    "level": 34,
+    "image": "output/images/pale_rider.webp",
+    "affinities": {
+      "Wind": "Rs",
+      "Dark": "Wk",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 25,
+      "Ma": 24,
+      "En": 21,
+      "Ag": 24,
+      "Lu": 15
+    }
+  },
+  {
+    "name": "Parvati",
+    "slug": "parvati",
+    "url": "https://www.ibunroku.com/p4g/personas/parvati",
+    "arcana": "Priestess",
+    "level": 37,
+    "image": "output/images/parvati.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Ice": "Dr"
+    },
+    "stats": {
+      "St": 20,
+      "Ma": 29,
+      "En": 17,
+      "Ag": 25,
+      "Lu": 27
+    }
+  },
+  {
+    "name": "Pazuzu",
+    "slug": "pazuzu",
+    "url": "https://www.ibunroku.com/p4g/personas/pazuzu",
+    "arcana": "Devil",
+    "level": 37,
+    "image": "output/images/pazuzu.webp",
+    "affinities": {
+      "Ice": "Rp",
+      "Dark": "Wk"
+    },
+    "stats": {
+      "St": 27,
+      "Ma": 15,
+      "En": 28,
+      "Ag": 29,
+      "Lu": 19
+    }
+  },
+  {
+    "name": "Phoenix",
+    "slug": "phoenix",
+    "url": "https://www.ibunroku.com/p4g/personas/phoenix",
+    "arcana": "Sun",
+    "level": 20,
+    "image": "output/images/phoenix.webp",
+    "affinities": {
+      "Ice": "Wk",
+      "Elec": "Dr"
+    },
+    "stats": {
+      "St": 9,
+      "Ma": 15,
+      "En": 9,
+      "Ag": 20,
+      "Lu": 14
+    }
+  },
+  {
+    "name": "Pixie",
+    "slug": "pixie",
+    "url": "https://www.ibunroku.com/p4g/personas/pixie",
+    "arcana": "Magician",
+    "level": 2,
+    "image": "output/images/pixie.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Wind": "Rs"
+    },
+    "stats": {
+      "St": 2,
+      "Ma": 3,
+      "En": 2,
+      "Ag": 4,
+      "Lu": 2
+    }
+  },
+  {
+    "name": "Power",
+    "slug": "power",
+    "url": "https://www.ibunroku.com/p4g/personas/power",
+    "arcana": "Justice",
+    "level": 27,
+    "image": "output/images/power.webp",
+    "affinities": {
+      "Fire": "Rs",
+      "Elec": "Wk",
+      "Wind": "Dr",
+      "Almi": "Wk"
+    },
+    "stats": {
+      "St": 21,
+      "Ma": 20,
+      "En": 11,
+      "Ag": 17,
+      "Lu": 19
+    }
+  },
+  {
+    "name": "Principality",
+    "slug": "principality",
+    "url": "https://www.ibunroku.com/p4g/personas/principality",
+    "arcana": "Justice",
+    "level": 19,
+    "image": "output/images/principality.webp",
+    "affinities": {
+      "Dark": "Dr",
+      "Almi": "Wk"
+    },
+    "stats": {
+      "St": 11,
+      "Ma": 15,
+      "En": 10,
+      "Ag": 18,
+      "Lu": 10
+    }
+  },
+  {
+    "name": "Pyro Jack",
+    "slug": "pyro-jack",
+    "url": "https://www.ibunroku.com/p4g/personas/pyro-jack",
+    "arcana": "Magician",
+    "level": 32,
+    "image": "output/images/pyro_jack.webp",
+    "affinities": {
+      "Fire": "Nu",
+      "Ice": "Wk"
+    },
+    "stats": {
+      "St": 16,
+      "Ma": 26,
+      "En": 19,
+      "Ag": 22,
+      "Lu": 20
+    }
+  },
+  {
+    "name": "Queen Mab",
+    "slug": "queen-mab",
+    "url": "https://www.ibunroku.com/p4g/personas/queen-mab",
+    "arcana": "Lovers",
+    "level": 25,
+    "image": "output/images/queen_mab.webp",
+    "affinities": {
+      "Elec": "Dr",
+      "Wind": "Wk"
+    },
+    "stats": {
+      "St": 17,
+      "Ma": 19,
+      "En": 15,
+      "Ag": 17,
+      "Lu": 14
+    }
+  },
+  {
+    "name": "Quetzalcoatl",
+    "slug": "quetzalcoatl",
+    "url": "https://www.ibunroku.com/p4g/personas/quetzalcoatl",
+    "arcana": "Aeon",
+    "level": 51,
+    "image": "output/images/quetzalcoatl.webp",
+    "affinities": {
+      "Wind": "Rs",
+      "Dark": "Dr",
+      "Almi": "Wk"
+    },
+    "stats": {
+      "St": 30,
+      "Ma": 31,
+      "En": 31,
+      "Ag": 35,
+      "Lu": 33
+    }
+  },
+  {
+    "name": "Raja Naga",
+    "slug": "raja-naga",
+    "url": "https://www.ibunroku.com/p4g/personas/raja-naga",
+    "arcana": "Aeon",
+    "level": 37,
+    "image": "output/images/raja_naga.webp",
+    "affinities": {
+      "Phys": "Rs",
+      "Fire": "Wk",
+      "Elec": "Dr"
+    },
+    "stats": {
+      "St": 25,
+      "Ma": 26,
+      "En": 24,
+      "Ag": 22,
+      "Lu": 21
+    }
+  },
+  {
+    "name": "Rakshasa",
+    "slug": "rakshasa",
+    "url": "https://www.ibunroku.com/p4g/personas/rakshasa",
+    "arcana": "Strength",
+    "level": 23,
+    "image": "output/images/rakshasa.webp",
+    "affinities": {
+      "Phys": "Rs",
+      "Ice": "Wk"
+    },
+    "stats": {
+      "St": 19,
+      "Ma": 12,
+      "En": 18,
+      "Ag": 14,
+      "Lu": 13
+    }
+  },
+  {
+    "name": "Rangda",
+    "slug": "rangda",
+    "url": "https://www.ibunroku.com/p4g/personas/rangda",
+    "arcana": "Magician",
+    "level": 47,
+    "image": "output/images/rangda.webp",
+    "affinities": {
+      "Phys": "Rp",
+      "Ice": "Wk"
+    },
+    "stats": {
+      "St": 24,
+      "Ma": 37,
+      "En": 30,
+      "Ag": 25,
+      "Lu": 32
+    }
+  },
+  {
+    "name": "Raphael",
+    "slug": "raphael",
+    "url": "https://www.ibunroku.com/p4g/personas/raphael",
+    "arcana": "Lovers",
+    "level": 53,
+    "image": "output/images/raphael.webp",
+    "affinities": {
+      "Ice": "Rp",
+      "Dark": "Dr",
+      "Almi": "Wk"
+    },
+    "stats": {
+      "St": 32,
+      "Ma": 38,
+      "En": 24,
+      "Ag": 33,
+      "Lu": 39
+    }
+  },
+  {
+    "name": "Rokuten Maoh",
+    "slug": "rokuten-maoh",
+    "url": "https://www.ibunroku.com/p4g/personas/rokuten-maoh",
+    "arcana": "Emperor",
+    "level": 1,
+    "image": "output/images/rokuten_maoh.webp",
+    "affinities": {
+      "Elec": "Dr",
+      "Wind": "Wk"
+    },
+    "stats": {
+      "St": 2,
+      "Ma": 2,
+      "En": 2,
+      "Ag": 2,
+      "Lu": 2
+    }
+  },
+  {
+    "name": "Saki Mitama",
+    "slug": "saki-mitama",
+    "url": "https://www.ibunroku.com/p4g/personas/saki-mitama",
+    "arcana": "Priestess",
+    "level": 11,
+    "image": "output/images/saki_mitama.webp",
+    "affinities": {
+      "Ice": "Rs",
+      "Wind": "Wk"
+    },
+    "stats": {
+      "St": 5,
+      "Ma": 12,
+      "En": 5,
+      "Ag": 8,
+      "Lu": 10
+    }
+  },
+  {
+    "name": "Samael",
+    "slug": "samael",
+    "url": "https://www.ibunroku.com/p4g/personas/samael",
+    "arcana": "Death",
+    "level": 36,
+    "image": "output/images/samael.webp",
+    "affinities": {
+      "Ice": "Rs",
+      "Elec": "Dr",
+      "Wind": "Wk",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 24,
+      "Ma": 29,
+      "En": 25,
+      "Ag": 19,
+      "Lu": 18
+    }
+  },
+  {
+    "name": "Sandalphon",
+    "slug": "sandalphon",
+    "url": "https://www.ibunroku.com/p4g/personas/sandalphon",
+    "arcana": "Moon",
+    "level": 84,
+    "image": "output/images/sandalphon.webp",
+    "affinities": {
+      "Wind": "Dr",
+      "Dark": "Rp",
+      "Almi": "Wk"
+    },
+    "stats": {
+      "St": 56,
+      "Ma": 61,
+      "En": 46,
+      "Ag": 47,
+      "Lu": 49
+    }
+  },
+  {
+    "name": "Sandman",
+    "slug": "sandman",
+    "url": "https://www.ibunroku.com/p4g/personas/sandman",
+    "arcana": "Strength",
+    "level": 5,
+    "image": "output/images/sandman.webp",
+    "affinities": {
+      "Elec": "Wk",
+      "Wind": "Rs"
+    },
+    "stats": {
+      "St": 4,
+      "Ma": 5,
+      "En": 6,
+      "Ag": 4,
+      "Lu": 3
+    }
+  },
+  {
+    "name": "Sarasvati",
+    "slug": "sarasvati",
+    "url": "https://www.ibunroku.com/p4g/personas/sarasvati",
+    "arcana": "Priestess",
+    "level": 17,
+    "image": "output/images/sarasvati.webp",
+    "affinities": {
+      "Ice": "Dr",
+      "Wind": "Wk"
+    },
+    "stats": {
+      "St": 9,
+      "Ma": 16,
+      "En": 10,
+      "Ag": 13,
+      "Lu": 10
+    }
+  },
+  {
+    "name": "Satan",
+    "slug": "satan",
+    "url": "https://www.ibunroku.com/p4g/personas/satan",
+    "arcana": "Judgement",
+    "level": 76,
+    "image": "output/images/satan.webp",
+    "affinities": {
+      "Fire": "Rp",
+      "Wind": "Wk",
+      "Almi": "Rp"
+    },
+    "stats": {
+      "St": 45,
+      "Ma": 60,
+      "En": 47,
+      "Ag": 40,
+      "Lu": 43
+    }
+  },
+  {
+    "name": "Sati",
+    "slug": "sati",
+    "url": "https://www.ibunroku.com/p4g/personas/sati",
+    "arcana": "Aeon",
+    "level": 31,
+    "image": "output/images/sati.webp",
+    "affinities": {
+      "Fire": "Dr",
+      "Ice": "Wk"
+    },
+    "stats": {
+      "St": 19,
+      "Ma": 27,
+      "En": 20,
+      "Ag": 17,
+      "Lu": 17
+    }
+  },
+  {
+    "name": "Saturnus",
+    "slug": "saturnus",
+    "url": "https://www.ibunroku.com/p4g/personas/saturnus",
+    "arcana": "Star",
+    "level": 75,
+    "image": "output/images/saturnus.webp",
+    "affinities": {
+      "Fire": "Nu",
+      "Ice": "Wk",
+      "Wind": "Dr"
+    },
+    "stats": {
+      "St": 50,
+      "Ma": 57,
+      "En": 36,
+      "Ag": 43,
+      "Lu": 49
+    }
+  },
+  {
+    "name": "Scathach",
+    "slug": "scathach",
+    "url": "https://www.ibunroku.com/p4g/personas/scathach",
+    "arcana": "Priestess",
+    "level": 79,
+    "image": "output/images/scathach.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Ice": "Nu",
+      "Wind": "Dr"
+    },
+    "stats": {
+      "St": 54,
+      "Ma": 59,
+      "En": 37,
+      "Ag": 49,
+      "Lu": 45
+    }
+  },
+  {
+    "name": "Seiryuu",
+    "slug": "seiryuu",
+    "url": "https://www.ibunroku.com/p4g/personas/seiryuu",
+    "arcana": "Temperance",
+    "level": 47,
+    "image": "output/images/seiryuu.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Wind": "Dr"
+    },
+    "stats": {
+      "St": 30,
+      "Ma": 31,
+      "En": 33,
+      "Ag": 28,
+      "Lu": 26
+    }
+  },
+  {
+    "name": "Seiten Taisei",
+    "slug": "seiten-taisei",
+    "url": "https://www.ibunroku.com/p4g/personas/seiten-taisei",
+    "arcana": "Jester",
+    "level": 68,
+    "image": "output/images/seiten_taisei.webp",
+    "affinities": {
+      "Phys": "Rs",
+      "Fire": "Wk",
+      "Wind": "Rs"
+    },
+    "stats": {
+      "St": 47,
+      "Ma": 34,
+      "En": 40,
+      "Ag": 48,
+      "Lu": 42
+    }
+  },
+  {
+    "name": "Senri",
+    "slug": "senri",
+    "url": "https://www.ibunroku.com/p4g/personas/senri",
+    "arcana": "Empress",
+    "level": 9,
+    "image": "output/images/senri.webp",
+    "affinities": {
+      "Fire": "Dr",
+      "Elec": "Wk"
+    },
+    "stats": {
+      "St": 7,
+      "Ma": 7,
+      "En": 4,
+      "Ag": 11,
+      "Lu": 5
+    }
+  },
+  {
+    "name": "Setanta",
+    "slug": "setanta",
+    "url": "https://www.ibunroku.com/p4g/personas/setanta",
+    "arcana": "Emperor",
+    "level": 34,
+    "image": "output/images/setanta.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Elec": "Dr"
+    },
+    "stats": {
+      "St": 23,
+      "Ma": 21,
+      "En": 25,
+      "Ag": 24,
+      "Lu": 16
+    }
+  },
+  {
+    "name": "Seth",
+    "slug": "seth",
+    "url": "https://www.ibunroku.com/p4g/personas/seth",
+    "arcana": "Moon",
+    "level": 68,
+    "image": "output/images/seth.webp",
+    "affinities": {
+      "Ice": "Rp",
+      "Elec": "Wk"
+    },
+    "stats": {
+      "St": 46,
+      "Ma": 51,
+      "En": 40,
+      "Ag": 39,
+      "Lu": 35
+    }
+  },
+  {
+    "name": "Shiisaa",
+    "slug": "shiisaa",
+    "url": "https://www.ibunroku.com/p4g/personas/shiisaa",
+    "arcana": "Hierophant",
+    "level": 21,
+    "image": "output/images/shiisaa.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Ice": "Rs",
+      "Elec": "Dr",
+      "Almi": "Wk"
+    },
+    "stats": {
+      "St": 18,
+      "Ma": 18,
+      "En": 9,
+      "Ag": 14,
+      "Lu": 11
+    }
+  },
+  {
+    "name": "Shiki-Ouji",
+    "slug": "shiki-ouji",
+    "url": "https://www.ibunroku.com/p4g/personas/shiki-ouji",
+    "arcana": "Fool",
+    "level": 56,
+    "image": "output/images/shiki_ouji.webp",
+    "affinities": {
+      "Fire": "Dr",
+      "Ice": "Dr",
+      "Wind": "Wk"
+    },
+    "stats": {
+      "St": 50,
+      "Ma": 29,
+      "En": 31,
+      "Ag": 41,
+      "Lu": 24
+    }
+  },
+  {
+    "name": "Shiva",
+    "slug": "shiva",
+    "url": "https://www.ibunroku.com/p4g/personas/shiva",
+    "arcana": "Tower",
+    "level": 80,
+    "image": "output/images/shiva.webp",
+    "affinities": {
+      "Ice": "Nu",
+      "Elec": "Rp"
+    },
+    "stats": {
+      "St": 59,
+      "Ma": 48,
+      "En": 44,
+      "Ag": 54,
+      "Lu": 42
+    }
+  },
+  {
+    "name": "Siegfried",
+    "slug": "siegfried",
+    "url": "https://www.ibunroku.com/p4g/personas/siegfried",
+    "arcana": "Strength",
+    "level": 63,
+    "image": "output/images/siegfried.webp",
+    "affinities": {
+      "Phys": "Dr",
+      "Ice": "Rs",
+      "Wind": "Wk"
+    },
+    "stats": {
+      "St": 48,
+      "Ma": 36,
+      "En": 41,
+      "Ag": 38,
+      "Lu": 33
+    }
+  },
+  {
+    "name": "Skadi",
+    "slug": "skadi",
+    "url": "https://www.ibunroku.com/p4g/personas/skadi",
+    "arcana": "Empress",
+    "level": 52,
+    "image": "output/images/skadi.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Ice": "Nu",
+      "Wind": "Rs"
+    },
+    "stats": {
+      "St": 27,
+      "Ma": 37,
+      "En": 32,
+      "Ag": 36,
+      "Lu": 31
+    }
+  },
+  {
+    "name": "Slime",
+    "slug": "slime",
+    "url": "https://www.ibunroku.com/p4g/personas/slime",
+    "arcana": "Chariot",
+    "level": 2,
+    "image": "output/images/slime.webp",
+    "affinities": {
+      "Phys": "Rs",
+      "Fire": "Wk"
+    },
+    "stats": {
+      "St": 3,
+      "Ma": 2,
+      "En": 3,
+      "Ag": 2,
+      "Lu": 3
+    }
+  },
+  {
+    "name": "Sraosha",
+    "slug": "sraosha",
+    "url": "https://www.ibunroku.com/p4g/personas/sraosha",
+    "arcana": "Justice",
+    "level": 74,
+    "image": "output/images/sraosha.webp",
+    "affinities": {
+      "Elec": "Nu",
+      "Dark": "Rp",
+      "Almi": "Wk"
+    },
+    "stats": {
+      "St": 57,
+      "Ma": 36,
+      "En": 44,
+      "Ag": 62,
+      "Lu": 33
+    }
+  },
+  {
+    "name": "Succubus",
+    "slug": "succubus",
+    "url": "https://www.ibunroku.com/p4g/personas/succubus",
+    "arcana": "Devil",
+    "level": 44,
+    "image": "output/images/succubus.webp",
+    "affinities": {
+      "Fire": "Rp",
+      "Dark": "Wk",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 22,
+      "Ma": 33,
+      "En": 28,
+      "Ag": 32,
+      "Lu": 27
+    }
+  },
+  {
+    "name": "Sui-ki",
+    "slug": "sui-ki",
+    "url": "https://www.ibunroku.com/p4g/personas/sui-ki",
+    "arcana": "Moon",
+    "level": 57,
+    "image": "output/images/sui_ki.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Ice": "Nu",
+      "Elec": "Rp"
+    },
+    "stats": {
+      "St": 42,
+      "Ma": 49,
+      "En": 43,
+      "Ag": 33,
+      "Lu": 17
+    }
+  },
+  {
+    "name": "Sukuna-Hikona",
+    "slug": "sukuna-hikona",
+    "url": "https://www.ibunroku.com/p4g/personas/sukuna-hikona",
+    "arcana": "Fortune",
+    "level": 55,
+    "image": "output/images/sukuna_hikona.webp",
+    "affinities": {
+      "Dark": "Rs",
+      "Almi": "Rs"
+    },
+    "stats": {
+      "St": 32,
+      "Ma": 38,
+      "En": 32,
+      "Ag": 40,
+      "Lu": 31
+    }
+  },
+  {
+    "name": "Sumeo-Okami",
+    "slug": "sumeo-okami",
+    "url": "https://www.ibunroku.com/p4g/personas/sumeo-okami",
+    "arcana": "Priestess",
+    "level": 1,
+    "image": "output/images/sumeo_okami.webp",
+    "affinities": {
+      "Fire": "Nu",
+      "Ice": "Wk",
+      "Elec": "Dr"
+    },
+    "stats": {
+      "St": 2,
+      "Ma": 2,
+      "En": 2,
+      "Ag": 2,
+      "Lu": 2
+    }
+  },
+  {
+    "name": "Suparna",
+    "slug": "suparna",
+    "url": "https://www.ibunroku.com/p4g/personas/suparna",
+    "arcana": "Sun",
+    "level": 77,
+    "image": "output/images/suparna.webp",
+    "affinities": {
+      "Elec": "Wk",
+      "Wind": "Dr"
+    },
+    "stats": {
+      "St": 48,
+      "Ma": 52,
+      "En": 45,
+      "Ag": 55,
+      "Lu": 38
+    }
+  },
+  {
+    "name": "Surt",
+    "slug": "surt",
+    "url": "https://www.ibunroku.com/p4g/personas/surt",
+    "arcana": "Magician",
+    "level": 69,
+    "image": "output/images/surt.webp",
+    "affinities": {
+      "Fire": "Rp",
+      "Ice": "Wk",
+      "Wind": "Dr"
+    },
+    "stats": {
+      "St": 41,
+      "Ma": 54,
+      "En": 39,
+      "Ag": 40,
+      "Lu": 40
+    }
+  },
+  {
+    "name": "Susano-O",
+    "slug": "susano-o",
+    "url": "https://www.ibunroku.com/p4g/personas/susano-o",
+    "arcana": "Magician",
+    "level": 1,
+    "image": "output/images/susano_o.webp",
+    "affinities": {
+      "Fire": "Rs",
+      "Elec": "Wk",
+      "Wind": "Dr"
+    },
+    "stats": {
+      "St": 5,
+      "Ma": 3,
+      "En": 3,
+      "Ag": 5,
+      "Lu": 4
+    }
+  },
+  {
+    "name": "Suzaku",
+    "slug": "suzaku",
+    "url": "https://www.ibunroku.com/p4g/personas/suzaku",
+    "arcana": "Temperance",
+    "level": 54,
+    "image": "output/images/suzaku.webp",
+    "affinities": {
+      "Fire": "Rp",
+      "Ice": "Wk"
+    },
+    "stats": {
+      "St": 30,
+      "Ma": 36,
+      "En": 31,
+      "Ag": 42,
+      "Lu": 30
+    }
+  },
+  {
+    "name": "Suzuka Gongen",
+    "slug": "suzuka-gongen",
+    "url": "https://www.ibunroku.com/p4g/personas/suzuka-gongen",
+    "arcana": "Chariot",
+    "level": 1,
+    "image": "output/images/suzuka_gongen.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Ice": "Dr",
+      "Dark": "Rs"
+    },
+    "stats": {
+      "St": 2,
+      "Ma": 2,
+      "En": 2,
+      "Ag": 2,
+      "Lu": 2
+    }
+  },
+  {
+    "name": "Sylph",
+    "slug": "sylph",
+    "url": "https://www.ibunroku.com/p4g/personas/sylph",
+    "arcana": "Temperance",
+    "level": 11,
+    "image": "output/images/sylph.webp",
+    "affinities": {
+      "Elec": "Wk",
+      "Wind": "Rs"
+    },
+    "stats": {
+      "St": 8,
+      "Ma": 10,
+      "En": 5,
+      "Ag": 10,
+      "Lu": 7
+    }
+  },
+  {
+    "name": "Take-Mikazuchi",
+    "slug": "take-mikazuchi",
+    "url": "https://www.ibunroku.com/p4g/personas/take-mikazuchi",
+    "arcana": "Emperor",
+    "level": 25,
+    "image": "output/images/take_mikazuchi.webp",
+    "affinities": {
+      "Elec": "Rs",
+      "Wind": "Wk"
+    },
+    "stats": {
+      "St": 20,
+      "Ma": 11,
+      "En": 17,
+      "Ag": 15,
+      "Lu": 14
+    }
+  },
+  {
+    "name": "Take-Minakata",
+    "slug": "take-minakata",
+    "url": "https://www.ibunroku.com/p4g/personas/take-minakata",
+    "arcana": "Jester",
+    "level": 27,
+    "image": "output/images/take_minakata.webp",
+    "affinities": {
+      "Phys": "Rs",
+      "Elec": "Rs",
+      "Dark": "Wk",
+      "Almi": "Wk"
+    },
+    "stats": {
+      "St": 20,
+      "Ma": 20,
+      "En": 22,
+      "Ag": 14,
+      "Lu": 12
+    }
+  },
+  {
+    "name": "Takehaya Susano-o",
+    "slug": "takehaya-susano-o",
+    "url": "https://www.ibunroku.com/p4g/personas/takehaya-susano-o",
+    "arcana": "Magician",
+    "level": 1,
+    "image": "output/images/takehaya_susano_o.webp",
+    "affinities": {
+      "Fire": "Dr",
+      "Elec": "Wk",
+      "Wind": "Nu"
+    },
+    "stats": {
+      "St": 5,
+      "Ma": 3,
+      "En": 3,
+      "Ag": 5,
+      "Lu": 4
+    }
+  },
+  {
+    "name": "Takeji Zaiten",
+    "slug": "takeji-zaiten",
+    "url": "https://www.ibunroku.com/p4g/personas/takeji-zaiten",
+    "arcana": "Emperor",
+    "level": 1,
+    "image": "output/images/takeji_zaiten.webp",
+    "affinities": {
+      "Phys": "Rs",
+      "Elec": "Nu",
+      "Wind": "Wk"
+    },
+    "stats": {
+      "St": 2,
+      "Ma": 2,
+      "En": 2,
+      "Ag": 2,
+      "Lu": 2
+    }
+  },
+  {
+    "name": "Tam Lin",
+    "slug": "tam-lin",
+    "url": "https://www.ibunroku.com/p4g/personas/tam-lin",
+    "arcana": "Sun",
+    "level": 53,
+    "image": "output/images/tam_lin.webp",
+    "affinities": {
+      "Phys": "Rs",
+      "Fire": "Rs",
+      "Elec": "Dr",
+      "Dark": "Dr"
+    },
+    "stats": {
+      "St": 45,
+      "Ma": 31,
+      "En": 34,
+      "Ag": 39,
+      "Lu": 25
+    }
+  },
+  {
+    "name": "Taotie",
+    "slug": "taotie",
+    "url": "https://www.ibunroku.com/p4g/personas/taotie",
+    "arcana": "Tower",
+    "level": 35,
+    "image": "output/images/taotie.webp",
+    "affinities": {
+      "Almi": "Rp"
+    },
+    "stats": {
+      "St": 20,
+      "Ma": 27,
+      "En": 30,
+      "Ag": 22,
+      "Lu": 13
+    }
+  },
+  {
+    "name": "Taowu",
+    "slug": "taowu",
+    "url": "https://www.ibunroku.com/p4g/personas/taowu",
+    "arcana": "Hanged Man",
+    "level": 56,
+    "image": "output/images/taowu.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Elec": "Dr",
+      "Dark": "Wk",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 40,
+      "Ma": 37,
+      "En": 31,
+      "Ag": 38,
+      "Lu": 29
+    }
+  },
+  {
+    "name": "Thor",
+    "slug": "thor",
+    "url": "https://www.ibunroku.com/p4g/personas/thor",
+    "arcana": "Chariot",
+    "level": 65,
+    "image": "output/images/thor.webp",
+    "affinities": {
+      "Phys": "Rs",
+      "Elec": "Nu",
+      "Wind": "Wk"
+    },
+    "stats": {
+      "St": 43,
+      "Ma": 39,
+      "En": 53,
+      "Ag": 32,
+      "Lu": 35
+    }
+  },
+  {
+    "name": "Thoth",
+    "slug": "thoth",
+    "url": "https://www.ibunroku.com/p4g/personas/thoth",
+    "arcana": "Emperor",
+    "level": 45,
+    "image": "output/images/thoth.webp",
+    "affinities": {
+      "Elec": "Dr",
+      "Wind": "Wk",
+      "Dark": "Rp",
+      "Almi": "Wk"
+    },
+    "stats": {
+      "St": 28,
+      "Ma": 43,
+      "En": 23,
+      "Ag": 21,
+      "Lu": 27
+    }
+  },
+  {
+    "name": "Throne",
+    "slug": "throne",
+    "url": "https://www.ibunroku.com/p4g/personas/throne",
+    "arcana": "Justice",
+    "level": 49,
+    "image": "output/images/throne.webp",
+    "affinities": {
+      "Fire": "Nu",
+      "Dark": "Dr",
+      "Almi": "Wk"
+    },
+    "stats": {
+      "St": 37,
+      "Ma": 30,
+      "En": 24,
+      "Ag": 37,
+      "Lu": 26
+    }
+  },
+  {
+    "name": "Titan",
+    "slug": "titan",
+    "url": "https://www.ibunroku.com/p4g/personas/titan",
+    "arcana": "Strength",
+    "level": 14,
+    "image": "output/images/titan.webp",
+    "affinities": {
+      "Ice": "Wk",
+      "Elec": "Rs"
+    },
+    "stats": {
+      "St": 11,
+      "Ma": 12,
+      "En": 10,
+      "Ag": 10,
+      "Lu": 6
+    }
+  },
+  {
+    "name": "Titania",
+    "slug": "titania",
+    "url": "https://www.ibunroku.com/p4g/personas/titania",
+    "arcana": "Empress",
+    "level": 26,
+    "image": "output/images/titania.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Ice": "Dr"
+    },
+    "stats": {
+      "St": 12,
+      "Ma": 23,
+      "En": 15,
+      "Ag": 19,
+      "Lu": 16
+    }
+  },
+  {
+    "name": "Tomoe",
+    "slug": "tomoe",
+    "url": "https://www.ibunroku.com/p4g/personas/tomoe",
+    "arcana": "Chariot",
+    "level": 4,
+    "image": "output/images/tomoe.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Ice": "Rs"
+    },
+    "stats": {
+      "St": 4,
+      "Ma": 4,
+      "En": 4,
+      "Ag": 2,
+      "Lu": 3
+    }
+  },
+  {
+    "name": "Triglav",
+    "slug": "triglav",
+    "url": "https://www.ibunroku.com/p4g/personas/triglav",
+    "arcana": "Chariot",
+    "level": 43,
+    "image": "output/images/triglav.webp",
+    "affinities": {
+      "Phys": "Rs",
+      "Elec": "Wk"
+    },
+    "stats": {
+      "St": 33,
+      "Ma": 23,
+      "En": 27,
+      "Ag": 32,
+      "Lu": 21
+    }
+  },
+  {
+    "name": "Trumpeter",
+    "slug": "trumpeter",
+    "url": "https://www.ibunroku.com/p4g/personas/trumpeter",
+    "arcana": "Judgement",
+    "level": 67,
+    "image": "output/images/trumpeter.webp",
+    "affinities": {
+      "Ice": "Nu",
+      "Elec": "Rp",
+      "Dark": "Rp",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 40,
+      "Ma": 47,
+      "En": 39,
+      "Ag": 45,
+      "Lu": 37
+    }
+  },
+  {
+    "name": "Tzitzimitl",
+    "slug": "tzitzimitl",
+    "url": "https://www.ibunroku.com/p4g/personas/tzitzimitl",
+    "arcana": "Priestess",
+    "level": 70,
+    "image": "output/images/tzitzimitl.webp",
+    "affinities": {
+      "Elec": "Rp",
+      "Wind": "Wk",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 46,
+      "Ma": 56,
+      "En": 41,
+      "Ag": 39,
+      "Lu": 35
+    }
+  },
+  {
+    "name": "Ukobach",
+    "slug": "ukobach",
+    "url": "https://www.ibunroku.com/p4g/personas/ukobach",
+    "arcana": "Devil",
+    "level": 3,
+    "image": "output/images/ukobach.webp",
+    "affinities": {
+      "Fire": "Rs",
+      "Ice": "Wk"
+    },
+    "stats": {
+      "St": 3,
+      "Ma": 4,
+      "En": 3,
+      "Ag": 4,
+      "Lu": 2
+    }
+  },
+  {
+    "name": "Undine",
+    "slug": "undine",
+    "url": "https://www.ibunroku.com/p4g/personas/undine",
+    "arcana": "Lovers",
+    "level": 33,
+    "image": "output/images/undine.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Ice": "Nu"
+    },
+    "stats": {
+      "St": 21,
+      "Ma": 27,
+      "En": 13,
+      "Ag": 26,
+      "Lu": 19
+    }
+  },
+  {
+    "name": "Unicorn",
+    "slug": "unicorn",
+    "url": "https://www.ibunroku.com/p4g/personas/unicorn",
+    "arcana": "Hierophant",
+    "level": 29,
+    "image": "output/images/unicorn.webp",
+    "affinities": {
+      "Ice": "Dr",
+      "Wind": "Wk",
+      "Almi": "Wk"
+    },
+    "stats": {
+      "St": 17,
+      "Ma": 22,
+      "En": 19,
+      "Ag": 22,
+      "Lu": 14
+    }
+  },
+  {
+    "name": "Uriel",
+    "slug": "uriel",
+    "url": "https://www.ibunroku.com/p4g/personas/uriel",
+    "arcana": "Justice",
+    "level": 58,
+    "image": "output/images/uriel.webp",
+    "affinities": {
+      "Fire": "Rp",
+      "Dark": "Dr",
+      "Almi": "Wk"
+    },
+    "stats": {
+      "St": 35,
+      "Ma": 42,
+      "En": 37,
+      "Ag": 36,
+      "Lu": 31
+    }
+  },
+  {
+    "name": "Valkyrie",
+    "slug": "valkyrie",
+    "url": "https://www.ibunroku.com/p4g/personas/valkyrie",
+    "arcana": "Strength",
+    "level": 8,
+    "image": "output/images/valkyrie.webp",
+    "affinities": {
+      "Ice": "Rs",
+      "Wind": "Wk"
+    },
+    "stats": {
+      "St": 7,
+      "Ma": 6,
+      "En": 6,
+      "Ag": 7,
+      "Lu": 5
+    }
+  },
+  {
+    "name": "Vasuki",
+    "slug": "vasuki",
+    "url": "https://www.ibunroku.com/p4g/personas/vasuki",
+    "arcana": "Hanged Man",
+    "level": 71,
+    "image": "output/images/vasuki.webp",
+    "affinities": {
+      "Ice": "Rs",
+      "Elec": "Dr",
+      "Almi": "Wk"
+    },
+    "stats": {
+      "St": 48,
+      "Ma": 47,
+      "En": 50,
+      "Ag": 40,
+      "Lu": 35
+    }
+  },
+  {
+    "name": "Vetala",
+    "slug": "vetala",
+    "url": "https://www.ibunroku.com/p4g/personas/vetala",
+    "arcana": "Devil",
+    "level": 19,
+    "image": "output/images/vetala.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Wind": "Rs",
+      "Almi": "Rs"
+    },
+    "stats": {
+      "St": 17,
+      "Ma": 10,
+      "En": 14,
+      "Ag": 12,
+      "Lu": 11
+    }
+  },
+  {
+    "name": "Virtue",
+    "slug": "virtue",
+    "url": "https://www.ibunroku.com/p4g/personas/virtue",
+    "arcana": "Justice",
+    "level": 33,
+    "image": "output/images/virtue.webp",
+    "affinities": {
+      "Ice": "Wk",
+      "Elec": "Dr",
+      "Dark": "Dr",
+      "Almi": "Wk"
+    },
+    "stats": {
+      "St": 22,
+      "Ma": 29,
+      "En": 21,
+      "Ag": 19,
+      "Lu": 15
+    }
+  },
+  {
+    "name": "Vishnu",
+    "slug": "vishnu",
+    "url": "https://www.ibunroku.com/p4g/personas/vishnu",
+    "arcana": "Temperance",
+    "level": 73,
+    "image": "output/images/vishnu.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Ice": "Dr",
+      "Dark": "Dr"
+    },
+    "stats": {
+      "St": 46,
+      "Ma": 52,
+      "En": 34,
+      "Ag": 54,
+      "Lu": 43
+    }
+  },
+  {
+    "name": "White Rider",
+    "slug": "white-rider",
+    "url": "https://www.ibunroku.com/p4g/personas/white-rider",
+    "arcana": "Death",
+    "level": 58,
+    "image": "output/images/white_rider.webp",
+    "affinities": {
+      "Fire": "Dr",
+      "Ice": "Wk",
+      "Dark": "Dr",
+      "Almi": "Rp"
+    },
+    "stats": {
+      "St": 49,
+      "Ma": 31,
+      "En": 37,
+      "Ag": 40,
+      "Lu": 24
+    }
+  },
+  {
+    "name": "Xiezhai",
+    "slug": "xiezhai",
+    "url": "https://www.ibunroku.com/p4g/personas/xiezhai",
+    "arcana": "Temperance",
+    "level": 16,
+    "image": "output/images/xiezhai.webp",
+    "affinities": {
+      "Elec": "Dr",
+      "Wind": "Wk"
+    },
+    "stats": {
+      "St": 14,
+      "Ma": 12,
+      "En": 9,
+      "Ag": 13,
+      "Lu": 7
+    }
+  },
+  {
+    "name": "Yaksini",
+    "slug": "yaksini",
+    "url": "https://www.ibunroku.com/p4g/personas/yaksini",
+    "arcana": "Empress",
+    "level": 18,
+    "image": "output/images/yaksini.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Ice": "Dr",
+      "Elec": "Rs"
+    },
+    "stats": {
+      "St": 13,
+      "Ma": 16,
+      "En": 10,
+      "Ag": 12,
+      "Lu": 10
+    }
+  },
+  {
+    "name": "Yamatano-Orochi",
+    "slug": "yamatano-orochi",
+    "url": "https://www.ibunroku.com/p4g/personas/yamatano-orochi",
+    "arcana": "Moon",
+    "level": 34,
+    "image": "output/images/yamatano_orochi.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Ice": "Dr",
+      "Elec": "Dr",
+      "Wind": "Wk"
+    },
+    "stats": {
+      "St": 29,
+      "Ma": 21,
+      "En": 26,
+      "Ag": 18,
+      "Lu": 15
+    }
+  },
+  {
+    "name": "Yamato Sumeragi",
+    "slug": "yamato-sumeragi",
+    "url": "https://www.ibunroku.com/p4g/personas/yamato-sumeragi",
+    "arcana": "Fortune",
+    "level": 1,
+    "image": "output/images/yamato_sumeragi.webp",
+    "affinities": {
+      "Fire": "Dr",
+      "Dark": "Rp",
+      "Almi": "Rp"
+    },
+    "stats": {
+      "St": 2,
+      "Ma": 2,
+      "En": 2,
+      "Ag": 2,
+      "Lu": 2
+    }
+  },
+  {
+    "name": "Yamato Takeru",
+    "slug": "yamato-takeru",
+    "url": "https://www.ibunroku.com/p4g/personas/yamato-takeru",
+    "arcana": "Fortune",
+    "level": 1,
+    "image": "output/images/yamato_takeru.webp",
+    "affinities": {
+      "Fire": "Rs",
+      "Dark": "Dr",
+      "Almi": "Dr"
+    },
+    "stats": {
+      "St": 2,
+      "Ma": 2,
+      "En": 2,
+      "Ag": 2,
+      "Lu": 2
+    }
+  },
+  {
+    "name": "Yatagarasu",
+    "slug": "yatagarasu",
+    "url": "https://www.ibunroku.com/p4g/personas/yatagarasu",
+    "arcana": "Sun",
+    "level": 40,
+    "image": "output/images/yatagarasu.webp",
+    "affinities": {
+      "Ice": "Wk",
+      "Wind": "Rs",
+      "Dark": "Dr"
+    },
+    "stats": {
+      "St": 28,
+      "Ma": 27,
+      "En": 22,
+      "Ag": 31,
+      "Lu": 19
+    }
+  },
+  {
+    "name": "Yatsufusa",
+    "slug": "yatsufusa",
+    "url": "https://www.ibunroku.com/p4g/personas/yatsufusa",
+    "arcana": "Hanged Man",
+    "level": 49,
+    "image": "output/images/yatsufusa.webp",
+    "affinities": {
+      "Fire": "Nu",
+      "Wind": "Rp",
+      "Dark": "Dr"
+    },
+    "stats": {
+      "St": 32,
+      "Ma": 33,
+      "En": 27,
+      "Ag": 36,
+      "Lu": 26
+    }
+  },
+  {
+    "name": "Yomotsu-Shikome",
+    "slug": "yomotsu-shikome",
+    "url": "https://www.ibunroku.com/p4g/personas/yomotsu-shikome",
+    "arcana": "Fool",
+    "level": 7,
+    "image": "output/images/yomotsu_shikome.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Ice": "Rs"
+    },
+    "stats": {
+      "St": 2,
+      "Ma": 7,
+      "En": 7,
+      "Ag": 8,
+      "Lu": 4
+    }
+  },
+  {
+    "name": "Yoshitsune",
+    "slug": "yoshitsune",
+    "url": "https://www.ibunroku.com/p4g/personas/yoshitsune",
+    "arcana": "Tower",
+    "level": 75,
+    "image": "output/images/yoshitsune.webp",
+    "affinities": {
+      "Phys": "Dr",
+      "Fire": "Rs",
+      "Elec": "Rp",
+      "Dark": "Rp"
+    },
+    "stats": {
+      "St": 52,
+      "Ma": 39,
+      "En": 49,
+      "Ag": 61,
+      "Lu": 34
+    }
+  },
+  {
+    "name": "Yurlungur",
+    "slug": "yurlungur",
+    "url": "https://www.ibunroku.com/p4g/personas/yurlungur",
+    "arcana": "Temperance",
+    "level": 69,
+    "image": "output/images/yurlungur.webp",
+    "affinities": {
+      "Fire": "Wk",
+      "Ice": "Nu",
+      "Wind": "Rs"
+    },
+    "stats": {
+      "St": 41,
+      "Ma": 50,
+      "En": 45,
+      "Ag": 43,
+      "Lu": 35
+    }
+  },
+  {
+    "name": "Zaou-Gongen",
+    "slug": "zaou-gongen",
+    "url": "https://www.ibunroku.com/p4g/personas/zaou-gongen",
+    "arcana": "Strength",
+    "level": 90,
+    "image": "output/images/zaou_gongen.webp",
+    "affinities": {
+      "Fire": "Rp",
+      "Elec": "Wk"
+    },
+    "stats": {
+      "St": 61,
+      "Ma": 48,
+      "En": 71,
+      "Ag": 47,
+      "Lu": 50
+    }
+  }
+]

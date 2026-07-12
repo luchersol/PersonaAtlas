@@ -1,17 +1,35 @@
 ---
-import Layout from '@layouts/Layout.astro';
-import { getCompendiumList, useTranslations } from '@i18n/utils';
-import type { Params } from '@types2/p4';
-import type { P4CompendiumEntry } from '@types2/p4';
+import Layout from "@layouts/Layout.astro";
+import { getCompendiumList, useTranslations } from "@i18n/utils";
+import type { P4Skill, Params, P4CompendiumEntry } from "@types2/p4";
+
+const affinityOrder = [
+  "Physical",
+  "Fire",
+  "Ice",
+  "Elec",
+  "Wind",
+  "Light",
+  "Dark",
+];
 
 export async function getStaticPaths() {
   const paths: any[] = [];
-  const languages = ['en', 'es'] as const;
+  const languages = ["en", "es"] as const;
 
   for (const lang of languages) {
     const list = await getCompendiumList(lang);
+
     list.forEach((entry) => {
-      paths.push({ params: { id: entry.id, lang }, props: { entry } });
+      paths.push({
+        params: {
+          id: entry.slug,
+          lang,
+        },
+        props: {
+          entry,
+        },
+      });
     });
   }
 
@@ -22,100 +40,283 @@ interface Props {
   entry: P4CompendiumEntry;
 }
 
-const { entry } = Astro.props as Props;
+const { entry } = Astro.props;
 const { lang } = Astro.params as Params;
 const t = useTranslations(lang);
 ---
 
 <Layout title={`${entry.name} | Persona 4 Hub`}>
-  <article class="p4-card-container">
-    <header class="p4-page-header border-orange-left">
-      <h1 class="p4-title">{entry.name}</h1>
-      <p class="p4-subtitle">{t('velvet-room.compendium.title')}</p>
-    </header>
-
-    <div class="p4-content-box border-orange">
-      <div class="p4-persona-layout">
-        <div class="p4-persona-main">
-          <p class="p4-description">{entry.description}</p>
-
-          <div class="p4-detail-grid">
-            <div class="p4-detail-card">
-              <h3>{t('velvet-room.compendium.level')}</h3>
-              <p>{entry.level}</p>
-            </div>
-            <div class="p4-detail-card">
-              <h3>{t('velvet-room.compendium.arcana')}</h3>
-              <p>{entry.arcana}</p>
-            </div>
+  <div class="p4-content-box border-orange">
+    <div class="p4-persona-layout">
+      <div class="p4-persona-main">
+        <div class="p4-detail-grid">
+          <div class="p4-detail-card">
+            <h3>Name</h3>
+            <p>{entry.name}</p>
           </div>
 
-          <div class="p4-persona-sections">
-            <section class="p4-persona-panel">
-              <h3>Elemental affinities</h3>
-              <div class="p4-affinity-grid">
-                {entry.affinities?.map((affinity) => (
-                  <div class="p4-affinity-card">
-                    <div class="p4-affinity-icon">{affinity.element}</div>
-                    <div class="p4-affinity-state">{affinity.state}</div>
-                  </div>
-                ))}
-              </div>
-            </section>
+          <div class="p4-detail-card">
+            <h3>Arcana</h3>
+            <p>{entry.arcana}</p>
+          </div>
 
-            <section class="p4-persona-panel wide">
-              <h3>Learned skills</h3>
-              <ul class="p4-skill-list">
-                {entry.skills?.map((skill) => (
-                  <li><span>{skill.name}</span><strong>Lv. {skill.level}</strong></li>
-                ))}
-              </ul>
-            </section>
+          <div class="p4-detail-card">
+            <h3>Level</h3>
+            <p>{entry.level}</p>
           </div>
         </div>
 
-        <aside class="p4-persona-image">
-          {entry.image ? <img src={entry.image} alt={entry.name} /> : <div class="p4-image-placeholder">No image</div>}
-        </aside>
-      </div>
-    </div>
+        <section class="p4-persona-panel">
+          <h3>Stats</h3>
 
-    <a href={`/${lang}/velvet-room/compendium`} class="p4-back-btn"><span>{t('nav.back')}</span></a>
-  </article>
+          <div class="p4-detail-grid">
+            <div class="p4-detail-card">
+              <h3>Strength</h3>
+              <p>{entry.stats.St}</p>
+            </div>
+
+            <div class="p4-detail-card">
+              <h3>Magic</h3>
+              <p>{entry.stats.Ma}</p>
+            </div>
+
+            <div class="p4-detail-card">
+              <h3>Endurance</h3>
+              <p>{entry.stats.En}</p>
+            </div>
+
+            <div class="p4-detail-card">
+              <h3>Agility</h3>
+              <p>{entry.stats.Ag}</p>
+            </div>
+
+            <div class="p4-detail-card">
+              <h3>Luck</h3>
+              <p>{entry.stats.Lu}</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="p4-persona-panel wide">
+          <h3>Elemental Affinities</h3>
+
+          <div class="p4-affinity-table">
+            {
+              affinityOrder.map((element) => (
+                <div class="p4-affinity-cell">
+                  <img
+                    src={`/images/elements/${element.toLowerCase()}.svg`}
+                    alt={element}
+                    class="p4-element-icon"
+                  />
+
+                  <img
+                    src={`/images/affinity/${entry.affinities[element]?.toLowerCase() ?? "-"}.svg`}
+                    alt={entry.affinities[element]}
+                    class="p4-affinity-icon"
+                  />
+                </div>
+              ))
+            }
+          </div>
+        </section>
+
+        {
+          entry.skills?.length > 0 && (
+            <section class="p4-persona-panel wide">
+              <h3>Learned Skills</h3>
+
+              <ul class="p4-skill-list">
+                {entry.skills.map((skill: P4Skill) => (
+                  <li>
+                    <span>{skill.name}</span>
+
+                    <strong>Lv. {skill.level}</strong>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )
+        }
+      </div>
+
+      <aside class="p4-persona-image">
+        <div class="image-container">
+          <img
+            src={`/images/personas/${entry.slug}.webp`}
+            alt={entry.name}
+            loading="lazy"
+            onerror="this.style.display='none'; this.nextElementSibling.removeAttribute('hidden');"
+          />
+          <div class="p4-image-placeholder" style="display: none;">
+            No image
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <a href={`/${lang}/velvet-room/compendium`} class="p4-back-btn">
+    <span>{t("nav.back")}</span>
+  </a>
 </Layout>
 
-<style>
-  .border-orange-left { border-left: 8px solid #FF9800; padding-left: 1.5rem; }
-  .border-orange { border-color: #FF9800; }
-  .p4-card-container { display: flex; flex-direction: column; gap: 2rem; margin-top: 2rem; }
-  .p4-page-header { border-left: 8px solid #FFEB3B; padding-left: 1.5rem; }
-  .p4-subtitle { font-size: 1.2rem; color: #FFEB3B; text-transform: uppercase; font-weight: 700; margin-top: -0.5rem; }
-  .p4-content-box { background-color: #000; border: 3px solid #333; padding: 2.5rem; box-shadow: 8px 8px 0px 0px #000; }
-  .p4-description { font-size: 1.15rem; line-height: 1.8; color: #e0e0e0; }
-  .p4-persona-layout { display: grid; grid-template-columns: 1.5fr 0.8fr; gap: 1.5rem; align-items: start; }
-  .p4-persona-main { display: flex; flex-direction: column; gap: 1rem; }
-  .p4-detail-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 0.5rem; }
-  .p4-detail-card { background-color: #111; border: 1px solid #333; padding: 1rem; }
-  .p4-detail-card h3 { color: #FF9800; margin-bottom: 0.4rem; font-size: 0.95rem; text-transform: uppercase; }
-  .p4-detail-card p { color: #fff; line-height: 1.6; }
-  .p4-persona-sections { display: grid; gap: 1rem; }
-  .p4-persona-panel { background-color: #111; border: 1px solid #333; padding: 1rem; }
-  .p4-persona-panel.wide { grid-column: 1 / -1; }
-  .p4-persona-panel h3 { color: #FFEB3B; margin-bottom: 0.7rem; text-transform: uppercase; font-size: 0.95rem; }
-  .p4-affinity-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 0.75rem; }
-  .p4-affinity-card { background-color: #1a1a1a; border: 1px solid #2e2e2e; padding: 0.8rem; display: flex; flex-direction: column; gap: 0.35rem; align-items: center; text-align: center; }
-  .p4-affinity-icon { font-size: 1rem; font-weight: 700; color: #fff; text-transform: uppercase; }
-  .p4-affinity-state { font-size: 0.8rem; color: #FFEB3B; text-transform: uppercase; }
-  .p4-skill-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.6rem; }
-  .p4-skill-list li { display: flex; justify-content: space-between; gap: 1rem; padding: 0.6rem 0.8rem; background-color: #1a1a1a; color: #fff; }
-  .p4-persona-image { display: flex; justify-content: center; align-items: center; }
-  .p4-persona-image img, .p4-image-placeholder { width: 100%; max-width: 260px; aspect-ratio: 1 / 1; object-fit: cover; border: 2px solid #333; background: #111; display: grid; place-items: center; color: #888; }
-  .p4-back-btn { align-self: flex-start; background-color: #333; color: #fff; padding: 0.6rem 1.5rem; font-weight: 700; text-transform: uppercase; text-decoration: none; transform: skewX(-12deg); border: 2px solid #444; }
-  .p4-back-btn span { display: inline-block; transform: skewX(12deg); }
-  .p4-back-btn:hover { background-color: #fff; color: #000; border-color: #fff; }
 
-  @media (max-width: 840px) {
-    .p4-persona-layout { grid-template-columns: 1fr; }
-    .p4-persona-image { order: -1; }
-  }
+<style>
+
+.p4-affinity-table{
+    display:grid;
+    grid-template-columns:repeat(9,1fr);
+    gap:.5rem;
+    background:#151515;
+    border:2px solid #ffd54a;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.p4-affinity-cell{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:1rem .5rem;
+    background:#202020;
+    border-right:1px solid rgba(255,255,255,.08);
+}
+
+.p4-affinity-cell:last-child{
+    border-right:none;
+}
+
+.p4-element-icon{
+    width:32px;
+    height:32px;
+    margin-bottom:.6rem;
+}
+
+.p4-affinity-icon{
+    width:28px;
+    height:28px;
+}
+
+.p4-stats{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:12px;
+}
+
+.p4-stat{
+    background:#242424;
+    border:1px solid #444;
+    border-radius:8px;
+    text-align:center;
+    padding:12px;
+}
+
+.p4-stat h4{
+    font-size:.8rem;
+    color:#ffd54a;
+    margin-bottom:6px;
+}
+
+.p4-stat span{
+    font-size:1.8rem;
+    font-weight:bold;
+}
+
+.p4-persona-panel{
+
+    background:#181818;
+
+    border:2px solid #f2c94c;
+
+    border-radius:12px;
+
+    padding:1.5rem;
+
+    box-shadow:
+        inset 0 0 0 1px rgba(255,255,255,.04),
+        0 6px 18px rgba(0,0,0,.35);
+}
+
+.p4-persona-image{
+
+    background:#1b1b1b;
+
+    border:2px solid #ffd54a;
+
+    border-radius:12px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:2rem;
+
+    min-height:420px;
+}
+
+.p4-persona-image img{
+
+    max-width:100%;
+
+    max-height:420px;
+
+    object-fit:contain;
+}
+
+.p4-skill-list{
+
+    list-style:none;
+
+    margin:0;
+
+    padding:0;
+}
+
+.p4-skill-list li{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:.8rem 1rem;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.p4-skill-list li:nth-child(even){
+
+    background:#222;
+}
+
+.p4-skill-list strong{
+
+    color:#ffd54a;
+}
+
+.aff-wk{
+    color:#ff5b5b;
+}
+
+.aff-rs{
+    color:#6bd26b;
+}
+
+.aff-nu{
+    color:#62b4ff;
+}
+
+.aff-rp{
+    color:#d56cff;
+}
+
+.aff-dr{
+    color:#ffd54a;
+}
+
 </style>
