@@ -24,32 +24,93 @@ const compendium = await getCompendiumList(lang);
     </header>
 
     <section class="p4-section">
-      <table class="p4-table">
+      <table class="p4-table" id="compendium-table">
         <thead>
           <tr>
-            <th>{t('velvet-room.compendium.title')}</th>
-            <th>{t('velvet-room.compendium.level')}</th>
-            <th>{t('velvet-room.compendium.arcana')}</th>
+            <th data-sort="arcana">{t('velvet-room.compendium.arcana')}</th>
+            <th data-sort="name">{t('velvet-room.compendium.title')}</th>
+            <th data-sort="level">{t('velvet-room.compendium.level')}</th>
           </tr>
         </thead>
+
         <tbody>
           {compendium.map((entry: P4CompendiumEntry) => (
-            <tr>
-              <td>
-                <a href={`/${lang}/velvet-room/compendium/${entry.id}`} class="p4-link">{entry.name}</a>
-                <div class="p4-muted">{entry.description}</div>
-              </td>
-              <td>{entry.level}</td>
+            <tr
+              data-arcana={entry.arcana}
+              data-name={entry.name}
+              data-level={entry.level}
+            >
               <td>{entry.arcana}</td>
+
+              <td>
+                <a
+                  href={`/${lang}/velvet-room/compendium/${entry.slug}`}
+                  class="p4-link"
+                >
+                  {entry.name}
+                </a>
+              </td>
+
+              <td>{entry.level}</td>
             </tr>
           ))}
         </tbody>
       </table>
     </section>
 
-    <a href={`/${lang}/velvet-room`} class="p4-back-btn"><span>{t('nav.back')}</span></a>
+    <a href={`/${lang}/velvet-room/compendium`} class="p4-back-btn"><span>{t('nav.back')}</span></a>
   </article>
 </Layout>
+
+<script>
+  const table = document.querySelector("#compendium-table")!;
+  const tbody = table.querySelector("tbody")!;
+  const headers = table.querySelectorAll("th");
+
+  let currentSort = "arcana";
+  let ascending = true;
+
+  function sortTable(key: string, asc = true) {
+    const rows = [...tbody.querySelectorAll("tr")];
+
+    rows.sort((a, b) => {
+      let av: string | number = a.dataset[key]!;
+      let bv: string | number = b.dataset[key]!;
+
+      if (key === "level") {
+        av = Number(av);
+        bv = Number(bv);
+        return asc ? av - bv : bv - av;
+      }
+
+      return asc
+        ? av.localeCompare(bv)
+        : bv.localeCompare(av);
+    });
+
+    tbody.append(...rows);
+  }
+
+  // Orden inicial
+  sortTable("arcana", true);
+
+  headers.forEach((header) => {
+    header.style.cursor = "pointer";
+
+    header.addEventListener("click", () => {
+      const key = header.dataset.sort!;
+
+      if (currentSort === key) {
+        ascending = !ascending;
+      } else {
+        currentSort = key;
+        ascending = true;
+      }
+
+      sortTable(key, ascending);
+    });
+  });
+</script>
 
 <style>
   .p4-card-container { display: flex; flex-direction: column; gap: 2rem; margin-top: 2rem; }
@@ -57,8 +118,28 @@ const compendium = await getCompendiumList(lang);
   .p4-subtitle { font-size: 1.2rem; color: #FFEB3B; text-transform: uppercase; font-weight: 700; margin-top: -0.5rem; }
   .p4-section { overflow-x: auto; }
   .p4-table { width: 100%; border-collapse: collapse; background-color: #111; border: 2px solid #333; }
-  .p4-table th, .p4-table td { padding: 0.9rem 1rem; border-bottom: 1px solid #2e2e2e; text-align: left; color: #fff; }
-  .p4-table th { background-color: #1a1a1a; color: #FFEB3B; text-transform: uppercase; }
+  .p4-table th,
+  .p4-table td {
+    padding: 0.9rem 1rem;
+    border-bottom: 1px solid #2e2e2e;
+    text-align: left;
+    color: #fff;
+  }
+
+  .p4-table th {
+    background-color: #1a1a1a;
+    color: #FFEB3B;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    user-select: none;
+    transition: background-color .2s ease;
+  }
+
+  .p4-table th:hover {
+    background-color: rgba(255, 213, 74, .15);
+    color: #fff176;
+  }
   .p4-link { color: #FF9800; font-weight: 700; text-decoration: none; }
   .p4-link:hover { color: #fff; }
   .p4-muted { color: #8a8a8a; font-size: 0.9rem; margin-top: 0.25rem; }
