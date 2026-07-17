@@ -1,0 +1,146 @@
+---
+import { useTranslations } from "@i18n/utils";
+import type { P3RLanguage } from "@types2/p3r";
+
+interface RankItem {
+  level: number;
+  bestAnswers: string[];
+  notes?: string;
+}
+
+interface Props {
+  lang: P3RLanguage;
+  ranks: RankItem[]
+}
+
+const { ranks, lang } = Astro.props;
+
+const t = useTranslations(lang);
+---
+<div class="p3r-ranks-box">
+  <h2>{t("social-links-table.ranks-title")}</h2>
+  
+  <div class="p3r-ranks-timeline">
+    {ranks && ranks.map((rankItem: any) => (
+      <div class="p3r-rank-row">
+        <div class="p3r-rank-number">
+          <span>RANK {rankItem.level}</span>
+        </div>
+        
+        <div class="p3r-rank-content">
+          <p class="p3r-rank-condition">
+            <strong>{t("social-links-table.rank-req") || "Requisito / Respuestas ideales"}:</strong>
+          </p>
+          <ul class="p3r-rank-answers">
+            {rankItem.bestAnswers && rankItem.bestAnswers.map((answer: string) => (
+              <li>{answer}</li>
+            ))}
+          </ul>
+          {rankItem.notes && <p class="p3r-rank-notes">{rankItem.notes}</p>}
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
+<style>
+    /* --- NUEVOS ESTILOS: SOCIAL LINK RANKS --- */
+  .p3r-ranks-box {
+    margin-top: 1rem;
+  }
+
+  .p3r-ranks-box h2 {
+    font-family: 'Impact', sans-serif;
+    text-transform: uppercase;
+    color: var(--primary);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.05em;
+  }
+
+  .p3r-ranks-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .p3r-rank-row {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #fff;
+    background-color: #111;
+    box-shadow: 6px 6px 0px var(--background);
+  }
+
+  @media (min-width: 576px) {
+    .p3r-rank-row {
+      flex-direction: row;
+    }
+  }
+
+  /* Badge del Rango (Estilo bloque inclinado P3R) */
+  .p3r-rank-number {
+    background-color: var(--primary);
+    color: #fff;
+    font-family: 'Impact', sans-serif;
+    font-size: 1.25rem;
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    min-width: 120px;
+    border-bottom: 3px solid #fff;
+  }
+
+  @media (min-width: 576px) {
+    .p3r-rank-number {
+      border-bottom: none;
+      border-right: 3px solid #fff;
+      transform: skewX(-5deg);
+      margin-left: -5px;
+    }
+    .p3r-rank-number span {
+      transform: skewX(5deg); /* Endereza el texto dentro del bloque torcido */
+    }
+  }
+
+  .p3r-rank-content {
+    padding: 1.25rem;
+    flex: 1;
+  }
+
+  .p3r-rank-condition {
+    color: var(--primary);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .p3r-rank-answers {
+    list-style: none;
+    margin: 0.5rem 0;
+    padding-left: 0;
+  }
+
+  .p3r-rank-answers li {
+    color: #ccc;
+    font-size: 0.95rem;
+    padding: 0.25rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+
+  .p3r-rank-answers li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+  }
+
+  .p3r-rank-notes {
+    color: #999;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: 0.5rem;
+  }
+</style>

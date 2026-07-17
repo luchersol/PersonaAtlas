@@ -72,7 +72,7 @@ const t = useTranslations(lang);
   .p4-card-container { display: flex; flex-direction: column; gap: 2rem; margin-top: 2rem; }
   .p4-page-header { border-left: 8px solid #FFEB3B; padding-left: 1.5rem; }
   .p4-subtitle { font-size: 1.2rem; color: #FFEB3B; text-transform: uppercase; font-weight: 700; margin-top: -0.5rem; }
-  .p4-content-box { background-color: #000; border: 3px solid #333; padding: 2.5rem; box-shadow: 8px 8px 0px 0px #000; }
+  .p4-content-box { background-color: var(--background); border: 3px solid #333; padding: 2.5rem; box-shadow: 8px 8px 0px 0px var(--background); }
   .p4-description { font-size: 1.15rem; line-height: 1.8; color: #e0e0e0; }
   .p4-detail-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
   .p4-detail-card { background-color: #111; border: 1px solid #333; padding: 1rem; }
@@ -84,5 +84,5 @@ const t = useTranslations(lang);
   .p4-sidebar-block.reward p { color: #FFEB3B; }
   .p4-back-btn { align-self: flex-start; background-color: #333; color: #fff; padding: 0.6rem 1.5rem; font-weight: 700; text-transform: uppercase; text-decoration: none; transform: skewX(-12deg); border: 2px solid #444; }
   .p4-back-btn span { display: inline-block; transform: skewX(12deg); }
-  .p4-back-btn:hover { background-color: #fff; color: #000; border-color: #fff; }
+  .p4-back-btn:hover { background-color: #fff; color: var(--background); border-color: #fff; }
 </style>

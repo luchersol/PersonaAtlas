@@ -89,10 +89,10 @@ const t = useTranslations(lang);
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
-    background-color: #000;
+    background-color: var(--background);
     border: 4px solid #FFEB3B;
     padding: 2.5rem;
-    box-shadow: 10px 10px 0px #000;
+    box-shadow: 10px 10px 0px var(--background);
   }
 
   @media (min-width: 768px) {
@@ -112,7 +112,7 @@ const t = useTranslations(lang);
     width: 180px;
     height: 180px;
     border: 4px solid #fff;
-    outline: 4px solid #000;
+    outline: 4px solid var(--background);
     transform: rotate(-2deg);
     background-color: #222;
   }
@@ -128,7 +128,7 @@ const t = useTranslations(lang);
   }
   .p4-arcana-title-badge {
     background-color: #FFEB3B;
-    color: #000;
+    color: var(--background);
     font-family: 'Impact', sans-serif;
     padding: 4px 12px;
     transform: skewX(-10deg);

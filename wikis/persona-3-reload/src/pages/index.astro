@@ -1,0 +1,13 @@
+---
+// src/pages/index.astro
+
+// Opción A: Redirigir siempre a español por defecto
+return Astro.redirect('/es/home');
+
+// Opción B (Más pro): Detectar el idioma del navegador del usuario
+// const languages = ['es', 'en'];
+// const acceptLang = Astro.request.headers.get('accept-language') || '';
+// const preferredLang = languages.find(lang => acceptLang.includes(lang)) || 'es';
+
+// return Astro.redirect(`/${preferredLang}/inicio`);
+---

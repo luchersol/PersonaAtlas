@@ -1,0 +1,115 @@
+---
+import type { P3RSkillCardEntry } from '@types2/p3r';
+
+interface Props {
+  entry: P3RSkillCardEntry;
+  compact?: boolean;
+}
+
+const { entry, compact = false } = Astro.props as Props;
+const kind = (entry.kind || 'support').toLowerCase();
+const icon = entry.icon || (kind === 'attack' ? (entry.element === 'Physical' ? '🗡️' : entry.element ? '⚡' : '💥') : kind === 'heal' ? '💚' : '✨');
+const typeLabel = entry.element || entry.kind || 'Support';
+const strengthLabel = entry.strength ? `${entry.strength}` : '';
+const costValue = entry.cost ?? '—';
+const costType = entry.costType || 'PE';
+const targetLabel = entry.target === 'one'
+  ? 'Single target'
+  : entry.target === 'all'
+    ? 'All targets'
+    : entry.target === 'party'
+      ? 'Party'
+      : entry.target === 'self'
+        ? 'Self'
+        : entry.target || '—';
+const healingValue = entry.healing ?? '—';
+---
+
+<div class={`skill-card-visual ${kind}`}>
+  <div class="skill-card-icon" aria-hidden="true">{icon}</div>
+  <div class="skill-card-body">
+    <div class="skill-card-topline">
+      <span class="skill-card-badge">{typeLabel}</span>
+      {strengthLabel && <span class="skill-card-strength">{strengthLabel}</span>}
+    </div>
+
+    {kind === 'attack' && (
+      <div class="skill-card-stats">
+        <span>{targetLabel}</span>
+        <span>{costValue} {costType}</span>
+      </div>
+    )}
+
+    {kind === 'heal' && (
+      <div class="skill-card-stats">
+        <span>Heal {healingValue}</span>
+        <span>{targetLabel}</span>
+      </div>
+    )}
+
+    {kind === 'support' && (
+      <div class="skill-card-stats">
+        <span>{targetLabel}</span>
+        <span>{costValue} {costType}</span>
+      </div>
+    )}
+
+    {!compact && <p class="skill-card-effect">{entry.effect}</p>}
+  </div>
+</div>
+
+<style>
+  .skill-card-visual {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    border: 2px solid #333;
+    background: linear-gradient(135deg, #151515 0%, #1a0f2e 100%);
+    box-shadow: 4px 4px 0 var(--background);
+  }
+  .skill-card-visual.attack { border-color: #ff6b35; }
+  .skill-card-visual.heal { border-color: #3ddc97; }
+  .skill-card-visual.support { border-color: var(--primary); }
+
+  .skill-card-icon {
+    font-size: 1.75rem;
+    width: 2.6rem;
+    height: 2.6rem;
+    display: grid;
+    place-items: center;
+    background: rgba(139, 79, 191, 0.1);
+    border-radius: 999px;
+  }
+  .skill-card-body { flex: 1; display: flex; flex-direction: column; gap: 0.5rem; }
+  .skill-card-topline { display: flex; justify-content: space-between; gap: 0.75rem; align-items: center; }
+  .skill-card-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.2rem 0.55rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: var(--background);
+    color: var(--primary);
+    border: 1px solid #444;
+  }
+  .skill-card-strength {
+    color: var(--primary);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .skill-card-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    color: #d8d8d8;
+    font-size: 0.92rem;
+  }
+  .skill-card-effect {
+    margin: 0;
+    color: #f3f3f3;
+    line-height: 1.6;
+  }
+</style>

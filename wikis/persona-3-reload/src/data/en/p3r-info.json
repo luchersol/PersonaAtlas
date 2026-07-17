@@ -1,0 +1,32 @@
+{
+  "social-links": {
+    "title": "Confidants",
+    "subtitle": "Deepening connections to grow stronger",
+    "description": "In Persona 3 Reload, Confidants represent the bonds you strengthen with your allies and friends at Gekkoukan High School. By building these relationships, you unlock powerful abilities and create special link attacks in combat, while also developing each character's storyline.",
+    "mechanic": "Reaching maximum bond level unlocks the ultimate Persona evolution and the strongest link attacks for each Confidant."
+  },
+  "velvet-room": {
+    "title": "Velvet Room",
+    "subtitle": "A prison of bonds and possibilities",
+    "description": "The Velvet Room serves as a mysterious location where Elizabeth assists the protagonist in managing Personas, creating new ones through fusion, and taking on special missions. As your journey progresses, the Velvet Room and its role evolve.",
+    "mechanic": "Persona Fusion allows you to combine existing Personas to create new and stronger ones, with level and stats determined by fusion laws."
+  },
+  "moonlight": {
+    "title": "Moonlight",
+    "subtitle": "The nocturnal phenomenon that shades reality",
+    "description": "During the Dark Hour, a mysterious phenomenon called Moonlight appears. The SEES organization monitors this phenomenon to gather intelligence and prepare for shadow attacks on Gekkoukan and the surrounding city.",
+    "mechanic": "Moonlight observations provide crucial information about potential shadow activity and help the team prepare for upcoming confrontations."
+  },
+  "tartarus": {
+    "title": "Tartarus",
+    "subtitle": "An ever-changing tower of mysteries",
+    "description": "Tartarus is a colossal tower that only appears during the Dark Hour. It is filled with Shadows and serves as the primary dungeon for the SEES organization. The tower's layout changes daily, presenting new challenges and rewards.",
+    "mechanic": "You must climb Tartarus during the Dark Hour to combat Shadows, gather rare materials, and strengthen your team members."
+  },
+  "quests": {
+    "title": "Requests",
+    "subtitle": "Help the people of Port Island",
+    "description": "Both students at Gekkoukan and townspeople of Port Island have requests. Gather materials, hunt specific Shadows, complete tasks, and increase your social stats and personal abilities.",
+    "mechanic": "Requests don't consume time and some require specific social stats or access to Tartarus segments to accept or complete."
+  }
+}

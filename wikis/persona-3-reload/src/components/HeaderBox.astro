@@ -1,0 +1,49 @@
+---
+import NoteBox from './NoteBox.astro';
+
+
+interface Props {
+  title: string;
+  subtitle: string;
+  description: string;
+  mechanic: string;
+}
+
+const {title, subtitle, description, mechanic} = Astro.props;
+---
+
+<header class="p3r-page-header">
+    <div class="p3r-header-content">
+        <div class="p3r-header-text">
+            <h1 class="p3r-title">{title}</h1>
+            <p class="p3r-subtitle">{subtitle}</p>
+        </div>
+        <NoteBox {...{description, mechanic}} />
+    </div>
+</header>
+
+<style>
+    .p3r-page-header {
+        border-left: 8px solid var(--primary);
+        padding-left: 1.5rem;
+    }
+
+    .p3r-header-content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .p3r-header-text {
+        flex: 1;
+    }
+
+    .p3r-subtitle {
+        font-size: 1.2rem;
+        color: var(--primary);
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-top: -0.5rem;
+    }
+</style>

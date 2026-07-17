@@ -1,0 +1,136 @@
+---
+import type { P3RLanguage, Params } from '@types2/p3r';
+
+interface Props {
+    id: number;
+    name: string; 
+    title: string;
+    day: string;
+    client: string; 
+    location: string;
+};
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'es' } }, 
+    { params: { lang: 'en' } }
+  ];
+}
+
+const { lang } = Astro.params as Params;
+
+const {id, name, title, day, client, location} = Astro.props;
+---
+<div class="p3r-quest-item">
+    <div class="p3r-quest-header">
+        <span class="p3r-quest-number">{name}</span>
+        <span class={"p3r-quest-day"}>{day}</span>
+    </div>
+
+    <div class="p3r-quest-body">
+        <div class="p3r-quest-info">
+            <h3 class="p3r-quest-title">{title}</h3>
+            <div class="p3r-quest-meta">
+                <p>👤 <strong>Client:</strong> {client}</p>
+                <p>📍 <strong>Location:</strong> {location}</p>
+            </div>
+        </div>
+        <a href={`/${lang}/quests/${id}`} class="p3r-view-quest-btn" aria-label="View details">
+            <svg class="p3r-view-quest-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="11" cy="11" r="5.5" />
+                <path d="M15 15l4 4" />
+            </svg>
+        </a>
+    </div>
+</div>
+
+<style>
+    .p3r-quest-item {
+    background-color: #111;
+    border: 2px solid #333;
+    padding: 1.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .p3r-quest-item:hover {
+    border-color: var(--primary);
+  }
+
+  .p3r-quest-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .p3r-quest-number {
+    font-family: 'Impact', sans-serif;
+    color: var(--primary);
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+
+  .p3r-quest-day {
+    padding: 2px 10px;
+    font-size: 0.8rem;
+    background-color: #6B3FA0; 
+    color: #fff; 
+    text-transform: uppercase;
+    font-weight: bold;
+    transform: skewX(-10deg);
+  }
+
+  .p3r-quest-body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .p3r-quest-info {
+    flex: 1;
+  }
+
+  .p3r-quest-title {
+    font-size: 1.4rem;
+    color: #fff;
+    margin: 0.2rem 0;
+  }
+
+  .p3r-quest-meta p {
+    font-size: 0.95rem;
+    color: #aaa;
+    margin: 0.2rem 0;
+  }
+
+  .p3r-view-quest-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    background-color: var(--primary);
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transform: skewX(-12deg);
+    border: 2px solid #333;
+    flex-shrink: 0;
+  }
+
+  .p3r-view-quest-btn:hover { background-color: #6B3FA0; }
+
+  .p3r-view-quest-icon {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    stroke: #fff;
+    stroke-width: 2;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transform: skewX(12deg);
+  }
+</style>

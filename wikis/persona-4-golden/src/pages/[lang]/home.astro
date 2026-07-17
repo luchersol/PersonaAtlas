@@ -18,7 +18,7 @@ const t = useTranslations(lang);
 <Layout title="Persona 4 Hub | Inaba">
   <div class="p4-home">
     <h1 class="p4-title" style="font-size: 4rem; line-height: 0.9;">
-      {t("home.title.0")}<br><span style="color:#fff; text-shadow: 4px 4px 0px #000;">{t("home.title.1")}</span>
+      {t("home.title.0")}<br><span style="color:#fff; text-shadow: 4px 4px 0px var(--background);">{t("home.title.1")}</span>
     </h1>
     
     <p class="p4-home-desc">
@@ -48,7 +48,7 @@ const t = useTranslations(lang);
 
   .p4-tv-static {
     margin-top: 1rem;
-    background-color: #000;
+    background-color: var(--background);
     border: 2px dashed #FFEB3B;
     padding: 1rem;
     width: fit-content;

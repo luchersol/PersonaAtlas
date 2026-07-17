@@ -1,0 +1,97 @@
+---
+// src/components/NavLink.astro
+
+interface Props {
+    href: string;
+    concept: string;
+}
+
+const { href, concept } = Astro.props;
+
+const { pathname } = Astro.url;
+
+const isActive =
+    pathname.replace(/\/$/, "") === href.replace(/\/$/, "");
+---
+
+<a
+    href={href}
+    class:list={[
+        "p3r-nav-link",
+        { active: isActive }
+    ]}
+>
+    {concept}
+</a>
+
+<style>
+.p3r-nav-link{
+
+    position:relative;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:.75rem 1rem;
+
+    color:var(--text-muted);
+
+    font-weight:600;
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+
+    transition:.25s;
+
+}
+
+.p3r-nav-link:hover{
+
+    color:var(--primary-light);
+
+}
+
+.p3r-nav-link::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-4px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--primary);
+
+    transition:.25s;
+
+}
+
+.p3r-nav-link:hover::after{
+
+    width:100%;
+
+}
+
+.p3r-nav-link.active{
+
+    color:white;
+
+}
+
+.p3r-nav-link.active::after{
+
+    width:100%;
+
+    box-shadow:
+        0 0 8px var(--primary),
+        0 0 20px rgba(36,184,255,.4);
+
+}
+</style>

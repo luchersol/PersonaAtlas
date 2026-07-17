@@ -1,0 +1,140 @@
+---
+// src/components/NavPersona3.astro
+
+import { useTranslations } from "@i18n/utils";
+import NavLink from "./NavLink.astro";
+import type { Params } from "@types2/p3r";
+
+export function getStaticPaths() {
+    return [
+        { params: { lang: "es" } },
+        { params: { lang: "en" } },
+    ];
+}
+
+const { lang } = Astro.params as Params;
+
+const t = useTranslations(lang);
+---
+
+<nav class="p3r-nav">
+
+    <a href={`/${lang}`} class="p3r-logo">
+        Persona 3
+        <span>Reload Hub</span>
+    </a>
+
+    <div class="p3r-nav-links">
+
+        <NavLink
+            href={`/${lang}/characters`}
+            concept={t("nav.characters")}
+        />
+
+        <NavLink
+            href={`/${lang}/personas`}
+            concept={t("nav.personas")}
+        />
+
+        <NavLink
+            href={`/${lang}/social-links`}
+            concept={t("nav.social_links")}
+        />
+
+        <NavLink
+            href={`/${lang}/calendar`}
+            concept={t("nav.calendar")}
+        />
+
+        <NavLink
+            href={`/${lang}/guides`}
+            concept={t("nav.guides")}
+        />
+
+    </div>
+
+</nav>
+
+<style>
+
+.p3r-nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    width:100%;
+
+    gap:3rem;
+
+}
+
+.p3r-logo{
+
+    display:flex;
+
+    flex-direction:column;
+
+    line-height:1;
+
+    font-weight:900;
+
+    font-size:1.7rem;
+
+    text-transform:uppercase;
+
+    letter-spacing:-1px;
+
+    color:white;
+
+}
+
+.p3r-logo span{
+
+    margin-top:.2rem;
+
+    font-size:.9rem;
+
+    font-weight:500;
+
+    letter-spacing:.3em;
+
+    color:var(--primary);
+
+}
+
+.p3r-nav-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:2rem;
+
+}
+
+@media (max-width:900px){
+
+    .p3r-nav{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:1.5rem;
+
+    }
+
+    .p3r-nav-links{
+
+        flex-wrap:wrap;
+
+        gap:1rem 1.5rem;
+
+    }
+
+}
+
+</style>

@@ -1,0 +1,123 @@
+---
+// src/layouts/Layout.astro
+
+import LangSelector from "@components/LangSelector.astro";
+import NavPersona3 from "@components/NavPersona3.astro";
+
+const { title = "Persona 3 Reload Hub" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>{title}</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <div class="background-grid"></div>
+
+        <header class="layout-header">
+            <NavPersona3 />
+            <LangSelector />
+        </header>
+
+        <main class="layout-content">
+            <slot />
+        </main>
+
+        <footer class="layout-footer">© ATLUS • MEMENTO MORI</footer>
+    </body>
+</html>
+
+<style is:global>
+    :root {
+        --primary: #24b8ff;
+        --primary-light: #74d3ff;
+        --primary-dark: #0d7fc2;
+
+        --background: #08121d;
+        --surface: rgba(255, 255, 255, 0.05);
+
+        --text: #f7fbff;
+        --text-muted: #bcd8e8;
+
+        --border: rgba(36, 184, 255, 0.25);
+
+        --shadow: 0 0 30px rgba(36, 184, 255, 0.15);
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        font-family: Outfit, sans-serif;
+        color: var(--text);
+        background: var(--background);
+    }
+
+    body {
+        min-height: 100vh;
+        background: radial-gradient(circle at top, #123a63 0%, #08121d 65%);
+    }
+
+    .background-grid {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        background-image: repeating-linear-gradient(
+            -45deg,
+            transparent 0,
+            transparent 24px,
+            rgba(255, 255, 255, 0.015) 24px,
+            rgba(255, 255, 255, 0.015) 25px
+        );
+        opacity: 0.8;
+    }
+
+    .layout-header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 3rem;
+        background: rgba(8, 18, 29, 0.75);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--border);
+    }
+
+    .layout-content {
+        width: min(1200px, 92%);
+        margin: auto;
+        padding: 4rem 0;
+    }
+
+    .layout-footer {
+        text-align: center;
+        color: var(--text-muted);
+        border-top: 1px solid var(--border);
+        padding: 2rem;
+        font-size: 0.9rem;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+</style>

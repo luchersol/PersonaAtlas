@@ -1,0 +1,199 @@
+---
+import { useTranslations } from '@i18n/utils';
+import type { Params } from '@types2/p3r';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'es' } },
+    { params: { lang: 'en' } }
+  ];
+}
+
+const { lang } = Astro.params as Params;
+
+interface Props {
+  description: string;
+  mechanic: string;
+}
+
+const { description, mechanic } = Astro.props as Props;
+const t = useTranslations(lang);
+---
+
+<div class="p3r-note-root" data-note-root>
+  <button class="p3r-info-button" type="button" data-note-trigger aria-label={t('notebox.system')}>
+    <span class="p3r-info-icon">ⓘ</span>
+  </button>
+
+  <div class="p3r-modal-backdrop" data-note-modal hidden aria-hidden="true">
+    <div class="p3r-modal" role="dialog" aria-modal="true" aria-label={t('notebox.system')}>
+      <button class="p3r-modal-close" type="button" data-note-close aria-label="Cerrar">×</button>
+      <div class="p3r-content-box">
+        <p class="p3r-description">{description}</p>
+        <div class="p3r-mechanic-box">
+          <span class="p3r-badge">{t('notebox.system')}</span>
+          <p>{mechanic}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const noteRoots = document.querySelectorAll('[data-note-root]');
+
+  noteRoots.forEach((root) => {
+    const trigger = root.querySelector('[data-note-trigger]');
+    const modal = root.querySelector('[data-note-modal]');
+    const closeButton = root.querySelector('[data-note-close]');
+
+    const openModal = () => {
+      if (!modal) return;
+      modal.removeAttribute('hidden');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('p3r-modal-open');
+    };
+
+    const closeModal = () => {
+      if (!modal) return;
+      modal.setAttribute('hidden', 'true');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('p3r-modal-open');
+    };
+
+    trigger?.addEventListener('click', openModal);
+    closeButton?.addEventListener('click', closeModal);
+
+    modal?.addEventListener('click', (event) => {
+      if (event.target === modal) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && !modal?.hasAttribute('hidden')) {
+        closeModal();
+      }
+    });
+  });
+</script>
+
+<style>
+  .p3r-note-root {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .p3r-info-button {
+    width: 2.4rem;
+    height: 2.4rem;
+    border: 2px solid #333;
+    background: var(--primary);
+    color: #fff;
+    box-shadow: 4px 4px 0 var(--background);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: transform 0.2s ease;
+  }
+
+  .p3r-info-button:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 5px 5px 0 var(--background);
+  }
+
+  .p3r-info-icon {
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: 'Impact', sans-serif;
+  }
+
+  .p3r-modal-backdrop {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100dvh;
+    min-height: 100dvh;
+    background: rgba(0, 0, 0, 0.78);
+    padding: 1.5rem;
+    z-index: 1000;
+    overflow-y: auto;
+  }
+
+  .p3r-modal-backdrop[hidden] {
+    display: none !important;
+  }
+
+  .p3r-modal {
+    position: fixed;
+    top: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(100%, 42rem);
+    max-width: min(42rem, calc(100vw - 2rem));
+    max-height: calc(100dvh - 3rem);
+    overflow-y: auto;
+  }
+
+  .p3r-modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: 2px solid #333;
+    background: var(--primary);
+    color: #fff;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 var(--background);
+    z-index: 1;
+  }
+
+  .p3r-content-box {
+    background-color: var(--background);
+    border: 3px solid #333;
+    padding: 2.5rem;
+    box-shadow: 8px 8px 0 0 var(--background);
+    position: relative;
+  }
+
+  .p3r-description {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #e0e0e0;
+  }
+
+  .p3r-mechanic-box {
+    margin-top: 2rem;
+    background-color: #222;
+    border-left: 5px solid var(--primary);
+    padding: 1.5rem;
+    position: relative;
+  }
+
+  .p3r-badge {
+    position: absolute;
+    top: -12px;
+    left: 15px;
+    background-color: var(--primary);
+    color: #fff;
+    font-family: 'Impact', sans-serif;
+    padding: 2px 8px;
+    font-size: 0.85rem;
+    transform: skewX(-10deg);
+  }
+
+  .p3r-mechanic-box p {
+    font-size: 1rem;
+    color: var(--primary);
+    font-style: italic;
+  }
+
+  :global(body.p3r-modal-open) {
+    overflow: hidden;
+  }
+</style>

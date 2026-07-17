@@ -1,0 +1,146 @@
+---
+import { useTranslations } from '@i18n/utils';
+import type { Params } from '@types2/p3r';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'es' } }, 
+    { params: { lang: 'en' } }
+  ];
+}
+
+const { lang } = Astro.params as Params;
+
+interface Props {
+    image: string; 
+    id: string;
+    name: string;
+    arcanaCard: string;
+    arcana: string;
+    location: string;
+    description: string;
+}
+
+const {image, id, name, arcanaCard, arcana, location, description} = Astro.props;
+
+const t = useTranslations(lang);
+
+---
+
+<div class="p3r-char-card">
+    <div class="p3r-card-arcana-wrapper">
+        <img src={arcanaCard} alt={arcana} class="p3r-arcana-img-fallback" onerror="this.style.display='none'" />
+        <span class="p3r-arcana-tag">{arcana}</span>
+    </div>
+    <div class="p3r-char-avatar-box">
+        <img src={image} alt={name} class="p3r-avatar-img-fallback" onerror="this.style.backgroundColor='#333'" />
+    </div>
+    <div class="p3r-char-info">
+        <h3>{name}</h3>
+        <p class="p3r-loc">📍 {location}</p>
+        <p class="p3r-desc">{description}</p>
+        <a href={`/${lang}/social-links/${id}`} class="p3r-profile-btn"><span>{t("profilebox.button")}</span></a>
+    </div>
+</div>
+
+<style>
+/* Tarjeta de Personaje Estilo P3R */
+  .p3r-char-card {
+    background-color: #111;
+    border: 3px solid var(--background);
+    box-shadow: 5px 5px 0px var(--primary);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 1.5rem;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+  }
+  .p3r-char-card:hover {
+    transform: translateY(-5px);
+  }
+
+  /* Contenedores de imágenes (con fallbacks visuales por si están vacíos) */
+  .p3r-char-avatar-box {
+    width: 90px;
+    height: 90px;
+    border: 3px solid #fff;
+    outline: 3px solid var(--background);
+    margin-bottom: 1rem;
+    transform: rotate(-3deg);
+    overflow: hidden;
+  }
+  .p3r-avatar-img-fallback {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .p3r-card-arcana-wrapper {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .p3r-arcana-img-fallback {
+    width: 45px;
+    height: auto;
+    margin-bottom: 4px;
+  }
+  .p3r-arcana-tag {
+    background-color: var(--background);
+    color: var(--primary);
+    font-size: 0.75rem;
+    font-weight: 900;
+    padding: 2px 6px;
+    text-transform: uppercase;
+    border: 1px solid var(--primary);
+  }
+
+  /* Info textual interna */
+  .p3r-char-info h3 {
+    font-family: 'Impact', sans-serif;
+    font-size: 1.6rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.25rem;
+  }
+  .p3r-loc {
+    color: var(--primary);
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+  }
+  .p3r-desc {
+    color: #bbb;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+  }
+
+  /* Botón de Perfil interno */
+  .p3r-profile-btn {
+    background-color: var(--primary);
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    transform: skewX(-10deg);
+    border: 2px solid var(--primary);
+    display: block;
+    transition: background 0.2s;
+  }
+  .p3r-profile-btn span {
+    display: inline-block;
+    transform: skewX(10deg);
+  }
+  .p3r-profile-btn:hover {
+    background-color: #6B3FA0;
+  }
+</style>

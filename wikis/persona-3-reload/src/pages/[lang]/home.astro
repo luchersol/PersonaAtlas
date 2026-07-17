@@ -1,0 +1,98 @@
+---
+import Layout from "@layouts/Layout.astro";
+import { useTranslations } from "@i18n/utils";
+import type { Params } from "@types2/p3r";
+
+export function getStaticPaths() {
+    return [{ params: { lang: "es" } }, { params: { lang: "en" } }];
+}
+
+const { lang } = Astro.params as Params;
+
+const t = useTranslations(lang);
+---
+
+<Layout title="Persona 3 Reload Hub | Gekkoukan">
+    <div class="p3r-home">
+        <h1 class="p3r-title" style="font-size: 4rem; line-height: 0.9;">
+            {t("home.title.0")}<br /><span
+                style="color:#fff; text-shadow: 4px 4px 0px var(--background);"
+                >{t("home.title.1")}</span
+            >
+        </h1>
+
+        <p class="p3r-home-desc">
+            {t("home.description")}
+        </p>
+
+        <div class="p3r-terminal-static">
+            <p class="static-text">{t("home.channel_tuned")}</p>
+        </div>
+    </div>
+</Layout>
+
+<style>
+    .p3r-home {
+        max-width: 900px;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .p3r-title {
+        font-size: clamp(3rem, 8vw, 5.5rem);
+        line-height: 0.9;
+        font-weight: 900;
+        letter-spacing: -3px;
+        text-transform: uppercase;
+    }
+
+    .p3r-title span {
+        color: var(--primary);
+        text-shadow:
+            0 0 12px rgba(36, 184, 255, 0.35),
+            0 0 30px rgba(36, 184, 255, 0.15);
+    }
+
+    .p3r-home-desc {
+        max-width: 700px;
+        color: var(--text-muted);
+        line-height: 1.8;
+        font-size: 1.1rem;
+    }
+
+    .p3r-info-box {
+        margin-top: 1rem;
+        width: fit-content;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        backdrop-filter: blur(12px);
+        border-radius: 10px;
+        padding: 1rem 1.5rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .p3r-info-box::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(
+            90deg,
+            transparent,
+            var(--primary),
+            transparent
+        );
+    }
+
+    .info-text {
+        color: var(--primary-light);
+        font-family: monospace;
+        letter-spacing: 2px;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+    }
+</style>

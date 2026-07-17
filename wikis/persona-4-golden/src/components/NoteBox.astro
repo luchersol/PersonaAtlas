@@ -90,8 +90,8 @@ const t = useTranslations(lang);
     height: 2.4rem;
     border: 2px solid #333;
     background: #ffeb3b;
-    color: #000;
-    box-shadow: 4px 4px 0 #000;
+    color: var(--background);
+    box-shadow: 4px 4px 0 var(--background);
     cursor: pointer;
     display: inline-flex;
     align-items: center;
@@ -102,7 +102,7 @@ const t = useTranslations(lang);
 
   .p4-info-button:hover {
     transform: translate(-1px, -1px);
-    box-shadow: 5px 5px 0 #000;
+    box-shadow: 5px 5px 0 var(--background);
   }
 
   .p4-info-icon {
@@ -144,20 +144,20 @@ const t = useTranslations(lang);
     right: 1rem;
     border: 2px solid #333;
     background: #ffeb3b;
-    color: #000;
+    color: var(--background);
     width: 2rem;
     height: 2rem;
     font-size: 1.2rem;
     cursor: pointer;
-    box-shadow: 3px 3px 0 #000;
+    box-shadow: 3px 3px 0 var(--background);
     z-index: 1;
   }
 
   .p4-content-box {
-    background-color: #000;
+    background-color: var(--background);
     border: 3px solid #333;
     padding: 2.5rem;
-    box-shadow: 8px 8px 0 0 #000;
+    box-shadow: 8px 8px 0 0 var(--background);
     position: relative;
   }
 
@@ -180,7 +180,7 @@ const t = useTranslations(lang);
     top: -12px;
     left: 15px;
     background-color: #ffeb3b;
-    color: #000;
+    color: var(--background);
     font-family: 'Impact', sans-serif;
     padding: 2px 8px;
     font-size: 0.85rem;

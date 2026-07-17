@@ -1,0 +1,32 @@
+{
+  "social-links": {
+    "title": "Confidentes",
+    "subtitle": "Profundizando conexiones para crecer más fuerte",
+    "description": "En Persona 3 Reload, los Confidentes representan los lazos que fortaleces con tus aliados y amigos en la Preparatoria Gekkoukan. Al construir estas relaciones, desbloqueas habilidades poderosas y creas ataques de enlace especiales en combate, mientras desarrollas la historia de cada personaje.",
+    "mechanic": "Al alcanzar el nivel de vínculo máximo desbloqueas la evolución de Persona definitiva y los ataques de enlace más fuertes para cada Confidente."
+  },
+  "velvet-room": {
+    "title": "Habitación Terciopelo",
+    "subtitle": "Una prisión de lazos y posibilidades",
+    "description": "La Sala Terciopelo funciona como una ubicación misteriosa donde Elizabeth asiste al protagonista en gestionar Personas, crear nuevas a través de fusión, y asumir misiones especiales. A medida que avanza tu viaje, la Sala Terciopelo y su rol evolucionan.",
+    "mechanic": "La fusión de Personas te permite combinar Personas existentes para crear otras nuevas y más fuertes, con nivel y estadísticas determinados por leyes de fusión."
+  },
+  "moonlight": {
+    "title": "Luz de Luna",
+    "subtitle": "El fenómeno nocturno que matiza la realidad",
+    "description": "Durante la Hora Oscura, aparece un fenómeno misterioso llamado Luz de Luna. La organización SEES monitorea este fenómeno para reunir inteligencia y prepararse para ataques de Sombras en Gekkoukan y la ciudad circundante.",
+    "mechanic": "Las observaciones de Luz de Luna proporcionan información crucial sobre la actividad potencial de Sombras y ayudan al equipo a prepararse para confrontaciones próximas."
+  },
+  "tartarus": {
+    "title": "Tártaro",
+    "subtitle": "Una torre que cambia constantemente llena de misterios",
+    "description": "Tártaro es una colosal torre que solo aparece durante la Hora Oscura. Está llena de Sombras y sirve como la mazmorra principal de la organización SEES. El diseño de la torre cambia diariamente, presentando nuevos desafíos y recompensas.",
+    "mechanic": "Debes escalar Tártaro durante la Hora Oscura para combatir Sombras, reunir materiales raros, y fortalecer a los miembros de tu equipo."
+  },
+  "quests": {
+    "title": "Solicitudes",
+    "subtitle": "Ayuda a la gente de Port Island",
+    "description": "Tanto estudiantes de Gekkoukan como ciudadanos de Port Island tienen solicitudes. Reúne materiales, caza Sombras específicas, completa tareas, e incrementa tus estadísticas sociales y habilidades personales.",
+    "mechanic": "Las solicitudes no consumen tiempo y algunas requieren estadísticas sociales específicas o acceso a segmentos de Tártaro para aceptar o completar."
+  }
+}

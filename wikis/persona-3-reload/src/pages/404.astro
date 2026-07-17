@@ -1,0 +1,154 @@
+---
+
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>404 - Dark Hour</title>
+    <link href="https://fonts.googleapis.com/css2?family=Impact&family=Rubik:wght@700;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="p3r-container">
+      <div class="scanlines"></div>
+
+      <main class="content">
+        <!-- Bloque del Código de Error -->
+        <div class="error-badge-wrapper">
+          <div class="error-badge">404</div>
+        </div>
+
+        <!-- Alerta estilo Dark Hour -->
+        <div class="alert-box">
+          <h1 id="p3r-title" class="status-title">---</h1>
+          <p id="p3r-desc" class="status-desc">---</p>
+        </div>
+
+        <!-- Botón de retorno dinámico -->
+        <nav class="p3r-menu">
+          <a id="p3r-btn" href="/es/" class="menu-item">
+            <span class="arrow">▶</span>
+            <span id="p3r-btn-text" class="text">---</span>
+          </a>
+        </nav>
+      </main>
+    </div>
+
+    <!-- SCRIPT CLIENT-SIDE: Detecta la ruta rota y traduce al vuelo -->
+    <script>
+      // 1. Diccionario de traducciones idéntico a tu sistema i18n
+      const translations = {
+        es: {
+          title: "ADVERTENCIA: ZONA NO ENCONTRADA",
+          desc: "El lugar que buscas se perdió en la Hora Oscura. Este segmento de <span class='highlight'>Tártaro</span> no existe en esta dimensión.",
+          btn: "REGRESAR A LA REALIDAD",
+          root: "/es/home"
+        },
+        en: {
+          title: "WARNING: ZONE NOT FOUND",
+          desc: "The place you are looking for has been lost in the Dark Hour. This <span class='highlight'>Tartarus</span> segment does not exist in this dimension.",
+          btn: "RETURN TO REALITY",
+          root: "/en/home"
+        }
+      };
+
+      // 2. Detectar qué idioma había en la URL que falló (ej: /en/fbwnoifew o /es/falsa)
+      const currentPath = window.location.pathname;
+      const isEnglish = currentPath.startsWith('/en/') || currentPath === '/en';
+      const lang = isEnglish ? 'en' : 'es';
+      const t = translations[lang];
+
+      // 3. Inyectar los textos de forma dinámica en el DOM
+      document.documentElement.lang = lang;
+      document.getElementById('p3r-title')!.textContent = t.title;
+      document.getElementById('p3r-desc')!.innerHTML = t.desc;
+      document.getElementById('p3r-btn-text')!.textContent = t.btn;
+      
+      // 4. Redirigir el botón de home al idioma correcto
+      const backBtn = document.getElementById('p3r-btn') as HTMLAnchorElement;
+      if (backBtn) backBtn.href = t.root;
+    </script>
+  </body>
+</html>
+
+<style>
+     :root {
+        --primary: #24b8ff;
+        --primary-light: #74d3ff;
+        --primary-dark: #0d7fc2;
+
+        --background: #08121d;
+        --surface: rgba(255, 255, 255, 0.05);
+
+        --text: #f7fbff;
+        --text-muted: #bcd8e8;
+
+        --border: rgba(36, 184, 255, 0.25);
+
+        --shadow: 0 0 30px rgba(36, 184, 255, 0.15);
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        font-family: Outfit, sans-serif;
+        color: var(--text);
+        background: var(--background);
+    }
+
+    body {
+        min-height: 100vh;
+        background: radial-gradient(circle at top, #123a63 0%, #08121d 65%);
+    }
+
+    .background-grid {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        background-image: repeating-linear-gradient(
+            -45deg,
+            transparent 0,
+            transparent 24px,
+            rgba(255, 255, 255, 0.015) 24px,
+            rgba(255, 255, 255, 0.015) 25px
+        );
+        opacity: 0.8;
+    }
+
+    .layout-header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 3rem;
+        background: rgba(8, 18, 29, 0.75);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--border);
+    }
+
+    .layout-content {
+        width: min(1200px, 92%);
+        margin: auto;
+        padding: 4rem 0;
+    }
+
+    .layout-footer {
+        text-align: center;
+        color: var(--text-muted);
+        border-top: 1px solid var(--border);
+        padding: 2rem;
+        font-size: 0.9rem;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+</style>
