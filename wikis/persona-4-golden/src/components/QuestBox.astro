@@ -1,5 +1,5 @@
 ---
-import type { P4Language, Params } from '@types2/p4';
+import type { P4Language, DefaultParams } from '@types2/p4';
 
 interface Props {
     id: number;
@@ -17,7 +17,7 @@ export function getStaticPaths() {
   ];
 }
 
-const { lang } = Astro.params as Params;
+const { lang } = Astro.params as DefaultParams;
 
 const {id, name, title, day, client, location} = Astro.props;
 ---
@@ -56,7 +56,7 @@ const {id, name, title, day, client, location} = Astro.props;
   }
 
   .p4-quest-item:hover {
-    border-color: #FF9800;
+    border-color: var(--color-orange);
   }
 
   .p4-quest-header {
@@ -67,7 +67,7 @@ const {id, name, title, day, client, location} = Astro.props;
 
   .p4-quest-number {
     font-family: 'Impact', sans-serif;
-    color: #FF9800;
+    color: var(--color-orange);
     font-size: 1.2rem;
     letter-spacing: 1px;
   }
@@ -111,7 +111,7 @@ const {id, name, title, day, client, location} = Astro.props;
     justify-content: center;
     width: 2.4rem;
     height: 2.4rem;
-    background-color: #FF9800;
+    background-color: var(--color-orange);
     color: var(--background);
     text-decoration: none;
     font-weight: bold;

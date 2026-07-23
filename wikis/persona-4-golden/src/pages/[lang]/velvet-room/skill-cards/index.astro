@@ -2,8 +2,12 @@
 import Layout from '@layouts/Layout.astro';
 import SkillCardVisual from '@components/SkillCardVisual.astro';
 import { getSkillCardsList, useTranslations } from '@i18n/utils';
-import type { Params } from '@types2/p4';
+import type { DefaultParams } from '@types2/p4';
 import type { P4SkillCardEntry } from '@types2/p4';
+import Page from '@components/Page.astro';
+import HeaderBox from '@components/HeaderBox.astro';
+import Section from '@components/Section.astro';
+import NavButton from '@components/NavButton.astro';
 
 export function getStaticPaths() {
   return [
@@ -12,19 +16,19 @@ export function getStaticPaths() {
   ];
 }
 
-const { lang } = Astro.params as Params;
+const { lang } = Astro.params as DefaultParams;
 const t = useTranslations(lang);
 const skillCards = await getSkillCardsList(lang);
 ---
 
 <Layout title={`${t('velvet-room.skill-cards.title')} | Persona 4 Hub`}>
-  <article class="p4-card-container">
-    <header class="p4-page-header">
-      <h1 class="p4-title">{t('velvet-room.skill-cards.title')}</h1>
-      <p class="p4-subtitle">Velvet Room</p>
-    </header>
+  <Page>
+    <HeaderBox 
+      title={t('velvet-room.skill-cards.title')}
+      subtitle='Velvet Room'
+    />
 
-    <section class="p4-section">
+    <Section>
       <div class="p4-skill-list">
         {skillCards.map((entry: P4SkillCardEntry) => (
           <a href={`/${lang}/velvet-room/skill-cards/${entry.id}`} class="p4-skill-card-link">
@@ -32,20 +36,13 @@ const skillCards = await getSkillCardsList(lang);
           </a>
         ))}
       </div>
-    </section>
+    </Section>
 
-    <a href={`/${lang}/velvet-room`} class="p4-back-btn"><span>{t('nav.back')}</span></a>
-  </article>
+    <NavButton {lang} route='/velvet-room'>{t("nav.back")}</NavButton>
+  </Page>
 </Layout>
 
 <style>
-  .p4-card-container { display: flex; flex-direction: column; gap: 2rem; margin-top: 2rem; }
-  .p4-page-header { border-left: 8px solid #FFEB3B; padding-left: 1.5rem; }
-  .p4-subtitle { font-size: 1.2rem; color: #FFEB3B; text-transform: uppercase; font-weight: 700; margin-top: -0.5rem; }
-  .p4-section { overflow-x: auto; }
   .p4-skill-list { display: grid; gap: 1rem; }
   .p4-skill-card-link { color: inherit; text-decoration: none; }
-  .p4-back-btn { align-self: flex-start; background-color: #333; color: #fff; padding: 0.6rem 1.5rem; font-weight: 700; text-transform: uppercase; text-decoration: none; transform: skewX(-12deg); border: 2px solid #444; }
-  .p4-back-btn span { display: inline-block; transform: skewX(12deg); }
-  .p4-back-btn:hover { background-color: #fff; color: var(--background); border-color: #fff; }
 </style>

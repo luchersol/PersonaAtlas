@@ -1,6 +1,6 @@
 ---
 import { useTranslations } from '@i18n/utils';
-import type { Params } from '@types2/p4';
+import type { DefaultParams } from '@types2/p4';
 
 export function getStaticPaths() {
   return [
@@ -9,7 +9,7 @@ export function getStaticPaths() {
   ];
 }
 
-const { lang } = Astro.params as Params;
+const { lang } = Astro.params as DefaultParams;
 
 interface Props {
     image: string; 
@@ -50,7 +50,7 @@ const t = useTranslations(lang);
   .p4-char-card {
     background-color: #111;
     border: 3px solid var(--background);
-    box-shadow: 5px 5px 0px #FFEB3B;
+    box-shadow: 5px 5px 0px var(--primary);
     display: flex;
     flex-direction: column;
     position: relative;
@@ -93,12 +93,12 @@ const t = useTranslations(lang);
   }
   .p4-arcana-tag {
     background-color: var(--background);
-    color: #FFEB3B;
+    color: var(--primary);
     font-size: 0.75rem;
     font-weight: 900;
     padding: 2px 6px;
     text-transform: uppercase;
-    border: 1px solid #FFEB3B;
+    border: 1px solid var(--primary);
   }
 
   /* Info textual interna */
@@ -111,7 +111,7 @@ const t = useTranslations(lang);
     margin-bottom: 0.25rem;
   }
   .p4-loc {
-    color: #FFEB3B;
+    color: var(--primary);
     font-size: 0.85rem;
     font-weight: 700;
     margin-bottom: 0.75rem;
@@ -126,7 +126,7 @@ const t = useTranslations(lang);
 
   /* Botón de Perfil interno */
   .p4-profile-btn {
-    background-color: #FFEB3B;
+    background-color: var(--primary);
     color: var(--background);
     text-align: center;
     padding: 0.5rem;

@@ -1,0 +1,218 @@
+/* ==========================================================
+   PERSONA 4 HUB
+   Components
+   ========================================================== */
+
+/* ==========================================================
+   Navigation
+   ========================================================== */
+
+.p4-back-btn {
+  align-self: flex-start;
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  color: #fff;
+  background: #333;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 2px solid #444;
+  transform: skewX(-12deg);
+  transition:
+    background-color .2s ease,
+    color .2s ease,
+    border-color .2s ease;
+}
+
+.p4-back-btn span {
+  display: inline-block;
+  transform: skewX(12deg);
+}
+
+.p4-back-btn:hover {
+  color: var(--background);
+  background: #fff;
+  border-color: #fff;
+}
+
+/* ==========================================================
+   Containers
+   ========================================================== */
+
+.p4-content-box {
+  padding: 2.5rem;
+  background: var(--background);
+  border: 3px solid #333;
+  box-shadow: 8px 8px 0 var(--background);
+}
+
+
+/* ==========================================================
+   Grid
+   ========================================================== */
+
+.p4-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.p4-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+
+  margin-top: 1.5rem;
+}
+
+/* ==========================================================
+   Info Cards
+   ========================================================== */
+
+.p4-info-card {
+  padding: 1.2rem;
+
+  background: #111;
+
+  border: 2px solid #333;
+
+  box-shadow: 4px 4px 0 var(--background);
+}
+
+.p4-info-card p {
+  margin-bottom: .35rem;
+
+  color: #cfcfcf;
+  line-height: 1.6;
+}
+
+/* ==========================================================
+   Detail Cards
+   ========================================================== */
+
+.p4-detail-card {
+  padding: 1rem;
+
+  background: #111;
+
+  border: 1px solid #333;
+}
+
+.p4-detail-card h3 {
+  margin-bottom: .4rem;
+
+  color: var(--color-orange);
+
+  font-size: .95rem;
+  text-transform: uppercase;
+}
+
+.p4-detail-card p {
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* ==========================================================
+   Card Link
+   ========================================================== */
+
+.p4-card-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.p4-card-link:hover {
+  transform: translateY(-2px);
+  border-color: var(--primary);
+}
+
+/* ==========================================================
+   Page Header
+   ========================================================== */
+
+.p4-page-header {
+  padding-left: 1.5rem;
+
+  border-left: 8px solid var(--primary);
+}
+
+.p4-description {
+  color: #e0e0e0;
+
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+/* ==========================================================
+   Sidebar
+   ========================================================== */
+
+.p4-sidebar-block {
+  margin-top: 1.5rem;
+  padding: 1rem;
+
+  background: #1a1a1a;
+
+  border-left: 4px solid var(--primary);
+}
+
+.p4-sidebar-block span {
+  color: #888;
+
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+.p4-sidebar-block p {
+  margin-top: .3rem;
+
+  color: #fff;
+}
+
+.p4-sidebar-block.reward p {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+/* ==========================================================
+   Mechanic Box
+   ========================================================== */
+
+.p4-mechanic-box {
+  position: relative;
+
+  margin-top: 2rem;
+  padding: 1.5rem;
+
+  background: #222;
+
+  border-left: 5px solid var(--primary);
+}
+
+.p4-mechanic-box p {
+  color: var(--primary);
+
+  font-size: 1rem;
+  font-style: italic;
+}
+
+/* ==========================================================
+   Badge
+   ========================================================== */
+
+.p4-badge {
+  position: absolute;
+  top: -12px;
+  left: 15px;
+
+  padding: 2px 8px;
+
+  color: var(--background);
+  background: var(--primary);
+
+  font-family: Impact, sans-serif;
+  font-size: .85rem;
+
+  transform: skewX(-10deg);
+}

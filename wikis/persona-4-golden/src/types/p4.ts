@@ -3,7 +3,7 @@
  */
 export type P4Language = 'en' | 'es';
 
-export interface Params {
+export interface DefaultParams {
   lang: P4Language;
 }
 

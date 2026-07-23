@@ -1,9 +1,12 @@
 ---
-import type { P4DungeonEntry, P4ObjectEntry, P4SectionInfo, P4ShadowEntry, Params } from '@types2/p4';
+import type { P4SectionInfo, DefaultParams } from '@types2/p4';
 
 import Layout from '@layouts/Layout.astro';
 import { getObjectsList, getP4Data, getTvWorldDungeonsList, getTvWorldShadowsList, useTranslations } from '@i18n/utils';
 import HeaderBox from '@components/HeaderBox.astro';
+import NavButton from '@components/NavButton.astro';
+import Section from '@components/Section.astro';
+import Page from '@components/Page.astro';
 
 export function getStaticPaths() {
   return [
@@ -12,7 +15,7 @@ export function getStaticPaths() {
   ];
 }
 
-const { lang } = Astro.params as Params;
+const { lang } = Astro.params as DefaultParams;
 const t = useTranslations(lang);
 
 const info: P4SectionInfo = await getP4Data(lang, 'tv-world');
@@ -23,68 +26,51 @@ const objectsList = await getObjectsList(lang);
 if (!info) {
   throw new Error(`Data missing for tv-world in language: ${lang}`);
 }
+
+const cards = [
+  {
+    href: `/${lang}/tv-world/dungeons`,
+    title: t('tv-world.dungeons.title'),
+    description: 'Accede al listado de mazmorras y sus datos básicos.'
+  },
+  {
+    href: `/${lang}/tv-world/shadows`,
+    title: t('tv-world.shadows.title'),
+    description: 'Explora las sombras y sus detalles principales.'
+  },
+  {
+    href: `/${lang}/tv-world/objects`,
+    title: t('tv-world.objects.title'),
+    description: 'Consulta los objetos disponibles en el mundo TV.'
+  }
+];
+
 ---
 
 <Layout title={`${info.title} | Persona 4 Hub`}>
-  <article class="p4-card-container">
+  <Page>
     <HeaderBox {...info} />
 
-    <section class="p4-section">
+    <Section>
       <div class="p4-grid">
-        <a href={`/${lang}/tv-world/dungeons`} class="p4-info-card p4-card-link">
-          <div class="p4-card-head">
-            <h3>{t('tv-world.dungeons.title')}</h3>
-            <span class="p4-chip">TV</span>
-          </div>
-          <p>Accede al listado de mazmorras y sus datos básicos.</p>
-        </a>
-
-        <a href={`/${lang}/tv-world/shadows`} class="p4-info-card p4-card-link">
-          <div class="p4-card-head">
-            <h3>{t('tv-world.shadows.title')}</h3>
-            <span class="p4-chip">TV</span>
-          </div>
-          <p>Explora las sombras y sus detalles principales.</p>
-        </a>
-
-        <a href={`/${lang}/tv-world/objects`} class="p4-info-card p4-card-link">
-          <div class="p4-card-head">
-            <h3>{t('tv-world.objects.title')}</h3>
-            <span class="p4-chip">TV</span>
-          </div>
-          <p>Consulta los objetos disponibles en el mundo TV.</p>
-        </a>
+        {cards.map((card) => (
+          <a href={card.href} class="p4-info-card p4-card-link">
+            <div class="p4-card-head">
+              <h3>{card.title}</h3>
+              <span class="p4-chip">TV</span>
+            </div>
+            <p>{card.description}</p>
+          </a>
+        ))}
       </div>
-    </section>
+    </Section>
 
-    <a href="/" class="p4-back-btn"><span>{t("nav.back")}</span></a>
-  </article>
+    <NavButton lang={lang} route="/">{t("nav.back")}</NavButton>
+  </Page>
 </Layout>
 
 <style>
-  .p4-card-container { display: flex; flex-direction: column; gap: 2rem; margin-top: 2rem; }
-  .p4-page-header { border-left: 8px solid #FFEB3B; padding-left: 1.5rem; }
-  .p4-subtitle { font-size: 1.2rem; color: #FFEB3B; text-transform: uppercase; font-weight: 700; margin-top: -0.5rem; }
-  .p4-content-box { background-color: var(--background); border: 3px solid #333; padding: 2.5rem; box-shadow: 8px 8px 0px 0px var(--background); }
-  .p4-description { font-size: 1.15rem; line-height: 1.8; color: #e0e0e0; }
-  .p4-mechanic-box { margin-top: 2rem; background-color: #222; border-left: 5px solid #FFEB3B; padding: 1.5rem; position: relative; }
-  .p4-badge { position: absolute; top: -12px; left: 15px; background-color: #FFEB3B; color: var(--background); font-family: 'Impact', sans-serif; padding: 2px 8px; font-size: 0.85rem; transform: skewX(-10deg); }
-  .p4-mechanic-box p { font-size: 1rem; color: #FFEB3B; font-style: italic; }
-  .p4-back-btn { align-self: flex-start; background-color: #333; color: #fff; padding: 0.6rem 1.5rem; font-weight: 700; text-transform: uppercase; text-decoration: none; transform: skewX(-12deg); border: 2px solid #444; }
-  .p4-back-btn span { display: inline-block; transform: skewX(12deg); }
-  .p4-back-btn:hover { background-color: #fff; color: var(--background); border-color: #fff; }
-
-  .p4-section { display: flex; flex-direction: column; gap: 1rem; }
-  .p4-section-head { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
-  .p4-section-link { color: #FF9800; font-weight: 700; text-decoration: none; text-transform: uppercase; font-size: 0.85rem; }
-  .p4-section-link:hover { color: #fff; }
-  .p4-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
-  .p4-info-card { background-color: #111; border: 2px solid #333; padding: 1.2rem; box-shadow: 4px 4px 0 var(--background); }
-  .p4-card-link { display: block; color: inherit; text-decoration: none; transition: transform 0.2s ease, border-color 0.2s ease; }
-  .p4-card-link:hover { transform: translateY(-2px); border-color: #FFEB3B; }
   .p4-card-head { display: flex; justify-content: space-between; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; }
   .p4-card-head h3 { color: #fff; font-size: 1.1rem; }
-  .p4-chip { background-color: #FF9800; color: var(--background); padding: 0.2rem 0.45rem; font-size: 0.75rem; text-transform: uppercase; font-weight: 700; }
-  .p4-info-card p { color: #cfcfcf; line-height: 1.6; margin-bottom: 0.35rem; }
-  .p4-card-meta { margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid #333; }
+  .p4-chip { background-color: var(--color-orange); color: var(--background); padding: 0.2rem 0.45rem; font-size: 0.75rem; text-transform: uppercase; font-weight: 700; }
 </style>

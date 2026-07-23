@@ -1,8 +1,12 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import { getCompendiumList, useTranslations } from '@i18n/utils';
-import type { Params } from '@types2/p4';
+import type { DefaultParams } from '@types2/p4';
 import type { P4CompendiumEntry } from '@types2/p4';
+import Page from '@components/Page.astro';
+import NavButton from '@components/NavButton.astro';
+import Section from '@components/Section.astro';
+import HeaderBox from '@components/HeaderBox.astro';
 
 export function getStaticPaths() {
   return [
@@ -11,19 +15,19 @@ export function getStaticPaths() {
   ];
 }
 
-const { lang } = Astro.params as Params;
+const { lang } = Astro.params as DefaultParams;
 const t = useTranslations(lang);
 const compendium = await getCompendiumList(lang);
 ---
 
 <Layout title={`${t('velvet-room.compendium.title')} | Persona 4 Hub`}>
-  <article class="p4-card-container">
-    <header class="p4-page-header">
-      <h1 class="p4-title">{t('velvet-room.compendium.title')}</h1>
-      <p class="p4-subtitle">Velvet Room</p>
-    </header>
+  <Page>
+    <HeaderBox 
+      title={t('velvet-room.compendium.title')} 
+      subtitle='Velvet Room'
+    />
 
-    <section class="p4-section">
+    <Section>
       <table class="p4-table" id="compendium-table">
         <thead>
           <tr>
@@ -56,10 +60,10 @@ const compendium = await getCompendiumList(lang);
           ))}
         </tbody>
       </table>
-    </section>
+    </Section>
 
-    <a href={`/${lang}/velvet-room/compendium`} class="p4-back-btn"><span>{t('nav.back')}</span></a>
-  </article>
+    <NavButton {lang} route='/velvet-room/compendium'>{t("nav.back")}</NavButton>
+  </Page>
 </Layout>
 
 <script>
@@ -113,10 +117,6 @@ const compendium = await getCompendiumList(lang);
 </script>
 
 <style>
-  .p4-card-container { display: flex; flex-direction: column; gap: 2rem; margin-top: 2rem; }
-  .p4-page-header { border-left: 8px solid #FFEB3B; padding-left: 1.5rem; }
-  .p4-subtitle { font-size: 1.2rem; color: #FFEB3B; text-transform: uppercase; font-weight: 700; margin-top: -0.5rem; }
-  .p4-section { overflow-x: auto; }
   .p4-table { width: 100%; border-collapse: collapse; background-color: #111; border: 2px solid #333; }
   .p4-table th,
   .p4-table td {
@@ -128,7 +128,7 @@ const compendium = await getCompendiumList(lang);
 
   .p4-table th {
     background-color: #1a1a1a;
-    color: #FFEB3B;
+    color: var(--primary);
     text-transform: uppercase;
 
     cursor: pointer;
@@ -140,10 +140,8 @@ const compendium = await getCompendiumList(lang);
     background-color: rgba(255, 213, 74, .15);
     color: #fff176;
   }
-  .p4-link { color: #FF9800; font-weight: 700; text-decoration: none; }
+  .p4-link { color: var(--color-orange); font-weight: 700; text-decoration: none; }
   .p4-link:hover { color: #fff; }
   .p4-muted { color: #8a8a8a; font-size: 0.9rem; margin-top: 0.25rem; }
-  .p4-back-btn { align-self: flex-start; background-color: #333; color: #fff; padding: 0.6rem 1.5rem; font-weight: 700; text-transform: uppercase; text-decoration: none; transform: skewX(-12deg); border: 2px solid #444; }
-  .p4-back-btn span { display: inline-block; transform: skewX(12deg); }
-  .p4-back-btn:hover { background-color: #fff; color: var(--background); border-color: #fff; }
+
 </style>

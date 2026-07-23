@@ -1,6 +1,6 @@
 ---
 import { useTranslations } from '@i18n/utils';
-import type { Params } from '@types2/p4';
+import type { DefaultParams } from '@types2/p4';
 
 export function getStaticPaths() {
   return [
@@ -9,7 +9,7 @@ export function getStaticPaths() {
   ];
 }
 
-const { lang } = Astro.params as Params;
+const { lang } = Astro.params as DefaultParams;
 
 interface Props {
   description: string;
@@ -89,7 +89,7 @@ const t = useTranslations(lang);
     width: 2.4rem;
     height: 2.4rem;
     border: 2px solid #333;
-    background: #ffeb3b;
+    background: var(--primary);
     color: var(--background);
     box-shadow: 4px 4px 0 var(--background);
     cursor: pointer;
@@ -143,7 +143,7 @@ const t = useTranslations(lang);
     top: 1rem;
     right: 1rem;
     border: 2px solid #333;
-    background: #ffeb3b;
+    background: var(--primary);
     color: var(--background);
     width: 2rem;
     height: 2rem;
@@ -170,7 +170,7 @@ const t = useTranslations(lang);
   .p4-mechanic-box {
     margin-top: 2rem;
     background-color: #222;
-    border-left: 5px solid #ffeb3b;
+    border-left: 5px solid var(--primary);
     padding: 1.5rem;
     position: relative;
   }
@@ -179,7 +179,7 @@ const t = useTranslations(lang);
     position: absolute;
     top: -12px;
     left: 15px;
-    background-color: #ffeb3b;
+    background-color: var(--primary);
     color: var(--background);
     font-family: 'Impact', sans-serif;
     padding: 2px 8px;
@@ -189,7 +189,7 @@ const t = useTranslations(lang);
 
   .p4-mechanic-box p {
     font-size: 1rem;
-    color: #ffeb3b;
+    color: var(--primary);
     font-style: italic;
   }
 

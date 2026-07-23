@@ -1,7 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import { useTranslations } from '@i18n/utils';
-import type { Params } from '@types2/p4';
+import type { DefaultParams } from '@types2/p4';
 
 export function getStaticPaths() {
   return [
@@ -10,7 +10,7 @@ export function getStaticPaths() {
   ];
 }
 
-const { lang } = Astro.params as Params;
+const { lang } = Astro.params as DefaultParams;
 
 const t = useTranslations(lang);
 
@@ -49,7 +49,7 @@ const t = useTranslations(lang);
   .p4-tv-static {
     margin-top: 1rem;
     background-color: var(--background);
-    border: 2px dashed #FFEB3B;
+    border: 2px dashed var(--primary);
     padding: 1rem;
     width: fit-content;
     transform: skewX(-10deg);
@@ -57,7 +57,7 @@ const t = useTranslations(lang);
 
   .static-text {
     font-family: monospace;
-    color: #FFEB3B;
+    color: var(--primary);
     font-weight: bold;
     font-size: 0.9rem;
     letter-spacing: 2px;

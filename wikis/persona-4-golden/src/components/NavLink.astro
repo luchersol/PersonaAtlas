@@ -39,17 +39,17 @@ const isActive = pathname.replace(/\/$/, '') === href.replace(/\/$/, '');
 
   /* Estilo cuando pasas el ratón por encima */
   .p4-nav-link:hover {
-    background-color: #FFEB3B;
+    background-color: var(--primary);
     color: var(--background);
     transform: skewX(-12deg) scale(1.05);
-    border-color: #FFEB3B;
+    border-color: var(--primary);
   }
 
   /* Estilo cuando está ACTIVO (Estilo P4 total) */
   .p4-nav-link.active {
-    background-color: #FFEB3B;
+    background-color: var(--primary);
     color: var(--background);
-    border-color: #FFEB3B;
+    border-color: var(--primary);
     box-shadow: 4px 4px 0px 0px var(--background);
     z-index: 2;
   }

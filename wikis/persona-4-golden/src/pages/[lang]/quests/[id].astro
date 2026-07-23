@@ -2,6 +2,9 @@
 import Layout from '@layouts/Layout.astro';
 import { useTranslations, getQuestsList } from '@i18n/utils';
 import type { P4Language, P4Quest } from '@types2/p4';
+import NavButton from '@components/NavButton.astro';
+import HeaderBox from '@components/HeaderBox.astro';
+import Page from '@components/Page.astro';
 
 export async function getStaticPaths() {
   const paths: any[] = [];
@@ -28,20 +31,21 @@ interface Props {
 
 const { quest } = Astro.props;
 
-interface Params {
+interface DefaultParams {
   lang: P4Language;
   id: string;
 }
 
-const { lang } = Astro.params as Params;
+const { lang } = Astro.params as DefaultParams;
 const t = useTranslations(lang);
 ---
+
 <Layout title={`${quest.number} | Persona 4 Hub`}>
-  <article class="p4-card-container">
-    <header class="p4-page-header border-orange-left">
-      <span class="p4-quest-top-num">{quest.number}</span>
-      <h1 class="p4-title">{quest.title}</h1>
-    </header>
+  <Page>
+    <HeaderBox
+      title={quest.number}
+      subtitle={quest.title}
+    />
 
     <div class="p4-content-box border-orange">
       <div class="p4-quest-detail-grid">
@@ -70,39 +74,27 @@ const t = useTranslations(lang);
         </div>
       </div>
     </div>
-
-    <a href={`/${lang}/quests`} class="p4-back-btn"><span>Back to Board</span></a>
-  </article>
+    <NavButton {lang} route='/quests'>{t("nav.back")}</NavButton>
+    
+  </Page>
 </Layout>
 
 <style>
-  .border-orange-left { border-left: 8px solid #FF9800; padding-left: 1.5rem; }
-  .border-orange { border-color: #FF9800; }
-  .text-orange { color: #FF9800; font-family: 'Impact', sans-serif; text-transform: uppercase; margin-bottom: 1rem; }
-
-  .p4-quest-top-num { color: #FF9800; font-weight: bold; font-family: 'Impact', sans-serif; font-size: 1.2rem; }
-
-  .p4-quest-detail-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
-  }
-
+  .border-orange { border-color: var(--color-orange); }
+  .text-orange { color: var(--color-orange); font-family: 'Impact', sans-serif; text-transform: uppercase; margin-bottom: 1rem; }
+  .p4-quest-detail-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; }
   @media (max-width: 768px) {
     .p4-quest-detail-grid { grid-template-columns: 1fr; }
   }
-
-  .p4-description { font-size: 1.15rem; line-height: 1.8; color: #e0e0e0; }
-
+  
   .p4-requirements-callout {
     margin-top: 1.5rem;
     background-color: #22170c;
-    border: 1px dashed #FF9800;
+    border: 1px dashed var(--color-orange);
     padding: 1rem;
     color: #ffcc80;
     font-size: 0.95rem;
   }
-
   .p4-detail-sidebar {
     display: flex;
     flex-direction: column;
@@ -111,26 +103,6 @@ const t = useTranslations(lang);
     padding: 1.5rem;
     border: 1px solid #333;
   }
-
-  .p4-sidebar-block span {
-    font-size: 0.75rem;
-    color: #888;
-    font-weight: bold;
-    letter-spacing: 1px;
-  }
-
-  .p4-sidebar-block p {
-    font-size: 1.1rem;
-    color: #fff;
-    margin: 0.1rem 0 0 0;
-  }
-
-  .p4-sidebar-block.reward p {
-    color: #FFEB3B;
-    font-weight: bold;
-  }
-
-  .p4-back-btn { align-self: flex-start; background-color: #333; color: #fff; padding: 0.6rem 1.5rem; font-weight: 700; text-transform: uppercase; text-decoration: none; transform: skewX(-12deg); border: 2px solid #444; }
-  .p4-back-btn span { display: inline-block; transform: skewX(12deg); }
-  .p4-back-btn:hover { background-color: #fff; color: var(--background); border-color: #fff; }
+  .p4-sidebar-block span { font-size: 0.75rem; color: #888; font-weight: bold; letter-spacing: 1px; }
+  .p4-sidebar-block p { font-size: 1.1rem; color: #fff; margin: 0.1rem 0 0 0;}
 </style>

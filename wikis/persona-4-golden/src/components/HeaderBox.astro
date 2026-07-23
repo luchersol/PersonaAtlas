@@ -5,8 +5,8 @@ import NoteBox from './NoteBox.astro';
 interface Props {
   title: string; // Asegúrate de que no diga "never" o un tipo incompatible
   subtitle: string;
-  description: string;
-  mechanic: string;
+  description?: string;
+  mechanic?: string;
 }
 
 const {title, subtitle, description, mechanic} = Astro.props;
@@ -18,13 +18,15 @@ const {title, subtitle, description, mechanic} = Astro.props;
             <h1 class="p4-title">{title}</h1>
             <p class="p4-subtitle">{subtitle}</p>
         </div>
-        <NoteBox {...{description, mechanic}} />
+        {
+           description && mechanic && <NoteBox {...{description, mechanic}} />
+        }
     </div>
 </header>
 
 <style>
     .p4-page-header {
-        border-left: 8px solid #FFEB3B;
+        border-left: 8px solid var(--primary);
         padding-left: 1.5rem;
     }
 
@@ -41,7 +43,7 @@ const {title, subtitle, description, mechanic} = Astro.props;
 
     .p4-subtitle {
         font-size: 1.2rem;
-        color: #FFEB3B;
+        color: var(--primary);
         text-transform: uppercase;
         font-weight: 700;
         margin-top: -0.5rem;

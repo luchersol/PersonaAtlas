@@ -1,6 +1,6 @@
 ---
 import { useTranslations } from '@i18n/utils';
-import type { Params } from '@types2/p4';
+import type { DefaultParams } from '@types2/p4';
 
 export function getStaticPaths() {
   return [
@@ -9,7 +9,7 @@ export function getStaticPaths() {
   ];
 }
 
-const { lang } = Astro.params as Params;
+const { lang } = Astro.params as DefaultParams;
 
 const t = useTranslations(lang);
 
@@ -52,7 +52,7 @@ const {id, image, name, status, airDate, broadcastSummary } = Astro.props;
   .p4-tv-monitor {
     background-color: #0e0e0e;
     border: 4px solid var(--background);
-    box-shadow: 6px 6px 0px #FFEB3B;
+    box-shadow: 6px 6px 0px var(--primary);
     display: flex;
     flex-direction: column;
     border-radius: 8px;
@@ -117,7 +117,7 @@ const {id, image, name, status, airDate, broadcastSummary } = Astro.props;
     z-index: 4;
   }
   .p4-tv-status.dead { background-color: #e60012; color: #fff; }
-  .p4-tv-status.alert { background-color: #FFEB3B; color: var(--background); animation: pulse 1s infinite alternate; }
+  .p4-tv-status.alert { background-color: var(--primary); color: var(--background); animation: pulse 1s infinite alternate; }
 
   @keyframes pulse { from { opacity: 0.6; } to { opacity: 1; } }
 
@@ -137,7 +137,7 @@ const {id, image, name, status, airDate, broadcastSummary } = Astro.props;
     text-transform: uppercase;
   }
   .p4-broadcast-time {
-    color: #FFEB3B;
+    color: var(--primary);
     font-size: 0.85rem;
     font-weight: 700;
     margin: 0.25rem 0 0.75rem 0;
@@ -154,16 +154,16 @@ const {id, image, name, status, airDate, broadcastSummary } = Astro.props;
   /* Botón Sintonizar */
   .p4-tune-btn {
     background-color: var(--background);
-    color: #FFEB3B;
+    color: var(--primary);
     text-align: center;
     padding: 0.5rem;
     font-weight: 900;
     text-transform: uppercase;
     text-decoration: none;
     transform: skewX(-10deg);
-    border: 2px solid #FFEB3B;
+    border: 2px solid var(--primary);
     transition: all 0.2s;
   }
   .p4-tune-btn span { display: inline-block; transform: skewX(10deg); }
-  .p4-tune-btn:hover { background-color: #FFEB3B; color: var(--background); }
+  .p4-tune-btn:hover { background-color: var(--primary); color: var(--background); }
 </style>

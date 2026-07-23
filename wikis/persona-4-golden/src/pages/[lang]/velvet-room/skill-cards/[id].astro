@@ -2,8 +2,10 @@
 import Layout from '@layouts/Layout.astro';
 import SkillCardVisual from '@components/SkillCardVisual.astro';
 import { getSkillCardsList, useTranslations } from '@i18n/utils';
-import type { Params } from '@types2/p4';
+import type { DefaultParams } from '@types2/p4';
 import type { P4SkillCardEntry } from '@types2/p4';
+import Page from '@components/Page.astro';
+import NavButton from '@components/NavButton.astro';
 
 export async function getStaticPaths() {
   const paths: any[] = [];
@@ -24,12 +26,12 @@ interface Props {
 }
 
 const { entry } = Astro.props as Props;
-const { lang } = Astro.params as Params;
+const { lang } = Astro.params as DefaultParams;
 const t = useTranslations(lang);
 ---
 
 <Layout title={`${entry.name} | Persona 4 Hub`}>
-  <article class="p4-card-container">
+  <Page>
     <header class="p4-page-header border-orange-left">
       <h1 class="p4-title">{entry.name}</h1>
       <p class="p4-subtitle">{t('velvet-room.skill-cards.title')}</p>
@@ -50,23 +52,18 @@ const t = useTranslations(lang);
       </div>
     </div>
 
-    <a href={`/${lang}/velvet-room`} class="p4-back-btn"><span>{t('nav.back')}</span></a>
-  </article>
+    <NavButton {lang} route='/velvet-room'>{t("nav.back")}</NavButton>
+  </Page>
 </Layout>
 
 <style>
-  .border-orange-left { border-left: 8px solid #FF9800; padding-left: 1.5rem; }
-  .border-orange { border-color: #FF9800; }
-  .p4-card-container { display: flex; flex-direction: column; gap: 2rem; margin-top: 2rem; }
-  .p4-page-header { border-left: 8px solid #FFEB3B; padding-left: 1.5rem; }
-  .p4-subtitle { font-size: 1.2rem; color: #FFEB3B; text-transform: uppercase; font-weight: 700; margin-top: -0.5rem; }
-  .p4-content-box { background-color: var(--background); border: 3px solid #333; padding: 2.5rem; box-shadow: 8px 8px 0px 0px var(--background); }
-  .p4-description { font-size: 1.15rem; line-height: 1.8; color: #e0e0e0; }
-  .p4-detail-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
-  .p4-detail-card { background-color: #111; border: 1px solid #333; padding: 1rem; }
-  .p4-detail-card h3 { color: #FF9800; margin-bottom: 0.4rem; font-size: 0.95rem; text-transform: uppercase; }
-  .p4-detail-card p { color: #fff; line-height: 1.6; }
-  .p4-back-btn { align-self: flex-start; background-color: #333; color: #fff; padding: 0.6rem 1.5rem; font-weight: 700; text-transform: uppercase; text-decoration: none; transform: skewX(-12deg); border: 2px solid #444; }
-  .p4-back-btn span { display: inline-block; transform: skewX(12deg); }
-  .p4-back-btn:hover { background-color: #fff; color: var(--background); border-color: #fff; }
+  .border-orange-left { border-left: 8px solid var(--color-orange); padding-left: 1.5rem; }
+  .border-orange { border-color: var(--color-orange); }
+  
+  
+  
+  
+  
+
+
 </style>

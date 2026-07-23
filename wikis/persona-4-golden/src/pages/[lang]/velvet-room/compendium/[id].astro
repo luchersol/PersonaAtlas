@@ -1,7 +1,8 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import { getCompendiumList, useTranslations } from "@i18n/utils";
-import type { P4Skill, Params, P4CompendiumEntry } from "@types2/p4";
+import type { P4Skill, DefaultParams, P4CompendiumEntry } from "@types2/p4";
+import NavButton from "@components/NavButton.astro";
 
 const affinityOrder = [
   "Physical",
@@ -41,7 +42,7 @@ interface Props {
 }
 
 const { entry } = Astro.props;
-const { lang } = Astro.params as Params;
+const { lang } = Astro.params as DefaultParams;
 const t = useTranslations(lang);
 ---
 
@@ -142,9 +143,7 @@ const t = useTranslations(lang);
   </div>
 
   <div class="p4-actions">
-    <a href={`/${lang}/velvet-room/compendium`} class="p4-back-btn">
-      <span>{t("nav.back")}</span>
-    </a>
+    <NavButton {lang} route="/velvet-room/compendium" >{t("nav.back")}</NavButton>
   </div>
 </Layout>
 
@@ -384,37 +383,6 @@ const t = useTranslations(lang);
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-}
-
-.p4-back-btn {
-    align-self: flex-start;
-
-    margin-top: 2rem;
-
-    background-color: #333;
-    color: #fff;
-    padding: 0.6rem 1.5rem;
-
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-
-    transform: skewX(-12deg);
-
-    border: 2px solid #444;
-
-    transition: background-color .2s, color .2s, border-color .2s;
-}
-
-.p4-back-btn span {
-    display: inline-block;
-    transform: skewX(12deg);
-}
-
-.p4-back-btn:hover {
-    background-color: #fff;
-    color: var(--background);
-    border-color: #fff;
 }
 
 </style>

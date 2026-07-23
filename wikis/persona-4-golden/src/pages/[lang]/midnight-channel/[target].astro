@@ -1,7 +1,10 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import { useTranslations, getMidnightChannelList } from '@i18n/utils';
-import type { Params, P4MidnightChannel } from '@types2/p4';
+import type { DefaultParams, P4MidnightChannel } from '@types2/p4';
+import HeaderBox from '@components/HeaderBox.astro';
+import NavButton from '@components/NavButton.astro';
+import Page from '@components/Page.astro';
 
 export async function getStaticPaths() {
   const paths: any[] = [];
@@ -21,17 +24,18 @@ export async function getStaticPaths() {
   return paths;
 }
 
-const { lang } = Astro.params as Params;
-const {name, airDate, image, broadcastSummary} = Astro.props as P4MidnightChannel;
+const { lang } = Astro.params as DefaultParams;
+const { name, airDate, image, broadcastSummary } = Astro.props as P4MidnightChannel;
 
 const t = useTranslations(lang);
 ---
+
 <Layout title={`${name} | Midnight Channel Broadcast`}>
-  <article class="p4-card-container">
-    <header class="p4-page-header">
-      <h1 class="p4-title">{name}</h1>
-      <p class="p4-subtitle">📍 {airDate}</p>
-    </header>
+  <Page>
+    <HeaderBox
+      title={name}
+      subtitle={"📍" + airDate}
+    />
 
     <div class="p4-content-box visual-transmission-box">
       <!-- Simulación de la televisión de P4 a pantalla completa -->
@@ -51,89 +55,8 @@ const t = useTranslations(lang);
       </div>
     </div>
 
-    <!-- Volvemos al tablón manteniendo el idioma de la ruta actual -->
-    <a href={`/${lang}/midnight-channel`} class="p4-back-btn">
-      <span>{t("midnight_channel.[target].back")}</span>
-    </a>
-  </article>
+    <NavButton lang={lang} route='/midnight-channel'>
+      {t("midnight_channel.[target].back")} 
+    </NavButton>
+  </Page>
 </Layout>
-
-<style>
-  .p4-broadcast-wrapper { margin-top: 1rem; }
-  .p4-btn-back-tv { color: #FFEB3B; text-transform: uppercase; font-weight: 700; text-decoration: none; font-size: 0.9rem; display: inline-block; margin-bottom: 1.5rem; }
-  .p4-btn-back-tv:hover { text-decoration: underline; }
-
-  .p4-crt-big-monitor {
-    background-color: #050505;
-    border: 6px solid var(--background);
-    box-shadow: 12px 12px 0px var(--background);
-    display: flex;
-    flex-direction: column;
-  }
-
-  /* Pantalla gigante */
-  .p4-crt-screen-big {
-    background-color: #121512;
-    height: 350px;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 6px solid var(--background);
-  }
-
-  .p4-big-tv-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: sepia(0.4) saturate(1.6) hue-rotate(-30deg) blur(1px); /* Distorsión de silueta */
-  }
-
-  /* Efectos CRT Gigantes */
-  .p4-scanlines-big {
-    position: absolute; inset: 0; z-index: 3; pointer-events: none;
-    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.4) 50%);
-    background-size: 100% 6px;
-  }
-  .p4-static-big {
-    position: absolute; inset: 0; opacity: 0.2; z-index: 2; pointer-events: none;
-    background-image: repeating-radial-gradient(circle at 50% 50%, #fff 0px, #fff 1px, transparent 1px, transparent 100%);
-    background-size: 6px 6px;
-    animation: noiseMove 0.05s infinite;
-  }
-  .p4-shadow-overlay {
-    position: absolute; inset: 0; z-index: 4; pointer-events: none;
-    background: radial-gradient(circle, transparent 40%, rgba(0, 0, 0, 0.8) 100%); /* Viñeta oscura */
-  }
-
-  @keyframes noiseMove {
-    0% { transform: translate(0, 0); }
-    100% { transform: translate(3px, -1px); }
-  }
-
-  /* Interfaz REC de la tele */
-  .p4-rec-indicator {
-    position: absolute; top: 20px; left: 20px; z-index: 5;
-    display: flex; align-items: center; gap: 8px;
-    font-family: monospace; color: #e60012; font-weight: bold; font-size: 0.9rem;
-    background: rgba(0,0,0,0.6); padding: 4px 8px;
-  }
-  .p4-rec-dot {
-    width: 10px; height: 10px; background-color: #e60012; border-radius: 50%;
-    animation: blink 1s infinite alternate;
-  }
-  @keyframes blink { from { opacity: 0.2; } to { opacity: 1; } }
-
-  /* Dashboard de Control */
-  .p4-tv-dashboard { padding: 2rem; background-color: #111; color: #fff; }
-  .p4-dash-header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; border-bottom: 2px solid #333; padding-bottom: 1rem; margin-bottom: 1rem; }
-  .p4-dash-badge { background-color: #e60012; color: #fff; font-weight: 900; font-size: 0.8rem; padding: 4px 10px; text-transform: uppercase; transform: skewX(-10deg); }
-  
-  .p4-dash-body { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
-  @media (min-width: 768px) { .p4-dash-body { grid-template-columns: 250px 1fr; } }
-
-  .p4-dash-meta p { font-size: 0.9rem; color: #888; margin-bottom: 0.5rem; }
-  .p4-dash-meta strong { color: #FFEB3B; }
-  .p4-dash-summary { font-size: 1.1rem; line-height: 1.6; color: #ccc; }
-</style>
