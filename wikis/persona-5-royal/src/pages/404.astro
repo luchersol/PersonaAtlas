@@ -1,0 +1,178 @@
+---
+import "@styles2/global.css";
+import { pwaInfo } from 'virtual:pwa-info';
+---
+
+<html lang="es">
+  <!-- Por defecto es 'es', cambiará mediante JS si es 'en' -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>404 - Midnight Channel</title>
+
+    {pwaInfo && <Fragment set:html={pwaInfo.webManifest.link} />}
+    <link
+      href="https://fonts.googleapis.com/css2?family=Impact&family=Rubik:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="p5-container">
+      <div class="scanlines"></div>
+
+      <main class="content">
+        <!-- Código de Error -->
+        <div class="error-badge-wrapper">
+          <div class="error-badge">404</div>
+        </div>
+
+        <!-- Alerta estilo Persona 5 -->
+        <div class="alert-box">
+          <h1 id="p5-title" class="status-title">---</h1>
+          <p id="p5-desc" class="status-desc">---</p>
+        </div>
+
+        <!-- Botón -->
+        <nav class="p5-menu">
+          <a id="p5-btn" href="/es/" class="menu-item">
+            <span class="arrow">▶</span>
+            <span id="p5-btn-text" class="text">---</span>
+          </a>
+        </nav>
+      </main>
+    </div>
+
+    <!-- SCRIPT CLIENT-SIDE: Detecta la ruta rota y traduce al vuelo -->
+    <script>
+      // 1. Diccionario de traducciones idéntico a tu sistema i18n
+      const translations = {
+        es: {
+          title: "MISSION FAILED",
+          desc: "No se ha podido localizar el objetivo. Esta ruta no existe dentro del <span class='highlight'>Metaverso</span>.",
+          btn: "VOLVER AL ESCONDITE",
+          root: "/es/home",
+        },
+        en: {
+          title: "MISSION FAILED",
+          desc: "Unable to locate the target. This route does not exist within the <span class='highlight'>Metaverse</span>.",
+          btn: "RETURN TO THE HIDEOUT",
+          root: "/en/home",
+        },
+      };
+
+      // 2. Detectar qué idioma había en la URL que falló (ej: /en/fbwnoifew o /es/falsa)
+      const currentPath = window.location.pathname;
+      const isEnglish = currentPath.startsWith("/en/") || currentPath === "/en";
+      const lang = isEnglish ? "en" : "es";
+      const t = translations[lang];
+
+      // 3. Inyectar los textos de forma dinámica en el DOM
+      document.documentElement.lang = lang;
+      document.getElementById("p5-title")!.textContent = t.title;
+      document.getElementById("p5-desc")!.innerHTML = t.desc;
+      document.getElementById("p5-btn-text")!.textContent = t.btn;
+
+      // 4. Redirigir el botón de home al idioma correcto
+      const backBtn = document.getElementById("p5-btn") as HTMLAnchorElement;
+      if (backBtn) backBtn.href = t.root;
+    </script>
+  </body>
+</html>
+
+<style>
+  /* --- PALETA DE COLORES RECALIBRADA --- */
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+  }
+
+  .error-badge-wrapper {
+    transform: rotate(-8deg);
+  }
+
+  .error-badge {
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    background: var(--primary);
+    color: white;
+    font-size: clamp(4rem, 12vw, 8rem);
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    clip-path: polygon(6% 0%, 100% 0%, 94% 100%, 0% 100%);
+    box-shadow: var(--shadow);
+  }
+
+  .alert-box {
+    max-width: 700px;
+    padding: 2rem;
+    background: var(--surface);
+    border-left: 8px solid var(--primary);
+    transform: skew(-8deg);
+    box-shadow: var(--shadow);
+  }
+
+  .alert-box > * {
+    transform: skew(8deg);
+  }
+
+  .status-title {
+    margin: 0 0 0.8rem;
+    color: var(--primary);
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .status-desc {
+    margin: 0;
+    color: var(--text);
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+
+  .highlight {
+    color: var(--primary);
+    font-weight: 700;
+  }
+
+  .p5-menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem 2rem;
+    background: var(--primary);
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    transform: skew(-12deg);
+    transition: 0.2s ease;
+    box-shadow: var(--shadow);
+  }
+
+  .menu-item:hover {
+    background: var(--primary-light);
+    transform: skew(-12deg) scale(1.05);
+  }
+
+  .menu-item span {
+    transform: skew(12deg);
+  }
+
+  .arrow {
+    font-size: 1.2rem;
+  }
+</style>

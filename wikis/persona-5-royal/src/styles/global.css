@@ -1,0 +1,72 @@
+/* ==========================================================
+   PERSONA 4 HUB
+   Globals
+   ========================================================== */
+
+:root {
+  /* ===== Colors ===== */
+
+  --primary: #d6001c;
+  --primary-light: #ff3b4f;
+  --primary-dark: #960014;
+
+  --background: #090909;
+  --background-alt: #151515;
+  --surface: rgba(24, 24, 24, 0.95);
+
+  --text: #ffffff;
+  --text-muted: #c9c9c9;
+
+  --color-red: #ff1f3d;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray: #5e5e5e;
+
+  /* ===== Effects ===== */
+
+  --border: rgba(214, 0, 28, 0.4);
+  --shadow: 0 0 30px rgba(214, 0, 28, 0.3);
+}
+
+/* ==========================================================
+   Reset
+   ========================================================== */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==========================================================
+   Base
+   ========================================================== */
+
+html {
+  height: 100%;
+  font-family: Outfit, sans-serif;
+  color: var(--text);
+  background: var(--background);
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #303030 0%, #111111 70%);
+}
+
+
+/* ==========================================================
+   Elements
+   ========================================================== */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  color: var(--background);
+  background: var(--primary);
+}

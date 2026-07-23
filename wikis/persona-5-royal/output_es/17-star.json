@@ -1,0 +1,44 @@
+[
+  {
+    "rank": "1.0",
+    "ability": {
+      "name": "Koma Sabaki",
+      "description": "Puede intercambiar miembros del grupo en mitad de la batalla durante el turno del Joker."
+    }
+  },
+  {
+    "rank": "3.0",
+    "ability": {
+      "name": "uchikomi",
+      "description": "Los miembros del grupo de respaldo pueden realizar ataques de seguimiento después de que Joker derribe a un enemigo."
+    }
+  },
+  {
+    "rank": "5.0",
+    "ability": {
+      "name": "Kakoi Kuzushi",
+      "description": "Puede escapar de una batalla incluso si estás rodeado"
+    }
+  },
+  {
+    "rank": "7.0",
+    "ability": {
+      "name": "Narikin",
+      "description": "Obtén el doble de dinero después de la batalla si el grupo puede derrotar a un enemigo emboscado en un turno."
+    }
+  },
+  {
+    "rank": "9.0",
+    "ability": {
+      "name": "Touryou",
+      "description": "El grupo puede escapar de las batallas en un turno."
+    }
+  },
+  {
+    "rank": "10.0",
+    "ability": {
+      "name": "Sistema de Togo",
+      "description": "Puede intercambiar miembros del grupo en mitad de la batalla durante el turno de cualquier persona."
+    }
+  }
+]

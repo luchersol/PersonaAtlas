@@ -1,0 +1,51 @@
+---
+// src/layouts/Layout.astro
+import "@styles2/global.css";
+import "@styles2/layout.css";
+import { pwaInfo } from 'virtual:pwa-info';
+
+import NavPersona5 from "@components/NavPersona5.astro";
+
+const { title = "Persona 5 Hub" } = Astro.props;
+---
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+
+        {pwaInfo && <Fragment set:html={pwaInfo.webManifest.link} />}
+
+        <!-- Fuentes de Google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Impact&family=Outfit:wght@400;700;900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <div class="p5-background-lines"></div>
+        <div class="p5-corner-block"></div>
+
+        <div class="p5-layout">
+            <header>
+                <NavPersona5 />
+            </header>
+
+            <main class="p5-main-content">
+                <slot />
+            </main>
+
+            <footer class="p5-footer">
+                <span class="yellow-text">© ATLUS</span> // PHANTOM THIEVES
+            </footer>
+            </div>
+    </body>
+</html>
+

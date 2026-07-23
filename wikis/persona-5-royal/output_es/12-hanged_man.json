@@ -1,0 +1,37 @@
+[
+  {
+    "rank": "1.0",
+    "ability": {
+      "name": "Personalización inicial",
+      "description": "Le permite instalar actualizaciones que aumentan la potencia o la precisión de un arma."
+    }
+  },
+  {
+    "rank": "3.0",
+    "ability": {
+      "name": "Personalización de camuflaje",
+      "description": "Te permite agregar pintura de camuflaje a tus armas para darles la oportunidad de infligir dolencias."
+    }
+  },
+  {
+    "rank": "5.0",
+    "ability": {
+      "name": "Descuento",
+      "description": "Puede personalizar armas a la mitad del precio."
+    }
+  },
+  {
+    "rank": "7.0",
+    "ability": {
+      "name": "Personalización experta",
+      "description": "Le permite instalar actualizaciones que aumentan en gran medida la potencia o la precisión de un arma a costa de la otra estadística."
+    }
+  },
+  {
+    "rank": "10.0",
+    "ability": {
+      "name": "La casa invita",
+      "description": "Te permite personalizar tus armas gratis"
+    }
+  }
+]

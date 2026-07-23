@@ -1,0 +1,37 @@
+[
+  {
+    "rank": "1",
+    "ability": {
+      "name": "aflojar",
+      "description": "Kawakami dejará que Joker haga actividades durante su clase"
+    }
+  },
+  {
+    "rank": "3",
+    "ability": {
+      "name": "Gestión interna",
+      "description": "Kawakami hará café o lavará la ropa."
+    }
+  },
+  {
+    "rank": "5",
+    "ability": {
+      "name": "Tiempo libre",
+      "description": "Kawakami llamará a los profesores a la oficina cuando Joker esté en su clase, permitiéndole realizar actividades."
+    }
+  },
+  {
+    "rank": "6",
+    "ability": {
+      "name": "Súper limpieza",
+      "description": "Kawakami fabricará curry o herramientas de infiltración"
+    }
+  },
+  {
+    "rank": "10",
+    "ability": {
+      "name": "Masaje Especial",
+      "description": "Kawakami le dará un masaje a Joker después de regresar del Metaverso, lo que le permitirá salir por la noche"
+    }
+  }
+]

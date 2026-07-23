@@ -1,0 +1,140 @@
+[
+  {
+    "id": "0-igor",
+    "name": "Igor",
+    "arcana": "Fool",
+    "image": "/images/characters/igor.png"
+  },
+  {
+    "id": "1-morgana",
+    "name": "Morgana",
+    "arcana": "Magician",
+    "image": "/images/characters/1-morgana.png"
+  },
+  {
+    "id": "2-makoto",
+    "name": "Makoto",
+    "arcana": "Priestess",
+    "image": "/images/characters/2-makoto.png"
+  },
+  {
+    "id": "3-haru",
+    "name": "Haru",
+    "arcana": "Empress",
+    "image": "/images/characters/3-haru.png"
+  },
+  {
+    "id": "4-yusuke",
+    "name": "Yusuke",
+    "arcana": "Emperor",
+    "image": "/images/characters/4-yusuke.png"
+  },
+  {
+    "id": "5-sojiro",
+    "name": "Sojiro",
+    "arcana": "Hierophant",
+    "image": "/images/characters/5-sojiro.png"
+  },
+  {
+    "id": "6-ann",
+    "name": "Ann",
+    "arcana": "Lovers",
+    "image": "/images/characters/6-ann.png"
+  },
+  {
+    "id": "7-ryuji",
+    "name": "Ryuji",
+    "arcana": "Chariot",
+    "image": "/images/characters/7-ryuji.png"
+  },
+  {
+    "id": "8-goro",
+    "name": "Goro",
+    "arcana": "Justice",
+    "image": "/images/characters/8-goro.png"
+  },
+  {
+    "id": "9-futaba",
+    "name": "Futaba",
+    "arcana": "Hermit",
+    "image": "/images/characters/9-futaba.png"
+  },
+  {
+    "id": "10-chihaya",
+    "name": "Chihaya",
+    "arcana": "Fortune",
+    "image": "/images/characters/10-chihaya.png"
+  },
+  {
+    "id": "11-caroline-justine",
+    "name": "Caroline & Justine",
+    "arcana": "Strength",
+    "image": "/images/characters/11-caroline-justine.png"
+  },
+  {
+    "id": "12-iwai",
+    "name": "Iwai",
+    "arcana": "Hanged Man",
+    "image": "/images/characters/12-iwai.png"
+  },
+  {
+    "id": "13-tae",
+    "name": "Tae",
+    "arcana": "Death",
+    "image": "/images/characters/13-tae.png"
+  },
+  {
+    "id": "14-kawakami",
+    "name": "Kawakami",
+    "arcana": "Temperance",
+    "image": "/images/characters/14-kawakami.png"
+  },
+  {
+    "id": "15-ohya",
+    "name": "Ohya",
+    "arcana": "Devil",
+    "image": "/images/characters/15-ohya.png"
+  },
+  {
+    "id": "16-shinya",
+    "name": "Shinya",
+    "arcana": "Tower",
+    "image": "/images/characters/16-shinya.png"
+  },
+  {
+    "id": "17-hifumi",
+    "name": "Hifumi",
+    "arcana": "Star",
+    "image": "/images/characters/17-hifumi.png"
+  },
+  {
+    "id": "18-mishima",
+    "name": "Mishima",
+    "arcana": "Moon",
+    "image": "/images/characters/18-mishima.png"
+  },
+  {
+    "id": "19-yoshida",
+    "name": "Yoshida",
+    "arcana": "Sun",
+    "image": "/images/characters/19-yoshida.png"
+  },
+  {
+    "id": "20-sae",
+    "name": "Sae",
+    "arcana": "Judgement",
+    "image": "/images/characters/20-sae.png"
+  },
+  {
+    "id": "22-kasumi",
+    "name": "Kasumi",
+    "arcana": "Faith",
+    "image": "/images/characters/21-kasumi.png"
+  },
+  {
+    "id": "23-maruki",
+    "name": "Maruki",
+    "arcana": "Councillor",
+    "image": "/images/characters/22-maruki.png"
+  }
+]

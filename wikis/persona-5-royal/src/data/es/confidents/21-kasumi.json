@@ -1,0 +1,149 @@
+{
+  "id": "22-kasumi",
+  "name": "Kasumi",
+  "arcana": {
+      "id": "21-faith",
+      "name": "Fe"
+  },
+  "gifts": [
+    "Mini Cactus (Floreria de Shinjuku's)",
+    "Embellecedor facial (Akihabara)",
+    "Perfume de diseñador (Shibuya Underground Mall)",
+    "Sakura Fan (Centro Comercial Subterráneo Shibuya)",
+    "Lápiz labial carmesí (centro comercial subterráneo de Shibuya)",
+    "Rose Bouquet (Centro Comercial Subterráneo Shibuya)",
+    "Anillo del corazón (centro comercial subterráneo, solo romance)"
+  ],
+  "ranks": [
+    {
+      "number": 1,
+      "options": [
+        "Se consigue en el progreso de la historia."
+      ]
+    },
+    {
+      "number": 2,
+      "options": [
+        "Primera Respuesta: 1° ó 3°opción",
+        "Segunda Respuesta: 1°opción",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: Cualquiera",
+        "Quinta Respuesta: Cualquiera",
+        "Llamada al móvil: 1°opción"
+      ],
+      "ability": {
+        "name": "cayendo",
+        "description": "Presionar el botón de acción en el momento adecuado permite al grupo evitar ser rodeado."
+      }
+    },
+    {
+      "number": 3,
+      "options": [
+        "Primera Respuesta: 1°opción",
+        "Segunda Respuesta: 1° ó 2°opción",
+        "Tercera Respuesta: 1°opción",
+        "Cuarta Respuesta: 2°opción",
+        "Quinta Respuesta: Cualquiera","Sexta Respuesta: Cualquiera","Séptima Respuesta: Cualquiera","Octava Respuesta: Cualquiera","Novena Respuesta: Cualquiera"
+      ]
+    },
+    {
+      "number": 4,
+      "options": [
+        "Primera Respuesta: 2°opción",
+        "Segunda Respuesta: 1°opción",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: 1° ó 2°opción",
+        "Quinta Respuesta: Cualquiera","Sexta Respuesta: 1°opción","Séptima Respuesta: Cualquiera","Octava Respuesta: 1°opción","Novena Respuesta: 2°opción","Llamada al móvil: 1° ó 2°opción"
+      ],
+      "ability": {
+        "name": "Gancho de cadenas",
+        "description": "Joker puede usar su gancho de agarre para emboscar a los enemigos desde la distancia y tener la posibilidad de infligirles dolencias al comienzo de una batalla."
+      }
+    },
+    {
+      "number": 5,
+      "options": [
+        "Primera Respuesta: 1°opción",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: 2°opción",
+        "Cuarta Respuesta: Cualquiera",
+        "Quinta Respuesta: 1° ó 2°opción","Sexta Respuesta: 1°opción","Séptima Respuesta: Cualquiera","Llamada al móvil: 1° ó 3°opción"
+      ]
+    },
+    {
+      "number": 6,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: Cualquiera",
+        "Quinta Respuesta: Cualquiera","Sexta Respuesta: Cualquiera","Séptima Respuesta: Cualquiera","Octava Respuesta: Cualquiera","Novena Respuesta: Cualquiera","Llamada al móvil: 2° ó 3°opción"
+      ],
+      "ability": [
+        {
+          "name": "Hacer un seguimiento",
+          "description": "Le permite a Sumire atacar a un enemigo fuera de turno si el ataque del Joker no lo derrota."
+        },
+        {
+          "name": "Charla de fitness",
+          "description": "Joker puede volver a intentar una negociación fallida contra cualquier sombra"
+        }
+      ],
+      "requirement": "Alcanza el rango 5 antes del 22 de diciembre/Bloqueado hasta el 13 de enero/Rechaza la oferta de Maruki cuando Joker y Akechi vayan a rescatar a Sumire."
+    },
+    {
+      "number": 7,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: 1°opción",
+        "Cuarta Respuesta: 1°opción",
+        "Quinta Respuesta: Cualquiera",
+        "Sexta Respuesta: Cualquiera",
+        "Llamada al móvil: 3°opción"
+      ],
+      "ability": {
+        "name": "Recuperación de Harisen",
+        "description": "Oportunidad de curar dolencias de los miembros del grupo cuando llegue el turno de Sumire."
+      }
+    },
+    {
+      "number": 8,
+      "options": [
+        "Primera Respuesta: 1°opción",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: Cualquiera",
+        "Quinta Respuesta: Cualquiera","Sexta Respuesta: Cualquiera","Séptima Respuesta: Cualquiera","Octava Respuesta: Cualquiera","Novena Respuesta: Cualquiera","Llamada al móvil: 2° ó 3°opción"
+      ],
+      "ability": {
+        "name": "Perdurar",
+        "description": "Permite a Sumire sobrevivir a un ataque fatal con 1 HP restante."
+      }
+    },
+    {
+      "number": 9,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: 1°opción",
+        "Cuarta Respuesta: Cualquiera",
+        "Quinta Respuesta: 3°opción","Sexta Respuesta: Cualquiera","Séptima Respuesta: 1°opción Solo Amigos 2°opción Iniciar Romance","Octava Respuesta: Cualquiera","Novena Respuesta: Cualquiera","Llamada al móvil: 1°opción"
+      ],
+      "ability": {
+        "name": "Proteger",
+        "description": "Sumire puede proteger al Joker de ataques fatales"
+      }
+    },
+    {
+      "number": 10,
+      "options": [
+        ""
+      ],
+      "ability": {
+        "name": "Segundo despertar",
+        "description": "La Persona de Sumire evoluciona a Vanadis"
+      }
+    }
+  ]
+}

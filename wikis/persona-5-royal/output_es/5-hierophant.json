@@ -1,0 +1,46 @@
+[
+  {
+    "rank": "2",
+    "ability": {
+      "name": "Conceptos básicos del café",
+      "description": "Joker puede preparar café que devuelve 30 SP a un aliado."
+    }
+  },
+  {
+    "rank": "4",
+    "ability": {
+      "name": "LeBlanc Curyy",
+      "description": "Joker puede hacer curry que devuelve 20 SP a todos los aliados."
+    }
+  },
+  {
+    "rank": "5",
+    "ability": {
+      "name": "Nada",
+      "description": ""
+    },
+    "requirement": "Bloqueado hasta después del 22 de agosto"
+  },
+  {
+    "rank": "6",
+    "ability": {
+      "name": "Dominio del café",
+      "description": "Joker puede preparar café que devuelve 100 SP a un aliado"
+    }
+  },
+  {
+    "rank": "9",
+    "ability": {
+      "name": "Consejos para el curry",
+      "description": "Joker puede hacer curry que devuelve 30 SP a todos los aliados."
+    },
+    "requirement": "Solicitud de recuerdos completa \"Tío codicioso de dinero\""
+  },
+  {
+    "rank": "10",
+    "ability": {
+      "name": "Dominio del curry",
+      "description": "Joker puede hacer curry que devuelve 100 SP a todos los aliados."
+    }
+  }
+]

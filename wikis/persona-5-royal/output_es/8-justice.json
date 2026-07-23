@@ -1,0 +1,57 @@
+[
+  {
+    "rank": "2",
+    "ability": {
+      "name": "Instinto detectivesco",
+      "description": "A veces revela la afinidad elemental de un enemigo cuando comienza la batalla."
+    }
+  },
+  {
+    "rank": "4",
+    "ability": {
+      "name": "Charla suave",
+      "description": "Joker puede volver a intentar una negociación fallida contra una sombra divina"
+    },
+    "requirement": "No puede estar lloviendo"
+  },
+  {
+    "rank": "6",
+    "ability": {
+      "name": "Hacer un seguimiento",
+      "description": "Le permite a Akechi atacar a un enemigo fuera de turno si el ataque del Joker no lo derrota."
+    },
+    "requirement": "No disponible hasta el 3 de septiembre."
+  },
+  {
+    "rank": "6",
+    "ability": {
+      "name": "Dominio de la investigación",
+      "description": "A veces revela todas las afinidades elementales de un enemigo cuando comienza la batalla."
+    },
+    "requirement": "No disponible hasta el 3 de septiembre."
+  },
+  {
+    "rank": "7",
+    "ability": {
+      "name": "Recuperación de Harisen",
+      "description": "Oportunidad de curar dolencias de los miembros del grupo cuando llegue el turno de Akechi."
+    },
+    "requirement": "Conocimiento de nivel 4/Explora el Palacio de Nijima a tu propio ritmo"
+  },
+  {
+    "rank": "10",
+    "ability": {
+      "name": "Perdurar",
+      "description": "Permite a Akechi sobrevivir a un ataque fatal con 1 HP restante."
+    },
+    "requirement": "Alcanza el rango 8 antes del 17 de noviembre."
+  },
+  {
+    "rank": "10",
+    "ability": {
+      "name": "Proteger",
+      "description": "Akechi puede proteger al Joker de ataques fatales"
+    },
+    "requirement": "Alcanza el rango 8 antes del 17 de noviembre."
+  }
+]

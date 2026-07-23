@@ -1,0 +1,138 @@
+{
+  "id": "4-yusuke",
+  "name": "Yusuke",
+  "arcana": {
+      "id": "4-emperor",
+      "name": "Emperador"
+  },
+  "gifts": [
+    "Castella (Supermercado del Centro Comercial Subterráneo)",
+    "Trufas (Supermercado del Centro Comercial Subterráneo)",
+    "Postal de acuarela (Papelería Kichijoji)",
+    "Jarrón de cristal (Centro Comercial Subterráneo)",
+    "Robot Aspirador (Tienda de electrónica Akihabara)"
+  ],
+  "ranks": [
+    {
+      "number": 1,
+      "options": [
+        "Llamada al móvil: 3°opción"
+      ],
+      "ability": {
+        "name": "Duplicación de tarjetas",
+        "description": "Yusuke puede copiar cartas de habilidad en cartas en blanco."
+      }
+    },
+    {
+      "number": 2,
+      "options": [
+        "Primera Respuesta: 1° o 2°opción",
+        "Segunda Respuesta: 1° ó 2°opción",
+        "Llamada al móvil: 1°opción"
+      ],
+      "ability": {
+        "name": "Hacer un seguimiento",
+        "description": "Le permite a Yusuke atacar a un enemigo fuera de turno si el ataque del Joker no lo derrota."
+      }
+    },
+    {
+      "number": 3,
+      "options": [
+        "Primera Respuesta: 3°opción",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: 2°opción",
+        "Cuarta Respuesta: Cualquiera",
+        "Llamada al móvil: 1°opción"
+      ],
+      "ability": {
+        "name": "Hacer un seguimiento",
+        "description": "Le permite a Yusuke atacar a un enemigo fuera de turno si el ataque del Joker no lo derrota."
+      }
+    },
+    {
+      "number": 4,
+      "options": [
+        "Primera Respuesta: 2° ó 3°opción",
+        "Segunda Respuesta: 1°opción",
+        "Llamada al móvil: 1°opción"
+      ],
+      "ability": {
+        "name": "Charla de arte",
+        "description": "Joker puede volver a intentar una negociación fallida contra una sombra solitaria"
+      },
+      "requirement": "No puede estar lloviendo"
+    },
+    {
+      "number": 5,
+      "options": [
+        "Primera Respuesta: 3°opción",
+        "Segunda Respuesta: 1° ó 2°opción",
+        "Llamada al móvil: 3°opción"
+      ],
+      "ability": {
+        "name": "Creación de tarjetas",
+        "description": "Yusuke puede crear cartas de habilidad que ya creó."
+      }
+    },
+    {
+      "number": 6,
+      "options": [
+        "Primera Respuesta: 1°opción",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: 1° ó 3°opción",
+        "Llamada al móvil: 1°opción"
+      ],
+      "ability": {
+        "name": "Recuperación de Harisen",
+        "description": "Oportunidad de curar dolencias de los miembros del grupo cuando llegue el turno de Haru."
+      },
+      "requirement": "Competencia Lv 4/No puede estar lloviendo"
+    },
+    {
+      "number": 7,
+      "options": [
+        "Primera Respuesta: 2°opción",
+        "Segunda Respuesta: 1°opción",
+        "Llamada al móvil: 1° ó 2°opción"
+      ],
+      "ability": {
+        "name": "Pintura en vivo",
+        "description": "Yusuke puede crear cartas de habilidad sin consumir tiempo."
+      }
+    },
+    {
+      "number": 8,
+      "options": [
+        "Primera Respuesta: 3°opción",
+        "Segunda Respuesta: 3°opción"
+      ],
+      "ability": {
+        "name": "Perdurar",
+        "description": "Le permite a Yusuke sobrevivir a un ataque fatal con 1 HP restante."
+      }
+    },
+    {
+      "number": 9,
+      "options": [
+        "Primera Respuesta: 1° ó 2°opción",
+        "Segunda Respuesta: 1°opción"
+      ],
+      "ability": {
+        "name": "Proteger",
+        "description": "Yusuke puede proteger al Joker de ataques fatales"
+      },
+      "requirement": "No puede estar lloviendo"
+    },
+    {
+      "number": 10,
+      "options": [
+        "Cualquier opción servirá"
+      ],
+      "ability": {
+        "name": "Segundo despertar",
+        "description": "La Persona de Yuske evoluciona a Susano-o"
+      }
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "id": "12-iwai",
+  "name": "Iwai",
+  "arcana": {
+      "id": "12-hanged-man",
+      "name": "Ahorcado"
+  },
+  "gifts": [
+    "Brazalete de plata (Joyería del Centro Comercial Subterráneo)",
+    "Robot Aspirador (Tienda de electrónica de Akihabara)",
+    "Cepillo de dientes eléctrico (Tienda de electrónica de Akihabara)"
+  ],
+  "ranks": [
+    {
+      "number": 1,
+      "options": [
+        "Llamada al móvil: 3°opción"
+      ],
+      "ability": {
+        "name": "Personalización inicial",
+        "description": "Le permite instalar actualizaciones que aumentan la potencia o la precisión de un arma."
+      },
+      "requirement": "Nivel 4 Coraje"
+    },
+    {
+      "number": 2,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: 1° ó 2°opción"
+      ]
+    },
+    {
+      "number": 3,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: 1°opción",
+        "Tercera Respuesta: 3°opción",
+        "Cuarta Respuesta: Cualquiera"
+      ],
+      "ability": {
+        "name": "Personalización de camuflaje",
+        "description": "Te permite agregar pintura de camuflaje a tus armas para darles la oportunidad de infligir dolencias."
+      }
+    },
+    {
+      "number": 4,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: 3°opción",
+        "Llamada al móvil: 1°opción"
+      ]
+    },
+    {
+      "number": 5,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: 2°opción",
+        "Tercera Respuesta: 3°opción",
+        "Llamada al móvil: 1°opción"
+      ],
+      "ability": {
+        "name": "Descuento",
+        "description": "Puede personalizar armas a la mitad del precio."
+      }
+    },
+    {
+      "number": 6,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: 2° ó 3°opción",
+        "Cuarta Respuesta: 3°opción",
+        "Llamada al móvil: 1° ó 2°opción"
+      ]
+    },
+    {
+      "number": 7,
+      "options": [
+        "Primera Respuesta: 2°opción",
+        "Segunda Respuesta: 2°opción",
+        "Tercera Respuesta: Cualquiera",
+        "Llamada al móvil: 2°opción"
+      ],
+      "ability": {
+        "name": "Personalización experta",
+        "description": "Le permite instalar actualizaciones que aumentan en gran medida la potencia o la precisión de un arma a costa de la otra estadística."
+      }
+    },
+    {
+      "number": 7.5,
+      "options": [
+        "Primera Respuesta: 2°opción",
+        "Segunda Respuesta: 1° ó 2°opción",
+        "Tercera Respuesta: Cualquiera"
+      ],
+      "requirement": "Nivel 5 Coraje"
+    },
+    {
+      "number": 8,
+      "options": [
+        "Primera Respuesta: 2°opción",
+        "Segunda Respuesta: 2° ó 3°opción",
+        "Llamada al móvil: 1°opción"
+      ]
+    },
+    {
+      "number": 9,
+      "options": [
+        "Primera Respuesta: 3°opción",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: Cualquiera",
+        "Quinta Respuesta: Cualquiera",
+        "Sexta Respuesta: 1° ó 3°opción",
+        "Llamada al móvil: 1° ó 2°opción"
+      ]
+    },
+    {
+      "number": 10,
+      "options": [
+        "Cualquier opción servirá"
+      ],
+      "ability": {
+        "name": "La casa invita",
+        "description": "Te permite personalizar tus armas gratis"
+      }
+    }
+  ]
+}

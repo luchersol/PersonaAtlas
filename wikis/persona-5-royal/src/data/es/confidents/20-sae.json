@@ -1,0 +1,52 @@
+{
+  "id": "20-sae",
+  "name": "Sae",
+  "arcana": {
+      "id": "20-judgement",
+      "name": "Juicio"
+  },
+  "ranks": [
+    {
+      "number": 1
+    },
+    {
+      "number": 2
+    },
+    {
+      "number": 3
+    },
+    {
+      "number": 4
+    },
+    {
+      "number": 5
+    },
+    {
+      "number": 6
+    },
+    {
+      "number": 7
+    },
+    {
+      "number": 8
+    },
+    {
+      "number": 9
+    },
+    {
+      "number": 10,
+      "options": [
+        "Para maximizar la confianza de Sae, elige las siguientes opciones para estas preguntas el 20 de noviembre.",
+        "Pregunta: Esos son los cómplices en el caso de los Ladrones Fantasma, ¿no?",
+        "Respuesta: No./ Nunca he oído hablar de ellos.",
+        "Pregunta: ¿Puedes hablarme de ellos?",
+        "Respuesta: No existieron tales personas."
+      ],
+      "ability": {
+        "name": "Justicia verdadera",
+        "description": "Sae se une a los Ladrones Fantasmas"
+      },
+      "requirement": "Rechazar el acuerdo de culpabilidad de Sae"
+    }
+  ]
+}

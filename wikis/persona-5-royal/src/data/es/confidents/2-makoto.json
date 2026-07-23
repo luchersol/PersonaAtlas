@@ -1,0 +1,142 @@
+{
+  "id": "2-makoto",
+  "name": "Makoto",
+  "arcana": {
+      "id": "2-priestess",
+      "name":"Sacerdotisa"
+  },
+  "gifts": [
+    "Figura de moto (bienes Tokobushiya Otaku en Akihabara)",
+    "Portada del libro (centro comercial subterráneo de Shibuya)",
+    "CD de éxitos clásicos (centro comercial subterráneo de Shibuya)",
+    "Perfume de diseñador (Shibuya Underground Mall)",
+    "Pluma Estilográfica (Shinjuku)",
+    "Collar de corazón (centro comercial subterráneo de Shibuya)"
+  ],
+  "ranks": [
+    {
+      "number": 1,
+      "options": [
+        "Llamada al móvil: 3°opción"
+      ],
+      "ability": {
+        "name": "Cálculo de sombras",
+        "description": "Te permite ver el objeto y las habilidades de un enemigo al analizar"
+      },
+      "requirement": "Conocimiento nivel 3"
+    },
+    {
+      "number": 2,
+      "options": [
+        "Primera Respuesta: 1°opción",
+        "Segunda Respuesta: 2°opción",
+        "Tercera Respuesta: Cualquiera",
+        "Llamada al móvil: 1°opción"
+      ]
+    },
+    {
+      "number": 3,
+      "options": [
+        "Primera Respuesta: 1°opción",
+        "Segunda Respuesta: 2°opción",
+        "Tercera Respuesta: Cualquiera",
+        "Llamada al móvil: 1°opción"
+      ],
+      "ability": {
+        "name": "Charla de cinturón negro",
+        "description": "Joker puede volver a intentar una negociación fallida contra las artes marciales usando sombras"
+      }
+    },
+    {
+      "number": 4,
+      "options": [
+        "Primera Respuesta: 1°opción",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: 1°opción",
+        "Quinta Respuesta: 3°opción"
+      ],
+      "ability": {
+        "name": "Hacer un seguimiento",
+        "description": "Le permite a Makoto atacar a un enemigo fuera de turno si el ataque del Joker no lo derrota."
+      }
+    },
+    {
+      "number": 5,
+      "options": [
+        "Primera Respuesta: 3°opción",
+        "Segunda Respuesta: 1°opción",
+        "Llamada al móvil: 3°opción"
+      ]
+    },
+    {
+      "number": 6,
+      "options": [
+        "Primera Respuesta: 3°opción",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: Cualquiera",
+        "Llamada al móvil: 1°opción"
+      ],
+      "ability": {
+        "name": "Recuperación de Harisen",
+        "description": "Oportunidad de curar dolencias de los miembros del grupo cuando llegue el turno de Makoto."
+      },
+      "requirement": "Encanto MAX"
+    },
+    {
+      "number": 7,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: 1° ó 3°opción",
+        "Quinta Respuesta: Cualquiera",
+        "Sexta Respuesta: Cualquiera",
+        "Septima Respuesta: 1° ó 3°opción",
+        "Llamada al móvil: 1° ó 3°opción"
+      ],
+      "ability": {
+        "name": "Factorización de sombras",
+        "description": "Muestra una X en un enemigo si ese ataque no causará ningún daño."
+      }
+    },
+    {
+      "number": 8,
+      "options": [
+        "Primera Respuesta: 1° ó 2°opción",
+        "Segunda Respuesta: 1°opción"
+      ],
+      "ability": {
+        "name": "Perdurar",
+        "description": "Permite a Makoto sobrevivir a un ataque fatal con 1 HP restante."
+      }
+    },
+    {
+      "number": 9,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: 2°opción",
+        "Cuarta Respuesta: 1° ó 2°opción",
+        "Quinta Respuesta: 1°opción Solo Amigos 2°opción Iniciar Romance",
+        "Sexta Respuesta: 1°opción Romance",
+        "Llamada al móvil: 1° ó 3°opción"
+      ],
+      "ability": {
+        "name": "Proteger",
+        "description": "Makoto puede proteger al Joker de ataques fatales"
+      },
+      "requirement": "No puede estar lloviendo"
+    },
+    {
+      "number": 10,
+      "options": [
+        "Cualquier opción servirá"
+      ],
+      "ability": {
+        "name": "Segundo despertar",
+        "description": "La Persona de Makoto evoluciona a Anat"
+      }
+    }
+  ]
+}

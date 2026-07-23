@@ -1,0 +1,144 @@
+{
+  "id": "3-haru",
+  "name": "Haru",
+  "arcana": {
+      "id": "3-empress",
+      "name":"Emperatriz"
+  },
+  "gifts": [
+    "Florero de vidrio (centro comercial subterráneo de Shibuya)",
+    "Portada del libro (centro comercial subterráneo de Shibuya)",
+    "Trufas de Chocolate (Centro Comercial Subterráneo Shibuya)",
+    "Cesta de flores (Shinjuku)",
+    "Collar de corazón / Anillo de corazón (solo romance, centro comercial subterráneo de Shibuya)"
+  ],
+  "ranks": [
+    {
+      "number": 1,
+      "options": [
+        "Llamada al móvil: 2°opción"
+      ],
+      "ability": {
+        "name": "Cultivo",
+        "description": "Joker puede ayudar a Haru a cultivar verduras en la azotea de Shujin"
+      }
+    },
+    {
+      "number": 2,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: 3°opción",
+        "Tercera Respuesta: Cualquiera",
+        "Llamada al móvil: Cualquiera"
+      ]
+    },
+    {
+      "number": 3,
+      "options": [
+        "Primera Respuesta: 2° ó 3°opción",
+        "Segunda Respuesta: 1°opción",
+        "Tercera Respuesta: Cualquiera",
+        "Llamada al móvil: 1°opción"
+      ],
+      "ability": {
+        "name": "Hacer un seguimiento",
+        "description": "Le permite a Haru atacar a un enemigo fuera de turno si el ataque del Joker no lo derrota."
+      }
+    },
+    {
+      "number": 4,
+      "options": [
+        "Primera Respuesta: 1° ó 3°opción",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: 3°opción",
+        "Quinta Respuesta: 3°opción",
+        "Llamada al móvil: 3°opción"
+      ],
+      "ability": {
+        "name": "Charla de celebridades",
+        "description": "Joker puede volver a intentar una negociación fallida contra un enorme grupo de sombras"
+      },
+      "requirement": "Nivel 5 Destreza"
+    },
+    {
+      "number": 5,
+      "options": [
+        "Primera Respuesta: 2° ó 3°opción",
+        "Segunda Respuesta: 3°opción",
+        "Tercera Respuesta: 1° ó 3°opción",
+        "Llamada al móvil: 3°opción"
+      ],
+      "ability": {
+        "name": "Cosecha abundante",
+        "description": "Permite que Haru cultive más vegetales de una sola cosecha."
+      }
+    },
+    {
+      "number": 6,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: 1°opción",
+        "Tercera Respuesta: 2° ó 3°opción",
+        "Cuarta Respuesta: Cualquiera",
+        "Quinta Respuesta: 2°opción",
+        "Llamada al móvil: 1° ó 2°opción"
+      ],
+      "ability": {
+        "name": "Recuperación de Harisen",
+        "description": "Oportunidad de curar dolencias de los miembros del grupo cuando llegue el turno de Haru."
+      }
+    },
+    {
+      "number": 7,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: 1° ó 3°opción",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: Cualquiera",
+        "Llamada al móvil: 2°opción"
+      ],
+      "ability": {
+        "name": "Mejora del suelo",
+        "description": "Le permite cosechar verduras antes"
+      }
+    },
+    {
+      "number": 8,
+      "options": [
+        "Primera Respuesta: 1°opción",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: Cualquiera",
+        "Llamada al móvil: 2° ó 3°opción"
+      ],
+      "ability": {
+        "name": "Perdurar",
+        "description": "Permite a Haru sobrevivir a un ataque fatal con 1 HP restante."
+      }
+    },
+    {
+      "number": 9,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: 1° ó 2°opción",
+        "Cuarta Respuesta: 1°opción Solo Amigos 2°opción Iniciar Romance",
+        "Llamada al móvil: 2° ó 3°opción"
+      ],
+      "ability": {
+        "name": "Proteger",
+        "description": "Haru puede proteger al Joker de ataques fatales"
+      }
+    },
+    {
+      "number": 10,
+      "options": [
+        "Cualquier opción servirá"
+      ],
+      "ability": {
+        "name": "Segundo despertar",
+        "description": "La Persona de Haru evoluciona a Astarte"
+      }
+    }
+  ]
+}

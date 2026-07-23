@@ -1,0 +1,37 @@
+[
+  {
+    "rank": "1",
+    "ability": {
+      "name": "Group Guillotine",
+      "description": "Lets Joker use 3 Personas in a fusion"
+    }
+  },
+  {
+    "rank": "3",
+    "ability": {
+      "name": "Lockdown",
+      "description": "Can leave a Persona in the Velvet Room to increase resistances to elements"
+    }
+  },
+  {
+    "rank": "5",
+    "ability": {
+      "name": "Special Treatment",
+      "description": "Joker can pay Igor to create Persona in a fusion that are above his current level"
+    }
+  },
+  {
+    "rank": "8",
+    "ability": {
+      "name": "Guillotine Booster",
+      "description": "Lets Joker use 4 or more Personas in a fusion"
+    }
+  },
+  {
+    "rank": "10",
+    "ability": {
+      "name": "VIP Treatment",
+      "description": "Decreases the money needed for Special Treatment"
+    }
+  }
+]

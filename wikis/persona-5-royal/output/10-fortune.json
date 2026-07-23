@@ -1,0 +1,46 @@
+[
+  {
+    "rank": "1",
+    "ability": {
+      "name": "Lucky Reading",
+      "description": "Joker will gain more points to a selected social stat"
+    },
+    "requirement": "Visit her kiosk two times and buy a holy stone for ¥100000. Then visit her kiosk a 3rd time and complete the Mementos request 'Ending the boyfriend's abuse'."
+  },
+  {
+    "rank": "3",
+    "ability": {
+      "name": "Money Reading",
+      "description": "Increases the money earned from battles for your next Metaverse visit"
+    }
+  },
+  {
+    "rank": "5",
+    "ability": {
+      "name": "Affinity Reading",
+      "description": "Adds bond points to a chosen Confidant"
+    }
+  },
+  {
+    "rank": "7",
+    "ability": {
+      "name": "Special Fate Reading",
+      "description": "Lets you see a selected Confidant's abilities in advance"
+    }
+  },
+  {
+    "rank": "8",
+    "ability": {
+      "name": "Celestial Reading",
+      "description": "Instantly triggers a fusion alarm in the Velvet Room and raises the chance for a fusion alarm for the rest of the day"
+    },
+    "requirement": "Complete Mementos request 'Debunking the Psychic'"
+  },
+  {
+    "rank": "10",
+    "ability": {
+      "name": "Special Bond Reading",
+      "description": "During a Confidant scenario, the best choices will have red text"
+    }
+  }
+]

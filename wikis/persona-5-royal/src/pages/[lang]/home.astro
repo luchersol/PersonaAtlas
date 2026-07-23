@@ -1,0 +1,62 @@
+---
+import Layout from '@layouts/Layout.astro';
+import { getLanguageStaticPaths, useTranslations } from '@i18n/utils';
+import type { DefaultParams } from '@types2/p5';
+
+export function getStaticPaths() {
+  return getLanguageStaticPaths();
+}
+
+const { lang } = Astro.params as DefaultParams;
+
+const t = useTranslations(lang);
+
+---
+<Layout title="Persona 5 Hub | Café Leblanc">
+  <div class="p5-home">
+    <h1 class="p5-title" style="font-size: 4rem; line-height: 0.9;">
+      {t("home.title.0")}<br><span style="color:#fff; text-shadow: 4px 4px 0px var(--background);">{t("home.title.1")}</span>
+    </h1>
+    
+    <p class="p5-home-desc">
+      {t("home.description")}
+    </p>
+
+    <div class="p5-tv-static">
+      <p class="static-text">{t("home.channel_tuned")}</p>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .p5-home {
+    max-w-xl;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 3rem 0;
+  }
+
+  .p5-home-desc {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ccc;
+  }
+
+  .p5-tv-static {
+    margin-top: 1rem;
+    background-color: var(--background);
+    border: 2px dashed var(--primary);
+    padding: 1rem;
+    width: fit-content;
+    transform: skewX(-10deg);
+  }
+
+  .static-text {
+    font-family: monospace;
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
+</style>

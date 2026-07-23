@@ -1,0 +1,58 @@
+[
+  {
+    "rank": "1",
+    "ability": {
+      "name": "Apoyo moral",
+      "description": "Futaba puede curar o aumentar las estadísticas de los miembros del grupo durante la batalla."
+    }
+  },
+  {
+    "rank": "2",
+    "ability": {
+      "name": "Escaneo de recuerdos",
+      "description": "Futaba tiene la oportunidad de mapear completamente un piso de Mementos al ingresar"
+    }
+  },
+  {
+    "rank": "4",
+    "ability": {
+      "name": "Hack de posición",
+      "description": "Futaba tiene la oportunidad de iniciar una batalla con un Hold Up."
+    }
+  },
+  {
+    "rank": "6",
+    "ability": {
+      "name": "Soporte activo",
+      "description": "El apoyo moral ahora tiene la posibilidad de cargar a un miembro del grupo o restaurar SP."
+    }
+  },
+  {
+    "rank": "7",
+    "ability": {
+      "name": "Reinicio del tesoro",
+      "description": "Futaba tiene la posibilidad de restaurar objetos de búsqueda en el Metaverso después de la batalla"
+    }
+  },
+  {
+    "rank": "9",
+    "ability": {
+      "name": "Turno de emergencia",
+      "description": "Cuando 2 o más miembros del grupo son KO, Futaba tiene la oportunidad de intercambiarlos con miembros de respaldo."
+    }
+  },
+  {
+    "rank": "10",
+    "ability": {
+      "name": "Guardia final",
+      "description": "Futaba tiene la posibilidad de negar un ataque fatal a cualquier miembro del grupo."
+    }
+  },
+  {
+    "rank": "10",
+    "ability": {
+      "name": "Segundo despertar",
+      "description": "La Persona de Futaba evoluciona a Prometheus"
+    }
+  }
+]

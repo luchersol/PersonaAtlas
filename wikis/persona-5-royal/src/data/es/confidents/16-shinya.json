@@ -1,0 +1,132 @@
+{
+  "id": "16-shinya",
+  "name": "Shinya",
+  "arcana": {
+      "id": "16-tower",
+      "name": "Torre"
+  },
+  "gifts": [
+    "Llavero Katana (Akihabara Goods Shop Tokobushiya)",
+    "Llavero de la Espada del Dragón (Akihabara)",
+    "Figura de moto (Akihabara)",
+    "Brazalete de plata (Joyería del centro comercial subterráneo)",
+    "Trufas de chocolate (Centro Comercial Subterráneo)"
+  ],
+  "ranks": [
+    {
+      "number": 1,
+      "options": [
+        "Llamada al móvil: 3°opción"
+      ],
+      "ability": {
+        "name": "Tiro hacia abajo",
+        "description": "Joker puede derribar a un enemigo para entrar en un Hold Up una vez por visita al Metaverso"
+      },
+      "requirement": "Lucha contra la sombra de Nejima durante la Solicitud de Mementos 'Los ganadores no usan trucos'"
+    },
+    {
+      "number": 2,
+      "options": [
+        "Primera Respuesta: 2°opción",
+        "Segunda Respuesta: 2°opción",
+        "Tercera Respuesta: 2°opción",
+        "Cuarta Respuesta: 1° ó 3°opción",
+        "Llamada al móvil: 1° ó 3°opción"
+      ],
+      "ability": {
+        "name": "Granizo de bala",
+        "description": "Cuando Joker tiende una emboscada a un enemigo, existe la posibilidad de realizar un ataque total con armas que puede reducir el HP del enemigo."
+      }
+    },
+    {
+      "number": 3,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: 1°opción",
+        "Llamada al móvil: 1°opción"
+      ],
+      "ability": {
+        "name": "Disparo de advertencia",
+        "description": "Joker puede usar su arma durante un atraco para asustar a una sombra, lo que facilita su obtención como Persona."
+      }
+    },
+    {
+      "number": 4,
+      "options": [
+        "Primera Respuesta: 3°opción",
+        "Segunda Respuesta: 2°opción"
+      ]
+    },
+    {
+      "number": 5,
+      "options": [
+        "Primera Respuesta: 1° ó 3°opción",
+        "Segunda Respuesta: 2°opción",
+        "Tercera Respuesta: 2°opción",
+        "Llamada al móvil: 1° ó 3°opción"
+      ],
+      "ability": {
+        "name": "Balas entrelazadas",
+        "description": "Las armas que causan enfermedades tienen más posibilidades de tener éxito"
+      }
+    },
+    {
+      "number": 6,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: 2°opción",
+        "Cuarta Respuesta: 2°opción",
+        "Llamada al móvil: 1°opción"
+      ],
+      "ability": {
+        "name": "Golpe bajo",
+        "description": "Joker puede usar Down Shot tres veces por visita al Metaverso"
+      }
+    },
+    {
+      "number": 7,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: Cualquiera"
+      ]
+    },
+    {
+      "number": 8,
+      "options": [
+        "Primera Respuesta: 2° ó 3°opción",
+        "Segunda Respuesta: 3°opción",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: Cualquiera"
+      ],
+      "ability": {
+        "name": "Babosa electrica",
+        "description": "Aumenta el daño causado por Bullet Hail."
+      },
+      "requirement": "Solicitud completa de Mementos 'La agresión de una madre'/No puede estar lloviendo"
+    },
+    {
+      "number": 9,
+      "options": [
+        "Primera Respuesta: 1°opción",
+        "Segunda Respuesta: 2° ó 3°opción",
+        "Tercera Respuesta: 1°opción",
+        "Llamada al móvil: Cualquiera"
+      ]
+    },
+    {
+      "number": 10,
+      "options": [
+        "Cualquier opción servirá"
+      ],
+      "ability": {
+        "name": "Especial de aod",
+        "description": "Niega la resistencia o inmunidad de un enemigo a los ataques con armas del Joker (no se aplica a las habilidades con armas)"
+      }
+    }
+  ]
+}

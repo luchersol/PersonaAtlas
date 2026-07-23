@@ -1,0 +1,187 @@
+---
+import { getLanguageStaticPaths, useTranslations } from '@i18n/utils';
+import type { DefaultParams } from '@types2/p5';
+
+export function getStaticPaths() {
+  return getLanguageStaticPaths();
+}
+
+const { lang } = Astro.params as DefaultParams;
+
+interface Props {
+  description: string;
+  mechanic: string;
+}
+
+const { description, mechanic } = Astro.props as Props;
+const t = useTranslations(lang);
+---
+
+<div class="p5-note-root">
+  <button
+    class="p5-info-button"
+    type="button"
+    data-note-trigger
+    aria-label={t('notebox.system')}
+  >
+    <span class="p5-info-icon">ⓘ</span>
+  </button>
+
+  <dialog class="p5-modal" data-note-modal>
+    <button
+      class="p5-modal-close"
+      type="button"
+      data-note-close
+      aria-label="Cerrar"
+    >
+      ×
+    </button>
+
+    <div class="p5-content-box">
+      <p class="p5-description">{description}</p>
+
+      <div class="p5-mechanic-box">
+        <span class="p5-badge">{t('notebox.system')}</span>
+        <p>{mechanic}</p>
+      </div>
+    </div>
+  </dialog>
+</div>
+
+<script>
+  document.querySelectorAll(".p5-note-root").forEach((root) => {
+    const trigger = root.querySelector("[data-note-trigger]");
+    const dialog = root.querySelector("[data-note-modal]") as HTMLDialogElement;
+    const close = root.querySelector("[data-note-close]");
+
+    trigger?.addEventListener("click", () => {
+      dialog?.showModal();
+    });
+
+    close?.addEventListener("click", () => {
+      dialog?.close();
+    });
+
+    dialog?.addEventListener("click", (event) => {
+      const rect = dialog.getBoundingClientRect();
+
+      const inside =
+        event.clientX >= rect.left &&
+        event.clientX <= rect.right &&
+        event.clientY >= rect.top &&
+        event.clientY <= rect.bottom;
+
+      if (!inside) {
+        dialog.close();
+      }
+    });
+  });
+</script>
+
+<style>
+  .p5-note-root {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .p5-info-button {
+    width: 2.4rem;
+    height: 2.4rem;
+    border: 2px solid #333;
+    background: var(--primary);
+    color: var(--background);
+    box-shadow: 4px 4px 0 var(--background);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: transform 0.2s ease;
+  }
+
+  .p5-info-button:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 5px 5px 0 var(--background);
+  }
+
+  .p5-info-icon {
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: 'Impact', sans-serif;
+  }
+
+  .p5-modal::backdrop {
+    background: rgba(0, 0, 0, 0.78);
+  }
+
+  .p5-modal {
+    border: none;
+    padding: 0;
+    background: transparent;
+
+    width: min(100%, 42rem);
+    max-width: min(42rem, calc(100vw - 2rem));
+
+    position: fixed;
+    top: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .p5-modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: 2px solid #333;
+    background: var(--primary);
+    color: var(--background);
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 var(--background);
+    z-index: 1;
+  }
+
+  .p5-content-box {
+    background-color: var(--background);
+    border: 3px solid #333;
+    padding: 2.5rem;
+    box-shadow: 8px 8px 0 0 var(--background);
+    position: relative;
+  }
+
+  .p5-description {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #e0e0e0;
+  }
+
+  .p5-mechanic-box {
+    margin-top: 2rem;
+    background-color: #222;
+    border-left: 5px solid var(--primary);
+    padding: 1.5rem;
+    position: relative;
+  }
+
+  .p5-badge {
+    position: absolute;
+    top: -12px;
+    left: 15px;
+    background-color: var(--primary);
+    color: var(--background);
+    font-family: 'Impact', sans-serif;
+    padding: 2px 8px;
+    font-size: 0.85rem;
+    transform: skewX(-10deg);
+  }
+
+  .p5-mechanic-box p {
+    font-size: 1rem;
+    color: var(--primary);
+    font-style: italic;
+  }
+
+</style>

@@ -1,0 +1,134 @@
+{
+  "id": "15-ohya",
+  "name": "Ohya",
+  "arcana": {
+      "id": "15-devil",
+      "name": "Diablo"
+  },
+  "gifts": [
+    "Taza Negra (Tienda General Shinjuku)",
+    "Perfume de diseñador (Shibuya Underground Mall)",
+    "Uji Matcha Flan (Centro Comercial Subterráneo de la Estación Shibuya)",
+    "Pluma Estilográfica (Tienda General Shinjuku",
+    "Sakura Fan (Centro Comercial Subterráneo Shibuya)",
+    "Mini Cactus (Floreria de Shinjuku's)"
+  ],
+  "ranks": [
+    {
+      "number": 1,
+      "options": [
+        "Llamada al móvil: Cualquiera"
+      ],
+      "ability": {
+        "name": "Primicia llena de rumores",
+        "description": "Encontrar una nueva habitación segura disminuye el nivel de seguridad de un palacio"
+      }
+    },
+    {
+      "number": 2,
+      "options": [
+        "Primera Respuesta: 3°opción",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: 2°opción"
+      ]
+    },
+    {
+      "number": 3,
+      "options": [
+        "Primera Respuesta: 3°opción",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: 3°opción"
+      ]
+    },
+    {
+      "number": 4,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: Cualquiera",
+        "Llamada al móvil: 1° ó 2°opción"
+      ],
+      "ability": {
+        "name": "primicia impactante",
+        "description": "Ralentiza el aumento del nivel de seguridad de un palacio y lo reduce aún más después de derrotar a un enemigo emboscado."
+      }
+    },
+    {
+      "number": 5,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: 2°opción",
+        "Llamada al móvil: 1°opción"
+      ],
+      "ability": {
+        "name": "Primicia sin precedentes",
+        "description": "Comienza un palacio con un nivel de seguridad más bajo."
+      }
+    },
+    {
+      "number": 6,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: 1°opción",
+        "Tercera Respuesta: 2°opción",
+        "Cuarta Respuesta: 1° ó 2°opción",
+        "Llamada al móvil: 3°opción"
+      ]
+    },
+    {
+      "number": 7,
+      "options": [
+        "Cualquier opción servirá"
+      ],
+      "ability": {
+        "name": "primicia escandalosa",
+        "description": "Comienza un palacio con el nivel de seguridad al 0%."
+      }
+    },
+    {
+      "number": 7.5,
+      "options": [
+        "Primera Respuesta: 2°opción",
+        "Segunda Respuesta: Cualquiera"
+      ]
+    },
+    {
+      "number": 8,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: Cualquiera",
+        "Llamada al móvil: 1° ó 2°opción"
+      ]
+    },
+    {
+      "number": 9,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: 2°opción",
+        "Tercera Respuesta: 1° ó 2°opción",
+        "Cuarta Respuesta: Cualquiera",
+        "Quinta Respuesta: 1°opción Iniciar Romance 2°opción Solo Amigos",
+        "Sexta Respuesta: 1°opción Romance",
+        "Llamada al móvil: 1° ó 2°opción Romance"
+      ]
+    },
+    {
+      "number": 10,
+      "options": [
+        "Romance: Primera Respuesta: 2°opción",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: Cualquiera"
+      ],
+      "ability": {
+        "name": "primicia legendaria",
+        "description": "Joker puede tender una emboscada a un enemigo sin importar el nivel de seguridad"
+      }
+    }
+  ]
+}

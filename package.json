@@ -18,13 +18,17 @@
     "build:all": "npm run build --workspaces --if-present",
     "preview:all": "npm run preview --workspaces --if-present",
     
+    "dev:p3": "npm run dev --workspace=persona-3-reload",
+    "build:p3": "npm run build --workspace=persona-3-reload",
+    "preview:p3": "npm run preview --workspace=persona-3-reload",
+
     "dev:p4": "npm run dev --workspace=persona-4-golden",
     "build:p4": "npm run build --workspace=persona-4-golden",
     "preview:p4": "npm run preview --workspace=persona-4-golden",
 
-    "dev:p3": "npm run dev --workspace=persona-3-reload",
-    "build:p3": "npm run build --workspace=persona-3-reload",
-    "preview:p3": "npm run preview --workspace=persona-3-reload",
+    "dev:p5": "npm run dev --workspace=persona-5-royal",
+    "build:p5": "npm run build --workspace=persona-5-royal",
+    "preview:p5": "npm run preview --workspace=persona-5-royal",
     
     "icon": "python .tools/create_icon.py"
   },

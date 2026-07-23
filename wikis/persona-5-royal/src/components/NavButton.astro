@@ -1,0 +1,38 @@
+---
+interface Props {
+    lang?: string;
+    route?: string;
+    href?: string;
+    class?: string;
+}
+
+const { lang, route, href, class: className } = Astro.props;
+const href_ = lang && route ? `/${lang}/home` : href;
+---
+
+<a href={href_} class={className ?? "p5-btn"}>
+    <span><slot/></span>
+</a>
+
+<style>
+    .p5-btn {
+        align-self: flex-start;
+        background-color: #333;
+        color: #fff;
+        padding: 0.6rem 1.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+        transform: skewX(-12deg);
+        border: 2px solid #444;
+    }
+    .p5-btn span {
+        display: inline-block;
+        transform: skewX(12deg);
+    }
+    .p5-btn:hover {
+        background-color: #fff;
+        color: var(--background);
+        border-color: #fff;
+    }
+</style>

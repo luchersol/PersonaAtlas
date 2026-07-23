@@ -1,0 +1,64 @@
+[
+  {
+    "rank": "2",
+    "ability": {
+      "name": "Girl Talk",
+      "description": "Joker can retry a failed negotiation against female shadows"
+    },
+    "requirement": "Lv 2 Kindness/Locked Until May 6th"
+  },
+  {
+    "rank": "3",
+    "ability": {
+      "name": "Follow Up",
+      "description": "Allows Ann to attack an enemy out of turn if Joker's attack doesn't defeat it"
+    },
+    "requirement": "It can't be raining"
+  },
+  {
+    "rank": "4",
+    "ability": {
+      "name": "Sexy Technique ♥",
+      "description": "Ann has a chance to grab an enemy's attention and forfeit their turn"
+    },
+    "requirement": "It can't be raining"
+  },
+  {
+    "rank": "5",
+    "ability": {
+      "name": "Crocodile Tears",
+      "description": "If a party member is captured by shadows, Ann can make them lessen their demands"
+    },
+    "requirement": "It can't be raining"
+  },
+  {
+    "rank": "6",
+    "ability": {
+      "name": "Harisen Recovery",
+      "description": "Chance to cure ailments on party members when Ann's turn comes up"
+    }
+  },
+  {
+    "rank": "8",
+    "ability": {
+      "name": "Endure",
+      "description": "Lets Ann survive a fatal attack with 1 HP remaining"
+    }
+  },
+  {
+    "rank": "9",
+    "ability": {
+      "name": "Protect",
+      "description": "Ann can shield Joker from fatal attacks"
+    },
+    "requirement": "It can't be raining"
+  },
+  {
+    "rank": "10",
+    "ability": {
+      "name": "Second Awakening",
+      "description": "Ann's Persona evolves into Hecate"
+    },
+    "requirement": "It can't be raining"
+  }
+]

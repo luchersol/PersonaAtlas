@@ -1,0 +1,135 @@
+{
+  "id": "23-maruki",
+  "name": "Maruki",
+  "arcana": {
+    "id": "22-councillor",
+    "name": "Consejero"
+  },
+  "gifts": [
+    "Reloj despertador (Tienda de electrónica Akihabara)",
+    "Pluma estilográfica (Tienda de artículos de papelería Kichijoji)",
+    "Omni-Vitamina (Tienda de descuentos Shibuya Rocinante)",
+    "Mini Cactus (Floreria de Shinjuku's)"
+  ],
+  "ranks": [
+    {
+      "number": 1,
+      "options": [
+        "Se consigue en el progreso de la historia."
+      ]
+    },
+    {
+      "number": 2,
+      "options": [
+        "Primera Respuesta: 2° ó 3°opción",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: 1°opción",
+        "Cuarta Respuesta: Cualquiera",
+        "Quinta Respuesta: 1°opción"
+      ],
+      "ability": {
+        "name": "Desintoxicación X",
+        "description": "Joker puede recuperarse de una enfermedad de estado inmediatamente"
+      }
+    },
+    {
+      "number": 3,
+      "options": [
+        "Primera Respuesta: 1° ó 3°opción",
+        "Segunda Respuesta: 1° ó 2°opción",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: 1° ó 3°opción",
+        "Quinta Respuesta: Cualquiera",
+        "Llamada al móvil: 1°opción"
+      ],
+      "ability": {
+        "name": "Fluir",
+        "description": "Joker puede recibir los efectos de Carga y Concentración al comienzo de una batalla."
+      },
+      "requirement": "No puede estar lloviendo"
+    },
+    {
+      "number": 4,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: 1°opción",
+        "Tercera Respuesta: 3°opción",
+        "Cuarta Respuesta: Cualquiera",
+        "Quinta Respuesta: Cualquiera",
+        "Sexta Respuesta: 1°opción",
+        "Llamada al móvil: 1° ó 2°opción"
+      ]
+    },
+    {
+      "number": 5,
+      "options": [
+        "Primera Respuesta: 1°opción",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: 3°opción",
+        "Cuarta Respuesta: 1° ó 2°opción",
+        "Quinta Respuesta: 2°opción",
+        "Llamada al móvil: 1° ó 3°opción"
+      ],
+      "ability": {
+        "name": "Consciencia",
+        "description": "El SP del Joker tiene la posibilidad de reponerse cuando está bajo"
+      }
+    },
+    {
+      "number": 6,
+      "options": [
+        "Primera Respuesta: 2° ó 3°opción",
+        "Segunda Respuesta: 1°opción",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: 3°opción",
+        "Quinta Respuesta: Cualquiera",
+        "Sexta Respuesta: Cualquiera",
+        "Llamada al móvil: 1° ó 2°opción"
+      ]
+    },
+    {
+      "number": 7,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: Cualquiera"
+      ],
+      "ability": {
+        "name": "Aumento del flujo",
+        "description": "Aumenta las posibilidades de que ocurra Flow."
+      },
+      "requirement": "No puede estar lloviendo"
+    },
+    {
+      "number": 8,
+      "options": [
+        "Primera Respuesta: 2°opción",
+        "Segunda Respuesta: 1°opción",
+        "Tercera Respuesta: 1°opción",
+        "Cuarta Respuesta: 3°opción",
+        "Quinta Respuesta: Cualquiera",
+        "Sexta Respuesta: Cualquiera",
+        "Septima Respuesta: Cualquiera",
+        "Llamada al móvil: 1°opción"
+      ]
+    },
+    {
+      "number": 9,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: 1°opción"
+      ],
+      "ability": {
+        "name": "Desintoxicación DX",
+        "description": "Aumenta las posibilidades de que se produzca Detox X."
+      }
+    },
+    {
+      "number": 10,
+      "options": [
+        "Cualquier opción servirá"
+      ]
+    }
+  ]
+}

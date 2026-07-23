@@ -1,0 +1,53 @@
+[
+  {
+    "rank": "1",
+    "ability": {
+      "name": "Down Shot",
+      "description": "Joker can knock down an enemy to enter a Hold Up once per Metaverse visit"
+    },
+    "requirement": "Fight Nejima's shadow during the Mementos Request 'Winners don't use Cheats'"
+  },
+  {
+    "rank": "2",
+    "ability": {
+      "name": "Bullet Hail",
+      "description": "When Joker ambushes an enemy, there's a chance to enter a gun-based All-Out attack that can reduce the enemy's HP"
+    }
+  },
+  {
+    "rank": "3",
+    "ability": {
+      "name": "Warning Shot",
+      "description": "Joker can use his gun during a Hold Up to scare a shadow, making it easier to obtain as a Persona"
+    }
+  },
+  {
+    "rank": "5",
+    "ability": {
+      "name": "Laced Bullets",
+      "description": "Ailment-inflicting guns have a higher chance of succeeding"
+    }
+  },
+  {
+    "rank": "6",
+    "ability": {
+      "name": "Cheap Shot",
+      "description": "Joker can use Down Shot three times per Metaverse visit"
+    }
+  },
+  {
+    "rank": "8",
+    "ability": {
+      "name": "Electric Slug",
+      "description": "Increases the damage done by Bullet Hail"
+    },
+    "requirement": "Complete Mementos request 'A Mother's Aggression'/It can't be raining"
+  },
+  {
+    "rank": "10",
+    "ability": {
+      "name": "Oda Special",
+      "description": "Negates an enemy's resistance or immunity to Joker's gun attacks (doesn't apply to Gun Skills)"
+    }
+  }
+]

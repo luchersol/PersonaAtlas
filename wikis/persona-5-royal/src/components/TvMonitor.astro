@@ -1,0 +1,166 @@
+---
+import { getLanguageStaticPaths, useTranslations } from '@i18n/utils';
+import type { DefaultParams } from '@types2/p5';
+
+export function getStaticPaths() {
+  return getLanguageStaticPaths();
+}
+
+const { lang } = Astro.params as DefaultParams;
+
+const t = useTranslations(lang);
+
+interface Props {
+    id: string;
+    image: string, 
+    name: string, 
+    status: string, 
+    airDate: string, 
+    broadcastSummary: string, 
+    href: string
+}
+
+const {id, image, name, status, airDate, broadcastSummary } = Astro.props;
+---
+<div class="p5-tv-monitor">
+    <div class="p5-crt-screen">
+        <div class="p5-crt-scanlines"></div>
+        <div class="p5-crt-static-layer"></div>
+        <img src={image} alt={name} class="p5-tv-image" onerror="this.style.opacity='0.1'" />
+        <span class={status.includes('Deceased') || status.includes('Fallecido') ? 'p5-tv-status dead' : 'p5-tv-status alert'}>
+        {status}
+        </span>
+    </div>
+    <div class="p5-tv-bezel">
+        <div class="p5-tv-meta">
+        <h3>{name}</h3>
+        <p class="p5-broadcast-time">📺 {airDate}</p>
+        <p class="p5-broadcast-desc">{broadcastSummary}</p>
+        </div>
+        <!-- Acoplamos el parámetro de idioma a la transmisión individual -->
+        <a href={`/${lang}/midnight-channel/${id}`} class="p5-tune-btn">
+        <span>{t("tv_monitor.tune_in")}</span>
+        </a>
+    </div>
+</div>
+
+<style>
+      /* El mueble de la televisión antigua */
+  .p5-tv-monitor {
+    background-color: #0e0e0e;
+    border: 4px solid var(--background);
+    box-shadow: 6px 6px 0px var(--primary);
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  /* Pantalla de Cristal (CRT) */
+  .p5-crt-screen {
+    background-color: #151815;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 4px solid var(--background);
+  }
+
+  .p5-tv-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: sepia(0.3) saturate(1.4) hue-rotate(-20deg); /* Efecto vintage amarillo/verdoso */
+    transition: opacity 0.3s ease;
+  }
+
+  /* Efecto líneas de escaneo de TV vieja */
+  .p5-crt-scanlines {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 3;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    background-size: 100% 4px, 6px 100%;
+  }
+
+  /* Capa de nieve/estática animada de TV sin señal */
+  .p5-crt-static-layer {
+    position: absolute;
+    inset: 0;
+    opacity: 0.15;
+    z-index: 2;
+    background-image: repeating-radial-gradient(circle at 50% 50%, #fff 0px, #fff 1px, transparent 1px, transparent 100%);
+    background-size: 8px 8px;
+    animation: tvNoise 0.1s infinite;
+  }
+
+  @keyframes tvNoise {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-2px, 2px); }
+  }
+
+  /* Badges de Estado */
+  .p5-tv-status {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    font-size: 0.75rem;
+    font-weight: 900;
+    padding: 2px 6px;
+    text-transform: uppercase;
+    z-index: 4;
+  }
+  .p5-tv-status.dead { background-color: #e60012; color: #fff; }
+  .p5-tv-status.alert { background-color: var(--primary); color: var(--background); animation: pulse 1s infinite alternate; }
+
+  @keyframes pulse { from { opacity: 0.6; } to { opacity: 1; } }
+
+  /* Controles e Información Inferior */
+  .p5-tv-bezel {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #1a1a1a;
+  }
+  .p5-tv-meta h3 {
+    font-family: 'Impact', sans-serif;
+    font-size: 1.4rem;
+    color: #fff;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  .p5-broadcast-time {
+    color: var(--primary);
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin: 0.25rem 0 0.75rem 0;
+  }
+  .p5-broadcast-desc {
+    color: #999;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 1.25rem;
+    flex-grow: 1;
+  }
+
+  
+  /* Botón Sintonizar */
+  .p5-tune-btn {
+    background-color: var(--background);
+    color: var(--primary);
+    text-align: center;
+    padding: 0.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    transform: skewX(-10deg);
+    border: 2px solid var(--primary);
+    transition: all 0.2s;
+  }
+  .p5-tune-btn span { display: inline-block; transform: skewX(10deg); }
+  .p5-tune-btn:hover { background-color: var(--primary); color: var(--background); }
+</style>

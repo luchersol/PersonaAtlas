@@ -1,0 +1,46 @@
+[
+  {
+    "rank": "2",
+    "ability": {
+      "name": "Coffee Basics",
+      "description": "Joker can make coffee that restores 30 SP to one ally."
+    }
+  },
+  {
+    "rank": "4",
+    "ability": {
+      "name": "LeBlanc Curyy",
+      "description": "Joker can make curry that restores 20 SP to all allies"
+    }
+  },
+  {
+    "rank": "5",
+    "ability": {
+      "name": "Nothing",
+      "description": ""
+    },
+    "requirement": "Locked until after August 22nd"
+  },
+  {
+    "rank": "6",
+    "ability": {
+      "name": "Coffee Mastery",
+      "description": "Joker can make coffee that restores 100 SP to one ally"
+    }
+  },
+  {
+    "rank": "9",
+    "ability": {
+      "name": "Curry Tips",
+      "description": "Joker can make curry that restores 30 SP to all allies"
+    },
+    "requirement": "Complete Mementos Request \"Money Grubbing Uncle\""
+  },
+  {
+    "rank": "10",
+    "ability": {
+      "name": "Curry Mastery",
+      "description": "Joker can make curry that restores 100 SP to all allies"
+    }
+  }
+]

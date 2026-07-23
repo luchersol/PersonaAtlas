@@ -1,0 +1,250 @@
+---
+import Layout from '@layouts/Layout.astro';
+import { useTranslations, getP5Data, getLanguageStaticPaths, getP5Answers } from '@i18n/utils';
+import type { DefaultParams } from '@types2/p5';
+
+import HeaderBox from '@components/HeaderBox.astro';
+import NavButton from '@components/NavButton.astro';
+
+export function getStaticPaths() {
+  return getLanguageStaticPaths();
+}
+
+const { lang } = Astro.params as DefaultParams;
+
+const t = useTranslations(lang);
+
+const info = await getP5Data(lang, 'classroom-answers');
+
+if (!info) {
+  throw new Error(`Data missing for classroom-answers in language: ${lang}`);
+}
+
+const answers = await getP5Answers(lang);
+
+
+const groupedByMonth = Object.entries(answers).reduce((acc, [day, responses]) => {
+    const [, month] = day.split("/");
+
+    if (!acc[month]) {
+        acc[month] = [];
+    }
+
+    acc[month].push({ day, responses });
+
+    return acc;
+}, {} as Record<string, { day: string; responses: string[] }[]>);
+---
+
+<Layout title={`${info.title} | Persona 5 Hub`}>
+  <HeaderBox {...info} />
+
+  <section class="p5-answers-section">
+    <nav class="p5-month-nav">
+      {Object.entries(groupedByMonth).map(([month]) => (
+          <a
+              href={`#month-${month}`}
+              class="p5-month-button"
+          >
+              {"Mes " + month}
+          </a>
+      ))}
+    </nav>
+    <div class="p5-answers-grid">
+        {Object.entries(groupedByMonth).map(([month, monthAnswers]) => (
+            <section
+                id={`month-${month}`}
+                class="p5-month-section"
+            >
+                <h2 class="p5-month-title">
+                    {"Mes " + month}
+                </h2>
+
+                {monthAnswers.map(({ day, responses }) => (
+                    <article class="p5-answer-card">
+                        <span class="p5-answer-date">
+                            {day}
+                        </span>
+
+                        <ul class="p5-answer-list">
+                            {responses.map((response) => (
+                                <li>{response}</li>
+                            ))}
+                        </ul>
+                    </article>
+                ))}
+            </section>
+        ))}
+    </div>
+  </section>
+
+  <NavButton lang={lang} route="/">
+    {t("nav.back")}
+  </NavButton>
+</Layout>
+
+
+<style>
+
+/* ==========================
+   Month selector
+   ========================== */
+
+.p5-month-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+
+    margin: 2rem 0 3rem;
+}
+
+.p5-month-button {
+    padding: .65rem 1.2rem;
+
+    background: var(--surface);
+
+    border: 2px solid var(--border);
+
+    color: var(--text);
+
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+
+    transition: .2s ease;
+}
+
+.p5-month-button:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+
+    transform: translateY(-2px);
+}
+
+.p5-month-button:active {
+    transform: scale(.97);
+}
+
+.p5-month-section {
+    scroll-margin-top: 110px;
+}
+
+/* ==========================================================
+   Classroom Answers
+   ========================================================== */
+
+.p5-answers-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    margin-top: 2rem;
+}
+
+.p5-month-title {
+    margin-bottom: 1.25rem;
+
+    color: var(--primary);
+
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+
+    border-left: .35rem solid var(--primary);
+    padding-left: .8rem;
+}
+
+.p5-answer-card {
+    position: relative;
+
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+
+    background: var(--surface);
+
+    border: 2px solid var(--border);
+
+    box-shadow: var(--shadow);
+
+    overflow: hidden;
+
+    transition: .2s ease;
+}
+
+.p5-answer-card::before {
+    content: "";
+
+    position: absolute;
+    inset: 0 auto 0 0;
+
+    width: .4rem;
+
+    background: var(--primary);
+}
+
+.p5-answer-card:hover {
+    transform: translateY(-4px);
+
+    border-color: var(--primary-light);
+
+    box-shadow: 0 0 35px rgba(214, 0, 28, .35);
+}
+
+.p5-answer-date {
+    display: inline-block;
+
+    margin-bottom: 1rem;
+
+    color: var(--primary-light);
+
+    font-size: .85rem;
+    font-weight: 700;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+
+.p5-answer-list {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+
+.p5-answer-list li {
+    position: relative;
+
+    padding-left: 1.5rem;
+
+    color: var(--text-muted);
+
+    line-height: 1.6;
+}
+
+.p5-answer-list li::before {
+    content: "◆";
+
+    position: absolute;
+    left: 0;
+
+    color: var(--primary);
+}
+
+/* ==========================
+   Responsive
+   ========================== */
+
+@media (max-width: 768px) {
+
+    .p5-month-title {
+        font-size: 1.5rem;
+    }
+
+    .p5-answer-card {
+        padding: 1.2rem;
+    }
+
+}
+
+</style>

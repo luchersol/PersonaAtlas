@@ -1,0 +1,14 @@
+{
+    "confidents": {
+        "title": "Confidentes",
+        "subtitle": "Roba corazones y fortalece tus lazos",
+        "description": "En Persona 5 Royal, los Confidentes representan las relaciones que estableces con las personas que conoces en Tokio. Al aumentar su rango, desbloqueas habilidades únicas que facilitan la exploración de Palacios y Mementos, mejoran tu vida diaria y otorgan bonificaciones de experiencia al fusionar Personas del Arcana correspondiente.",
+        "mechanic": "Al completar un Confidente desbloqueas la Persona definitiva de su Arcana. Además, algunos Confidentes, como Takuto Maruki, Kasumi Yoshizawa y Goro Akechi, son esenciales para acceder a contenido exclusivo de Persona 5 Royal."
+    },
+    "classroom-answers": {
+        "title": "Respuestas de Clase",
+        "subtitle": "Demuestra que prestas atención en clase",
+        "description": "A lo largo del curso escolar en Persona 5 Royal, los profesores pondrán a prueba tus conocimientos con preguntas sobre historia, literatura, filosofía y cultura general. Responder correctamente aumenta ocasionalmente tu estadística de Conocimiento y, si Morgana o un compañero te ayudan, también puedes mejorar tu relación con ellos.",
+        "mechanic": "Consulta las respuestas organizadas por fecha para no fallar ninguna pregunta durante el año escolar y maximizar tus recompensas."
+    }
+}

@@ -1,0 +1,126 @@
+{
+  "id": "18-mishima",
+  "name": "Mishima",
+  "arcana": {
+      "id": "18-moon",
+      "name": "Luna"
+  },
+  "ranks": [
+    {
+      "number": 1,
+      "options": [
+        "Se consigue mientras se progresa en la historia."
+      ],
+      "ability": {
+        "name": "El apoyo de Mishima",
+        "description": "Los miembros del grupo de respaldo ganan experiencia"
+      }
+    },
+    {
+      "number": 2,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: 1°opción",
+        "Tercera Respuesta: 2°opción",
+        "Llamada al móvil: 1°opción"
+      ]
+    },
+    {
+      "number": 3,
+      "options": [
+        "Primera Respuesta: 2°opción",
+        "Segunda Respuesta: 2° ó 3°opción",
+        "Tercera Respuesta: 1°opción",
+        "Llamada al móvil: Cualquiera"
+      ],
+      "ability": {
+        "name": "El entusiasmo de Mishima",
+        "description": "Aumentar la experiencia de las batallas."
+      }
+    },
+    {
+      "number": 4,
+      "options": [
+        "Primera Respuesta: 1°opción",
+        "Segunda Respuesta: 1°opción",
+        "Tercera Respuesta: Cualquiera",
+        "Llamada al móvil: 1° ó 3°opción"
+      ]
+    },
+    {
+      "number": 5,
+      "options": [
+        "Primera Respuesta: 3°opción",
+        "Segunda Respuesta: 1°opción",
+        "Llamada al móvil: 1°opción"
+      ],
+      "ability": {
+        "name": "La desesperación de Mishima",
+        "description": "El miembro del grupo de respaldo gana más experiencia"
+      }
+    },
+    {
+      "number": 6,
+      "options": [
+        "Primera Respuesta: 1° ó 3°opción",
+        "Segunda Respuesta: 2°opción",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: 2°opción"
+      ]
+    },
+    {
+      "number": 6.5,
+      "options": [
+        "Primera Respuesta: 2°opción",
+        "Segunda Respuesta: 1° ó 3°opción",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: Cualquiera",
+        "Quinta Respuesta: Cualquiera",
+        "Sexta Respuesta: Cualquiera",
+        "Septima Respuesta: Cualquiera"
+      ]
+    },
+    {
+      "number": 7,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: 3°opción",
+        "Llamada al móvil: 1° ó 3°opción"
+      ],
+      "ability": {
+        "name": "fanboy",
+        "description": "Aumenta aún más la experiencia de las batallas."
+      }
+    },
+    {
+      "number": 8,
+      "options": [
+        "Primera Respuesta: 1°opción",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: 2° ó 3°opción",
+        "Llamada al móvil: 1° ó 3°opción"
+      ]
+    },
+    {
+      "number": 9,
+      "options": [
+        "Primera Respuesta: 2°opción",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: Cualquiera",
+        "Llamada al móvil: 1°opción"
+      ]
+    },
+    {
+      "number": 10,
+      "options": [
+        "Cualquier opción servirá"
+      ],
+      "ability": {
+        "name": "Deseo de salvación",
+        "description": "Los miembros activos y de respaldo del grupo reciben la misma cantidad de experiencia"
+      }
+    }
+  ]
+}

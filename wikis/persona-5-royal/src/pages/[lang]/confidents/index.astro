@@ -1,0 +1,61 @@
+---
+import Layout from '@layouts/Layout.astro';
+import { useTranslations, getP5Data, getConfidentsList, getLanguageStaticPaths } from '@i18n/utils';
+import type { DefaultParams } from '@types2/p5';
+import HeaderBox from '@components/HeaderBox.astro';
+import ProfileBox from '@components/ProfileBox.astro';
+import NavButton from '@components/NavButton.astro';
+import Page from '@components/Page.astro';
+
+export function getStaticPaths() {
+  return getLanguageStaticPaths();
+}
+
+const { lang } = Astro.params as DefaultParams;
+
+const t = useTranslations(lang);
+
+const sLinksList = await getConfidentsList(lang); // Nuevo método asíncrono para su JSON
+
+const info = await getP5Data(lang, 'confidents');
+
+if (!info) {
+  throw new Error(`Data missing for velvet-room in language: ${lang}`);
+}
+
+---
+
+<Layout title={`${info?.title} | Persona 5 Hub`}>
+  <Page>
+    <HeaderBox {...info} />
+
+    <section class="p5-slinks-section">
+      <h2 class="p5-title sub">{t("confidents.section.title")}</h2>
+      <div class="p5-slinks-grid">
+        {sLinksList.map((char: any) => {
+          const totalChar = {
+            ...char,
+            image: "/images/characters/" + char.id + ".jpg",
+            arcana: char.arcana.name,
+            arcanaCard: "/images/cards/" + char.arcana.id + ".jpg",
+          };
+          
+          return <ProfileBox {...totalChar} />;
+        })}
+      </div>
+    </section>
+
+    <NavButton lang={lang} route="/">{t("nav.back")}</NavButton>
+  </Page>
+</Layout>
+
+
+<style>
+  /* Mantenemos estilos anteriores y sumamos los nuevos */
+  
+  
+
+  /* NUEVOS ESTILOS PARA LA CUADRÍCULA DE SOCIAL LINKS */
+  .p5-title.sub { font-size: 2rem; margin-bottom: 1.5rem; }
+  .p5-slinks-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+</style>

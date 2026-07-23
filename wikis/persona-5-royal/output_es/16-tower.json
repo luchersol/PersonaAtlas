@@ -1,0 +1,53 @@
+[
+  {
+    "rank": "1",
+    "ability": {
+      "name": "Tiro hacia abajo",
+      "description": "Joker puede derribar a un enemigo para entrar en un Hold Up una vez por visita al Metaverso"
+    },
+    "requirement": "Lucha contra la sombra de Nejima durante la Solicitud de Recuerdos 'Los ganadores no usan trucos'"
+  },
+  {
+    "rank": "2",
+    "ability": {
+      "name": "Granizo de bala",
+      "description": "Cuando Joker tiende una emboscada a un enemigo, existe la posibilidad de realizar un ataque total con armas que puede reducir el HP del enemigo."
+    }
+  },
+  {
+    "rank": "3",
+    "ability": {
+      "name": "Disparo de advertencia",
+      "description": "Joker puede usar su arma durante un atraco para asustar a una sombra, lo que facilita su obtención como Persona."
+    }
+  },
+  {
+    "rank": "5",
+    "ability": {
+      "name": "Balas entrelazadas",
+      "description": "Las armas que causan enfermedades tienen más posibilidades de tener éxito"
+    }
+  },
+  {
+    "rank": "6",
+    "ability": {
+      "name": "Golpe bajo",
+      "description": "Joker puede usar Down Shot tres veces por visita al Metaverso"
+    }
+  },
+  {
+    "rank": "8",
+    "ability": {
+      "name": "Babosa electrica",
+      "description": "Aumenta el daño causado por Bullet Hail."
+    },
+    "requirement": "Solicitud completa de Mementos 'La agresión de una madre'/No puede estar lloviendo"
+  },
+  {
+    "rank": "10",
+    "ability": {
+      "name": "Especial de aod",
+      "description": "Niega la resistencia o inmunidad de un enemigo a los ataques con armas del Joker (no se aplica a las habilidades con armas)"
+    }
+  }
+]

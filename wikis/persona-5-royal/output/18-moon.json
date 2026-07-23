@@ -1,0 +1,37 @@
+[
+  {
+    "rank": "1.0",
+    "ability": {
+      "name": "Mishima's Support",
+      "description": "Backup party members earn experience"
+    }
+  },
+  {
+    "rank": "3.0",
+    "ability": {
+      "name": "Mishima's Enthusiasm",
+      "description": "Increase experience from battles"
+    }
+  },
+  {
+    "rank": "5.0",
+    "ability": {
+      "name": "Mishima's Desperation",
+      "description": "Backup party member earn more experience"
+    }
+  },
+  {
+    "rank": "7.0",
+    "ability": {
+      "name": "Phanboy",
+      "description": "Further increase experience from battles"
+    }
+  },
+  {
+    "rank": "10.0",
+    "ability": {
+      "name": "Salvation Wish",
+      "description": "Active and backup party members receive the same amount of experience"
+    }
+  }
+]

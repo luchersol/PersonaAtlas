@@ -1,0 +1,155 @@
+{
+  "id": "6-ann",
+  "name": "Ann",
+  "arcana": {
+      "id": "6-lovers",
+      "name": "Amantes"
+  },
+  "gifts": [
+    "Lo mejor de KGB49 (Shibuya Underground Mall)",
+    "Perfume de diseñador (Shibuya Underground Mall)",
+    "Chocolate barato (Shibuya Central Street - Tienda de descuento)",
+    "Castella (centro comercial subterráneo de la estación de Shibuya)",
+    "Anillo en forma de corazón (centro comercial subterráneo de Shibuya)",
+    "Uji Matcha Flan (Centro Comercial Subterráneo de la Estación Shibuya)",
+    "Lápiz labial carmesí (centro comercial subterráneo de Shibuya)",
+    "Trufas de Chocolate (Centro Comercial Subterráneo Shibuya)"
+  ],
+  "ranks": [
+    {
+      "number": 1
+    },
+    {
+      "number": 2,
+      "options": [
+        "Primera Respuesta: 1° ó 2°opción",
+        "Segunda Respuesta: 2°opción",
+        "Tercera Respuesta: 2°opción",
+        "Cuarta Respuesta: Cualquiera",
+        "Llamada al móvil: Cualquiera"
+      ],
+      "ability": {
+        "name": "Charla de chicas",
+        "description": "Joker puede volver a intentar una negociación fallida contra sombras femeninas."
+      },
+      "requirement": "Nivel 2 Gentileza/Bloqueado hasta el 6 de mayo"
+    },
+    {
+      "number": 3,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: Cualquiera",
+        "Quinta Respuesta: 3°opción",
+        "Sexta Respuesta: Cualquiera",
+        "Séptima Respuesta: Cualquiera",
+        "Octava Respuesta: 2°opción",
+        "Novena Respuesta: 2°opción",
+        "Llamada al móvil: 1°opción"
+      ],
+      "ability": {
+        "name": "Hacer un seguimiento",
+        "description": "Permite a Ann atacar a un enemigo fuera de turno si el ataque de Joker no lo derrota."
+      },
+      "requirement": "No puede estar lloviendo"
+    },
+    {
+      "number": 4,
+      "options": [
+        "Primera Respuesta: 1°opción",
+        "Segunda Respuesta: 2°opción",
+        "Tercera Respuesta: 1°opción",
+        "Cuarta Respuesta: 1°opción",
+        "Quinta Respuesta: 3°opción",
+        "Llamada al móvil: 1° ó 3°opción"
+      ],
+      "ability": {
+        "name": "Técnica sexy ♥",
+        "description": "Ann tiene la oportunidad de llamar la atención de un enemigo y hacerle perder su turno."
+      },
+      "requirement": "No puede estar lloviendo"
+    },
+    {
+      "number": 5,
+      "options": [
+        "Primera Respuesta: 2°opción",
+        "Segunda Respuesta: 2°opción",
+        "Tercera Respuesta: 1°opción",
+        "Cuarta Respuesta: Cualquiera",
+        "Quinta Respuesta: Cualquiera"
+      ],
+      "ability": {
+        "name": "Lágrimas de cocodrilo",
+        "description": "Si un miembro del grupo es capturado por las sombras, Ann puede hacer que disminuyan sus demandas."
+      },
+      "requirement": "No puede estar lloviendo"
+    },
+    {
+      "number": 6,
+      "options": [
+        "Primera Respuesta: 1°opción",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: 1° ó 3°opción",
+        "Llamada al móvil: 1° ó 2°opción"
+      ],
+      "ability": {
+        "name": "Recuperación de Harisen",
+        "description": "Oportunidad de curar dolencias en los miembros del grupo cuando le llegue el turno a Ann."
+      }
+    },
+    {
+      "number": 7,
+      "options": [
+        "Primera Respuesta: 2°opción",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: 2°opción",
+        "Llamada al móvil: 1°opción"
+      ],
+      "requirement": "No puede estar lloviendo"
+    },
+    {
+      "number": 8,
+      "options": [
+        "Primera Respuesta: 2°opción",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: Cualquiera",
+        "Llamada al móvil: 1° ó 3°opción"
+      ],
+      "ability": {
+        "name": "Perdurar",
+        "description": "Permite que Ann sobreviva a un ataque mortal con 1 HP restante."
+      }
+    },
+    {
+      "number": 9,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: 1°opción Iniciar Romance 2°opción Solo Amigos",
+        "Quinta Respuesta: Cualquiera",
+        "Llamada al móvil: 1° ó 2°opción"
+      ],
+      "ability": {
+        "name": "Proteger",
+        "description": "Ann puede proteger a Joker de ataques fatales."
+      },
+      "requirement": "No puede estar lloviendo"
+    },
+    {
+      "number": 10,
+      "options": [
+        "Cualquier opción servirá"
+      ],
+      "ability": {
+        "name": "Segundo despertar",
+        "description": "La personalidad de Ann evoluciona a Hécate."
+      },
+      "requirement": "No puede estar lloviendo"
+    }
+  ]
+}

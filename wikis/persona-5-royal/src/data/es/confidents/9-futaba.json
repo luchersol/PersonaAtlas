@@ -1,0 +1,137 @@
+{
+  "id": "9-futaba",
+  "name": "Futaba",
+  "arcana": {
+      "id": "9-hermit",
+      "name": "Ermitaño"
+  },
+  "gifts": [
+    "Figura de moto (bienes Tokobushiya Otaku en Akihabara)",
+    "Chocolate barato (Calle Principal de Shibuya - Tienda de descuento)",
+    "Lo mejor del CD KGB49 (Centro Comercial Subterráneo)",
+    "Conjunto de mascota local (bienes Tokobushiya Otaku en Akihabara)"
+  ],
+  "ranks": [
+    {
+      "number": 1,
+      "options": [
+        "Se consigue mientras se progresa en la historia."
+      ],
+      "ability": {
+        "name": "Apoyo moral",
+        "description": "Futaba puede curar o aumentar las estadísticas de los miembros del grupo durante la batalla."
+      }
+    },
+    {
+      "number": 2,
+      "options": [
+        "Primera Respuesta: 2°opción",
+        "Segunda Respuesta: 1°opción",
+        "Tercera Respuesta: Cualquiera",
+        "Llamada al móvil: 1°opción"
+      ],
+      "ability": {
+        "name": "Escaneo de recuerdos",
+        "description": "Futaba tiene la posibilidad de mapear completamente un piso de Mementos al entrar."
+      },
+      "requirement": "Nivel 4 Gentileza"
+    },
+    {
+      "number": 3,
+      "options": [
+        "Primera Respuesta: 3°opción",
+        "Segunda Respuesta: 1°opción",
+        "Llamada al móvil: 3°opción"
+      ]
+    },
+    {
+      "number": 4,
+      "options": [
+        "Primera Respuesta: 2°opción",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: 3°opción",
+        "Llamada al móvil: 1° ó 2°opción"
+      ],
+      "ability": {
+        "name": "Hackeo de posición",
+        "description": "Futaba tiene la oportunidad de iniciar una batalla con un Hold Up."
+      }
+    },
+    {
+      "number": 5,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: 1°opción",
+        "Tercera Respuesta: 3°opción",
+        "Llamada al móvil: 1°opción"
+      ]
+    },
+    {
+      "number": 6,
+      "options": [
+        "Primera Respuesta: 2°opción",
+        "Segunda Respuesta: 1°opción",
+        "Tercera Respuesta: Cualquiera",
+        "Llamada al móvil: 1°opción"
+      ],
+      "ability": {
+        "name": "Apoyo activo",
+        "description": "El apoyo moral ahora tiene la posibilidad de cargar a un miembro del grupo o restaurar puntos de habilidad."
+      }
+    },
+    {
+      "number": 7,
+      "options": [
+        "Primera Respuesta: 1° ó 2°opción",
+        "Segunda Respuesta: 1° ó 2°opción"
+      ],
+      "ability": {
+        "name": "Reinicio del tesoro",
+        "description": "Futaba tiene la posibilidad de restaurar objetos de búsqueda en el Metaverso después de la batalla."
+      }
+    },
+    {
+      "number": 8,
+      "options": [
+        "Primera Respuesta: 1° ó 2°opción",
+        "Segunda Respuesta: 1°opción",
+        "Tercera Respuesta: Cualquiera",
+        "Llamada al móvil: 1° ó 3°opción"
+      ],
+      "requirement": "Completar solicitud de Mementos 'Hija solo es un billete de comida'."
+    },
+    {
+      "number": 9,
+      "options": [
+        "Primera Respuesta: 1°opción",
+        "Segunda Respuesta: 2°opción",
+        "Tercera Respuesta: 1° ó 2°opción",
+        "Cuarta Respuesta: 1°opción Solo Amigos 2°opción Iniciar Romance",
+        "Quinta Respuesta: Cualquiera",
+        "Sexta Respuesta: Cualquiera",
+        "Septima Respuesta: Cualquiera",
+        "Llamada al móvil: 3°opción"
+      ],
+      "ability": {
+        "name": "Turno de emergencia",
+        "description": "Cuando dos o más miembros del grupo quedan fuera de combate, Futaba tiene la posibilidad de sustituirlos por miembros de reserva."
+      }
+    },
+    {
+      "number": 10,
+      "options": [
+        "Cualquier opción servirá"
+      ],
+      "ability": [
+        {
+          "name": "Guardia final",
+          "description": "Futaba tiene la posibilidad de anular un ataque fatal contra cualquier miembro del grupo."
+        },
+        {
+          "name": "Segundo despertar",
+          "description": "La Persona de Futaba evoluciona a Prometheus"
+        }
+      ]
+    }
+  ]
+}

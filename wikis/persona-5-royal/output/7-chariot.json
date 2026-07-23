@@ -1,0 +1,63 @@
+[
+  {
+    "rank": "2",
+    "ability": {
+      "name": "Punk Talk",
+      "description": "Joker can retry a failed negotiation against an upbeat shadow"
+    },
+    "requirement": "It can't be raining"
+  },
+  {
+    "rank": "3",
+    "ability": {
+      "name": "Follow Up",
+      "description": "Allows Ryuji to attack an enemy out of turn if Joker's attack doesn't defeat it"
+    },
+    "requirement": "It can't be raining"
+  },
+  {
+    "rank": "4",
+    "ability": {
+      "name": "Stealth Dash",
+      "description": "Lets you dash around palaces without making noise"
+    }
+  },
+  {
+    "rank": "6",
+    "ability": {
+      "name": "Harisen Recovery",
+      "description": "Chance to cure ailments on party members when Ryuji's turn comes up"
+    },
+    "requirement": "It can't be raining"
+  },
+  {
+    "rank": "7",
+    "ability": {
+      "name": "Insta-Kill",
+      "description": "Joker can instantly kill a shadow by dashing into it if he's at least 10 levels stronger as indicated by a green outline when using Third Eye"
+    },
+    "requirement": "Accept Ryuji's text at night"
+  },
+  {
+    "rank": "8",
+    "ability": {
+      "name": "Endure",
+      "description": "Lets Ryuji survive a fatal attack with 1 HP remaining"
+    },
+    "requirement": "It can't be raining"
+  },
+  {
+    "rank": "9",
+    "ability": {
+      "name": "Protect",
+      "description": "Ryuji can shield Joker from fatal attacks"
+    }
+  },
+  {
+    "rank": "10",
+    "ability": {
+      "name": "Second Awakening",
+      "description": "Ryuji's Persona evolves into Seiten Taisei"
+    }
+  }
+]

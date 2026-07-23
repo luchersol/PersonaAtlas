@@ -1,0 +1,229 @@
+---
+import { useTranslations } from "@i18n/utils";
+import type { P5Language, P5Rank } from "@types2/p5";
+
+interface Props {
+  lang: P5Language;
+  ranks: P5Rank[]
+}
+
+const { ranks, lang } = Astro.props;
+
+const t = useTranslations(lang);
+---
+<div class="p5-ranks">
+    <h2 class="p5-ranks__title">
+        {t("confidents-table.ranks-title")}
+    </h2>
+
+    <div class="p5-ranks__list">
+        {ranks?.map((rank) => {
+            const abilities = rank.ability
+                ? Array.isArray(rank.ability)
+                    ? rank.ability
+                    : [rank.ability]
+                : [];
+
+            return (
+                <article class="p5-rank">
+
+                    <header class="p5-rank__header">
+                        <span class="p5-rank__number">
+                            {t("confidents-table.rank")} {rank.number}
+                        </span>
+                    </header>
+
+                    <div class="p5-rank__body">
+
+                        <section class="p5-rank__options">
+                            <h3>{t("confidents-table.rank-options")}</h3>
+
+                            {rank.options ? (
+                                <ul class="p5-rank__list-options">
+                                    {rank.options.map(option => (
+                                        <li>{option}</li>
+                                    ))}
+                                </ul>
+                            ) : (
+                                <p>{t("confidents.[character].automatic")}</p>
+                            )}
+                        </section>
+
+                        {(abilities.length > 0 || rank.requirement) && (
+                            <section class="p5-rank__extra">
+
+                                {abilities.map((ability) => (
+                                    <p>
+                                        <strong>{ability.name}</strong>
+                                        {" — "}
+                                        {ability.description}
+                                    </p>
+                                ))}
+
+                                {rank.requirement && (
+                                  <p class="p5-rank__requirement">
+                                      <strong>{t("confidents-table.rank-req")}:</strong>
+                                      {" "}
+                                      {rank.requirement}
+                                  </p>
+                                )}
+
+                            </section>
+                        )}
+
+                    </div>
+
+                </article>
+            );
+        })}
+    </div>
+</div>
+
+<style>
+  .p5-ranks__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* ===== Tarjeta ===== */
+
+.p5-rank {
+    display: flex;
+    background: #111;
+    border: 3px solid #fff;
+    box-shadow: 6px 6px 0 var(--background);
+}
+
+/* ===== Cabecera ===== */
+
+.p5-rank__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex: 0 0 130px;
+
+    background: var(--primary);
+    border-right: 3px solid #fff;
+    padding: 1rem;
+}
+
+.p5-rank__number {
+    font-family: Impact, sans-serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--background);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* ===== Contenido ===== */
+
+.p5-rank__body {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    padding: 1.25rem;
+}
+
+/* ===== Títulos ===== */
+
+.p5-rank__options h3,
+.p5-rank__extra h3 {
+    margin: 0 0 .75rem;
+    color: var(--primary);
+    font-size: .95rem;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+
+/* ===== Lista de opciones ===== */
+
+.p5-rank__list-options {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.p5-rank__list-options li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: .5rem;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.p5-rank__list-options li::before {
+    content: "▶";
+    position: absolute;
+    left: 0;
+    color: #ff9900;
+    font-size: .85rem;
+}
+
+/* ===== Información adicional ===== */
+
+.p5-rank__extra {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.p5-rank__extra p {
+    margin: 0;
+    color: #ddd;
+    line-height: 1.5;
+}
+
+.p5-rank__extra strong {
+    color: #fff;
+}
+
+/* ===== Requisito ===== */
+
+.p5-rank__requirement {
+    padding: .75rem 1rem;
+    margin-top: .5rem;
+
+    background: rgba(255,255,255,.05);
+    border-left: 4px solid var(--primary);
+
+    color: #ddd;
+    font-size: .95rem;
+}
+
+.p5-rank__requirement strong {
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 768px) {
+
+    .p5-rank {
+        flex-direction: column;
+    }
+
+    .p5-rank__header {
+        flex: none;
+        width: 100%;
+        border-right: none;
+        border-bottom: 3px solid #fff;
+        padding: .9rem;
+    }
+
+    .p5-rank__number {
+        font-size: 1.2rem;
+    }
+
+    .p5-rank__body {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+        padding: 1rem;
+    }
+
+}
+</style>

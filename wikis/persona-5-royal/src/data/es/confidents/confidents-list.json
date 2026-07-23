@@ -1,0 +1,186 @@
+[
+  {
+    "id": "0-igor",
+    "name": "Igor",
+    "arcana": {
+      "id": "0-fool",
+      "name":"Loco"
+    }
+  },
+  {
+    "id": "1-morgana",
+    "name": "Morgana",
+    "arcana": {
+      "id": "1-magician",
+      "name":"Mago"
+    }
+  },
+  {
+    "id": "2-makoto",
+    "name": "Makoto",
+    "arcana": {
+      "id": "2-priestess",
+      "name":"Sacerdotisa"
+    }
+  },
+  {
+    "id": "3-haru",
+    "name": "Haru",
+    "arcana": {
+      "id": "3-empress",
+      "name":"Emperatriz"
+    }
+  },
+  {
+    "id": "4-yusuke",
+    "name": "Yusuke",
+    "arcana": {
+      "id": "4-emperor",
+      "name": "Emperador"
+    } 
+  },
+  {
+    "id": "5-sojiro",
+    "name": "Sojiro",
+    "arcana": {
+      "id": "5-hierophant",
+      "name":"Hierofante"
+    }
+  },
+  {
+    "id": "6-ann",
+    "name": "Ann",
+    "arcana": {
+      "id": "6-lovers",
+      "name": "Amantes"
+    } 
+  },
+  {
+    "id": "7-ryuji",
+    "name": "Ryuji",
+    "arcana": {
+      "id": "7-chariot",
+      "name": "Carro"
+    }
+  },
+  {
+    "id": "8-goro",
+    "name": "Goro",
+    "arcana": {
+      "id": "8-justice",
+      "name": "Justicia"
+    } 
+  },
+  {
+    "id": "9-futaba",
+    "name": "Futaba",
+    "arcana": {
+      "id": "9-hermit",
+      "name": "Ermitaño"
+    } 
+  },
+  {
+    "id": "10-chihaya",
+    "name": "Chihaya",
+    "arcana": {
+      "id": "10-fortune",
+      "name": "Fortuna"
+    } 
+  },
+  {
+    "id": "11-caroline-justine",
+    "name": "Caroline & Justine",
+    "arcana": {
+      "id": "11-strength",
+      "name": "Fuerza"
+    } 
+  },
+  {
+    "id": "12-iwai",
+    "name": "Iwai",
+    "arcana": {
+      "id": "12-hanged-man",
+      "name": "Ahorcado"
+    }
+  },
+  {
+    "id": "13-tae",
+    "name": "Tae",
+    "arcana": {
+      "id": "13-death",
+      "name": "Muerte"
+    }
+  },
+  {
+    "id": "14-kawakami",
+    "name": "Kawakami",
+    "arcana": {
+      "id": "14-temperance",
+      "name": "Templanza"
+    }
+  },
+  {
+    "id": "15-ohya",
+    "name": "Ohya",
+    "arcana": {
+      "id": "15-devil",
+      "name": "Diablo"
+    }
+  },
+  {
+    "id": "16-shinya",
+    "name": "Shinya",
+    "arcana": {
+      "id": "16-tower",
+      "name": "Torre"
+    }
+  },
+  {
+    "id": "17-hifumi",
+    "name": "Hifumi",
+    "arcana": {
+      "id": "17-star",
+      "name": "Estrella"
+    }
+  },
+  {
+    "id": "18-mishima",
+    "name": "Mishima",
+    "arcana": {
+      "id": "18-moon",
+      "name": "Luna"
+    }
+  },
+  {
+    "id": "19-yoshida",
+    "name": "Yoshida",
+    "arcana": {
+      "id": "19-sun",
+      "name": "Sol"
+    }
+  },
+  {
+    "id": "20-sae",
+    "name": "Sae",
+    "arcana": {
+      "id": "20-judgement",
+      "name": "Juicio"
+    }
+  },
+  {
+    "id": "21-kasumi",
+    "name": "Kasumi",
+    "arcana": {
+      "id": "21-faith",
+      "name": "Fe"
+    }
+  },
+  {
+    "id": "22-maruki",
+    "name": "Maruki",
+    "arcana": {
+      "id": "22-councillor",
+      "name": "Consejero"
+    }
+  }
+]

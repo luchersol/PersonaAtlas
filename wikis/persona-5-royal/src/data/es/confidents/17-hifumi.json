@@ -1,0 +1,129 @@
+{
+  "id": "17-hifumi",
+  "name": "Hifumi",
+  "arcana": {
+      "id": "17-star",
+      "name": "Estrella"
+  },
+  "gifts": [
+    "Portada del libro (centro comercial subterráneo de Shibuya)",
+    "Perfume de diseñador (Shibuya Underground Mall)",
+    "Uji Matcha Flan (Centro Comercial Subterráneo de la Estación Shibuya)",
+    "CD de la Colección Rakugo (Shibuya Station Underground Mall)",
+    "Sakura Fan (Centro Comercial Subterráneo Shibuya)"
+  ],
+  "ranks": [
+    {
+      "number": 1,
+      "options": [
+        "Llamada al móvil: 3°opción"
+      ],
+      "ability": {
+        "name": "Koma Sabaki",
+        "description": "Puede intercambiar miembros del grupo en mitad de la batalla durante el turno del Joker."
+      },
+      "requirement": "Nivel 3 Encanto"
+    },
+    {
+      "number": 2,
+      "options": [
+        "Primera Respuesta: 1°opción",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: 3°opción"
+      ]
+    },
+    {
+      "number": 3,
+      "options": [
+        "Primera Respuesta: 1°opción",
+        "Segunda Respuesta: 2°opción",
+        "Llamada al móvil: 1°opción"
+      ],
+      "ability": {
+        "name": "uchikomi",
+        "description": "Los miembros del grupo de respaldo pueden realizar ataques de seguimiento después de que Joker derribe a un enemigo."
+      }
+    },
+    {
+      "number": 4,
+      "options": [
+        "Primera Respuesta: 1° ó 3°opción",
+        "Segunda Respuesta: 2°opción",
+        "Llamada al móvil: 1° ó 3°opción"
+      ]
+    },
+    {
+      "number": 5,
+      "options": [
+        "Primera Respuesta: 2°opción",
+        "Segunda Respuesta: 2°opción",
+        "Llamada al móvil: 2°opción"
+      ],
+      "ability": {
+        "name": "Kakoi Kuzushi",
+        "description": "Puede escapar de una batalla incluso si estás rodeado"
+      }
+    },
+    {
+      "number": 6,
+      "options": [
+        "Primera Respuesta: 2°opción",
+        "Segunda Respuesta: 1°opción",
+        "Llamada al móvil: 2°opción"
+      ]
+    },
+    {
+      "number": 7,
+      "options": [
+        "Primera Respuesta: 3°opción",
+        "Segunda Respuesta: 2°opción"
+      ],
+      "ability": {
+        "name": "Narikin",
+        "description": "Obtén el doble de dinero después de la batalla si el grupo puede derrotar a un enemigo emboscado en un turno."
+      }
+    },
+    {
+      "number": 7.5,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: 1°opción",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: Cualquiera"
+      ],
+      "requirement": "Nivel 5 Conocimiento"
+    },
+    {
+      "number": 8,
+      "options": [
+        "Primera Respuesta: 3°opción",
+        "Segunda Respuesta: Cualquiera",
+        "Llamada al móvil: 1°opción"
+      ]
+    },
+    {
+      "number": 9,
+      "options": [
+        "Primera Respuesta: 1°opción",
+        "Segunda Respuesta: 3°opción",
+        "Tercera Respuesta: 1°opción Solo Amigos 2°opción Iniciar Romance",
+        "Cuarta Respuesta: 1°opción Romance",
+        "Llamada al móvil: Cualquiera"
+      ],
+      "ability": {
+        "name": "Touryou",
+        "description": "El grupo puede escapar de las batallas en un turno."
+      }
+    },
+    {
+      "number": 10,
+      "options": [
+        "Cualquier opción servirá"
+      ],
+      "ability": {
+        "name": "Sistema de Togo",
+        "description": "Puede intercambiar miembros del grupo en mitad de la batalla durante el turno de cualquier persona."
+      }
+    }
+  ]
+}

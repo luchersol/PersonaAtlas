@@ -1,0 +1,37 @@
+[
+  {
+    "rank": "2",
+    "ability": {
+      "name": "Diplomacy",
+      "description": "Joker can ask for more money and items during negotiations"
+    }
+  },
+  {
+    "rank": "3",
+    "ability": {
+      "name": "Fundraising",
+      "description": "Joker can ask for large amounts of money during negotiations"
+    }
+  },
+  {
+    "rank": "5",
+    "ability": {
+      "name": "Manipulation",
+      "description": "Can sometime receive rare items from enemies"
+    }
+  },
+  {
+    "rank": "8",
+    "ability": {
+      "name": "Mind Control",
+      "description": "Joker can sometimes obtain a Persona without having to negotiate with shadows"
+    }
+  },
+  {
+    "rank": "10",
+    "ability": {
+      "name": "Charismatic Speech",
+      "description": "Joker can obtain Personas from shadows that are a higher level than him"
+    }
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "rank": "2",
+    "ability": {
+      "name": "Desintoxicación X",
+      "description": "Joker puede recuperarse de una enfermedad de estado inmediatamente"
+    }
+  },
+  {
+    "rank": "3",
+    "ability": {
+      "name": "Fluir",
+      "description": "Joker puede recibir los efectos de Carga y Concentración al comienzo de una batalla."
+    },
+    "requirement": "No puede estar lloviendo"
+  },
+  {
+    "rank": "5",
+    "ability": {
+      "name": "Consciencia",
+      "description": "El SP del Joker tiene la posibilidad de reponerse cuando está bajo"
+    }
+  },
+  {
+    "rank": "7",
+    "ability": {
+      "name": "Aumento del flujo",
+      "description": "Aumenta las posibilidades de que ocurra Flow."
+    },
+    "requirement": "No puede estar lloviendo"
+  },
+  {
+    "rank": "9",
+    "ability": {
+      "name": "Desintoxicación DX",
+      "description": "Aumenta las posibilidades de que se produzca Detox X."
+    }
+  }
+]

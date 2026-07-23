@@ -1,0 +1,46 @@
+[
+  {
+    "rank": "1",
+    "ability": {
+      "name": "Lectura afortunada",
+      "description": "Joker ganará más puntos para una estadística social seleccionada"
+    },
+    "requirement": "Visita su quiosco dos veces y compra una piedra sagrada por ¥100.000. Luego visita su quiosco por tercera vez y completa la solicitud de Recuerdos 'Fin del abuso del novio'."
+  },
+  {
+    "rank": "3",
+    "ability": {
+      "name": "Lectura de dinero",
+      "description": "Aumenta el dinero ganado en las batallas para tu próxima visita al Metaverso."
+    }
+  },
+  {
+    "rank": "5",
+    "ability": {
+      "name": "Lectura de afinidad",
+      "description": "Agrega puntos de vínculo a un Confidente elegido"
+    }
+  },
+  {
+    "rank": "7",
+    "ability": {
+      "name": "Lectura de destino especial",
+      "description": "Te permite ver las habilidades de un Confidente seleccionado de antemano"
+    }
+  },
+  {
+    "rank": "8",
+    "ability": {
+      "name": "Lectura celestial",
+      "description": "Activa instantáneamente una alarma de fusión en Velvet Room y aumenta la posibilidad de que se active una alarma de fusión durante el resto del día."
+    },
+    "requirement": "Completa la solicitud de Recuerdos 'Desmentir al psíquico'"
+  },
+  {
+    "rank": "10",
+    "ability": {
+      "name": "Lectura de bonos especiales",
+      "description": "Durante un escenario Confidant, las mejores opciones tendrán texto rojo"
+    }
+  }
+]

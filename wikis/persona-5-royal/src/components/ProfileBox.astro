@@ -1,0 +1,217 @@
+---
+import { getLanguageStaticPaths, useTranslations } from '@i18n/utils';
+import type { DefaultParams } from '@types2/p5';
+
+export function getStaticPaths() {
+  return getLanguageStaticPaths();
+}
+
+const { lang } = Astro.params as DefaultParams;
+
+interface Props {
+    image: string; 
+    id: string;
+    name: string;
+    arcanaCard: string;
+    arcana: string;
+    location: string;
+    description: string;
+}
+
+const {image, id, name, arcanaCard, arcana, description} = Astro.props;
+
+
+
+const t = useTranslations(lang);
+
+---
+
+<div class="p5-char-card">
+    <div class="p5-card-arcana-wrapper">
+        <img src={arcanaCard} alt={arcana} class="p5-arcana-img-fallback" onerror="this.style.display='none'" />
+        <span class="p5-arcana-tag">{arcana}</span>
+    </div>
+
+    <div class="p5-char-header">
+        <div class="p5-char-avatar-box">
+            <img src={image} alt={name} class="p5-avatar-img-fallback" onerror="this.style.backgroundColor='#333'" />
+        </div>
+
+        <div class="p5-char-info">
+            <h3>{name}</h3>
+            <p class="p5-desc">{description}</p>
+
+            <a href={`/${lang}/confidents/${id}`} class="p5-profile-btn">
+                <span>{t("profilebox.button")}</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<style>
+  /* Tarjeta */
+  .p5-char-card {
+    background-color: #111;
+    border: 3px solid var(--background);
+    box-shadow: 5px 5px 0px var(--primary);
+    position: relative;
+    padding: 1.5rem;
+    overflow: hidden;
+    transition: transform .2s ease;
+  }
+
+  .p5-char-card:hover {
+    transform: translateY(-5px);
+  }
+
+  /* Cabecera */
+  .p5-char-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Avatar */
+  .p5-char-avatar-box {
+    width: 90px;
+    height: 90px;
+    border: 3px solid #fff;
+    outline: 3px solid var(--background);
+    margin-bottom: 1rem;
+    transform: rotate(-3deg);
+    overflow: hidden;
+  }
+
+  .p5-avatar-img-fallback {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Arcana */
+  .p5-card-arcana-wrapper {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .p5-arcana-img-fallback {
+    width: 45px;
+    margin-bottom: 4px;
+  }
+
+  .p5-arcana-tag {
+    background: var(--background);
+    color: var(--primary);
+    font-size: .75rem;
+    font-weight: 900;
+    padding: 2px 6px;
+    text-transform: uppercase;
+    border: 1px solid var(--primary);
+  }
+
+  /* Texto */
+  .p5-char-info h3 {
+    font-family: 'Impact', sans-serif;
+    font-size: 1.6rem;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: .25rem;
+  }
+
+  .p5-desc {
+    color: #bbb;
+    font-size: .95rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Botón */
+  .p5-profile-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--primary);
+    color: var(--background);
+
+    padding: .5rem 1rem;
+
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transform: skewX(-10deg);
+
+    border: 2px solid var(--background);
+
+    transition: background .2s;
+  }
+
+  .p5-profile-btn span {
+    transform: skewX(10deg);
+  }
+
+  .p5-profile-btn:hover {
+    background: white;
+  }
+
+  /* ==========================
+     Móvil
+     ========================== */
+
+  @media (max-width: 768px) {
+
+    .p5-char-card {
+      padding: 1rem;
+    }
+
+    .p5-char-header {
+      flex-direction: row;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+
+    .p5-char-avatar-box {
+      width: 72px;
+      height: 72px;
+      margin-bottom: 0;
+      flex-shrink: 0;
+    }
+
+    .p5-char-info {
+      flex: 1;
+    }
+
+    .p5-char-info h3 {
+      font-size: 1.2rem;
+      padding-right: 3rem;
+    }
+
+    .p5-desc {
+      font-size: .85rem;
+      margin-bottom: .75rem;
+    }
+
+    .p5-card-arcana-wrapper {
+      top: .75rem;
+      right: .75rem;
+    }
+
+    .p5-arcana-img-fallback {
+      width: 34px;
+    }
+
+    .p5-arcana-tag {
+      font-size: .6rem;
+      padding: 2px 4px;
+    }
+
+    .p5-profile-btn {
+      padding: .4rem .75rem;
+      font-size: .8rem;
+    }
+  }
+</style>

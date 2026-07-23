@@ -1,0 +1,136 @@
+{
+  "id": "7-ryuji",
+  "name": "Ryuji",
+  "arcana": {
+      "id": "7-chariot",
+      "name": "Carro"
+  },
+  "gifts": [
+    "Juego de fideos (Tienda de descuentos Shibuya Rocinante)",
+    "Pesas para la muñeca (Tienda de Deportes del Centro Comercial Subterráneo)",
+    "Gafas de sol deportivas (Tienda de deportes del centro comercial Underground)",
+    "Brazalete de plata (Tienda de joyería del centro comercial subterráneo)",
+    "Llavero de la Espada del Dragón (Akihabara)",
+    "Reloj despertador (Tienda de electrónica de Akihabara)"
+  ],
+  "ranks": [
+    {
+      "number": 1
+    },
+    {
+      "number": 2,
+      "options": [
+        "Primera Respuesta: 1° ó 2°opción",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: Cualquiera",
+        "Llamada al móvil: Cualquiera"
+      ],
+      "ability": {
+        "name": "charla punk",
+        "description": "Joker puede volver a intentar una negociación fallida contra una sombra optimista"
+      },
+      "requirement": "No puede estar lloviendo"
+    },
+    {
+      "number": 3,
+      "options": [
+        "Primera Respuesta: 1°opción",
+        "Segunda Respuesta: 1°opción",
+        "Llamada al móvil: 1°opción"
+      ],
+      "ability": {
+        "name": "Hacer un seguimiento",
+        "description": "Le permite a Ryuji atacar a un enemigo fuera de turno si el ataque del Joker no lo derrota."
+      },
+      "requirement": "No puede estar lloviendo"
+    },
+    {
+      "number": 4,
+      "options": [
+        "Primera Respuesta: 2°opción",
+        "Segunda Respuesta: 1° ó 3°opción"
+      ],
+      "ability": {
+        "name": "Carrera sigilosa",
+        "description": "Te permite recorrer palacios sin hacer ruido."
+      }
+    },
+    {
+      "number": 5,
+      "options": [
+        "Primera Respuesta: 2°opción",
+        "Segunda Respuesta: 1° ó 2°opción",
+        "Tercera Respuesta: 2°opción",
+        "Llamada al móvil: 1°opción"
+      ]
+    },
+    {
+      "number": 6,
+      "options": [
+        "Primera Respuesta: 3°opción",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: 1° ó 2°opción",
+        "Cuarta Respuesta: Cualquiera",
+        "Quinta Respuesta: Cualquiera",
+        "Llamada al móvil: 3°opción"
+      ],
+      "ability": {
+        "name": "Recuperación de Harisen",
+        "description": "Oportunidad de curar dolencias de los miembros del grupo cuando llegue el turno de Ryuji."
+      },
+      "requirement": "No puede estar lloviendo"
+    },
+    {
+      "number": 7,
+      "options": [
+        "Primera Respuesta: 2°opción",
+        "Segunda Respuesta: 1°opción",
+        "Llamada al móvil: 1°opción"
+      ],
+      "ability": {
+        "name": "Insta-Kill",
+        "description": "Joker puede matar instantáneamente una sombra lanzándose hacia ella si es al menos 10 niveles más fuerte, como lo indica un contorno verde cuando usa el Tercer Ojo."
+      },
+      "requirement": "Acepta el mensaje de texto de Ryuji por la noche."
+    },
+    {
+      "number": 8,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: 1°opción",
+        "Cuarta Respuesta: 2°opción",
+        "Llamada al móvil: 2°opción"
+      ],
+      "ability": {
+        "name": "Perdurar",
+        "description": "Permite a Ryuji sobrevivir a un ataque fatal con 1 HP restante."
+      },
+      "requirement": "No puede estar lloviendo"
+    },
+    {
+      "number": 9,
+      "options": [
+        "Primera Respuesta: 1°opción",
+        "Segunda Respuesta: 3°opción",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: 1°opción",
+        "Llamada al móvil: 1° ó 3°opción"
+      ],
+      "ability": {
+        "name": "Proteger",
+        "description": "Ryuji puede proteger al Joker de ataques fatales"
+      }
+    },
+    {
+      "number": 10,
+      "options": [
+        "Cualquier opción servirá"
+      ],
+      "ability": {
+        "name": "Segundo despertar",
+        "description": "La Persona de Ryuji evoluciona a Seiten Taisei"
+      }
+    }
+  ]
+}

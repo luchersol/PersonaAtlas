@@ -1,0 +1,126 @@
+{
+  "id": "10-chihaya",
+  "name": "Chihaya",
+  "arcana": {
+      "id": "10-fortune",
+      "name": "Fortuna"
+  },
+  "gifts": [
+    "Florero de vidrio (centro comercial subterráneo de Shibuya)",
+    "Canasta de Flores (Tienda General Shinjuku)",
+    "Conjunto de incienso (centro comercial subterráneo de Shibuya)",
+    "Espejo estrella (Tienda General Shinjuku)",
+    "Reloj despertador súper ruidoso (centro comercial subterráneo de Shibuya)"
+  ],
+  "ranks": [
+    {
+      "number": 1,
+      "options": [
+        "Llamada al móvil: 1°opción"
+      ],
+      "ability": {
+        "name": "Lectura afortunada",
+        "description": "Joker obtendrá más puntos en una estadística social seleccionada."
+      },
+      "requirement": "Visita su quiosco dos veces y compra una piedra sagrada por 100 000 yenes. Luego, visita su quiosco una tercera vez y completa la misión de Mementos 'Poner fin al abuso del novio'."
+    },
+    {
+      "number": 2,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: 2°opción",
+        "Llamada al móvil: 1°opción"
+      ]
+    },
+    {
+      "number": 3,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: Cualquiera",
+        "Llamada al móvil: Cualquiera"
+      ],
+      "ability": {
+        "name": "Lectura de dinero",
+        "description": "Aumenta el dinero ganado en las batallas para tu próxima visita al Metaverso."
+      }
+    },
+    {
+      "number": 4,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: 3°opción",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: Cualquiera",
+        "Quinta Respuesta: Cualquiera",
+        "Llamada al móvil: 2°opción"
+      ]
+    },
+    {
+      "number": 5,
+      "options": [
+        "Primera Respuesta: 1°opción",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: Cualquiera"
+      ],
+      "ability": {
+        "name": "Lectura de afinidad",
+        "description": "Añade puntos de vínculo a un confidente elegido."
+      }
+    },
+    {
+      "number": 6,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: 3°opción",
+        "Llamada al móvil: 2°opción"
+      ]
+    },
+    {
+      "number": 7,
+      "options": [
+        "Primera Respuesta: 3°opción",
+        "Segunda Respuesta: 1° ó 2°opción"
+      ],
+      "ability": {
+        "name": "Lectura sobre el destino especial",
+        "description": "Te permite ver las habilidades de un confidente seleccionado con antelación."
+      }
+    },
+    {
+      "number": 8,
+      "options": [
+        "Primera Respuesta: 2°opción",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: 2°opción",
+        "Llamada al móvil: 2°opción"
+      ],
+      "ability": {
+        "name": "Lectura celestial",
+        "description": "Activa instantáneamente una alarma de fusión en la Habitación Terciopelo y aumenta la probabilidad de que se active una alarma de fusión durante el resto del día."
+      },
+      "requirement": "Completa la solicitud de Mementos 'Desmitificando a la psíquica'."
+    },
+    {
+      "number": 9,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: 2°opción",
+        "Tercera Respuesta: 1°opción Solo Amigos 2°opción Iniciar Romance",
+        "Llamada al móvil: 1°opción"
+      ]
+    },
+    {
+      "number": 10,
+      "options": [
+        "Cualquier opción servirá"
+      ],
+      "ability": {
+        "name": "Lectura de bonos especiales",
+        "description": "Durante un escenario de Confidente, las mejores opciones tendrán texto rojo."
+      }
+    }
+  ]
+}

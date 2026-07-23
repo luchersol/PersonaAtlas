@@ -1,0 +1,60 @@
+[
+  {
+    "rank": "1",
+    "ability": {
+      "name": "Charla salvaje",
+      "description": "Te permite negociar con las Sombras después de realizar un atraco."
+    }
+  },
+  {
+    "rank": "1",
+    "ability": {
+      "name": "Explosión de arcanos",
+      "description": "Gana experiencia adicional al fusionar Personas según el Confidente de sus Arcanos"
+    }
+  },
+  {
+    "rank": "2",
+    "ability": {
+      "name": "tercer ojo",
+      "description": "Vea cosas normalmente invisibles presionando el botón L1/LB/ZL"
+    },
+    "requirement": "Fusiona tu primera persona"
+  },
+  {
+    "rank": "3",
+    "ability": {
+      "name": "Reserva de energía",
+      "description": "Te permite llevar 8 personas a la vez"
+    }
+  },
+  {
+    "rank": "5",
+    "ability": {
+      "name": "Súper acciones",
+      "description": "Te permite llevar 10 Personas a la vez"
+    }
+  },
+  {
+    "rank": "6",
+    "ability": {
+      "name": "Explosión de Arcanos Altos",
+      "description": "Aumenta el efecto de Arcana Burst"
+    }
+  },
+  {
+    "rank": "8",
+    "ability": {
+      "name": "Ultra stock",
+      "description": "Te permite llevar 12 Personas a la vez"
+    }
+  },
+  {
+    "rank": "10",
+    "ability": {
+      "name": "Explosión de arcanos máximos",
+      "description": "Aumenta enormemente el efecto del estallido de Arcanos."
+    },
+    "requirement": "Rechazar la oferta de 'Igor'"
+  }
+]

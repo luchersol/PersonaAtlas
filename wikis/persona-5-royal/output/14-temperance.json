@@ -1,0 +1,37 @@
+[
+  {
+    "rank": "1",
+    "ability": {
+      "name": "Slack off",
+      "description": "Kawakami will let Joker do activities during her class"
+    }
+  },
+  {
+    "rank": "3",
+    "ability": {
+      "name": "Housekeeping",
+      "description": "Kawakami will make coffee or do laundry"
+    }
+  },
+  {
+    "rank": "5",
+    "ability": {
+      "name": "Free Time",
+      "description": "Kawakami will call teachers to the office when Joker's in their class, allowing him to do activities"
+    }
+  },
+  {
+    "rank": "6",
+    "ability": {
+      "name": "Super Housekeeping",
+      "description": "Kawakami will make curry or infiltration tools"
+    }
+  },
+  {
+    "rank": "10",
+    "ability": {
+      "name": "Special Massage",
+      "description": "Kawakami will give Joker a massage after returning from the Metaverse, allowing him to go out at night"
+    }
+  }
+]

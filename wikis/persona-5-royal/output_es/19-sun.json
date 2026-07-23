@@ -1,0 +1,37 @@
+[
+  {
+    "rank": "2",
+    "ability": {
+      "name": "Diplomacia",
+      "description": "Joker puede pedir más dinero y artículos durante las negociaciones."
+    }
+  },
+  {
+    "rank": "3",
+    "ability": {
+      "name": "Recaudación de fondos",
+      "description": "Joker puede pedir grandes cantidades de dinero durante las negociaciones"
+    }
+  },
+  {
+    "rank": "5",
+    "ability": {
+      "name": "Manipulación",
+      "description": "En algún momento puede recibir objetos raros de los enemigos."
+    }
+  },
+  {
+    "rank": "8",
+    "ability": {
+      "name": "Control mental",
+      "description": "El Joker a veces puede obtener una Persona sin tener que negociar con las sombras."
+    }
+  },
+  {
+    "rank": "10",
+    "ability": {
+      "name": "Discurso carismático",
+      "description": "Joker puede obtener Personas de sombras que tienen un nivel superior al suyo."
+    }
+  }
+]

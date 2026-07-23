@@ -1,0 +1,123 @@
+{
+  "id": "5-sojiro",
+  "name": "Sojiro",
+  "arcana": {
+      "id": "5-hierophant",
+      "name":"Hierofante"
+  },
+  "gifts": [
+    "Pluma estilográfica (Papelería Kichijoji)",
+    "Trufas (Supermercado del Centro Comercial Subterráneo)",
+    "Brazalete de plata (Joyería del Centro Comercial Subterráneo)",
+    "Castella (Supermercado del Centro Comercial Subterráneo)"
+  ],
+  "ranks": [
+    {
+      "number": 1,
+      "options": [
+        "Llamada al móvil: 1°opción"
+      ]
+    },
+    {
+      "number": 2,
+      "options": [
+        "Primera Respuesta: 1°opción",
+        "Segunda Respuesta: 2°opción",
+        "Tercera Respuesta: 1°opción",
+        "Llamada al móvil: 1°opción"
+      ],
+      "ability": {
+        "name": "Conceptos básicos del café",
+        "description": "Joker puede preparar café que devuelve 30 SP a un aliado."
+      }
+    },
+    {
+      "number": 3,
+      "options": [
+        "Primera Respuesta: 1°opción",
+        "Segunda Respuesta: 2°opción",
+        "Llamada al móvil: 1° ó 3°opción"
+      ],
+      "requirement": "Prepara café al menos una vez."
+    },
+    {
+      "number": 4,
+      "options": [
+        "Primera Respuesta: 1°opción",
+        "Segunda Respuesta: 2°opción",
+        "Llamada al móvil: 1°opción"
+      ],
+      "ability": {
+        "name": "LeBlanc Curyy",
+        "description": "Joker puede hacer curry que devuelve 20 SP a todos los aliados."
+      }
+    },
+    {
+      "number": 5,
+      "options": [
+        "Primera Respuesta: 3°opción",
+        "Segunda Respuesta: 2°opción",
+        "Tercera Respuesta: 1°opción",
+        "Llamada al móvil: 2°opción"
+      ],
+      "ability": {
+        "name": "Nada",
+        "description": ""
+      },
+      "requirement": "Bloqueado hasta después del 22 de agosto"
+    },
+    {
+      "number": 6,
+      "options": [
+        "Primera Respuesta: 3°opción",
+        "Segunda Respuesta: 3°opción",
+        "Tercera Respuesta: 1°opción",
+        "Llamada al móvil: 3°opción"
+      ],
+      "ability": {
+        "name": "Dominio del café",
+        "description": "Joker puede preparar café que devuelve 100 SP a un aliado"
+      }
+    },
+    {
+      "number": 7,
+      "options": [
+        "Primera Respuesta: 1°opción",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: Cualquiera",
+        "Llamada al móvil: 3°opción"
+      ],
+      "requirement": "Nivel 5 Gentileza"
+    },
+    {
+      "number": 8,
+      "options": [
+        "Primera Respuesta: 2°opción",
+        "Segunda Respuesta: 2°opción"
+      ]
+    },
+    {
+      "number": 9,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: 2° ó 3°opción",
+        "Llamada al móvil: 1° ó 2°opción"
+      ],
+      "ability": {
+        "name": "Consejos para el curry",
+        "description": "Joker puede hacer curry que devuelve 30 SP a todos los aliados."
+      },
+      "requirement": "Solicitud de recuerdos completa 'Tío codicioso de dinero'"
+    },
+    {
+      "number": 10,
+      "options": [
+        "Cualquier opción servirá"
+      ],
+      "ability": {
+        "name": "Dominio del curry",
+        "description": "Joker puede hacer curry que devuelve 100 SP a todos los aliados."
+      }
+    }
+  ]
+}

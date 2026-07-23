@@ -1,0 +1,60 @@
+[
+  {
+    "rank": "1",
+    "ability": {
+      "name": "Wild Talk",
+      "description": "Allows you to negotiate with Shadows after performing a hold-up."
+    }
+  },
+  {
+    "rank": "1",
+    "ability": {
+      "name": "Arcana Burst",
+      "description": "Earn Bonus experience when fusing Personas based on their Arcana's Confidant"
+    }
+  },
+  {
+    "rank": "2",
+    "ability": {
+      "name": "Third Eye",
+      "description": "See things normally invisible by pressing L1/LB/ZL button"
+    },
+    "requirement": "Fuse your 1st Persona"
+  },
+  {
+    "rank": "3",
+    "ability": {
+      "name": "Power Stock",
+      "description": "Lets you carry 8 Personas at once"
+    }
+  },
+  {
+    "rank": "5",
+    "ability": {
+      "name": "Super Stock",
+      "description": "Lets you carry 10 Personas at once"
+    }
+  },
+  {
+    "rank": "6",
+    "ability": {
+      "name": "High Arcana Burst",
+      "description": "Increases effect of Arcana Burst"
+    }
+  },
+  {
+    "rank": "8",
+    "ability": {
+      "name": "Ultra Stock",
+      "description": "Lets you carry 12 Personas at once"
+    }
+  },
+  {
+    "rank": "10",
+    "ability": {
+      "name": "Max Arcana Burst",
+      "description": "Greatly increases the effect of Arcana burst"
+    },
+    "requirement": "Reject 'Igor's' offer"
+  }
+]

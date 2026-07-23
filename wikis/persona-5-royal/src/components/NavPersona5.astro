@@ -1,0 +1,157 @@
+---
+import { getLanguageStaticPaths, useTranslations } from '@i18n/utils';
+import NavLink from './NavLink.astro';
+import type { DefaultParams } from '@types2/p5';
+import LangSelector from './LangSelector.astro';
+
+export function getStaticPaths() {
+  return getLanguageStaticPaths();
+}
+
+const { lang } = Astro.params as DefaultParams;
+
+const t = useTranslations(lang);
+
+const navItems = [
+  { id: 'confidents', concept: t("nav.concept.social-link") },
+  { id: 'classroom-answers', concept: t("nav.concept.classroom-answer") }
+];
+
+---
+
+<nav class="p5-navbar">
+  <div class="p5-logo">
+    P5_MENU.SYS
+  </div>
+
+  <button
+    class="menu-toggle"
+    aria-label="Abrir menú"
+    aria-expanded="false"
+  >
+    ☰
+  </button>
+
+  <div class="p5-links-container" id="menu">
+    {navItems.map((item) => (
+      <NavLink href={`/${lang}/${item.id}`} concept={item.concept} />
+    ))}
+    <div class="lang-selector-wrapper">
+      <LangSelector />
+    </div>
+  </div>
+</nav>
+
+<script>
+  const button = document.querySelector(".menu-toggle");
+  const menu = document.querySelector("#menu");
+
+  button?.addEventListener("click", () => {
+    menu?.classList.toggle("open");
+
+    const expanded = menu?.classList.contains("open");
+    button?.setAttribute("aria-expanded", expanded ? "true" : "false");
+  });
+</script>
+
+<style>
+
+  .p5-navbar {
+    /* Ancho completo */
+    width: 100%;
+    box-sizing: border-box; /* Evita que el padding sume ancho extra y genere scroll horizontal */
+    
+    /* Resto de tus estilos... */
+    background-color: #111;
+    padding: 1.5rem;
+    border-bottom: 4px solid var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Tip: 'space-between' suele funcionar mejor que 'center' para navbars full-width */
+    gap: 1rem;
+    position: relative;
+  }
+  
+  .p5-logo {
+    color: var(--primary);
+    font-family: 'Impact', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    letter-spacing: -0.05em;
+    transform: skewX(-12deg);
+    background-color: var(--background);
+    padding: 0.25rem 0.75rem;
+    border: 2px solid var(--primary);
+  }
+
+  .p5-links-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    font-size: 1.5rem;
+    padding: .3rem .8rem;
+    cursor: pointer;
+  }
+  
+  .lang-selector-wrapper {
+      margin-left: auto;
+  }
+
+@media (max-width: 768px) {
+
+  .p5-navbar {
+    position: relative;
+    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .p5-links-container {
+    position: absolute;
+    top: calc(100% + 4px); /* Justo debajo de la barra */
+    left: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+
+    padding: 1rem;
+
+    background: #111;
+    border-bottom: 4px solid var(--primary);
+
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+
+    transition: max-height .3s ease, opacity .3s ease;
+
+    z-index: 999;
+  }
+
+  .p5-links-container.open {
+    max-height: 600px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .lang-selector-wrapper {
+    margin-left: 0;
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+</style>

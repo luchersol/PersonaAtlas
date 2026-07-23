@@ -4,21 +4,12 @@
   "exclude": ["dist"],
   "compilerOptions": {
     "paths": {
-      "@components/*": [
-        "./src/components/*"
-      ],
-      "@layouts/*": [
-        "./src/layouts/*"
-      ],
-      "@data/*": [
-        "./src/data/*"
-      ],
-      "@i18n/*": [
-        "./src/i18n/*"
-      ],
-      "@types2/*": [
-        "./src/types/*"
-      ],
+      "@components/*": ["./src/components/*"],
+      "@layouts/*": ["./src/layouts/*"],
+      "@data/*": ["./src/data/*"],
+      "@i18n/*": ["./src/i18n/*"],
+      "@types2/*": ["./src/types/*"],
+      "@styles/*": ["./src/styles/*"]
     }
   }
 }

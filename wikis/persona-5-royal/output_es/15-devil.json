@@ -1,0 +1,37 @@
+[
+  {
+    "rank": "1",
+    "ability": {
+      "name": "Primicia llena de rumores",
+      "description": "Encontrar una nueva habitación segura disminuye el nivel de seguridad de un palacio"
+    }
+  },
+  {
+    "rank": "4",
+    "ability": {
+      "name": "primicia impactante",
+      "description": "Ralentiza el aumento del nivel de seguridad de un palacio y lo reduce aún más después de derrotar a un enemigo emboscado."
+    }
+  },
+  {
+    "rank": "5",
+    "ability": {
+      "name": "Primicia sin precedentes",
+      "description": "Comienza un palacio con un nivel de seguridad más bajo."
+    }
+  },
+  {
+    "rank": "7",
+    "ability": {
+      "name": "primicia escandalosa",
+      "description": "Comienza un palacio con el nivel de seguridad al 0%."
+    }
+  },
+  {
+    "rank": "10",
+    "ability": {
+      "name": "primicia legendaria",
+      "description": "Joker puede tender una emboscada a un enemigo sin importar el nivel de seguridad"
+    }
+  }
+]

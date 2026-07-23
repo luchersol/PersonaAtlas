@@ -1,0 +1,57 @@
+[
+  {
+    "rank": "2",
+    "ability": {
+      "name": "Sleuthing Instinct",
+      "description": "Sometimes reveals one enemy's elemental affinity when battle starts"
+    }
+  },
+  {
+    "rank": "4",
+    "ability": {
+      "name": "Smooth Talk",
+      "description": "Joker can retry a failed negotiation against a god-like shadow"
+    },
+    "requirement": "It can't be raining"
+  },
+  {
+    "rank": "6",
+    "ability": {
+      "name": "Follow Up",
+      "description": "Allows Akechi to attack an enemy out of turn if Joker's attack doesn't defeat it"
+    },
+    "requirement": "Unavailable until September 3rd"
+  },
+  {
+    "rank": "6",
+    "ability": {
+      "name": "Sleuthing Mastery",
+      "description": "Sometimes reveal all of an enemy's elemental affinities when battle starts"
+    },
+    "requirement": "Unavailable until September 3rd"
+  },
+  {
+    "rank": "7",
+    "ability": {
+      "name": "Harisen Recovery",
+      "description": "Chance to cure ailments on party members when Akechi's turn comes up"
+    },
+    "requirement": "Lv 4 Knowledge/ Explore Nijima's Palace on your own time"
+  },
+  {
+    "rank": "10",
+    "ability": {
+      "name": "Endure",
+      "description": "Lets Akechi survive a fatal attack with 1 HP remaining"
+    },
+    "requirement": "Reach Rank 8 before November 17"
+  },
+  {
+    "rank": "10",
+    "ability": {
+      "name": "Protect",
+      "description": "Akechi can shield Joker from fatal attacks"
+    },
+    "requirement": "Reach Rank 8 before November 17"
+  }
+]

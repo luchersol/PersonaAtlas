@@ -1,0 +1,19 @@
+---
+interface Props {
+  class?: string;
+}
+
+const { class: className = "" } = Astro.props;
+---
+<section class={`p5-section ${className}`}>
+    <slot/>
+</section>
+
+
+<style>
+    .p5-section { 
+        display: flex; 
+        flex-direction: column; 
+        gap: 1rem; 
+    }
+</style>

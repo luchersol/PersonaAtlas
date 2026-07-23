@@ -1,0 +1,60 @@
+[
+  {
+    "rank": "2",
+    "ability": {
+      "name": "cayendo",
+      "description": "Presionar el botón de acción en el momento adecuado permite al grupo evitar ser rodeado."
+    }
+  },
+  {
+    "rank": "4",
+    "ability": {
+      "name": "Gancho de cadenas",
+      "description": "Joker puede usar su gancho de agarre para emboscar a los enemigos desde la distancia y tener la posibilidad de infligirles dolencias al comienzo de una batalla."
+    }
+  },
+  {
+    "rank": "6",
+    "ability": {
+      "name": "Hacer un seguimiento",
+      "description": "Le permite a Sumire atacar a un enemigo fuera de turno si el ataque del Joker no lo derrota."
+    },
+    "requirement": "Alcanza el rango 5 antes del 22 de diciembre/Bloqueado hasta el 13 de enero/Rechaza la oferta de Maruki cuando Joker y Akechi vayan a rescatar a Sumire."
+  },
+  {
+    "rank": "6",
+    "ability": {
+      "name": "Charla de fitness",
+      "description": "Joker puede volver a intentar una negociación fallida contra cualquier sombra"
+    },
+    "requirement": "Alcanza el rango 5 antes del 22 de diciembre/Bloqueado hasta el 13 de enero/Rechaza la oferta de Maruki cuando Joker y Akechi vayan a rescatar a Sumire."
+  },
+  {
+    "rank": "7",
+    "ability": {
+      "name": "Recuperación de Harisen",
+      "description": "Oportunidad de curar dolencias de los miembros del grupo cuando llegue el turno de Sumire."
+    }
+  },
+  {
+    "rank": "8",
+    "ability": {
+      "name": "Perdurar",
+      "description": "Permite a Sumire sobrevivir a un ataque fatal con 1 HP restante."
+    }
+  },
+  {
+    "rank": "9",
+    "ability": {
+      "name": "Proteger",
+      "description": "Sumire puede proteger al Joker de ataques fatales"
+    }
+  },
+  {
+    "rank": "10",
+    "ability": {
+      "name": "Segundo despertar",
+      "description": "La Persona de Sumire evoluciona a Vanadis"
+    }
+  }
+]

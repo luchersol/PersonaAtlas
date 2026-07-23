@@ -1,0 +1,37 @@
+[
+  {
+    "rank": "1.0",
+    "ability": {
+      "name": "Rejuvenation",
+      "description": "Takemi will sell Joker the following items; Takemedic-All, Takemedic-All V"
+    }
+  },
+  {
+    "rank": "3.0",
+    "ability": {
+      "name": "Sterilization",
+      "description": "Takemi will sell Joker the following items: Rejuvenating IV, Kajaclear-R, Kundaclear-R"
+    }
+  },
+  {
+    "rank": "5.0",
+    "ability": {
+      "name": "Immunization",
+      "description": "Takemi will sell Joker the following items: Takemedic, Takemedic-all Z, Life Ointment, Regen Patch 1, Regen Patch 2, Regen Patch 3, SP Adhesive 1, SP Adhesive 2, SP Adhesive 3, Hot Compress, Grudge Gauze, Thought Gauze"
+    }
+  },
+  {
+    "rank": "7.0",
+    "ability": {
+      "name": "Discount",
+      "description": "Takemi will sell her items at 1/2 price (doesn't apply to items that require Resuscitation)"
+    }
+  },
+  {
+    "rank": "10.0",
+    "ability": {
+      "name": "Resuscitation",
+      "description": "Takemi will Sell Joker the following items: Reviv-All, Renew-All, Magic Ointment, Physical Ointment"
+    }
+  }
+]

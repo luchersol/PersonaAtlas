@@ -1,0 +1,44 @@
+[
+  {
+    "rank": "1.0",
+    "ability": {
+      "name": "Koma Sabaki",
+      "description": "Can swap party members mid-battle during Joker's Turn"
+    }
+  },
+  {
+    "rank": "3.0",
+    "ability": {
+      "name": "Uchikomi",
+      "description": "Backup party members can perform follow-up attacks after Joker downs an enemy"
+    }
+  },
+  {
+    "rank": "5.0",
+    "ability": {
+      "name": "Kakoi Kuzushi",
+      "description": "Can escape a battle even if you're surrounded"
+    }
+  },
+  {
+    "rank": "7.0",
+    "ability": {
+      "name": "Narikin",
+      "description": "Get double money after battle if the party can defeat an ambushed enemy in one turn"
+    }
+  },
+  {
+    "rank": "9.0",
+    "ability": {
+      "name": "Touryou",
+      "description": "The party can escape battles in one turn"
+    }
+  },
+  {
+    "rank": "10.0",
+    "ability": {
+      "name": "Togo System",
+      "description": "Can swap party members mid-battle during anyone's turn"
+    }
+  }
+]

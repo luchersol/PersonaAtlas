@@ -1,0 +1,37 @@
+[
+  {
+    "rank": "1",
+    "ability": {
+      "name": "Rumor-filled Scoop",
+      "description": "Finding a new Safe Room decreases a palace's security level"
+    }
+  },
+  {
+    "rank": "4",
+    "ability": {
+      "name": "Shocking Scoop",
+      "description": "Slows the rise of a palace's security level and lowers it more after defeating an ambushed enemy"
+    }
+  },
+  {
+    "rank": "5",
+    "ability": {
+      "name": "Unprecedented Scoop",
+      "description": "Begin a palace with a lower security level"
+    }
+  },
+  {
+    "rank": "7",
+    "ability": {
+      "name": "Outrageous Scoop",
+      "description": "Begin a palace with the security level at 0%"
+    }
+  },
+  {
+    "rank": "10",
+    "ability": {
+      "name": "Legendary Scoop",
+      "description": "Joker can ambush an enemy regardless of security level"
+    }
+  }
+]

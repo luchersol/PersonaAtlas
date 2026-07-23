@@ -1,0 +1,58 @@
+[
+  {
+    "rank": "1",
+    "ability": {
+      "name": "Moral Support",
+      "description": "Futaba can either heal or raise stats on party members during battle"
+    }
+  },
+  {
+    "rank": "2",
+    "ability": {
+      "name": "Mementos Scan",
+      "description": "Futaba has a chance to full map a floor of Mementos upon entering"
+    }
+  },
+  {
+    "rank": "4",
+    "ability": {
+      "name": "Position Hack",
+      "description": "Futaba has a chance to start a battle with a Hold Up"
+    }
+  },
+  {
+    "rank": "6",
+    "ability": {
+      "name": "Active Support",
+      "description": "Moral Support now has a chance to Charge a party member or restore SP"
+    }
+  },
+  {
+    "rank": "7",
+    "ability": {
+      "name": "Treasure Reboot",
+      "description": "Futaba has a chance to restore search objects in the Metaverse after battle"
+    }
+  },
+  {
+    "rank": "9",
+    "ability": {
+      "name": "Emergency Shift",
+      "description": "When 2 or more party members are KO'ed, Futaba has a chance to swap them in with backup members"
+    }
+  },
+  {
+    "rank": "10",
+    "ability": {
+      "name": "Final Guard",
+      "description": "Futaba has a chance to negate a fatal attack to any party member"
+    }
+  },
+  {
+    "rank": "10",
+    "ability": {
+      "name": "Second Awakening",
+      "description": "Futaba's Persona evolves into Prometheus"
+    }
+  }
+]

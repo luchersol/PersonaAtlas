@@ -1,0 +1,150 @@
+{
+  "id": "8-goro",
+  "name": "Goro",
+  "arcana": {
+      "id": "8-justice",
+      "name": "Justicia"
+  },
+  "gifts": [
+    "Rompecabezas de 48 caras (Tienda general de Shinjuku)",
+    "Cepillo de dientes eléctrico (Tienda de Electrónica de Akihabara)",
+    "Omni-Vitamina (Tienda de descuentos Shibuya Rocinante)",
+    "Gafas de sol deportivas (Tienda de deportes del centro comercial Underground)",
+    "Brazalete de plata (Tienda de joyería del centro comercial subterráneo)"
+  ],
+  "ranks": [
+    {
+      "number": 1
+    },
+    {
+      "number": 2,
+      "options": [
+        "Primera Respuesta: 1°opción",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: Cualquiera",
+        "Quinta Respuesta: 3°opción",
+        "Llamada al móvil: 3°opción"
+      ],
+      "ability": {
+        "name": "Instinto detectivesco",
+        "description": "A veces revela la afinidad elemental de un enemigo cuando comienza la batalla."
+      }
+    },
+    {
+      "number": 3,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: 1°opción",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: Cualquiera",
+        "Quinta Respuesta: Cualquiera",
+        "Llamada al móvil: 2°opción"
+      ],
+      "requirement": "Nivel 3 Encanto"
+    },
+    {
+      "number": 4,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: 3°opción",
+        "Tercera Respuesta: 1°opción",
+        "Cuarta Respuesta: 1°opción",
+        "Quinta Respuesta: Cualquiera",
+        "Sexta Respuesta: 1° ó 2°opción",
+        "Llamada al móvil: 2°opción"
+      ],
+      "ability": {
+        "name": "Charla suave",
+        "description": "Joker puede volver a intentar una negociación fallida contra una sombra divina"
+      },
+      "requirement": "No puede estar lloviendo"
+    },
+    {
+      "number": 5,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: 1°opción",
+        "Tercera Respuesta: 1°opción",
+        "Cuarta Respuesta: Cualquiera",
+        "Llamada al móvil: Cualquiera"
+      ]
+    },
+    {
+      "number": 6,
+      "options": [
+        "Primera Respuesta: 3°opción",
+        "Segunda Respuesta: 2°opción",
+        "Tercera Respuesta: 1° ó 2°opción",
+        "Cuarta Respuesta: 1°opción",
+        "Quinta Respuesta: Cualquiera",
+        "Sexta Respuesta: 1°opción",
+        "Llamada al móvil: 3°opción"
+      ],
+      "ability": [
+        {
+          "name": "Hacer un seguimiento",
+          "description": "Le permite a Akechi atacar a un enemigo fuera de turno si el ataque del Joker no lo derrota."
+        },
+        {
+          "name": "Dominio de la investigación",
+          "description": "A veces revela todas las afinidades elementales de un enemigo cuando comienza la batalla."
+        }
+      ],
+      "requirement": "No disponible hasta el 3 de septiembre."
+    },
+    {
+      "number": 7,
+      "options": [
+        "Primera Respuesta: 2°opción",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: 2°opción",
+        "Quinta Respuesta: Cualquiera",
+        "Sexta Respuesta: Cualquiera",
+        "Llamada al móvil: 3°opción"
+      ],
+      "ability": {
+        "name": "Recuperación de Harisen",
+        "description": "Oportunidad de curar dolencias de los miembros del grupo cuando llegue el turno de Akechi."
+      },
+      "requirement": "Conocimiento de nivel 4/Explora el Palacio de Nijima a tu propio ritmo"
+    },
+    {
+      "number": 8,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: Cualquiera",
+        "Quinta Respuesta: Cualquiera",
+        "Sexta Respuesta: 1°opción",
+        "Séptima Respuesta: 2°opción",
+        "Octava Respuesta: Cualquiera"
+      ]
+    },
+    {
+      "number": 9,
+      "options": [
+        "Sube automaticamente en la historia siempre y cuando lleguemos a Rango 8 antes del 12 de noviembre."
+      ]
+    },
+    {
+      "number": 10,
+      "options": [
+        "Sube automaticamente en la historia siempre y cuando lleguemos a Rango 8 antes del 12 de noviembre."
+      ],
+      "ability": [
+        {
+          "name": "Perdurar",
+          "description": "Permite a Akechi sobrevivir a un ataque fatal con 1 HP restante."
+        },
+        {
+          "name": "Proteger",
+          "description": "Akechi puede proteger al Joker de ataques fatales"
+        }
+      ],
+      "requirement": "Alcanza el rango 8 antes del 17 de noviembre."
+    }
+  ]
+}

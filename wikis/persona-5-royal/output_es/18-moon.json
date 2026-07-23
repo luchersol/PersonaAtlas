@@ -1,0 +1,37 @@
+[
+  {
+    "rank": "1.0",
+    "ability": {
+      "name": "El apoyo de Mishima",
+      "description": "Los miembros del grupo de respaldo ganan experiencia"
+    }
+  },
+  {
+    "rank": "3.0",
+    "ability": {
+      "name": "El entusiasmo de Mishima",
+      "description": "Aumentar la experiencia de las batallas."
+    }
+  },
+  {
+    "rank": "5.0",
+    "ability": {
+      "name": "La desesperación de Mishima",
+      "description": "El miembro del grupo de respaldo gana más experiencia"
+    }
+  },
+  {
+    "rank": "7.0",
+    "ability": {
+      "name": "fanboy",
+      "description": "Aumenta aún más la experiencia de las batallas."
+    }
+  },
+  {
+    "rank": "10.0",
+    "ability": {
+      "name": "Deseo de salvación",
+      "description": "Los miembros activos y de respaldo del grupo reciben la misma cantidad de experiencia"
+    }
+  }
+]

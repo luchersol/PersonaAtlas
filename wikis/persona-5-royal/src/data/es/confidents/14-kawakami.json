@@ -1,0 +1,130 @@
+{
+  "id": "14-kawakami",
+  "name": "Kawakami",
+  "arcana": {
+      "id": "14-temperance",
+      "name": "Templanza"
+  },
+  "gifts": [
+    "Perfume de diseñador (Shibuya Underground Mall)",
+    "Castella (centro comercial subterráneo de la estación de Shibuya)",
+    "Chocolate barato (Shibuya Central Street - Tienda de descuento)",
+    "Reloj despertador súper ruidoso (centro comercial subterráneo de Shibuya)",
+    "Cepillo de dientes eléctrico de alto rendimiento (Akihabara)",
+    "Lo mejor de KGB49 (Shibuya Underground Mall)",
+    "Espejo estrella (Tienda General Shinjuku)"
+  ],
+  "ranks": [
+    {
+      "number": 1,
+      "options": [
+        "Llamada al móvil: 1°opción"
+      ],
+      "ability": {
+        "name": "aflojar",
+        "description": "Kawakami dejará que Joker haga actividades durante su clase"
+      }
+    },
+    {
+      "number": 2,
+      "options": [
+        "Primera Respuesta: 1°opción",
+        "Segunda Respuesta: 2°opción",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: Cualquiera",
+        "Llamada al móvil: 3°opción"
+      ]
+    },
+    {
+      "number": 3,
+      "options": [
+        "Primera Respuesta: 1° ó 2°opción",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: 2°opción",
+        "Cuarta Respuesta: Cualquiera",
+        "Llamada al móvil: 1°opción"
+      ],
+      "ability": {
+        "name": "Gestión interna",
+        "description": "Kawakami hará café o lavará la ropa."
+      }
+    },
+    {
+      "number": 4,
+      "options": [
+        "Primera Respuesta: Cualquiera",
+        "Segunda Respuesta: 1°opción",
+        "Tercera Respuesta: 3°opción",
+        "Cuarta Respuesta: Cualquiera"
+      ]
+    },
+    {
+      "number": 5,
+      "options": [
+        "Primera Respuesta: 1° ó 3°opción",
+        "Segunda Respuesta: 1° ó 3°opción",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: Cualquiera",
+        "Quinta Respuesta: Cualquiera",
+        "Llamada al móvil: 3°opción"
+      ],
+      "ability": {
+        "name": "Tiempo libre",
+        "description": "Kawakami llamará a los profesores a la oficina cuando Joker esté en su clase, permitiéndole realizar actividades."
+      }
+    },
+    {
+      "number": 6,
+      "options": [
+        "Primera Respuesta: 2°opción",
+        "Segunda Respuesta: 1° ó 3°opción",
+        "Tercera Respuesta: Cualquiera",
+        "Llamada al móvil: 3°opción"
+      ],
+      "ability": {
+        "name": "Súper limpieza",
+        "description": "Kawakami fabricará curry o herramientas de infiltración"
+      }
+    },
+    {
+      "number": 7,
+      "options": [
+        "Primera Respuesta: 3°opción",
+        "Segunda Respuesta: 3°opción",
+        "Tercera Respuesta: Cualquiera"
+      ]
+    },
+    {
+      "number": 8,
+      "options": [
+        "Primera Respuesta: 3°opción",
+        "Segunda Respuesta: 2°opción",
+        "Tercera Respuesta: Cualquiera",
+        "Cuarta Respuesta: Cualquiera",
+        "Quinta Respuesta: Cualquiera",
+        "Sexta Respuesta: Cualquiera",
+        "Llamada al móvil: Cualquiera"
+      ]
+    },
+    {
+      "number": 9,
+      "options": [
+        "Primera Respuesta: 1°opción",
+        "Segunda Respuesta: Cualquiera",
+        "Tercera Respuesta: 1°opción Solo Amigos 2°opción Iniciar Romance",
+        "Cuarta Respuesta: 2°opción Romance",
+        "Quinta Respuesta: 2°opción Romance"
+      ]
+    },
+    {
+      "number": 10,
+      "options": [
+        "Cualquier opción servirá"
+      ],
+      "ability": {
+        "name": "Masaje Especial",
+        "description": "Kawakami le dará un masaje a Joker después de regresar del Metaverso, lo que le permitirá salir por la noche"
+      }
+    }
+  ]
+}

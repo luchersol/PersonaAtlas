@@ -1,0 +1,39 @@
+[
+  {
+    "rank": "2",
+    "ability": {
+      "name": "Detox X",
+      "description": "Joker can recover from a status ailment immediately"
+    }
+  },
+  {
+    "rank": "3",
+    "ability": {
+      "name": "Flow",
+      "description": "Joker can receive the effects of Charge and Concentrate at the start of a battle"
+    },
+    "requirement": "It can't be raining"
+  },
+  {
+    "rank": "5",
+    "ability": {
+      "name": "Mindfulness",
+      "description": "Joker's SP has a chance to replenish itself when low"
+    }
+  },
+  {
+    "rank": "7",
+    "ability": {
+      "name": "Flow Boost",
+      "description": "Increases the chances of Flow happening"
+    },
+    "requirement": "It can't be raining"
+  },
+  {
+    "rank": "9",
+    "ability": {
+      "name": "Detox DX",
+      "description": "Increases the the chances of Detox X happening"
+    }
+  }
+]

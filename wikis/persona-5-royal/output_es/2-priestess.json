@@ -1,0 +1,61 @@
+[
+  {
+    "rank": "1",
+    "ability": {
+      "name": "Cálculo de sombras",
+      "description": "Te permite ver el objeto y las habilidades de un enemigo al analizar"
+    },
+    "requirement": "Conocimiento nivel 3"
+  },
+  {
+    "rank": "3",
+    "ability": {
+      "name": "Charla de cinturón negro",
+      "description": "Joker puede volver a intentar una negociación fallida contra las artes marciales usando sombras"
+    }
+  },
+  {
+    "rank": "4",
+    "ability": {
+      "name": "Hacer un seguimiento",
+      "description": "Le permite a Makoto atacar a un enemigo fuera de turno si el ataque del Joker no lo derrota."
+    }
+  },
+  {
+    "rank": "6",
+    "ability": {
+      "name": "Recuperación de Harisen",
+      "description": "Oportunidad de curar dolencias de los miembros del grupo cuando llegue el turno de Makoto."
+    },
+    "requirement": "Encanto MAX"
+  },
+  {
+    "rank": "7",
+    "ability": {
+      "name": "Factorización de sombras",
+      "description": "Muestra una X en un enemigo si ese ataque no causará ningún daño."
+    }
+  },
+  {
+    "rank": "8",
+    "ability": {
+      "name": "Perdurar",
+      "description": "Permite a Makoto sobrevivir a un ataque fatal con 1 HP restante."
+    }
+  },
+  {
+    "rank": "9",
+    "ability": {
+      "name": "Proteger",
+      "description": "Makoto puede proteger al Joker de ataques fatales"
+    },
+    "requirement": "No puede estar lloviendo"
+  },
+  {
+    "rank": "10",
+    "ability": {
+      "name": "Segundo despertar",
+      "description": "La Persona de Makoto evoluciona a Anat"
+    }
+  }
+]

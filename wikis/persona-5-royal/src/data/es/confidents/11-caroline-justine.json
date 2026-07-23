@@ -1,0 +1,90 @@
+{
+  "id": "11-caroline-justine",
+  "name": "Caroline & Justine",
+  "arcana": {
+      "id": "11-strength",
+      "name": "Fuerza"
+  },
+  "ranks": [
+    {
+      "number": 1,
+      "options": [
+        "Jack Frost con la habilidad Mabufu"
+      ],
+      "ability": {
+        "name": "Guillotina grupal",
+        "description": "Permite que Joker use 3 Personas en una fusión"
+      }
+    },
+    {
+      "number": 2,
+      "options": [
+        "Ame-No-Uzame con habilidad Frei"
+      ]
+    },
+    {
+      "number": 3,
+      "options": [
+        "Flauros con habilidad Tarukaba"
+      ],
+      "ability": {
+        "name": "Aislamiento",
+        "description": "Puede dejar una Persona en Velvet Room para aumentar la resistencia a los elementos."
+      }
+    },
+    {
+      "number": 4,
+      "options": [
+        "Fenix con habilidad Replica (Counter)"
+      ]
+    },
+    {
+      "number": 5,
+      "options": [
+        "Setanta con habilidad Rakukaja"
+      ],
+      "ability": {
+        "name": "Tratamiento Especial",
+        "description": "Joker puede pagarle a Igor para crear Persona en una fusión que esté por encima de su nivel actual"
+      }
+    },
+    {
+      "number": 6,
+      "options": [
+        "Neko Shohun con habilidad Dekaja"
+      ]
+    },
+    {
+      "number": 7,
+      "options": [
+        "Lequesis con habilidad Tetraja"
+      ]
+    },
+    {
+      "number": 8,
+      "options": [
+        "Hecatónquiro con habilidad Masukunda"
+      ],
+      "ability": {
+        "name": "Refuerzo de guillotina",
+        "description": "Permite que Joker use 4 o más Personas en una fusión"
+      }
+    },
+    {
+      "number": 9,
+      "options": [
+        "Bugs con la habilidad Samarecarm"
+      ]
+    },
+    {
+      "number": 10,
+      "options": [
+        "Seth con la habilidad Gran Replica (High Counter)"
+      ],
+      "ability": {
+        "name": "Tratamiento VIP",
+        "description": "Disminuye el dinero necesario para el Tratamiento Especial"
+      }
+    }
+  ]
+}

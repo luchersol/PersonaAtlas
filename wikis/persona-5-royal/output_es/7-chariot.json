@@ -1,0 +1,63 @@
+[
+  {
+    "rank": "2",
+    "ability": {
+      "name": "charla punk",
+      "description": "Joker puede volver a intentar una negociación fallida contra una sombra optimista"
+    },
+    "requirement": "No puede estar lloviendo"
+  },
+  {
+    "rank": "3",
+    "ability": {
+      "name": "Hacer un seguimiento",
+      "description": "Le permite a Ryuji atacar a un enemigo fuera de turno si el ataque del Joker no lo derrota."
+    },
+    "requirement": "No puede estar lloviendo"
+  },
+  {
+    "rank": "4",
+    "ability": {
+      "name": "Carrera sigilosa",
+      "description": "Te permite recorrer palacios sin hacer ruido."
+    }
+  },
+  {
+    "rank": "6",
+    "ability": {
+      "name": "Recuperación de Harisen",
+      "description": "Oportunidad de curar dolencias de los miembros del grupo cuando llegue el turno de Ryuji."
+    },
+    "requirement": "No puede estar lloviendo"
+  },
+  {
+    "rank": "7",
+    "ability": {
+      "name": "Insta-Kill",
+      "description": "Joker puede matar instantáneamente una sombra lanzándose hacia ella si es al menos 10 niveles más fuerte, como lo indica un contorno verde cuando usa el Tercer Ojo."
+    },
+    "requirement": "Acepta el mensaje de texto de Ryuji por la noche."
+  },
+  {
+    "rank": "8",
+    "ability": {
+      "name": "Perdurar",
+      "description": "Permite a Ryuji sobrevivir a un ataque fatal con 1 HP restante."
+    },
+    "requirement": "No puede estar lloviendo"
+  },
+  {
+    "rank": "9",
+    "ability": {
+      "name": "Proteger",
+      "description": "Ryuji puede proteger al Joker de ataques fatales"
+    }
+  },
+  {
+    "rank": "10",
+    "ability": {
+      "name": "Segundo despertar",
+      "description": "La Persona de Ryuji evoluciona a Seiten Taisei"
+    }
+  }
+]

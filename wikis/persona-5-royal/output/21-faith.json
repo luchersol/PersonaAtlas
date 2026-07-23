@@ -1,0 +1,60 @@
+[
+  {
+    "rank": "2",
+    "ability": {
+      "name": "Tumbling",
+      "description": "Pushing the action button at the right time allows the party to avoid being surrounded"
+    }
+  },
+  {
+    "rank": "4",
+    "ability": {
+      "name": "Chaines Hook",
+      "description": "Joker can use his Grappling Hook to ambush enemies from a distance with a chance to inflict ailments on them at the beginning of a battle"
+    }
+  },
+  {
+    "rank": "6",
+    "ability": {
+      "name": "Follow Up",
+      "description": "Allows Sumire to attack an enemy out of turn if Joker's attack doesn't defeat it"
+    },
+    "requirement": "Reach Rank 5 before December 22nd/Locked until January 13th/ Reject Maruki's offer when Joker and Akechi go to rescue Sumire"
+  },
+  {
+    "rank": "6",
+    "ability": {
+      "name": "Fitness Talk",
+      "description": "Joker can retry a failed negotiation against any shadow"
+    },
+    "requirement": "Reach Rank 5 before December 22nd/Locked until January 13th/ Reject Maruki's offer when Joker and Akechi go to rescue Sumire"
+  },
+  {
+    "rank": "7",
+    "ability": {
+      "name": "Harisen Recovery",
+      "description": "Chance to cure ailments on party members when Sumire's turn comes up"
+    }
+  },
+  {
+    "rank": "8",
+    "ability": {
+      "name": "Endure",
+      "description": "Lets Sumire survive a fatal attack with 1 HP remaining"
+    }
+  },
+  {
+    "rank": "9",
+    "ability": {
+      "name": "Protect",
+      "description": "Sumire can shield Joker from fatal attacks"
+    }
+  },
+  {
+    "rank": "10",
+    "ability": {
+      "name": "Second Awakening",
+      "description": "Sumire's Persona evolves into Vanadis"
+    }
+  }
+]
