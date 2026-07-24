@@ -22,6 +22,16 @@ if (!info) {
 
 const answers = await getP5Answers(lang);
 
+const monthOrder = [4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3];
+const monthOrderPredicate = (
+    [monthA]: [string, { day: string; responses: string[] }[]],
+    [monthB]: [string, { day: string; responses: string[] }[]]
+): number => {
+    return (
+        monthOrder.indexOf(Number(monthA)) -
+        monthOrder.indexOf(Number(monthB))
+    );
+};
 
 const groupedByMonth = Object.entries(answers).reduce((acc, [day, responses]) => {
     const [, month] = day.split("/");
@@ -41,7 +51,9 @@ const groupedByMonth = Object.entries(answers).reduce((acc, [day, responses]) =>
 
   <section class="p5-answers-section">
     <nav class="p5-month-nav">
-      {Object.entries(groupedByMonth).map(([month]) => (
+      {Object.entries(groupedByMonth)
+        .sort(monthOrderPredicate)
+        .map(([month]) => (
           <a
               href={`#month-${month}`}
               class="p5-month-button"
@@ -51,29 +63,31 @@ const groupedByMonth = Object.entries(answers).reduce((acc, [day, responses]) =>
       ))}
     </nav>
     <div class="p5-answers-grid">
-        {Object.entries(groupedByMonth).map(([month, monthAnswers]) => (
-            <section
-                id={`month-${month}`}
-                class="p5-month-section"
-            >
-                <h2 class="p5-month-title">
-                    {"Mes " + month}
-                </h2>
+        {Object.entries(groupedByMonth)
+            .sort(monthOrderPredicate)
+            .map(([month, monthAnswers]) => (
+                <section
+                    id={`month-${month}`}
+                    class="p5-month-section"
+                >
+                    <h2 class="p5-month-title">
+                        {"Mes " + month}
+                    </h2>
 
-                {monthAnswers.map(({ day, responses }) => (
-                    <article class="p5-answer-card">
-                        <span class="p5-answer-date">
-                            {day}
-                        </span>
+                    {monthAnswers.map(({ day, responses }) => (
+                        <article class="p5-answer-card">
+                            <span class="p5-answer-date">
+                                {day}
+                            </span>
 
-                        <ul class="p5-answer-list">
-                            {responses.map((response) => (
-                                <li>{response}</li>
-                            ))}
-                        </ul>
-                    </article>
-                ))}
-            </section>
+                            <ul class="p5-answer-list">
+                                {responses.map((response) => (
+                                    <li>{response}</li>
+                                ))}
+                            </ul>
+                        </article>
+                    ))}
+                </section>
         ))}
     </div>
   </section>
