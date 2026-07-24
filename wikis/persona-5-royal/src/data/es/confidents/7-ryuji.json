@@ -75,8 +75,8 @@
         "Llamada al móvil: 3°opción"
       ],
       "ability": {
-        "name": "Recuperación de Harisen",
-        "description": "Oportunidad de curar dolencias de los miembros del grupo cuando llegue el turno de Ryuji."
+        "name": "Golpe de abanico",
+        "description": "Posibilidad de curar estados de los miembros del grupo."
       },
       "requirement": "No puede estar lloviendo"
     },

@@ -1,5 +1,5 @@
 {
-  "id": "23-maruki",
+  "id": "22-maruki",
   "name": "Maruki",
   "arcana": {
     "id": "22-councillor",
@@ -28,8 +28,8 @@
         "Quinta Respuesta: 1°opción"
       ],
       "ability": {
-        "name": "Desintoxicación X",
-        "description": "Joker puede recuperarse de una enfermedad de estado inmediatamente"
+        "name": "Depuración X",
+        "description": "Cuando Joker sufre algún estado, tal vez se recupere de inmediato"
       }
     },
     {
