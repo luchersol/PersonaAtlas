@@ -19,7 +19,7 @@
     {
       "number": 3,
       "ability": {
-        "name": "Hacer un seguimiento",
+        "name": "Golpe de gracia",
         "description": "Le permite a Morgana atacar a un enemigo fuera de turno si el ataque del Joker no lo derrota."
       }
     },
@@ -54,7 +54,7 @@
     {
       "number": 8,
       "ability": {
-        "name": "Perdurar",
+        "name": "Último aliento",
         "description": "Permite que Morgana sobreviva a un ataque fatal con 1 HP restante."
       }
     },

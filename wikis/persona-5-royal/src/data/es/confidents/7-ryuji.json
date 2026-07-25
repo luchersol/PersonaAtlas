@@ -88,8 +88,8 @@
         "Llamada al móvil: 1°opción"
       ],
       "ability": {
-        "name": "Insta-Kill",
-        "description": "Joker puede matar instantáneamente una sombra lanzándose hacia ella si es al menos 10 niveles más fuerte, como lo indica un contorno verde cuando usa el Tercer Ojo."
+        "name": "Muerte instantanea",
+        "description": "Joker puede matar de inmediato con una sombra debil"
       },
       "requirement": "Acepta el mensaje de texto de Ryuji por la noche."
     },
@@ -103,7 +103,7 @@
         "Llamada al móvil: 2°opción"
       ],
       "ability": {
-        "name": "Perdurar",
+        "name": "Último aliento",
         "description": "Permite a Ryuji sobrevivir a un ataque fatal con 1 HP restante."
       },
       "requirement": "No puede estar lloviendo"

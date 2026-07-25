@@ -43,7 +43,7 @@
         "Llamada al móvil: 1°opción"
       ],
       "ability": {
-        "name": "Fluir",
+        "name": "Flujo",
         "description": "Joker puede recibir los efectos de Carga y Concentración al comienzo de una batalla."
       },
       "requirement": "No puede estar lloviendo"

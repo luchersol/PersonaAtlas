@@ -29,7 +29,7 @@
         "Llamada al móvil: Cualquiera"
       ],
       "ability": {
-        "name": "Charla de chicas",
+        "name": "Medición femenina",
         "description": "Joker puede volver a intentar una negociación fallida contra sombras femeninas."
       },
       "requirement": "Nivel 2 Gentileza/Bloqueado hasta el 6 de mayo"
@@ -49,8 +49,8 @@
         "Llamada al móvil: 1°opción"
       ],
       "ability": {
-        "name": "Hacer un seguimiento",
-        "description": "Permite a Ann atacar a un enemigo fuera de turno si el ataque de Joker no lo derrota."
+        "name": "Golpe de gracia",
+        "description": "Le permite a Ann atacar a un enemigo fuera de turno si el ataque del Joker no lo derrota."
       },
       "requirement": "No puede estar lloviendo"
     },
@@ -65,7 +65,7 @@
         "Llamada al móvil: 1° ó 3°opción"
       ],
       "ability": {
-        "name": "Técnica sexy ♥",
+        "name": "Seducción ♥",
         "description": "Ann tiene la oportunidad de llamar la atención de un enemigo y hacerle perder su turno."
       },
       "requirement": "No puede estar lloviendo"
@@ -120,7 +120,7 @@
         "Llamada al móvil: 1° ó 3°opción"
       ],
       "ability": {
-        "name": "Perdurar",
+        "name": "Último aliento",
         "description": "Permite que Ann sobreviva a un ataque mortal con 1 HP restante."
       }
     },
