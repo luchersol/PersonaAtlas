@@ -7,7 +7,7 @@ interface Props {
 }
 
 const { lang, route, href, class: className } = Astro.props;
-const href_ = lang && route ? `/${lang}/home` : href;
+const href_ = lang && route ? href : `/${lang}/home`;
 ---
 
 <a href={href_} class={className ?? "p5-btn"}>
