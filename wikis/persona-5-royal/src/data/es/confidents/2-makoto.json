@@ -20,7 +20,7 @@
         "Llamada al móvil: 3°opción"
       ],
       "ability": {
-        "name": "Cálculo de sombras",
+        "name": "Análisis de sombras",
         "description": "Te permite ver el objeto y las habilidades de un enemigo al analizar"
       },
       "requirement": "Conocimiento nivel 3"
@@ -43,7 +43,7 @@
         "Llamada al móvil: 1°opción"
       ],
       "ability": {
-        "name": "Charla de cinturón negro",
+        "name": "Medición marcial",
         "description": "Joker puede volver a intentar una negociación fallida contra las artes marciales usando sombras"
       }
     },

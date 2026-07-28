@@ -81,7 +81,7 @@
       ],
       "ability": {
         "name": "Lágrimas de cocodrilo",
-        "description": "Si un miembro del grupo es capturado por las sombras, Ann puede hacer que disminuyan sus demandas."
+        "description": "Posibilidad de hacer que los enemigos pidan menos en las negociaciones."
       },
       "requirement": "No puede estar lloviendo"
     },

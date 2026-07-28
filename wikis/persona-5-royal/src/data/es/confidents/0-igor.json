@@ -39,15 +39,15 @@
     {
       "number": 5,
       "ability": {
-        "name": "Súper acciones",
+        "name": "Megainventario",
         "description": "Te permite llevar 10 Personas a la vez"
       }
     },
     {
       "number": 6,
       "ability": {
-        "name": "Explosión de Arcanos Altos",
-        "description": "Aumenta el efecto de Arcana Burst"
+        "name": "Gran explosicón arcana",
+        "description": "Aumenta la EXP extra que otorga la Explosión arcana"
       }
     },
     {
